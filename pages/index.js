@@ -1,6 +1,6 @@
 import Head from "next/head";
-import HeaderComponent from "../components/Header";
-import FooterComponent from "../components/Footer";
+import HeaderComponent from "../components/header";
+import FooterComponent from "../components/footer";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
