@@ -1,8 +1,12 @@
 import Head from "next/head";
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-export default function Home() {
+export default function Home({ props }) {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <HeaderComponent></HeaderComponent>
