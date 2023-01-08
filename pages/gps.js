@@ -15,14 +15,14 @@ export default function gpsind({ products }) {
           href="custom"
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
         >
-          How to get your customized track?
+          How to get your customised track?
         </a>
       </div>
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">
-            The essentials
+            The Essentials
           </h3>
           <p className="mt-4 mx-auto">
             <span className="text-5xl font-extrabold tracking-tight">€0</span>
