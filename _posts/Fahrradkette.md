@@ -3,9 +3,9 @@ title: "Fahrradkette"
 
 excerpt: "Alles zum Thema Fahrradkette"
 
-coverImage: "/assets/blog/authors/joe.jpeg"
+coverImage: "/assets/blog/Fahrradkette.jpg"
 
-date: "2020-06-16T05:35:07.322Z"
+date: "2023-01-28T05:35:07.322Z"
 
 author:
   name: Konstantin
@@ -37,7 +37,7 @@ Solltet ihr eine neue Kette aufziehen wollen, ist es am einfachsten, die neue Ke
 
 ### Reinigung
 
-Die Reinigung erfolgt am besten durch vorheriges Einweichen der Kette und Ritzel mit Entfetter und anschließendem Reinigen mit Schwamm und Wasser. Zu empfehlen sind auch Set’s wie dieses von [Parktool https://amzn.to/3XI8TQD](https://amzn.to/3XI8TQD).
+Die Reinigung erfolgt am besten durch vorheriges Einweichen der Kette und Ritzel mit Entfetter und anschließendem Reinigen mit Schwamm und Wasser. Zu empfehlen sind auch Set’s wie dieses von [Parktool](https://amzn.to/3XI8TQD).
 
 ### Schmierung
 
@@ -48,3 +48,5 @@ Nachdem man die Kette gefettet hat, sollte man das überschüssige Fett mit eine
 ## Kettenriss, was nun?
 
 Bei einem Kettenriss unterwegs kürzt man einfach die Kette um ein Glied. Hierzu ist es ratsam, ein Mutlitool mit Kettennieter zu haben (Beispiel [Crank Brothers 17](https://amzn.to/3JiaqIF)).
+
+&lt;a href="https://de.freepik.com/vektoren-kostenlos/schwarze-vertikale-ketten-eingestellt_4431390.htm#query=bike%20chain&position=2&from_view=search&track=sph">Bild von macrovector_official&lt;/a> auf Freepik
