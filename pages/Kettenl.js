@@ -58,7 +58,7 @@ export default function Kettenl() {
   return (
     <div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
       <div className="px-6 py-4">
-        <div className="mb-2 text-xl font-bold">Kettenlänge berechnen</div>
+        <div className="mb-2 text-xl font-bold">Kettenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
           <label className="block mb-3" htmlfor="lKettenstrebe">
             Kettenstrebenlänge in mm
@@ -90,7 +90,7 @@ export default function Kettenl() {
             type="number"
             name="ZRitzel"
             id="ZRitzel"
-            placeholder="~34"
+            placeholder="~28"
             required
           />
           <label className="block mb-3" htmlfor="Schaltungsröllchen">
@@ -111,7 +111,7 @@ export default function Kettenl() {
             type="submit"
             className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
           >
-            Submit
+            Berechnen
           </button>
         </form>
       </div>
