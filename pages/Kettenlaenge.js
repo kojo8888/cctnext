@@ -52,7 +52,7 @@ export default function Kettenl() {
       } else Klgerade = Klgerundet;
     }
     Kl = Klgerade;
-    alert(`Deine Kettenlänge ist ${Kl}?`);
+    alert(`Deine Kettenlänge ist ${Kl} Glieder!`);
   };
 
   return (
