@@ -1,4 +1,6 @@
-export default function Kettenl() {
+import HeaderComponent from "../components/header";
+import FooterComponent from "../components/footer";
+export default function Kettenlaenge() {
   const submitContact = async (event) => {
     event.preventDefault();
 
@@ -56,7 +58,8 @@ export default function Kettenl() {
   };
 
   return (
-    <div className="max-w-xs my-2 overflow-hidden rounded shadow-lg">
+    <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <HeaderComponent></HeaderComponent>
       <div className="px-6 py-4">
         <div className="mb-2 text-xl font-bold">Kettenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
@@ -115,6 +118,7 @@ export default function Kettenl() {
           </button>
         </form>
       </div>
+      <FooterComponent></FooterComponent>
     </div>
   );
 }
