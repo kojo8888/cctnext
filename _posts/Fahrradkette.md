@@ -13,7 +13,7 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/authors/joe.jpeg"
+  url: "/assets/blog/Fahrradkette.jpg"
 ---
 
 # Hätte, hätte, Fahrradkette

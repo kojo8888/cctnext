@@ -3,7 +3,7 @@ title: "Packliste"
 
 excerpt: "Packlisten für alle Radtouren"
 
-coverImage: "/assets/blog/authors/joe.jpeg"
+coverImage: "/assets/blog/Bikepacking.jpg"
 
 date: "2020-04-16T05:35:07.322Z"
 
@@ -13,7 +13,7 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/authors/joe.jpeg"
+  url: "/assets/blog/Bikepacking.jpg"
 ---
 
 # Irgendwas vergisst man eh

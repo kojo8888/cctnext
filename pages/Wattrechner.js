@@ -45,7 +45,7 @@ export default function Wattrechner() {
 
     // Ausgabe
     alert(
-      `Die Leistung ist ${Ptotal}, die relative Leistung ist ${Prel}, die Leistung für den Anstieg ist ${Pclimb}, die Leistung gegen den Luftwiederstand ist ${Pair}, die Leistung gegen den Rollwiederstand ist ${Proll}`
+      `Die Leistung ist ${Ptotal}, die relative Leistung ist ${Prel}, die Leistung für den Anstieg ist ${Pclimb}, die Leistung gegen den Luftwiderstand ist ${Pair}, die Leistung gegen den Rollwiderstand ist ${Proll}`
     );
   };
 

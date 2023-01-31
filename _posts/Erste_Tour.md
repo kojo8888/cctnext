@@ -3,7 +3,7 @@ title: "Die erste Rennradtour"
 
 excerpt: "Damit die erste Tour zum Vergnügen wird, haben wir das Wichtigste kurz zusam"
 
-coverImage: "/assets/blog/authors/joe.jpeg"
+coverImage: "/assets/blog/Erstetour.jpg"
 
 date: "2020-04-16T05:35:07.322Z"
 
@@ -13,7 +13,7 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/authors/joe.jpeg"
+  url: "/assets/blog/Erstetour.jpg"
 ---
 
 # Deine erste Rennradtour steht an? 50 Tipps, die dir helfen, ein neues Hobby zu finden.

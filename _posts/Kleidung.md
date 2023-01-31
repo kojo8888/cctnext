@@ -3,7 +3,7 @@ title: "Was soll ich anziehen"
 
 excerpt: "Eine kurze Zusammenfassung für alle Jahreszeiten und Witterungsbedingungen"
 
-coverImage: "/assets/blog/authors/joe.jpeg"
+coverImage: "/assets/blog/Kleidung.jpg"
 
 date: "2020-06-16T05:35:07.322Z"
 
@@ -13,7 +13,7 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/authors/joe.jpeg"
+  url: "/assets/blog/Kleidung.jpg"
 ---
 
 # Mama, was soll ich anziehen?

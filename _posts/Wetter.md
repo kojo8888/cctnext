@@ -3,7 +3,7 @@ title: "Wetter"
 
 excerpt: "Regnet es nun oder nicht?"
 
-coverImage: "/assets/blog/authors/joe.jpeg"
+coverImage: "/assets/blog/Wetter.jpg"
 
 date: "2020-05-16T05:35:07.322Z"
 
@@ -13,7 +13,7 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/authors/joe.jpeg"
+  url: "/assets/blog/Wetter.jpg"
 ---
 
 # Was muss man beim Radfahren in Sachen Wetter alles beachten?
