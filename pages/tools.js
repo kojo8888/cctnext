@@ -91,6 +91,14 @@ export default function tools({ products }) {
               Kurbellänge
             </a>
           </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="Bikeflix"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Bikeflix
+            </a>
+          </span>
         </div>
       </div>
 

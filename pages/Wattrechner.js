@@ -52,14 +52,14 @@ export default function Wattrechner() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
       <HeaderComponent></HeaderComponent>
-      <div className="px-6 py-4">
-        <div className="mb-2 text-xl font-bold">Wattrechner</div>
+      <div className="px-6 py-3">
+        <div className="mb-3 text-xl font-bold">Wattrechner</div>
         <form className="flex flex-col" onSubmit={submitContact}>
           <label className="block mb-3" htmlfor="vk">
             Geschwindigkeit (in km/h)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="vk"
             id="vk"
@@ -69,7 +69,7 @@ export default function Wattrechner() {
             Gewicht Fahrer (in kg)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="mfahrer"
             id="mfahrer"
@@ -79,7 +79,7 @@ export default function Wattrechner() {
             Gewicht Rad (in kg)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="mrad"
             id="mrad"
@@ -89,7 +89,7 @@ export default function Wattrechner() {
             Distanz (in km)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="d"
             id="d"
@@ -99,7 +99,7 @@ export default function Wattrechner() {
             Höhenunterschied (in m)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="h"
             id="h"
@@ -107,7 +107,7 @@ export default function Wattrechner() {
           />
           <button
             type="submit"
-            className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
           >
             Berechnen
           </button>

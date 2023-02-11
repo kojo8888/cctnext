@@ -18,73 +18,96 @@ export default function Trittfrequenz() {
     let Dev;
 
     //Rechnung
-    Ü = parseInt(ZK) / parseInt(ZR);
+    Ü = parseInt(ZR) / parseInt(ZK);
     v = (parseInt(veloc) * 1000) / 60;
     U = (parseInt(wd) * Math.PI) / 1000;
 
     // Ergebnis
     Cad = (Ü * v) / U;
     Dev = U / Ü;
+    Cad = Number.parseFloat(Cad).toFixed(2);
+    Dev = Number.parseFloat(Dev).toFixed(2);
 
+    // Ausgabe
     alert(`Deine Trittfrequenz ist ${Cad}1/min, die Entfaltung ist ${Dev}m!`);
   };
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
       <HeaderComponent></HeaderComponent>
-      <div className="px-6 py-4">
-        <div className="mb-2 text-xl font-bold">
+      <div className="px-6 py-3">
+        <div className="mb-3 text-xl font-bold">
           Trittfrequenz und Entfaltung
         </div>
         <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlfor="ZR">
-            ZR in mm
-          </label>
-          <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="ZR"
-            id="ZR"
-            required
-          />
           <label className="block mb-3" htmlfor="ZK">
-            ZK in mm
+            Zähnezahl Kettenblatt
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="ZK"
             id="ZK"
             required
           />
-          <label className="block mb-3" htmlfor="wd">
-            wd in mm
+          <label className="block mb-3" htmlfor="ZR">
+            Zähnezahl Ritzel
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            type="number"
+            name="ZR"
+            id="ZR"
+            required
+          />
+          <label className="block mb-3" htmlfor="wd">
+            Laufraddurchmesser (in mm)
+          </label>
+          <input
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="wd"
+            placeholder="Rennrad ~ 694mm"
             id="wd"
             required
           />
           <label className="block mb-3" htmlfor="veloc">
-            veloc in mm
+            Geschwindigkeit (in km/h)
           </label>
           <input
-            className="w-half p-2 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="veloc"
             id="veloc"
             required
           />
-
           <button
             type="submit"
-            className="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
           >
             Berechnen
           </button>
         </form>
+        <div className="mt-3 space-y-3 sm:space-y-0 sm:grid sm:gap-x-3 sm:gap-y-3">
+          <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+            <p>
+              Die <a class="underline">Entfaltung</a> ist die zurückgelegte
+              Strecke bei einer Kurbelumdrehung.<br></br>Hier findest du ein
+              paar <a class="underline">Laufraddurchmesser:</a>
+              <br></br>37-349 420 mm<br></br>
+              32-369 430 mm<br></br>
+              28-406 469 mm<br></br>
+              37-406 483 mm<br></br>
+              47-406 498 mm<br></br>
+              25-559 617 mm<br></br>
+              33-559 630 mm<br></br>
+              47-559 645 mm<br></br>
+              51-559 664 mm<br></br>
+              37-622 694 mm<br></br>
+              47-622 709 mm
+            </p>
+          </div>
+        </div>
       </div>
       <FooterComponent></FooterComponent>
     </div>
