@@ -91,9 +91,16 @@ export default function Trittfrequenz() {
         <div className="mt-3 space-y-3 sm:space-y-0 sm:grid sm:gap-x-3 sm:gap-y-3">
           <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
             <p>
+              Durch die Eingabe der Felder kannst du die Trittfrequenz und die
+              Entfaltung berechnen.<br></br>
+              <br></br>
+              Die berechnete <a class="underline">Trittfrequenz</a> zeigt dir,
+              wie schnell du im jeweiligen Gang bei der angegebenen
+              Geschwindigkeit treten musst.<br></br>
               Die <a class="underline">Entfaltung</a> ist die zurückgelegte
-              Strecke bei einer Kurbelumdrehung.<br></br>Hier findest du ein
-              paar <a class="underline">Laufraddurchmesser:</a>
+              Strecke bei einer Kurbelumdrehung.<br></br>
+              <br></br>Hier findest du ein paar{" "}
+              <a class="underline">Laufraddurchmesser:</a>
               <br></br>37-349 420 mm<br></br>
               32-369 430 mm<br></br>
               28-406 469 mm<br></br>

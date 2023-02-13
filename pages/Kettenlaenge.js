@@ -121,13 +121,17 @@ export default function Kettenlaenge() {
         <div className="mt-3 space-y-3 sm:space-y-0 sm:grid sm:gap-x-3 sm:gap-y-3">
           <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
             <p>
+              <br></br>
+              In diesem Tool kannst du die theoretische Kettenlänge deines
+              Fahrrades berechnen. Bei Nabenschaltungen funktioniert es nicht.
+              <br></br> <br></br>
               Die <a class="underline">Kettenstrebenlänge</a> ist der Abstand
-              zwischen dem Tretlager und der Hinterradachse. <br></br>Das
+              zwischen dem Tretlager und der Hinterradachse.<br></br>Das
               <a class="underline">Schaltungsröllchen</a> ist am hinteren
               Schaltwerk das kleine Ritzel zur Führung der Kette.
             </p>
             <p>
-              <img src="Kettenlaenge.png" className="rounded-lg mx-auto mt-3" />
+              <img src="Kettenlaenge.png" className="rounded-lg mx-auto mt-6" />
             </p>
           </div>
         </div>

@@ -114,7 +114,7 @@ export default function Speichenlaenge() {
             <p>
               <img
                 src="Speichenlaenge.png"
-                className="rounded-lg mx-auto mt-3"
+                className="rounded-lg mx-auto mt-6"
               />
             </p>
           </div>
