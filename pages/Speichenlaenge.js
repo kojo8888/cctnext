@@ -104,12 +104,14 @@ export default function Speichenlaenge() {
         <div className="mt-3 space-y-3 sm:space-y-0 sm:grid sm:gap-x-3 sm:gap-y-3">
           <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
             <p>
-              Der <a class="underline">Durchmesser D</a> läßt sich wie folgt
-              ermitteln: Zwei Speichen auf der Kopfseite auf 250 mm kürzen. Die
-              Speichen bündig in die Nippel schrauben. Die Speichen anschließend
-              gegenüberliegend in der Felge einhängen. Der Abstand der inneren
-              Speichenenden ergibt zusammen mit den Längen der gekürzten
-              Speichen den gefragten Durchmesser.
+              In diesem Tool kannst du die Speichenlänge für deine Laufräder
+              berechnen.<br></br>
+              <br></br>Der <a class="underline">Durchmesser D</a> läßt sich wie
+              folgt ermitteln: Zwei Speichen auf der Kopfseite auf 250 mm
+              kürzen. Die Speichen bündig in die Nippel schrauben. Die Speichen
+              anschließend gegenüberliegend in der Felge einhängen. Der Abstand
+              der inneren Speichenenden ergibt zusammen mit den Längen der
+              gekürzten Speichen den gefragten Durchmesser.
             </p>
             <p>
               <img
