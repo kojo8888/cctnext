@@ -1,4 +1,3 @@
-import Head from "next/head";
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import { Plus } from "react-feather";

@@ -1,5 +1,6 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+
 export default function Trittfrequenz() {
   const submitContact = async (event) => {
     event.preventDefault();

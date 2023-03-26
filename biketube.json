@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "name": "How to Size a Bicycle Chain",
+      "url": "https://youtu.be/O0YibMDWBAw",
+      "isFeatured": true,
+      "category": "Reparatur",
+      "description": "Replacement chains for bicycles are always longer than you need. This video will take you step by step through sizing a bike chain, including determining whether your old chain was correctly sized, sizing to an old chain, and the largest cog & chainring method, as well as some exceptions and considerations such as rear suspension and chain guides."
+    },
+    {
+      "name": "The Ultimate Cycling Kit Guide For Cold Weather Rides",
+      "url": "https://youtu.be/peho6sGtYsk",
+      "isFeatured": true,
+      "category": "Kleidung",
+      "description": "Wearing the right clothing when riding in winter can sometimes be a bit of a challenge. If you misread the conditions you can easily find yourself getting much too hot or really really cold! If you're unsure what to wear or just can't get the right combo, this is the ultimate cycling kit guide for cold weather rides!"
+    },
+    {
+      "name": "How to Dress For Autumn on Your Road Bike | Layers and Rain Capes",
+      "url": "https://www.youtube.com/watch?v=elfe9ljTHxw",
+      "isFeatured": true,
+      "category": "Kleidung",
+      "description": "Choosing the right clothes when going out on a bike ride is essential, especially in changeable weather conditions. Hank and Conor talk us through some top tips to prepare for your rides as the seasons change and the weather gets cooler."
+    }
+  ]
+}

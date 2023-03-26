@@ -1,9 +1,9 @@
 ---
-title: "Wetter"
+title: "Welche Kleidung trage ich bei bestimmten Wetter?"
 
-excerpt: "Regnet es nun oder nicht?"
+excerpt: "Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen."
 
-coverImage: "/assets/blog/Wetter.jpg"
+coverImage: "/assets/blog/authors/joe.jpeg"
 
 date: "2020-05-16T05:35:07.322Z"
 
@@ -13,12 +13,14 @@ author:
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-  url: "/assets/blog/Wetter.jpg"
+  url: "/assets/blog/authors/joe.jpeg"
 ---
 
-# Was muss man beim Radfahren in Sachen Wetter alles beachten?
+# Welche Kleidung trage ich bei bestimmten Wetter?
 
 Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen.
+
+## Das kleine Einmaleins
 
 ## Regenvorhersage
 
