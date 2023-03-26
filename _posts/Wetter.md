@@ -1,5 +1,5 @@
 ---
-title: "Welche Kleidung trage ich bei bestimmten Wetter?"
+title: "Wie wird das Wetter auf meiner Radtour?"
 
 excerpt: "Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen."
 
@@ -16,7 +16,7 @@ ogImage:
   url: "/assets/blog/authors/joe.jpeg"
 ---
 
-# Welche Kleidung trage ich bei bestimmten Wetter?
+# Wie wird das Wetter auf meiner Radtour?
 
 Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen.
 
