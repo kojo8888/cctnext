@@ -1,7 +1,7 @@
 ---
-title: "Commuten"
+title: "Commuter 1x1"
 
-excerpt: "Am Stau vorbeifahren ist einfach"
+excerpt: "In diesem Blogpost erkläre ich dir, worauf man bei der täglichen Fahrt zur Arbeit achten muss und welche kleinen Tipps erfahrene Commuter noch so haben."
 
 coverImage: "/assets/blog/authors/joe.jpeg"
 
@@ -18,25 +18,29 @@ ogImage:
 
 # Mit dem Rad zur Arbeit
 
+In diesem Blogpost erkläre ich dir, worauf man bei der täglichen Fahrt zur Arbeit achten muss und welche kleinen Tipps erfahrene Commuter noch so haben.
+
 ## Das kleine Einmaleins
 
-- Routine entwickeln
-- Radtaschen
-- Sichtbarkeit
-- Nicht aufs Wetter schauen
+- Nicht aufs Wetter schauen, einfach losfahren
+- Radtaschen sind ihr Geld wert
+- Licht vergessen?
 - Reserveklamotten
+- Ersatzschlauch nicht vergessen
 
 ## Wettervorhersage
 
-## Bei der täglichen Fahrt ins Büro achte ich mittlerweile überhaupt nicht mehr aufs Wetter. Falls es regnet, werde ich halt nass und dusche anschließend nach der Fahrt kurz. Bei Detailfragen zum Wetter gibt es einen weiteren Blogeintrag.
+Bei der täglichen Fahrt ins Büro achte ich mittlerweile überhaupt nicht mehr aufs Wetter. Falls es regnet, werde ich halt nass und dusche anschließend kurz. Bei Detailfragen zum Wetter gibt es einen weiteren Blogeintrag.
 
 ## Ausrüstung
 
-Zu empfehlen sind Radtaschen oder spezielle Radrucksäcke, die auch wirklich wasserdicht sind. Glatte Oberflächen sind immer zu bevorzugen, da sie sich am einfachsten abwaschen lassen. Fancy Stoffe sehen meist nur bei den ersten Fahrten gut aus. Nach der ersten Dusche bleibt davon nicht viel übrig.
+Zu empfehlen sind Radtaschen oder spezielle Radrucksäcke, die auch wirklich wasserdicht sind. Glatte Oberflächen sind immer zu bevorzugen, da sie sich am einfachsten abwaschen lassen. Fancy Stoffe sehen meist nur bei den ersten Fahrten gut aus, nach der ersten Regendusche im Matsch bleibt davon nicht viel übrig. Radtaschen bieten gegenüber einem Rucksack den Vorteil, dass man nicht so sehr am Rücken schwitzt. Ob nun ein Rucksack komfortabler zu tragen ist oder ob einem die Radtasche am Gepäckträger beim Fahrradhandling stört, muss man selbst beurteilen. Ich empfehle die Ortlieb oder Vaudetaschen (Beispiel [Vaude](https://amzn.to/42Ljw8e)).
 
-Ein Dynamo am Rad erspart euch das lästige Aufladen der Vorderlampe. Das Rücklicht hält ja meist ein paar Tage, ein helles Vorderlicht jedoch meist nur eine halbe Woche. Natürlich hat sich hier viel getan und die Akkulaufzeit ist deutlich besser als noch vor ein paar Jahren. Dennoch bietet ein Dynamo den Vorteil, dass man einfach losfahren kann, kein Licht vergessen hat und auch nicht an den Akkustand denken muss. Als Zusatz kann man sich ein Blinklicht noch an den Rucksack oder die Tasche machen, um die Sichtbarkeit zu erhöhen.
+Ein Dynamo am Rad erspart euch das lästige Aufladen der Vorderlampe. Das Rücklicht hält ja meist ein paar Tage, ein helles Vorderlicht jedoch meist nur eine halbe Woche. Als Rücklicht empfehle ich das Rotlicht von Lupine (Beispiel [Lupine](https://amzn.to/3LSrar1)) und als Vorderlicht Busch udn Müller (Beispiel [BuM Ixon Space](https://amzn.to/3TKHDj6)). Dennoch bietet ein Dynamo den Vorteil, dass man einfach losfahren kann, das Licht nicht vergessen kann und nicht auf den Akkustand achten muss. Als Zusatz kann man sich ein Blinklicht an den Rucksack oder die Tasche machen, um die Sichtbarkeit zu erhöhen.
 
 Ich habe immer ein Set Wechselklamotten dabei, da ich in der Arbeit nach der Fahrt duschen kann. Falls es möglich ist, empfiehlt es sich natürlich, seine Duschsachen in der Arbeit zu lassen, sodass man das Handtuch nicht täglich mitschleppen muss.
+
+Die Fahrradmäntel sollten bei der Fahrt durch die Stadt auf jeden Fall pannensicher sein. Natürlich will man auch nicht allzu schwere Mäntel verwenden, dennoch empfiehlt sich hier ein Reifen mit extra Alu-Schutzschicht. Bei Fahrten übers Land würde ich aus Effizienzgründen auf leichtere Reifen wechseln.
 
 Zudem habe ich eine kleine Tasche mit Ersatzschlauch, Pumpe und Werkzeug dabei.
 
@@ -46,6 +50,8 @@ Ich persönlich habe an der Arbeitsstelle und am Supermarkt auf dem Nachhauseweg
 
 Bei der Planung der Route habe ich auf folgendes geachtet: Die Anzahl der Ampeln möglichst zu reduzieren, viel im Grünen zu fahren, wenige Rechts-vor-Links-Kreuzungen, Fahrradstraßen und gute Radwege zu benutzen und einen Supermarkt auf dem Nachhauseweg zu haben.
 
+Für die Sportler unter uns, kann man den Weg von und zur Arbeit beliebig ausbauen, um gleich ein paar Basiskilometer zu sammeln.
+
 ## Backup
 
-Es empfiehlt sich, im Büro oder der Arbeitsstelle ein zweites Set Klamotten mit Handtuch und Duschgel aufzubewahren. Es stellt sich nicht die Frage, ob man irgendwann mal die Unterhose vergisst, sondern wann. Ach, und das Reserveset wieder auffüllen, wenn man zur Ersatzhose greifen musste. Außerdem kann man sich auch in den Schreibtisch einen Ersatzschlauch legen, nur für den Fall der Fälle. Ein weiteres Backup kann man sich ein zweites Schloss vor der Arbeit an den Laternenpfahl hängen.
+Es empfiehlt sich, in der Arbeitsstelle ein zweites Set Klamotten mit Handtuch und Duschgel aufzubewahren. Es stellt sich nicht die Frage, ob man irgendwann mal die Unterhose vergisst, sondern wann. Ach und denk dran, das Reserveset wieder aufzufüllen, wenn man zur Ersatzhose greifen musste. Außerdem kann man sich auch einen Ersatzschlauch in den Schreibtisch legen, nur für den Fall der Fälle. Für die ganz Vergesslichen empfiehlt es sich, ein zweites Schloss vor der Arbeit an den Laternenpfahl zu hängen.
