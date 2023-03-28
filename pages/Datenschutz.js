@@ -1,5 +1,6 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // import LocaleSwitcher from "../components/locale-switcher";
