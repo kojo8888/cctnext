@@ -10,6 +10,9 @@ export default function Datenschutz({ products }) {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
+      <Head>
+        <title>Datenschutz</title>
+      </Head>
       <HeaderComponent></HeaderComponent>
       <div className="text-justify font-mono">
         <p>

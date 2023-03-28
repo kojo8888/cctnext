@@ -1,9 +1,13 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Head from "next/head";
 
 export default function Impressum({ products }) {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
+      <Head>
+        <title>Impressum</title>
+      </Head>
       <HeaderComponent></HeaderComponent>
       <div className="ml-5 mr-5 font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">
         <p className="mt-5 text-gray-500 text-left">

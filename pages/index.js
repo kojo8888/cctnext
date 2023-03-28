@@ -11,6 +11,9 @@ export default function Home({ props }) {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
+      <Head>
+        <title>Home</title>
+      </Head>
       <HeaderComponent></HeaderComponent>
 
       <p>

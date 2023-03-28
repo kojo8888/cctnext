@@ -1,14 +1,17 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import { Plus } from "react-feather";
+import Head from "next/head";
 
 export default function gpsind({ products }) {
   return (
     // <Layout title="Genervt von Komoot?">
 
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
+      <Head>
+        <title>Packliste</title>
+      </Head>
       <HeaderComponent></HeaderComponent>
-
       <div className="p-8">
         <a
           href="custom"
