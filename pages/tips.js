@@ -16,6 +16,7 @@ export default function tips({ allPosts }) {
         <Head>
           <title>Tips&Tricks</title>
         </Head>
+
         <Container>
           <Intro />
           {heroPost && (

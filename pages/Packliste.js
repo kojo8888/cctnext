@@ -20,8 +20,6 @@ export default function Home(props) {
           >
             <h2>{post.name}</h2>
             <p>{post.kategorie}</p>
-            <p>{post.description}</p>
-            <p>{post.url}</p>
           </div>
         ))}
         <FooterComponent></FooterComponent>

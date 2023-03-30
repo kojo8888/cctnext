@@ -5,7 +5,7 @@ excerpt: "Das Trainingslager im Frühjahr auf Mallorca bietet viele Vorteile. Di
 
 coverImage: "/assets/blog/authors/joe.jpeg"
 
-date: "2023-06-16T05:35:07.322Z"
+date: "2023-03-16T05:35:07.322Z"
 
 author:
   name: Konstantin
