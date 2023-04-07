@@ -9,20 +9,23 @@ export default function Wattrechner() {
     let vd = event.target.vd.value;
     let s = event.target.s.value;
     let t = event.target.t.value;
+    let vdr;
+    let sr;
+    let tr;
 
     // Variablen zum Rechnen
 
     //Rechnung
-    vd = parseInt(s) / parseInt(t);
-    s = parseInt(vd) * parseInt(t);
-    t = parseInt(s) / parseInt(vd);
-    //vd = Number.parseFloat(vd).toFixed(2);
-    //s = Number.parseFloat(s).toFixed(2);
-    //t = Number.parseFloat(t).toFixed(2);
+    vdr = parseInt(s) / parseInt(t);
+    sr = parseInt(vd) * parseInt(t);
+    tr = parseInt(s) / parseInt(vd);
+    //vdr = Number.parseFloat(vdr).toFixed(2);
+    //sr = Number.parseFloat(sr).toFixed(2);
+    //tr = Number.parseFloat(tr).toFixed(2);
 
     // Ausgabe
     alert(
-      `Die Durchschnittliche Geschwindigkeit ist ${vd} km/h, die Strecke ist ${s}, die Zeit ist ${t}`
+      `Die Durchschnittliche Geschwindigkeit ist ${vdr} km/h, die Strecke ist ${sr} km, die Zeit ist ${tr} Stunden`
     );
   };
 
