@@ -1,7 +1,7 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 
-export default function Schaltverhaeltnis() {
+export default function Ritzelrechner() {
   const submitContact = async (event) => {
     event.preventDefault();
 
@@ -9,28 +9,38 @@ export default function Schaltverhaeltnis() {
     const ZR = event.target.ZR.value;
     const ZK = event.target.ZK.value;
     const wd = event.target.wd.value;
-    const veloc = event.target.veloc.value;
+    const wb = event.target.wb.value;
+    const Cad = event.target.Cad.value;
+    var Bb;
 
-    // Variablen zum Rechnen
-    let Cad;
-    let U;
     let v;
     let Ü;
     let Dev;
+    var s;
+    var Umf;
 
-    //Rechnung
+    //Übersetzung
     Ü = parseInt(ZR) / parseInt(ZK);
-    v = (parseInt(veloc) * 1000) / 60;
-    U = (parseInt(wd) * Math.PI) / 1000;
-
-    // Ergebnis
-    Cad = (Ü * v) / U;
-    Dev = U / Ü;
-    Cad = Number.parseFloat(Cad).toFixed(2);
+    //Umfang in m
+    Umf = ((parseInt(wb) * 2 + parseInt(wd)) * Math.PI) / 1000;
+    Umf = Number.parseFloat(Umf).toFixed(2);
+    //Entfaltung
+    Dev = Umf / Ü;
     Dev = Number.parseFloat(Dev).toFixed(2);
+    //Entfaltung bei Cad in m
+    s = parseInt(Cad) * Umf * Ü;
+    //Geschwindigkeit in km/h
+    v = (Dev * parseInt(Cad) * 60) / 1000;
+    v = Number.parseFloat(v).toFixed(2);
+    //Bandbreite
+    //Gk = ZRk / ZKk;
+    //Gh = ZKh / ZRh;
+    //Bb = Gh / Gk;
 
     // Ausgabe
-    alert(`Deine Trittfrequenz ist ${Cad}1/min, die Entfaltung ist ${Dev}m!`);
+    alert(
+      `Die Entfaltung ist ${Umf}m/Kurbelumdrehung, die Geschwindigkeit ist ${v}km/h`
+    );
   };
 
   return (
@@ -72,14 +82,25 @@ export default function Schaltverhaeltnis() {
             id="wd"
             required
           />
-          <label className="block mb-3" htmlfor="veloc">
-            Geschwindigkeit (in km/h)
+          <label className="block mb-3" htmlfor="wb">
+            Reifenbreite (in mm)
           </label>
           <input
             className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
-            name="veloc"
-            id="veloc"
+            name="wb"
+            placeholder="Rennrad ~ 30mm"
+            id="wb"
+            required
+          />
+          <label className="block mb-3" htmlfor="Cad">
+            Kadenz (in 1/min)
+          </label>
+          <input
+            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            type="number"
+            name="Cad"
+            id="Cad"
             required
           />
           <button
@@ -92,15 +113,7 @@ export default function Schaltverhaeltnis() {
         <div className="mt-3 space-y-3 sm:space-y-0 sm:grid sm:gap-x-3 sm:gap-y-3">
           <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
             <p>
-              Durch die Eingabe der Felder kannst du die Trittfrequenz und die
-              Entfaltung berechnen.<br></br>
-              <br></br>
-              Die berechnete <a class="underline">Trittfrequenz</a> zeigt dir,
-              wie schnell du im jeweiligen Gang bei der angegebenen
-              Geschwindigkeit treten musst.<br></br>
-              Die <a class="underline">Entfaltung</a> ist die zurückgelegte
-              Strecke bei einer Kurbelumdrehung.<br></br>
-              <br></br>Hier findest du ein paar{" "}
+              Hier findest du ein paar{" "}
               <a class="underline">Laufraddurchmesser:</a>
               <br></br>37-349 420 mm<br></br>
               32-369 430 mm<br></br>

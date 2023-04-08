@@ -9,7 +9,7 @@ export default function gpsind({ products }) {
 
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
-        <title>Packliste</title>
+        <title>GPS</title>
       </Head>
       <HeaderComponent></HeaderComponent>
       <div className="p-8">

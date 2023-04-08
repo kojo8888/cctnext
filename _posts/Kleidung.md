@@ -1,32 +1,19 @@
 ---
-
 title: "Mama, was soll ich anziehen?"
 
-excerpt: "Die Wahl des Radlgewands ist gar nicht so kompliziert, wie man manchmal denken mag. Zwei Fragestellungen, die dir schnell weiterhelfen:
-
-
-
-* Wird es auf meiner Tour regnen?
-* Wie warm oder kalt wird es sein?
-
-Die erste Frage ist meistens, brauche ich eine Regenjacke oder nicht. Besonders Nässe kann zum schnellen Auskühlen des Körpers führen.
-
-Die zweite Frage ist, wie kalt es wohl sein wird. Wie warm es ist, ist meistens nebensächlich, da man im Sommer eh kurz/kurz fährt und somit keine Wahl hat, noch weniger zu tragen. Im Frühjahr und Herbst hingegen können es gerne ein paar Lagen mehr sein. Doch wie viele? Und im Winter, was ziehe ich da an?"
+excerpt: "Die Wahl des Radlgewands ist gar nicht so kompliziert, wie man manchmal denken mag. Regnet es und wie warm wird es?"
 
 coverImage: "/assets/blog/authors/joe.jpeg"
 
 date: "2020-06-16T05:35:07.322Z"
 
 author:
-
   name: Konstantin
 
   picture: "/assets/blog/authors/Konstantin.png"
 
 ogImage:
-
   url: "/assets/blog/authors/joe.jpeg"
-
 ---
 
 # Mama, was soll ich anziehen?
