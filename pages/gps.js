@@ -1,219 +1,90 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
-import { Plus } from "react-feather";
+import { Plus, Clock, Heart, MapPin, Users } from "react-feather";
 import Head from "next/head";
 
 export default function gpsind({ products }) {
   return (
-    // <Layout title="Genervt von Komoot?">
-
-    <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
+    <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
         <title>GPS</title>
       </Head>
       <HeaderComponent></HeaderComponent>
-      <div className="p-8">
+
+      <div className="font-mono mt-3 mx-auto text-center max-w-3xl px-10"></div>
+      <p>
+        <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
+      </p>
+      <p className="mt-12 text-3xl font-extrabold text-gray-900 tracking-tight">
+        Keine Lust auf stundenlange Routenplanung?
+      </p>
+
+      <p className="mt-12 text-xl font-extrabold text-gray-900 tracking-tight">
+        Wir erstellen deine individuelle Fahrradtour, schnell und ohne Stress
+      </p>
+      <div className="p-3">
         <a
           href="custom"
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
         >
-          How to get your customised track?
+          Interessiert an einem individuellem Track?
         </a>
       </div>
-
-      <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Essentials
-          </h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€0</span>
-            <span className="ml-1 text-xl font-semibold">/GPX</span>
+      <div className="p-3">
+        <a
+          href="standard"
+          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
+        >
+          Hier geht es zu den Standards!
+        </a>
+      </div>
+      <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">
+            <MapPin color="black" />
           </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/qztdlr"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  München, Deutschland
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/bxstou"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Bozen, Tirol
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/bvitl"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Mallorca, Spanien
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">Packliste</span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Wissenswertes übers Rennradfahren
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Customized Track
+          <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+            Angepasst an deine Wünsche
           </h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€29</span>
-            <span className="ml-1 text-xl font-semibold">/GPX</span>
+          <p className="mt-3 text-gray-500">
+            Von Start bis zum Ziel erstellen wir dir deinen individuellen GPX
+            Track
           </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Entfernung und Höhenmeter
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Cafepausen und andere Stopps
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                12 Stunden oder schneller bis zur individuellen Tour
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/sgspp"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Customized Track
-                </a>
-              </span>
-            </li>
-          </ul>
         </div>
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Traveller
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">
+            <Heart color="black" />
+          </p>
+          <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+            Nervenschonend
           </h3>
-
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€249</span>
-            <span className="ml-1 text-xl font-semibold">/multi-stage GPX</span>
+          <p className="mt-3 text-gray-500">
+            Verschwende keine kostbare Zeit, gib uns ein paar Details, wir
+            machen den Rest
           </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Bis zu 10 GPX Tracks aufeinander abgestimmt
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Entfernung und Höhenmeter
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Cafepausen und andere Stopps
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                36 Stunden bis zur individuellen Bikepackingtour
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/ifagj"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Bikepacking
-                </a>
-              </span>
-            </li>
-          </ul>
         </div>
-
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">The Expert</h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€60</span>
-            <span className="ml-1 text-xl font-semibold">/session</span>
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">
+            <Users color="black" />
           </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/szldn"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Skype or Zoom
-                </a>
-              </span>
-            </li>
-          </ul>
+          <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+            Von erfahrenen Radlern
+          </h3>
+          <p className="mt-3 text-gray-500">
+            Wir kennen uns aus - mit allen Fahrradtypen.
+          </p>
+        </div>
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">
+            <Clock color="black" />
+          </p>
+          <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+            Schnelle Lieferung
+          </h3>
+          <p className="mt-3 text-gray-500">
+            Deinen GPX Track bekommst du innerhalb von 12 Stunden.
+          </p>
         </div>
       </div>
 

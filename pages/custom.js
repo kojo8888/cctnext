@@ -1,11 +1,15 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { CreditCard, Database, Download, Clipboard } from "react-feather";
 
 export default function custom({ products }) {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
+      <Head>
+        <title>Individueller GPS Track</title>
+      </Head>{" "}
       <HeaderComponent></HeaderComponent>
       <div className="font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">
         <p className="flex">

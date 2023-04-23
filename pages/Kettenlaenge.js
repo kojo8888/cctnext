@@ -100,7 +100,7 @@ export default function Kettenlaenge() {
             required
           />
           <label className="block mb-3" htmlfor="Schaltungsröllchen">
-            Schaltungsröllchen
+            Zähnezahl Schaltungsröllchen
           </label>
           <select
             className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
@@ -109,7 +109,9 @@ export default function Kettenlaenge() {
             required
           >
             <option value="10">10</option>
-            <option value="11">11</option>
+            <option value="11" selected="">
+              11
+            </option>
             <option value="12">12</option>
           </select>
           <button

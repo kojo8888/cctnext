@@ -101,7 +101,7 @@ export default function Trittfrequenz() {
               Die <a class="underline">Entfaltung</a> ist die zurückgelegte
               Strecke bei einer Kurbelumdrehung.<br></br>
               <br></br>Hier findest du ein paar{" "}
-              <a class="underline">Laufraddurchmesser:</a>
+              <a className="underline">Laufraddurchmesser:</a>
               <br></br>37-349 420 mm<br></br>
               32-369 430 mm<br></br>
               28-406 469 mm<br></br>

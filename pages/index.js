@@ -15,7 +15,6 @@ export default function Home({ props }) {
         <title>Home</title>
       </Head>
       <HeaderComponent></HeaderComponent>
-
       <p>
         <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
       </p>
