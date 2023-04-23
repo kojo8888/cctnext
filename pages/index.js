@@ -3,7 +3,7 @@ import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Clock, Heart, MapPin, Users } from "react-feather";
+import { Clock, Archive, Tool, Map } from "react-feather";
 
 export default function Home({ props }) {
   const router = useRouter();
@@ -19,48 +19,48 @@ export default function Home({ props }) {
         <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
       </p>
       <p className="mt-12 text-3xl font-extrabold text-gray-900 tracking-tight">
-        Keine Lust auf stundenlange Routenplanung?
+        Die ultimative Rennradseite!
       </p>
 
       <p className="mt-12 text-xl font-extrabold text-gray-900 tracking-tight">
-        Wir erstellen deine individuelle Fahrradtour, schnell und ohne Stress
+        Hier findest du alles rund ums Radfahren, kurz und knackig.
       </p>
 
       <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">
-            <MapPin color="black" />
+            <Map color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Angepasst an deine Wünsche
+            GPX Tracks
           </h3>
           <p className="mt-3 text-gray-500">
-            Von Start bis zum Ziel erstellen wir dir deinen individuellen GPX
-            Track
+            Ob individuelle Tracks oder ein paar Standardrouten, hier wirst du
+            fündig.
           </p>
         </div>
 
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">
-            <Heart color="black" />
+            <Archive color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Nervenschonend
+            Tips & Tricks
           </h3>
           <p className="mt-3 text-gray-500">
-            Verschwende keine kostbare Zeit, gib uns ein paar Details, wir
-            machen den Rest
+            Ein paar Blogposts zu Themen wie: Saisonstart auf Mallorca,
+            Commuten, Kleiderwahl..
           </p>
         </div>
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">
-            <Users color="black" />
+            <Tool color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Von erfahrenen Radlern
+            Tools
           </h3>
           <p className="mt-3 text-gray-500">
-            Wir kennen uns aus - mit allen Fahrradtypen.
+            Ritzelrechner, Ketten- und Speichenlänge, Packliste, Videos..
           </p>
         </div>
         <div className="bg-white border rounded-2xl px-6 pb-8">
@@ -68,10 +68,10 @@ export default function Home({ props }) {
             <Clock color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Schnelle Lieferung
+            Kurz und knackig
           </h3>
           <p className="mt-3 text-gray-500">
-            Deinen GPX Track bekommst du innerhalb von 12 Stunden.
+            Alle Infos sind schnell und einfach zugänglich
           </p>
         </div>
       </div>
