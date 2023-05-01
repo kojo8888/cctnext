@@ -6,13 +6,13 @@ export default function Ritzelrechner() {
     event.preventDefault();
     var ZL;
     const ZK = event.target.ZK.value;
-    if (ZK === "[Campagnolo Ekar - 39]") {
-      ZL = 5;
-    }
-
-    //const Ü = JSON.parse("[" + ZK + "]");
-
-    alert(`${ZL}`);
+    //if (ZK === "[Campagnolo Ekar - 38]") {
+    //  ZL = 5;
+    //}
+    var P;
+    const Ü = JSON.parse("[" + ZK + "]");
+    Ü[1] = P;
+    alert(`${P}`);
   };
 
   return (

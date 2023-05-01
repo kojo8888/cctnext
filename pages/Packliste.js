@@ -16,7 +16,6 @@ function Packliste() {
         <title>Packliste</title>
       </Head>
       <HeaderComponent></HeaderComponent>
-
       <div className="container">
         <Table theadData={getHeadings()} tbodyData={data} />
       </div>
