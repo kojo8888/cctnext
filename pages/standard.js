@@ -1,223 +1,111 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
-import { Plus, Clock, Heart, MapPin, Users } from "react-feather";
 import Head from "next/head";
+import Image from "next/image";
+import { Component } from "react";
+import styles from "../styles/Home.module.css";
+import StoryCard from "../components/StoryCard";
+import Map from "../components/Map";
+import Logo from "../components/Logo";
 
-export default function gpsind({ products }) {
-  return (
-    // <Layout title="Genervt von Komoot?">
-    <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
-      <Head>
-        <title>Standard GPS Track</title>
-      </Head>
-      <HeaderComponent></HeaderComponent>
+import { getSortedPostsData } from "../lib/posts";
 
-      <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Essentials
-          </h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€0</span>
-            <span className="ml-1 text-xl font-semibold">/GPX</span>
-          </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/qztdlr"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  München, Deutschland
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/bxstou"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Bozen, Tirol
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/bvitl"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Mallorca, Spanien
-                </a>
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">Packliste</span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Wissenswertes übers Rennradfahren
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Customized Track
-          </h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€29</span>
-            <span className="ml-1 text-xl font-semibold">/GPX</span>
-          </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Entfernung und Höhenmeter
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Cafepausen und andere Stopps
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                12 Stunden oder schneller bis zur individuellen Tour
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/sgspp"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Customized Track
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
+const postsDirectory = "public/content/posts";
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            The Traveller
-          </h3>
+export async function getServerSideProps() {
+  const postsData = await getSortedPostsData(postsDirectory);
+  const today = new Date();
+  const todayString = today.toJSON();
 
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€249</span>
-            <span className="ml-1 text-xl font-semibold">/multi-stage GPX</span>
-          </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Bis zu 10 GPX Tracks aufeinander abgestimmt
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Entfernung und Höhenmeter
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                Cafepausen und andere Stopps
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                36 Stunden bis zur individuellen Bikepackingtour
-              </span>
-            </li>
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/ifagj"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Bikepacking
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
+  // console.log(postsData.length)
+  var minDistance = 100;
+  var stopIndex = 0;
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">The Expert</h3>
-          <p className="mt-4 mx-auto">
-            <span className="text-5xl font-extrabold tracking-tight">€60</span>
-            <span className="ml-1 text-xl font-semibold">/session</span>
-          </p>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-gray-500 text-left">
-                <a
-                  href="https://customcyclingtracks.gumroad.com/l/szldn"
-                  className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-                >
-                  Skype or Zoom
-                </a>
-              </span>
-            </li>
-          </ul>
-        </div>
+  function find_start_date(index, item, todayString) {
+    const postDate = item.id;
+    const todayDate = todayString;
+    // console.log(postDate, todayDate)
+    const postDateNum = postDate.substring(0, 2) + postDate.substring(3, 5);
+    const todayDateNum = todayDate.substring(5, 7) + todayDate.substring(8, 10);
+    const time_distance = parseInt(todayDateNum) - parseInt(postDateNum);
+
+    if ((time_distance > 0) & (time_distance < minDistance)) {
+      minDistance = time_distance;
+      stopIndex = index;
+    }
+    // console.log(postDateNum, todayDateNum, time_distance)
+  }
+
+  postsData.map((item, index) => find_start_date(index, item, todayString));
+
+  var pastPosts = postsData.slice(0, stopIndex);
+  var futurePosts = postsData.slice(stopIndex);
+  const datedSortedPosts = futurePosts.concat(pastPosts);
+
+  console.log(today, stopIndex, datedSortedPosts[0], datedSortedPosts.length);
+
+  return {
+    props: {
+      datedSortedPosts,
+    },
+  };
+}
+
+export default class Main extends Component {
+  constructor(props) {
+    super(props);
+    this.flyTo = this.flyTo.bind(this);
+    this.zoomOut = this.zoomOut.bind(this);
+    this.state = {};
+  }
+
+  async flyTo(event) {
+    const lng = event.target.dataset.lng;
+    const lat = event.target.dataset.lat;
+
+    const trigger = document.getElementById("trigger");
+    trigger.setAttribute("data-lat", lat);
+    trigger.setAttribute("data-lng", lng);
+    trigger.click();
+  }
+
+  async zoomOut() {
+    console.log("Zooming Out");
+  }
+
+  componentDidMount() {}
+
+  render() {
+    return (
+      <div className={styles.container}>
+        <Head>
+          <title>Next Map</title>
+          <meta name="description" content="Location-based Stories" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+
+        <main className={styles.main}>
+          <Logo />
+
+          <Map
+            width="100vw"
+            height="65vh"
+            data={this.props.datedSortedPosts}
+            zoom="2"
+            lng="90.09105767050022"
+            lat="12.74421786982952"
+          />
+
+          <div className={styles.timeline}>
+            {this.props.datedSortedPosts.map((item, index) => (
+              <StoryCard
+                key={index}
+                item={item}
+                flyTo={this.flyTo}
+                zoomOut={this.zoomOut}
+              />
+            ))}
+          </div>
+        </main>
       </div>
-
-      <div className="p-8">
-        <a
-          href="mailto:customcyclingtracks@gmx.net"
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-        >
-          Contact us
-        </a>
-      </div>
-
-      <FooterComponent></FooterComponent>
-    </div>
-  );
+    );
+  }
 }
