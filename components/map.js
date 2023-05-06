@@ -5,7 +5,7 @@ import mapboxgl from "!mapbox-gl";
 import React from "react";
 
 mapboxgl.accessToken =
-  "pk.eyJ1Ijoia29qbzg4IiwiYSI6ImNsaGJ0djg4YTA1dGIzZ252azN0ajNqcnkifQ.1CZ-Nr2pIHetUrU8TxAnOQ";
+  "pk.eyJ1IjoiaGlsbG9kZXNpZ24iLCJhIjoiY2w1aXhxcm5pMGIxMTNsa21ldjRkanV4ZyJ9.ztk5_j48dkFtce1sTx0uWw";
 
 export default class Map extends Component {
   constructor(props) {
@@ -36,7 +36,7 @@ export default class Map extends Component {
 
     const map = new mapboxgl.Map({
       container: this.mapContainer.current,
-      style: "mapbox://styles/hillodesign/clb95v8zd000v15nudmodao0i",
+      style: "mapbox://styles/mapbox/streets-v12",
       center: [lng, lat],
       zoom: 9,
     });
