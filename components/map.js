@@ -3,6 +3,7 @@ import Styles from "./map.module.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "!mapbox-gl";
 import React from "react";
+import { LngLat } from "mapbox-gl";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiaGlsbG9kZXNpZ24iLCJhIjoiY2w1aXhxcm5pMGIxMTNsa21ldjRkanV4ZyJ9.ztk5_j48dkFtce1sTx0uWw";
@@ -38,7 +39,34 @@ export default class Map extends Component {
       container: this.mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v12",
       center: [lng, lat],
-      zoom: 9,
+      zoom: 4.5,
+    });
+
+    const GPXStrecken = [
+      {
+        name: "Muenchen",
+        color: "",
+        lngLat: [11.631449, 47.994517],
+      },
+      {
+        name: "Slowenien",
+        color: "",
+        lngLat: [14.193308, 46.19124],
+      },
+      {
+        name: "Mallorca",
+        color: "",
+        lngLat: [2.699071, 39.771867],
+      },
+      {
+        name: "Toscana",
+        color: "",
+        lngLat: [11.117143, 43.165123],
+      },
+    ];
+
+    GPXStrecken.forEach(({ lngLat }) => {
+      new mapboxgl.Marker().setLngLat(lngLat).addTo(map);
     });
 
     console.log(attractions);
@@ -56,7 +84,7 @@ export default class Map extends Component {
     const map = this.state.myMap;
     map.flyTo({
       center: [lng, lat],
-      zoom: 4,
+      zoom: 1,
     });
   }
 
