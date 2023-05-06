@@ -1,6 +1,5 @@
 import { Component } from "react";
-//import Styles from "./map.module.css";
-import Styles from "../styles/Home.module.css";
+import Styles from "./map.module.css";
 import "mapbox-gl/dist/mapbox-gl.css";
 import mapboxgl from "!mapbox-gl";
 import React from "react";
@@ -39,7 +38,7 @@ export default class Map extends Component {
       container: this.mapContainer.current,
       style: "mapbox://styles/hillodesign/clb95v8zd000v15nudmodao0i",
       center: [lng, lat],
-      zoom: optimalZoom,
+      zoom: 9,
     });
 
     console.log(attractions);
