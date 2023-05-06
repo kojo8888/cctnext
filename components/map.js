@@ -37,7 +37,7 @@ export default class Map extends Component {
 
     const map = new mapboxgl.Map({
       container: this.mapContainer.current,
-      style: "mapbox://styles/mapbox/streets-v12",
+      style: "mapbox://styles/mapbox/light-v11",
       center: [lng, lat],
       zoom: 4.5,
     });
@@ -45,28 +45,28 @@ export default class Map extends Component {
     const GPXStrecken = [
       {
         name: "Muenchen",
-        color: "",
+        color: "#F8B0B0",
         lngLat: [11.631449, 47.994517],
       },
       {
         name: "Slowenien",
-        color: "",
+        color: "#F8B0B0",
         lngLat: [14.193308, 46.19124],
       },
       {
         name: "Mallorca",
-        color: "",
+        color: "#F8B0B0",
         lngLat: [2.699071, 39.771867],
       },
       {
         name: "Toscana",
-        color: "",
+        color: "#F8B0B0",
         lngLat: [11.117143, 43.165123],
       },
     ];
 
-    GPXStrecken.forEach(({ lngLat }) => {
-      new mapboxgl.Marker().setLngLat(lngLat).addTo(map);
+    GPXStrecken.forEach(({ lngLat, color }) => {
+      new mapboxgl.Marker({ color }).setLngLat(lngLat).addTo(map);
     });
 
     console.log(attractions);
