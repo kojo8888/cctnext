@@ -2,9 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-//import StoryCard from "../components/StoryCard"
 import Map from "../components/map";
-//import Logo from "../components/Logo"
 
 export default class Main extends Component {
   constructor(props) {
@@ -44,9 +42,9 @@ export default class Main extends Component {
             width="100vw"
             height="65vh"
             data={this.props.datedSortedPosts}
-            zoom="2"
-            lng="90.09105767050022"
-            lat="12.74421786982952"
+            zoom="5"
+            lng="2.800029"
+            lat="39.834872"
           />
         </main>
       </div>

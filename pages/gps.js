@@ -32,7 +32,7 @@ export default function gpsind({ products }) {
       </div>
       <div className="p-3">
         <a
-          href="standard"
+          href="maps"
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
         >
           Hier geht es zu den Standards!
