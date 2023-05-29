@@ -1,4 +1,3 @@
-// import Table from "./Table";
 import Table from "../components/Table";
 import data from "../data.json";
 import HeaderComponent from "../components/header";

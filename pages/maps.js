@@ -8,20 +8,20 @@ import Map from "../components/map";
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    this.flyTo = this.flyTo.bind(this);
+    // this.flyTo = this.flyTo.bind(this);
     this.zoomOut = this.zoomOut.bind(this);
     this.state = {};
   }
 
-  async flyTo(event) {
-    const lng = event.target.dataset.lng;
-    const lat = event.target.dataset.lat;
+  // async flyTo(event) {
+  //   const lng = event.target.dataset.lng;
+  //   const lat = event.target.dataset.lat;
 
-    const trigger = document.getElementById("trigger");
-    trigger.setAttribute("data-lat", lat);
-    trigger.setAttribute("data-lng", lng);
-    trigger.click();
-  }
+  //   const trigger = document.getElementById("trigger");
+  //   trigger.setAttribute("data-lat", lat);
+  //   trigger.setAttribute("data-lng", lng);
+  //   trigger.click();
+  // }
 
   async zoomOut() {
     console.log("Zooming Out");
@@ -38,10 +38,9 @@ export default class Main extends Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <HeaderComponent></HeaderComponent>
-
         <main className={styles.main}>
           <Map
-            width="100vw"
+            width="50vw"
             height="50vh"
             //data={this.props.datedSortedPosts}
             zoom="1"

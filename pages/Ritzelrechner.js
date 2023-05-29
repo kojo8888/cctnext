@@ -1,55 +1,32 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import ritzelrechner from "../ritzelrechner.json";
+import Head from "next/head";
+import { useState } from "react";
 
-export default function Ritzelrechner() {
-  const submitContact = async (event) => {
-    event.preventDefault();
-    var ZL;
-    const ZK = event.target.ZK.value;
-    //if (ZK === "[Campagnolo Ekar - 38]") {
-    //  ZL = 5;
-    //}
-    var P;
-    const Ü = JSON.parse("[" + ZK + "]");
-    Ü[1] = P;
-    alert(`${P}`);
+// const options = ["Italy", "Spain", "Greece"];
+const options = JSON.parse(ritzelrechner);
+const test = options.name[0];
+
+function DropdownForm() {
+  const [selected, setSelected] = useState(options[0]);
+  const submit = () => {
+    console.log(selected);
   };
 
   return (
-    <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
-      <HeaderComponent></HeaderComponent>
-      <div className="px-6 py-3">
-        <div className="mb-3 text-xl font-bold">
-          Ritzelrechner und Schaltverhältnis
-        </div>
-        <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlFor="ZK">
-            Zähnezahl Kettenblatt
-          </label>
-          <select
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            id="ZK"
-            name="ZK"
-            required
-          >
-            <option value="[Campagnolo Ekar - 38]">Campagnolo Ekar - 38</option>
-            <option Value="[40,41]">Campagnolo Ekar - 40</option>
-            <option value="Campagnolo Ekar - 42">Campagnolo Ekar - 42</option>
-            <option value="Campagnolo Ekar - 44">Campagnolo Ekar - 44</option>
-            <option value="Shimano 105 - 39 - 53">Shimano 105 - 39 - 53</option>
-            <option value="Shimano 105 - 36 - 52">Shimano 105 - 36 - 52</option>
-            <option value="Shimano 105 - 34 - 50">Shimano 105 - 34 - 50</option>
-          </select>
-
-          <button
-            type="submit"
-            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
-          >
-            Berechnen
-          </button>
-        </form>
-      </div>
-      <FooterComponent></FooterComponent>
-    </div>
+    <form>
+      <select value={selected} onChange={(e) => setSelected(e.target.value)}>
+        {options.map((value) => (
+          <option value={value} key={value}>
+            {value}
+          </option>
+        ))}
+      </select>
+      <button type="button" onClick={submit}>
+        Submit
+      </button>
+    </form>
   );
 }
+export default DropdownForm;
