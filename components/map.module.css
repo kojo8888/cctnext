@@ -1,5 +1,12 @@
 .map {
-	width: 100vw;
-	height: 65vh;
-    background-color: white;
+  width: 100vw;
+  height: 65vh;
+  background-color: white;
+}
+
+.map a {
+  @apply text-base underline text-red-300;
+}
+.map h1 {
+  @apply text-lg text-black;
 }
