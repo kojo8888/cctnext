@@ -1,5 +1,6 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Head from "next/head";
 
 export default function Trittfrequenz() {
   const submitContact = async (event) => {
@@ -13,7 +14,7 @@ export default function Trittfrequenz() {
 
     // Variablen zum Rechnen
     let Cad;
-    let U;
+    let Umf;
     let v;
     let Ü;
     let Dev;
@@ -21,11 +22,11 @@ export default function Trittfrequenz() {
     //Rechnung
     Ü = parseInt(ZR) / parseInt(ZK);
     v = (parseInt(veloc) * 1000) / 60;
-    U = (parseInt(wd) * Math.PI) / 1000;
+    Umf = (parseInt(wd) * Math.PI) / 1000;
 
     // Ergebnis
-    Cad = (Ü * v) / U;
-    Dev = U / Ü;
+    Cad = (Ü * v) / Umf;
+    Dev = Umf / Ü;
     Cad = Number.parseFloat(Cad).toFixed(2);
     Dev = Number.parseFloat(Dev).toFixed(2);
 
@@ -35,6 +36,9 @@ export default function Trittfrequenz() {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <Head>
+        <title>Trittfrequenz und Entfaltung</title>
+      </Head>
       <HeaderComponent></HeaderComponent>
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">

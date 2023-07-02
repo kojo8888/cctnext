@@ -1,0 +1,24 @@
+.lpo .sr a:link, .lpo .sr a:visited { text-decoration: none; color: #003399; }
+.lpo .sr a:hover { text-decoration: underline; color: #E47911; }
+.lpo .k2border { background-color: #D5D0B2; margin-top:3px; margin-bottom:8px; }
+.lpo .k2fill { background-color: #F9F8E6 }
+.lpo .k2indent { margin-left:1em; margin-top:.25em; margin-bottom:.25em; margin-right:1em; }
+.lpo .k2sm { font-size:.86em; }
+.lpo .k2sm .h3color { color:black; font-weight: bold; font-size:.86em; }
+.lpo .k2sm .small strong, .lpo .k2sm .small a { 
+    line-height: normal; 
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px; 
+}
+.lpo table.tablezero {
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    border-spacing:0px;
+}
+.lpo td.third {
+    width: 33%;
+    vertical-align: top;
+}
+.lpo .breadcrumb { font-size: 12px; margin: 8px 0 8px 0; }
+
