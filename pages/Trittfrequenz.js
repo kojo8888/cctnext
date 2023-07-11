@@ -45,7 +45,7 @@ export default function Trittfrequenz() {
           Trittfrequenz und Entfaltung
         </div>
         <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlfor="ZK">
+          <label className="block mb-3" htmlFor="ZK">
             Zähnezahl Kettenblatt
           </label>
           <input
@@ -55,7 +55,7 @@ export default function Trittfrequenz() {
             id="ZK"
             required
           />
-          <label className="block mb-3" htmlfor="ZR">
+          <label className="block mb-3" htmlFor="ZR">
             Zähnezahl Ritzel
           </label>
           <input
@@ -65,7 +65,7 @@ export default function Trittfrequenz() {
             id="ZR"
             required
           />
-          <label className="block mb-3" htmlfor="wd">
+          <label className="block mb-3" htmlFor="wd">
             Laufraddurchmesser (in mm)
           </label>
           <input
@@ -76,7 +76,7 @@ export default function Trittfrequenz() {
             id="wd"
             required
           />
-          <label className="block mb-3" htmlfor="veloc">
+          <label className="block mb-3" htmlFor="veloc">
             Geschwindigkeit (in km/h)
           </label>
           <input

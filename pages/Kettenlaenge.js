@@ -66,7 +66,7 @@ export default function Kettenlaenge() {
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">Kettenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlfor="lKettenstrebe">
+          <label className="block mb-3" htmlFor="lKettenstrebe">
             Kettenstrebenlänge (in mm)
           </label>
           <input
@@ -77,7 +77,7 @@ export default function Kettenlaenge() {
             placeholder="gewöhnlich ~ 420mm"
             required
           />
-          <label className="block mb-3" htmlfor="ZKettenblatt">
+          <label className="block mb-3" htmlFor="ZKettenblatt">
             Zähnezahl größtes Kettenblatt (vorne)
           </label>
           <input
@@ -88,7 +88,7 @@ export default function Kettenlaenge() {
             placeholder="~ 44"
             required
           />
-          <label className="block mb-3" htmlfor="ZRitzel">
+          <label className="block mb-3" htmlFor="ZRitzel">
             Zähnezahl größtes Ritzel (hinten)
           </label>
           <input
@@ -99,7 +99,7 @@ export default function Kettenlaenge() {
             placeholder="~ 28"
             required
           />
-          <label className="block mb-3" htmlfor="Schaltungsröllchen">
+          <label className="block mb-3" htmlFor="Schaltungsröllchen">
             Zähnezahl Schaltungsröllchen
           </label>
           <select

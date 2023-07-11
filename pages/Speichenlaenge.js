@@ -41,7 +41,7 @@ export default function Speichenlaenge() {
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">Speichenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlfor="D">
+          <label className="block mb-3" htmlFor="D">
             Durchmesser durch Speichenenden (in mm)
           </label>
           <input
@@ -52,7 +52,7 @@ export default function Speichenlaenge() {
             placeholder="D"
             required
           />
-          <label className="block mb-3" htmlfor="N">
+          <label className="block mb-3" htmlFor="N">
             Durchmesser Nabenflansch-Lochkreis (in mm)
           </label>
           <input
@@ -63,7 +63,7 @@ export default function Speichenlaenge() {
             placeholder="d"
             required
           />
-          <label className="block mb-3" htmlfor="A">
+          <label className="block mb-3" htmlFor="A">
             Abstand Flansch zur Mittelachse (in mm)
           </label>
           <input
@@ -74,7 +74,7 @@ export default function Speichenlaenge() {
             placeholder="a"
             required
           />
-          <label className="block mb-3" htmlfor="K">
+          <label className="block mb-3" htmlFor="K">
             Anzahl der Speichenkreuzungen
           </label>
           <input
@@ -84,7 +84,7 @@ export default function Speichenlaenge() {
             id="K"
             required
           />
-          <label className="block mb-3" htmlfor="Z">
+          <label className="block mb-3" htmlFor="Z">
             Speichenanzahl
           </label>
           <input

@@ -1,8 +1,10 @@
+import React from "react";
+import TableComponent from "../components/Tabl";
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import Head from "next/head";
 
-export default function Ritzelrechner() {
+const HomePage = () => {
   const submitContact = async (event) => {
     event.preventDefault();
 
@@ -102,6 +104,8 @@ export default function Ritzelrechner() {
     // Gh = ZKh / ZRh;
     // Bb = Gk / Gh;
   };
+  const headers = vkl;
+  const data = vgr;
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
@@ -176,8 +180,13 @@ export default function Ritzelrechner() {
           </button>
         </form>
       </div>
-
+      <div>
+        <h1>Table Example</h1>
+        <TableComponent headers={headers} data={data} />
+      </div>
       <FooterComponent></FooterComponent>
     </div>
   );
-}
+};
+
+export default HomePage;

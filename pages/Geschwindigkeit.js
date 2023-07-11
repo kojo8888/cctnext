@@ -35,7 +35,7 @@ export default function Wattrechner() {
       <div className="px-6 py-3">
         <div className="mb-2 text-xl font-bold">Geschwindigkeit, Distanz</div>
         <form className="flex flex-col" onSubmit={submitContact}>
-          <label className="block mb-3" htmlfor="vd">
+          <label className="block mb-3" htmlFor="vd">
             Durchschnittliche Geschwindigkeit (in km/h)
           </label>
           <input
@@ -44,7 +44,7 @@ export default function Wattrechner() {
             name="vd"
             id="vd"
           />
-          <label className="block mb-3" htmlfor="s">
+          <label className="block mb-3" htmlFor="s">
             Distanz (in km)
           </label>
           <input
@@ -53,7 +53,7 @@ export default function Wattrechner() {
             name="s"
             id="s"
           />
-          <label className="block mb-3" htmlfor="t">
+          <label className="block mb-3" htmlFor="t">
             Zeit (in h)
           </label>
           <input
