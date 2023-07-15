@@ -5,8 +5,8 @@
 }
 
 .map a {
-  @apply text-base underline text-red-300;
+  @apply text-base underline text-red-300 font-mono;
 }
 .map h1 {
-  @apply text-lg text-black;
+  @apply text-lg text-black font-mono;
 }

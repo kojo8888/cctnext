@@ -1,12 +1,16 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-relaxed font-mono;
 }
 
 .markdown p,
-.markdown ul,
-.markdown ol,
+/* .markdown ul,
+.markdown ol, */
 .markdown blockquote {
   @apply my-6;
+}
+
+.markdown h1 {
+  @apply text-6xl mt-12 mb-4 leading-snug;
 }
 
 .markdown h2 {
@@ -15,4 +19,18 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+}
+.markdown a {
+  @apply text-base underline text-white;
+}
+
+.markdown ul {
+  margin-left-ltr: 20px;
+  margin-right-rtl: 20px;
+  @apply text-base text-black;
+}
+.markdown ol {
+  margin-left-ltr: 25px;
+  margin-right-rtl: 25px;
+  @apply text-base text-black;
 }
