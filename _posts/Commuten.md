@@ -23,28 +23,30 @@ In diesem Blogpost erkläre ich dir, worauf man bei der täglichen Fahrt zur Arb
 ## Das kleine Einmaleins
 
 - Nicht aufs Wetter schauen, einfach losfahren
-- Radtaschen sind ihr Geld wert
 - Licht vergessen?
-- Reserveklamotten
-- Ersatzschlauch nicht vergessen
+- Reserveklamotten und Ersatzschlauch im Büro deponieren#
+- Kauf dir abwaschbare Radtaschen
+- Halte dein Fahrrad in Schuss
 
 ## Wettervorhersage
 
-Bei der täglichen Fahrt ins Büro achte ich mittlerweile überhaupt nicht mehr aufs Wetter. Falls es regnet, werde ich halt nass und dusche anschließend kurz. Bei Detailfragen zum Wetter gibt es einen weiteren Blogeintrag.
+Bei der täglichen Fahrt ins Büro achte ich mittlerweile überhaupt nicht mehr aufs Wetter. Falls es regnet, werde ich halt nass und dusche anschließend kurz. Je mehr man sich auf die Wetterdiskussion einlässt, desto eher fährt man am Ende doch Auto oder Bahn. Eine Routine ohne wenn und aber ist am einfachsten. Bei Detailfragen zum Wetter gibt es [hier](https://www.customcyclingtracks.com/posts/Wetter) einen weiteren Blogeintrag.
 
 ## Ausrüstung
 
-Zu empfehlen sind Radtaschen oder spezielle Radrucksäcke, die auch wirklich wasserdicht sind. Glatte Oberflächen sind immer zu bevorzugen, da sie sich am einfachsten abwaschen lassen. Fancy Stoffe sehen meist nur bei den ersten Fahrten gut aus, nach der ersten Regendusche im Matsch bleibt davon nicht viel übrig. Radtaschen bieten gegenüber einem Rucksack den Vorteil, dass man nicht so sehr am Rücken schwitzt. Ob nun ein Rucksack komfortabler zu tragen ist oder ob einem die Radtasche am Gepäckträger beim Fahrradhandling stört, muss man selbst beurteilen. Ich empfehle die Ortlieb oder Vaudetaschen (Beispiel [Vaude](https://amzn.to/42Ljw8e)).
+Zu empfehlen sind **Radtaschen** oder spezielle <span style="text-decoration:underline;">Radrucksäcke</span>, die auch wirklich wasserdicht sind. Glatte Oberflächen sind immer zu bevorzugen, da sie sich am einfachsten abwaschen lassen. Fancy Stoffe sehen meist nur bei den ersten Fahrten gut aus, nach der ersten Regendusche im Matsch bleibt davon nicht viel übrig. Radtaschen bieten gegenüber einem Rucksack den Vorteil, dass man nicht so sehr am Rücken schwitzt. Ob nun ein Rucksack komfortabler zu tragen ist oder ob einem die Radtasche am Gepäckträger beim Fahrradhandling stört, muss man selbst beurteilen. Ich empfehle die Ortlieb oder Vaudetaschen (Beispiel [Vaude](https://amzn.to/42Ljw8e)).
 
-Ein Dynamo am Rad erspart euch das lästige Aufladen der Vorderlampe. Das Rücklicht hält ja meist ein paar Tage, ein helles Vorderlicht jedoch meist nur eine halbe Woche. Als Rücklicht empfehle ich das Rotlicht von Lupine (Beispiel [Lupine](https://amzn.to/3LSrar1)) und als Vorderlicht Busch udn Müller (Beispiel [BuM Ixon Space](https://amzn.to/3TKHDj6)). Dennoch bietet ein Dynamo den Vorteil, dass man einfach losfahren kann, das Licht nicht vergessen kann und nicht auf den Akkustand achten muss. Als Zusatz kann man sich ein Blinklicht an den Rucksack oder die Tasche machen, um die Sichtbarkeit zu erhöhen.
+Ein <span style="text-decoration:underline;">Dynamo</span> am Rad erspart euch das lästige Aufladen der Vorderlampe. Das Rücklicht hält ja meist ein paar Tage, ein helles Vorderlicht jedoch meist nur eine halbe Woche. Als Rücklicht empfehle ich das Rotlicht von Lupine (Beispiel [Lupine](https://amzn.to/3LSrar1)) und als Vorderlicht Busch udn Müller (Beispiel [BuM Ixon Space](https://amzn.to/3TKHDj6)). Dennoch bietet ein Dynamo den Vorteil, dass man einfach losfahren kann, das Licht nicht vergessen kann und nicht auf den Akkustand achten muss. Als Zusatz kann man sich ein Blinklicht an den Rucksack oder die Tasche machen, um die Sichtbarkeit zu erhöhen.
 
-Ich habe immer ein Set Wechselklamotten dabei, da ich in der Arbeit nach der Fahrt duschen kann. Falls es möglich ist, empfiehlt es sich natürlich, seine Duschsachen in der Arbeit zu lassen, sodass man das Handtuch nicht täglich mitschleppen muss.
+Ich habe immer ein Set <span style="text-decoration:underline;">Wechselklamotten</span> dabei, da ich in der Arbeit nach der Fahrt duschen kann. Falls es möglich ist, empfiehlt es sich natürlich, seine Duschsachen in der Arbeit zu lassen, sodass man das Handtuch nicht täglich mitschleppen muss.
 
-Die Fahrradmäntel sollten bei der Fahrt durch die Stadt auf jeden Fall pannensicher sein. Natürlich will man auch nicht allzu schwere Mäntel verwenden, dennoch empfiehlt sich hier ein Reifen mit extra Alu-Schutzschicht. Bei Fahrten übers Land würde ich aus Effizienzgründen auf leichtere Reifen wechseln.
+Die <span style="text-decoration:underline;">Fahrradmäntel</span> sollten bei der Fahrt durch die Stadt auf jeden Fall pannensicher sein. Natürlich will man auch nicht allzu schwere Mäntel verwenden, dennoch empfiehlt sich hier ein Reifen mit extra Alu-Schutzschicht. Bei Fahrten übers Land würde ich aus Effizienzgründen auf leichtere Reifen wechseln.
 
 Zudem habe ich eine kleine Tasche mit Ersatzschlauch, Pumpe und Werkzeug dabei.
 
-Ich persönlich habe an der Arbeitsstelle und am Supermarkt auf dem Nachhauseweg jeweils ein Schloss hängen, sodass ich das nicht immer mitschleppen muss.
+Ich persönlich habe an der Arbeitsstelle und am Supermarkt auf dem Nachhauseweg jeweils ein <span style="text-decoration:underline;">Schloss</span> hängen, sodass ich das nicht immer mitschleppen muss. Zu bevorzugen sind aus meiner Perspektive Bügelschlösser. Falt- und Kettenschlösser haben meist eine geringere Sicherheit.
+
+Es ist zu empfehlen, sich ab und zu ums Rad zu kümmern. Kette fetten und Luft aufpumpen, sollte öfter mal gemacht werden. Bremsleitungen und Schaltung werden nur nach Bedarf repariert. Und die grundsätzliche Instandhaltung mache ich meist im Frühjahr, nachdem das Streusalz von der Straße verschwunden ist.
 
 ## Die Strecke
 
