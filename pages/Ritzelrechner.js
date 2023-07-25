@@ -246,6 +246,20 @@ const HomePage = () => {
             </tr>
           </tbody>
         </table>
+
+        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <p>
+            Durch die Eingabe der Felder kannst du die{" "}
+            <a className="underline">Entfaltung</a> in Meter pro Kurbeldrehung
+            und die <a className="underline">Gescwindigkeit</a> berechnen.
+            <br></br>
+            <br></br>
+            Die hohen Gänge liegen außen und die niedrigen Gänge innnen.
+            <br></br>
+            <a className="underline">Laufraddurchmesser</a> ist bei einem 28
+            Zoll Rennrad 622 und 28mm breit.
+          </p>
+        </div>
       </div>
       <FooterComponent></FooterComponent>
     </div>
