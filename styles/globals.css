@@ -113,6 +113,36 @@ p {
   }
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Styling the table headers */
+th {
+  background-color: black;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+/* Styling the table cells */
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+/* Styling the table rows */
+tr:nth-child(even) {
+  background-color: grey;
+  border-radius: 8px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

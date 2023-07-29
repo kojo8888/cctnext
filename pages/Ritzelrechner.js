@@ -122,65 +122,94 @@ const HomePage = () => {
         <title>Ritzelrechner</title>
       </Head>
       <HeaderComponent></HeaderComponent>
-      <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <div className="font-mono mt-10 text-center">
         <div className="mb-3 text-xl font-bold">Ritzelrechner</div>
         <form onSubmit={handleSubmit}>
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="ZKh"
-            value={formData.ZKh}
-            onChange={handleInputChange}
-            placeholder="ZKh"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="ZKk"
-            value={formData.ZKk}
-            onChange={handleInputChange}
-            placeholder="ZKk"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="ZRh"
-            value={formData.ZRh}
-            onChange={handleInputChange}
-            placeholder="ZRh"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="ZRk"
-            value={formData.ZRk}
-            onChange={handleInputChange}
-            placeholder="ZRk"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="wd"
-            value={formData.wd}
-            onChange={handleInputChange}
-            placeholder="wd"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="wb"
-            value={formData.wb}
-            onChange={handleInputChange}
-            placeholder="wb"
-          />
-          <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
-            type="number"
-            name="Cad"
-            value={formData.Cad}
-            onChange={handleInputChange}
-            placeholder="Cad"
-          />
+          <div class="flex flex-row gap-3">
+            <div class="basis-1/3">
+              <label className="block mb-1" htmlFor="ZKh">
+                ZKh
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="ZKh"
+                value={formData.ZKh}
+                onChange={handleInputChange}
+                placeholder="ZKh"
+              />
+              <label className="block mb-1" htmlFor="ZKk">
+                ZKk
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="ZKk"
+                value={formData.ZKk}
+                onChange={handleInputChange}
+                placeholder="ZKk"
+              />
+            </div>
+            <div class="basis-1/3">
+              <label className="block mb-1" htmlFor="ZRh">
+                ZRh
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="ZRh"
+                value={formData.ZRh}
+                onChange={handleInputChange}
+                placeholder="ZRh"
+              />
+              <label className="block mb-1" htmlFor="ZRk">
+                ZRk
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="ZRk"
+                value={formData.ZRk}
+                onChange={handleInputChange}
+                placeholder="ZRk"
+              />
+            </div>
+            <div class="basis-1/3">
+              <label className="block mb-1" htmlFor="wd">
+                wd
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="wd"
+                value={formData.wd}
+                onChange={handleInputChange}
+                placeholder="wd"
+              />
+              <label className="block mb-1" htmlFor="wb">
+                wb
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="wb"
+                value={formData.wb}
+                onChange={handleInputChange}
+                placeholder="wb"
+              />
+              <label className="block mb-1" htmlFor="Cad">
+                Cad
+              </label>
+              <input
+                className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+                type="number"
+                name="Cad"
+                value={formData.Cad}
+                onChange={handleInputChange}
+                placeholder="Cad"
+              />
+            </div>
+          </div>
           <div className="font-mono mt-1 mb-3 mx-auto text-center max-w-lg px-10">
             <button
               className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
