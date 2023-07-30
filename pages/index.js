@@ -32,7 +32,12 @@ export default function Home({ props }) {
             <Map color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            GPX Tracks
+            <a
+              href="./gps"
+              className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+            >
+              GPX Tracks
+            </a>
           </h3>
           <p className="mt-3 text-gray-500">
             Ob individuelle Tracks oder ein paar Standardrouten, hier wirst du
@@ -45,7 +50,12 @@ export default function Home({ props }) {
             <Archive color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Tips & Tricks
+            <a
+              href="./tips"
+              className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+            >
+              Tips & Tricks
+            </a>
           </h3>
           <p className="mt-3 text-gray-500">
             Ein paar Blogposts zu Themen wie: Saisonstart auf Mallorca,
@@ -57,7 +67,12 @@ export default function Home({ props }) {
             <Tool color="black" />
           </p>
           <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-            Tools
+            <a
+              href="./tools"
+              className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+            >
+              Tools
+            </a>
           </h3>
           <p className="mt-3 text-gray-500">
             Ritzelrechner, Ketten- und Speichenlänge, Packliste, Videos..
@@ -75,23 +90,14 @@ export default function Home({ props }) {
           </p>
         </div>
       </div>
-      <div className="p-9">
-        <a
-          href="mailto:customcyclingtracks@gmx.net"
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
-        >
-          Schreib uns
-        </a>
-      </div>
-      <div className="mb-10 p-3">
+      <div className="mb-3 p-12">
         <a
           href="https://forms.aweber.com/form/40/1727432440.htm"
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
+          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
         >
           Frequent updates
         </a>
       </div>
-
       <FooterComponent></FooterComponent>
     </div>
   );

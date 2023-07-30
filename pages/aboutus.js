@@ -15,7 +15,11 @@ export default function aboutus({ products }) {
           className="rounded-full w-32 mb-4 mx-auto"
         />
         <p className="mt-6 mb-6 text-gray-500">Das ist Konstantin</p>
-        <a href="https://www.strava.com/athletes/19506898" title="Strava">
+        <a
+          className="mt-6 mb-6 text-gray-500"
+          href="https://www.strava.com/athletes/19506898"
+          title="Strava"
+        >
           Strava
         </a>
         <p className="mt-5 text-gray-500">
@@ -32,7 +36,8 @@ export default function aboutus({ products }) {
           className="rounded-full w-32 mb-4 mx-auto"
           alt="Avatar"
         />
-        <p className="mt-6 text-gray-500 text-center">Das ist Jana</p>
+        <p className="mt-6 text-gray-500 text-center">Das ist Svenja</p>
+        <p className="mt-5 text-gray-500">Wer QOM sucht, ist hier richtig.</p>
       </div>
 
       <div className="mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
@@ -41,7 +46,8 @@ export default function aboutus({ products }) {
           className="rounded-full w-32 mb-4 mx-auto"
           alt="Avatar"
         />
-        <p className="mt-6 text-gray-500 text-center">Das ist Jan</p>
+        <p className="mt-6 text-gray-500 text-center">Das ist Tim</p>
+        <p className="mt-5 text-gray-500">Tim ist der Pendler und Styler.</p>
       </div>
       <div className="mb-10 p-8">
         <a
