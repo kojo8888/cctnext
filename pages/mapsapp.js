@@ -3,7 +3,7 @@ import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-import MapStd from "../components/mapStd";
+import MapApp from "../components/mapApp";
 
 export default class Main extends Component {
   constructor(props) {
@@ -39,7 +39,7 @@ export default class Main extends Component {
         </Head>
         <HeaderComponent></HeaderComponent>
         <main className={styles.main}>
-          <MapStd
+          <MapApp
             width="50vw"
             height="50vh"
             //data={this.props.datedSortedPosts}
