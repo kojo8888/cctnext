@@ -3,7 +3,8 @@ import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-import MapApp from "../components/mapApp";
+import LeafletMap from "../components/LeafletMap";
+import Form from "../components/form";
 
 export default class Main extends Component {
   constructor(props) {
@@ -28,11 +29,12 @@ export default class Main extends Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <HeaderComponent></HeaderComponent>
-        <main className={styles.main}>
-          <MapApp
-            width="50vw"
-            height="50vh"
-            //data={this.props.datedSortedPosts}
+        {/* <main className={styles.main}> */}
+        <main>
+          <Form></Form>
+          <LeafletMap
+            // width="50vw"
+            // height="50vh"
             zoom="1"
             lng="2.800029"
             lat="42.834872"
