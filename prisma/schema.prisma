@@ -20,4 +20,5 @@ model Packliste {
   size            String
   accomodation    String
   bike            Boolean   @default(true)
+  space           String    @default("test")
 }

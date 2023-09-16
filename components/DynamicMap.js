@@ -8,22 +8,12 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useMapEvent } from "react-leaflet/hooks";
-import L from "leaflet";
+// import L from "leaflet";
 import Kreis from "../lib/Kreis.json";
 
 const DynamicMap = () => {
   const [circleCenter, setCircleCenter] = useState(null);
   const [circleRadius, setCircleRadius] = useState(10000); // Default radius in meters
-
-  // Load and display GeoJSON data
-  // fetch("../lib/Kreis.geojson")
-  //   .then((response) => response.json())
-  //   .then((geojson) => {
-  //     L.geoJSON(geojson).addTo(map);
-  //   })
-  //   .catch((error) => {
-  //     console.error("Error loading GeoJSON:", error);
-  //   });
 
   const setColor = ({ properties }) => {
     return { weight: 1 };

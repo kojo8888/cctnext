@@ -5,58 +5,77 @@ import { Plus } from "react-feather";
 import Head from "next/head";
 
 export default function ExampleCheckbox() {
-  const [showBasis, setshowBasis] = useState();
-  const [showNass, setshowNass] = useState();
-  const [showWplatz, setshowWplatz] = useState();
-  const [showVplatz, setshowVplatz] = useState();
+  const [showWerkzeug, setshowWerkzeug] = useState();
+  const [showNasskalt, setshowNasskalt] = useState();
+  const [showElektronik, setshowElektronik] = useState();
+  const [showErsatzteile, setshowErsatzteile] = useState();
+  const [showAusruestung, setshowAusruestung] = useState();
+
+  // const [showVplatz, setshowVplatz] = useState();
   const apiUrl = "/api/liste";
-  let displayData;
-  let dData;
+  let werkzeugData;
+  let elektronikData;
+  let nasskaltData;
+  let ersatzteileData;
+  let ausruestungData;
 
   function pullJson() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        displayData = responseData
+        werkzeugData = responseData
           .filter((el) => el.category == "Werkzeug")
           .map(function (liste) {
             return <p key={liste.id}>{liste.name}</p>;
           });
 
-        setshowBasis(displayData);
+        setshowWerkzeug(werkzeugData);
       });
     fetch(apiUrl)
       .then((response) => response.json())
       .then((rData) => {
-        dData = rData
+        nasskaltData = rData
+          .filter((els) => els.location != "warm")
+          .map(function (liste) {
+            return <p key={liste.id}>{liste.name}</p>;
+          });
+
+        setshowNasskalt(nasskaltData);
+      });
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((rData) => {
+        elektronikData = rData
           .filter((els) => els.category == "Elektronik")
           .map(function (liste) {
             return <p key={liste.id}>{liste.name}</p>;
           });
 
-        setshowNass(dData);
+        setshowElektronik(elektronikData);
       });
     fetch(apiUrl)
       .then((response) => response.json())
       .then((rData) => {
-        dData = rData
-          .filter((els) => els.category == "Elektronik")
+        ersatzteileData = rData
+          .filter((els) => els.category == "Ersatzteile")
           .map(function (liste) {
             return <p key={liste.id}>{liste.name}</p>;
           });
 
-        setshowVplatz(dData);
+        setshowErsatzteile(ersatzteileData);
       });
     fetch(apiUrl)
       .then((response) => response.json())
       .then((rData) => {
-        dData = rData
-          .filter((els) => els.category == "Elektronik")
+        ausruestungData = rData
+          .filter(
+            (els) => els.category == "Ausrüstung" && els.location == "warm"
+          )
           .map(function (liste) {
             return <p key={liste.id}>{liste.name}</p>;
           });
 
-        setshowWplatz(dData);
+        setshowAusruestung(ausruestungData);
       });
   }
 
@@ -73,11 +92,15 @@ export default function ExampleCheckbox() {
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Basis</h3>
-          <p className="mt-4 mx-auto"></p>
+          <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
-              <span className="ml-3 text-left">{showBasis}</span>
+              <span className="text-blue-500 text-3xl">
+                <Plus />
+              </span>
+              <span className="ml-3 text-black text-left">
+                {showAusruestung}
+              </span>
             </li>
           </ul>
         </div>
@@ -85,37 +108,46 @@ export default function ExampleCheckbox() {
           <h3 className="text-3xl font-semibold text-gray-900">
             Nass und kalt
           </h3>
-          <p className="mt-4 mx-auto"></p>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
               <span className="text-blue-500 text-3xl">
                 <Plus />
               </span>
-              <span className="ml-3 text-black text-left">{showNass}</span>
+              <span className="ml-3 text-black text-left">{showNasskalt}</span>
             </li>
           </ul>
         </div>
-
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Wenig Platz</h3>
+          <h3 className="text-3xl font-semibold text-gray-900">Werkzeug</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
-              <span className="text-blue-500 text-3xl">
-                <Plus />
-              </span>
-              <span className="ml-3 text-black text-left">{showWplatz}</span>
+              <span className="ml-3 text-left">{showWerkzeug}</span>
             </li>
           </ul>
         </div>
-
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Viel Platz</h3>
+          <h3 className="text-3xl font-semibold text-gray-900">Elektronik</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
               <span className="text-blue-500 text-3xl">
                 <Plus />
               </span>
-              <span className="ml-3 text-black text-left">{showVplatz}</span>
+              <span className="ml-3 text-black text-left">
+                {showElektronik}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">Ersatzteile</h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="text-blue-500 text-3xl">
+                <Plus />
+              </span>
+              <span className="ml-3 text-black text-left">
+                {showErsatzteile}
+              </span>
             </li>
           </ul>
         </div>
