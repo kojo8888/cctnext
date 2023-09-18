@@ -121,6 +121,9 @@ export default function ExampleCheckbox() {
           <h3 className="text-3xl font-semibold text-gray-900">Werkzeug</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
+              <span className="text-blue-500 text-3xl">
+                <Plus />
+              </span>
               <span className="ml-3 text-left">{showWerkzeug}</span>
             </li>
           </ul>
