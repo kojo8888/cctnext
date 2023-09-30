@@ -17,6 +17,8 @@
     "cloudinary-react": "^1.8.1",
     "date-fns": "^2.29.3",
     "eslint-config-next": "13.1.1",
+    "fs": "^0.0.1-security",
+    "globby": "^13.2.2",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
     "mapbox-gl": "^2.14.1",
