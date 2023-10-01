@@ -1,48 +1,44 @@
-const EXTERNAL_DATA_URL = "https://customcyclingtracks.com/posts";
+import { getAllPosts } from "../lib/api";
+
+const URL = "https://customcyclingtracks.com";
 
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <!--We manually set the two URLs we know already-->
+   <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+     <!-- Add the static URLs manually -->
      <url>
-       <loc>https://customcyclingtracks.com</loc>
+       <loc>${URL}</loc>
      </url>
      <url>
-       <loc>http://customcyclingtracks.com/gps</loc>
+       <loc>${URL}/tips</loc>
      </url>
      <url>
-       <loc>http://customcyclingtracks.com/tips</loc>
-     </url>
-     <url>
-       <loc>http://customcyclingtracks.com/tools</loc>
+     <loc>${URL}/gps</loc>
+   </url>
+      <url>
+       <loc>${URL}/tools</loc>
      </url>
      ${posts
        .map(({ id }) => {
          return `
-       <url>
-           <loc>${`${EXTERNAL_DATA_URL}/${id}`}</loc>
-       </url>
-     `;
+           <url>
+               <loc>${`${URL}/blog/${id}`}</loc>
+           </url>
+         `;
        })
        .join("")}
    </urlset>
  `;
 }
 
-function SiteMap() {
-  // getServerSideProps will do the heavy lifting
-}
-
 export async function getServerSideProps({ res }) {
-  // We make an API call to gather the URLs for our site
-  const request = await fetch(EXTERNAL_DATA_URL);
-  const posts = await request.json();
+  const posts = getAllPosts();
 
-  // We generate the XML sitemap with the posts data
+  // Generate the XML sitemap with the blog data
   const sitemap = generateSiteMap(posts);
 
   res.setHeader("Content-Type", "text/xml");
-  // we send the XML to the browser
+  // Send the XML to the browser
   res.write(sitemap);
   res.end();
 
@@ -51,4 +47,4 @@ export async function getServerSideProps({ res }) {
   };
 }
 
-export default SiteMap;
+export default function SiteMap() {}
