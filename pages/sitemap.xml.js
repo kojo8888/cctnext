@@ -23,6 +23,9 @@ function generateSiteMap(posts) {
         <loc>${URL}/posts/Mallorca</loc>
     </url>
     <url>
+        <loc>${URL}/posts/Sardinien</loc>
+    </url>
+    <url>
         <loc>${URL}/posts/Commuten</loc>
     </url>
     <url>
