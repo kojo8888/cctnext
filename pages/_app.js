@@ -1,11 +1,11 @@
 import "../styles/globals.css";
-import Layout from "../components/layout";
+import Lay from "../components/lay";
 import Script from "next/script";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Layout>
+      <Lay>
         <Component {...pageProps} />
         <Script
           strategy="lazyOnload"
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }) {
                 `}
         </Script>
         {/* <Analytics /> */}
-      </Layout>
+      </Lay>
     </>
   );
 }

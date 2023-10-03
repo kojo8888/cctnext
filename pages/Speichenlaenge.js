@@ -37,7 +37,7 @@ export default function Speichenlaenge() {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">Speichenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
@@ -122,7 +122,7 @@ export default function Speichenlaenge() {
           </div>
         </div>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Impressum({ products }) {
       <Head>
         <title>Impressum</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="ml-5 mr-5 font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">
         <p className="mt-5 text-gray-500 text-left">
           Angaben gem&auml;&szlig; &sect; 5 TMG
@@ -32,7 +32,7 @@ export default function Impressum({ products }) {
         <p>Redaktionell verantwortlich</p>
         <p>Konstantin Mair</p>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

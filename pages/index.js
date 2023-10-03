@@ -14,7 +14,7 @@ export default function Home({ props }) {
       <Head>
         <title>Home</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <p>
         <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
       </p>
@@ -98,7 +98,7 @@ export default function Home({ props }) {
           Frequent updates
         </a>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

@@ -39,7 +39,7 @@ export default function Trittfrequenz() {
       <Head>
         <title>Trittfrequenz und Entfaltung</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">
           Trittfrequenz und Entfaltung
@@ -121,7 +121,7 @@ export default function Trittfrequenz() {
           </div>
         </div>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

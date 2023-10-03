@@ -31,7 +31,7 @@ export default function Wattrechner() {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-2 text-xl font-bold">Geschwindigkeit, Distanz</div>
         <form className="flex flex-col" onSubmit={submitContact}>
@@ -70,7 +70,7 @@ export default function Wattrechner() {
           </button>
         </form>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

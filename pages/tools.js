@@ -8,7 +8,7 @@ export default function tools({ products }) {
       <Head>
         <title>Tools</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <span className="text-gray-500">
@@ -119,7 +119,7 @@ export default function tools({ products }) {
           Schreib uns
         </a>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

@@ -1,14 +1,6 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
-import Head from "next/head";
-
-export default function aboutus({ products }) {
+export default function test() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
-      <Head>
-        <title>Über uns</title>
-      </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
         <img
           src="../../Avatar.png"
@@ -57,7 +49,6 @@ export default function aboutus({ products }) {
           Frequent updates
         </a>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

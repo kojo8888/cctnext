@@ -15,13 +15,13 @@ export default function tips({ allPosts }) {
         <Head>
           <title>Tips&Tricks</title>
         </Head>
-        <HeaderComponent></HeaderComponent>
+        {/* <HeaderComponent></HeaderComponent> */}
         <Container>
           <Intro />
 
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        <FooterComponent></FooterComponent>
+        {/* <FooterComponent></FooterComponent> */}
       </Layout>
     </>
   );

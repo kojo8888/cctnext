@@ -14,7 +14,7 @@ export default function Datenschutz({ products }) {
       <Head>
         <title>Datenschutz</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="text-justify font-mono">
         <p>
           Der Schutz deiner persönlichen Daten liegt uns am Herzen. Gemäß der
@@ -314,7 +314,7 @@ export default function Datenschutz({ products }) {
         </p>
       </div>
 
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

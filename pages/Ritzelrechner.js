@@ -121,7 +121,7 @@ const HomePage = () => {
       <Head>
         <title>Ritzelrechner</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mt-10 text-center">
         <div className="mb-3 text-xl font-bold">Ritzelrechner</div>
         <form onSubmit={handleSubmit}>
@@ -290,7 +290,7 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 };

@@ -7,7 +7,6 @@ const URL = "https://customcyclingtracks.com";
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-     <!-- Add the static URLs manually -->
     <url>
         <loc>${URL}</loc>
     </url>

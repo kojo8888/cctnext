@@ -9,7 +9,7 @@ export default function gpsind({ products }) {
       <Head>
         <title>GPS</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
 
       <div className="font-mono mt-3 mx-auto text-center max-w-3xl px-10"></div>
       <p>
@@ -97,7 +97,7 @@ export default function gpsind({ products }) {
         </a>
       </div>
 
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

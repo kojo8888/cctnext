@@ -10,7 +10,7 @@ export default function custom({ products }) {
       <Head>
         <title>Individueller GPS Track</title>
       </Head>{" "}
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">
         <p className="flex">
           <Clipboard />
@@ -96,7 +96,7 @@ export default function custom({ products }) {
           Schreib uns
         </a>
       </div>
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

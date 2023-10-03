@@ -10,7 +10,7 @@ export default function gpsind({ products }) {
       <Head>
         <title>Standard GPS Track</title>
       </Head>
-      <HeaderComponent></HeaderComponent>
+      {/* <HeaderComponent></HeaderComponent> */}
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
@@ -216,8 +216,7 @@ export default function gpsind({ products }) {
           Contact us
         </a>
       </div>
-
-      <FooterComponent></FooterComponent>
+      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }
