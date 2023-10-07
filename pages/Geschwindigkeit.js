@@ -1,5 +1,6 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
+import Head from "next/head";
 
 export default function Wattrechner() {
   const submitContact = async (event) => {
@@ -31,6 +32,23 @@ export default function Wattrechner() {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <Head>
+        <title>Geschwindigkeit</title>
+        <meta
+          name="description"
+          content="Tool zum Berechnen der Geschwindigkeit"
+          key="desc"
+        />
+        <meta property="og:title" content="Geschwindigkeit" />
+        <meta
+          property="og:description"
+          content="Tool zum berechnen der Geschwindigkeit"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
+      </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-2 text-xl font-bold">Geschwindigkeit, Distanz</div>

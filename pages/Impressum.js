@@ -7,6 +7,13 @@ export default function Impressum({ products }) {
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
         <title>Impressum</title>
+        <meta name="description" content="Impressum" key="desc" />
+        <meta property="og:title" content="Impressum" />
+        <meta property="og:description" content="Impressum" />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="ml-5 mr-5 font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">

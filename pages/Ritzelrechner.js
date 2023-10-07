@@ -120,6 +120,20 @@ const HomePage = () => {
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
       <Head>
         <title>Ritzelrechner</title>
+        <meta
+          name="description"
+          content="Tool zum Berechnen der Gänge"
+          key="desc"
+        />
+        <meta property="og:title" content="Ritzelrechner" />
+        <meta
+          property="og:description"
+          content="Tool zum Berechnen der Gänge"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mt-10 text-center">

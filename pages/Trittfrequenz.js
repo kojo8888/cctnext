@@ -38,6 +38,20 @@ export default function Trittfrequenz() {
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
       <Head>
         <title>Trittfrequenz und Entfaltung</title>
+        <meta
+          name="description"
+          content="Tool zum Berechnen der Trittfrequenz"
+          key="desc"
+        />
+        <meta property="og:title" content="Trittfrequenz und Entfaltung" />
+        <meta
+          property="og:description"
+          content="Tool zum Berechnen der Trittfrequenz"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">

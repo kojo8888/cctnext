@@ -7,6 +7,20 @@ export default function tools({ products }) {
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
         <title>Tools</title>
+        <meta
+          name="description"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
+          key="desc"
+        />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta
+          property="og:description"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">

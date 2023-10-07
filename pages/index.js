@@ -12,7 +12,21 @@ export default function Home({ props }) {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
-        <title>Home</title>
+        <title>Custom Cycling Tracks</title>
+        <meta
+          name="description"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
+          key="desc"
+        />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta
+          property="og:description"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <p>

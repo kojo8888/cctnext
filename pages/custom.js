@@ -9,6 +9,20 @@ export default function custom({ products }) {
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
         <title>Individueller GPS Track</title>
+        <meta
+          name="description"
+          content="Fahrradtouren maßgeschneidert, von Haustür zu Haustür als GPX Strecke"
+          key="desc"
+        />
+        <meta property="og:title" content="Individuelle Fahrradtouren" />
+        <meta
+          property="og:description"
+          content="Fahrradtouren maßgeschneidert, von Haustür zu Haustür als GPX Strecke"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>{" "}
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">

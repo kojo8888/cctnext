@@ -7,7 +7,21 @@ export default function gpsind({ products }) {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
-        <title>GPS</title>
+        <title>GPX Strecken</title>
+        <meta
+          name="description"
+          content="Fahrradtouren für Rennradfahrer"
+          key="desc"
+        />
+        <meta property="og:title" content="GPX Strecken" />
+        <meta
+          property="og:description"
+          content="Fahrradtouren für Rennradfahrer"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
 

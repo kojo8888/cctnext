@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import { Plus } from "react-feather";
 import Head from "next/head";
 
@@ -86,16 +84,16 @@ export default function ExampleCheckbox() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
-        <title>Packliste</title>
+        <title>Strava Add-on Liste</title>
         <meta
           name="description"
-          content="Packlisten für Rennradfahrer"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
           key="desc"
         />
-        <meta property="og:title" content="Packliste" />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
         <meta
           property="og:description"
-          content="Packlisten für Rennradfahrer"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
         />
         <meta
           property="og:image"

@@ -13,6 +13,13 @@ export default function Datenschutz({ products }) {
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
         <title>Datenschutz</title>
+        <meta name="description" content="Datenschutz" key="desc" />
+        <meta property="og:title" content="Datenschutz" />
+        <meta property="og:description" content="Datenschutz" />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="text-justify font-mono">

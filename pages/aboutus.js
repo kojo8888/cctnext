@@ -7,6 +7,13 @@ export default function aboutus({ products }) {
     <div className="font-mono mt-10 mx-auto text-center max-w-3xl px-10">
       <Head>
         <title>Über uns</title>
+        <meta name="description" content="Über uns, wer wir sind." key="desc" />
+        <meta property="og:title" content="Über uns" />
+        <meta property="og:description" content="Über uns, wer wir sind." />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
       </Head>
       {/* <HeaderComponent></HeaderComponent> */}
       <div className="mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
