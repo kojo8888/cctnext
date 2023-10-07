@@ -52,6 +52,9 @@ function generateSiteMap(posts) {
     <url>
         <loc>${URL}/posts/Fahrradkette</loc>
     </url>
+    <url>
+        <loc>${URL}/posts/Addon</loc>
+    </url>
      ${posts
        .map(({ id }) => {
          return `
