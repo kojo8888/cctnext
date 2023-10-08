@@ -12,7 +12,7 @@ export default function ExampleCheckbox() {
   const [showAusruestung, setshowAusruestung] = useState();
 
   // const [showVplatz, setshowVplatz] = useState();
-  const apiUrl = "/api/liste";
+  const apiUrl = "/api/Packliste";
   let werkzeugData;
   let elektronikData;
   let nasskaltData;

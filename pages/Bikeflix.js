@@ -6,7 +6,7 @@ export default function ExampleCheckbox() {
   const [showWerkzeug, setshowWerkzeug] = useState();
 
   // const [showVplatz, setshowVplatz] = useState();
-  const apiUrl = "/api/Strava";
+  const apiUrl = "/api/Bikeflix";
   let allData;
 
   function pullJson() {

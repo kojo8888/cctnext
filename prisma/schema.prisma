@@ -22,3 +22,25 @@ model Packliste {
   bike            Boolean   @default(true)
   space           String    @default("test")
 }
+
+model Addonstrava {
+  id              Int       @id @default(autoincrement())
+  name            String
+  link            String
+  rating          Int       @default(2)
+  category        String
+  subcategory     String
+  active          Boolean   @default(true)
+  created_at      DateTime  @default(now())
+}
+
+model Bikeflix {
+  id              Int       @id @default(autoincrement())
+  name            String
+  url             String
+  description     String 
+  rating          Int       @default(2)
+  category        String
+  isFeatured      Boolean   @default(true)
+  created_at      DateTime  @default(now())
+}
