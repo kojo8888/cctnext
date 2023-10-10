@@ -16,7 +16,13 @@ export default function ExampleCheckbox() {
         allData = responseData
           // .filter((el) => el.category == "Werkzeug")
           .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
+            return (
+              <p key={liste.id}>
+                {liste.name}
+                {/* {liste.url}
+                {liste.description} */}
+              </p>
+            );
           });
         setshowWerkzeug(allData);
       });
@@ -29,10 +35,17 @@ export default function ExampleCheckbox() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
-        <title>Strava Add-on Liste</title>
-        <meta name="description" content="Strava Add-on Liste" key="desc" />
-        <meta property="og:title" content="Strava Add-on Liste" />
-        <meta property="og:description" content="Strava Add-on Liste" />
+        <title>Bikeflix</title>
+        <meta
+          name="description"
+          content="Die besten Youtube Videos zum Thema Radreparatur"
+          key="desc"
+        />
+        <meta property="og:title" content="Bikeflix" />
+        <meta
+          property="og:description"
+          content="Die besten Youtube Videos zum Thema Radreparatur"
+        />
         <meta
           property="og:image"
           content="https://www.customcyclingtracks.com/Logo.png"
@@ -42,9 +55,7 @@ export default function ExampleCheckbox() {
 
       <div className="space-y-12">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            Strava Add-ons
-          </h3>
+          <h3 className="text-3xl font-semibold text-gray-900">Bikeflix</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
               <span className="ml-3 text-left">{showWerkzeug}</span>
