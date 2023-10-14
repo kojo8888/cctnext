@@ -53,7 +53,49 @@ function generateSiteMap(posts) {
         <loc>${URL}/posts/Fahrradkette</loc>
     </url>
     <url>
-        <loc>${URL}/posts/Addon</loc>
+        <loc>${URL}/Addonliste</loc>
+    </url>
+    <url>
+    <loc>${URL}/custom</loc>
+    </url>
+    <url>
+        <loc>${URL}/Datenschutz</loc>
+    </url>
+    <url>
+        <loc>${URL}/aboutus</loc>
+    </url>
+    <url>
+        <loc>${URL}/Impressum</loc>
+    </url>
+    <url>
+        <loc>${URL}/Kettenlaenge</loc>
+    </url>
+    <url>
+        <loc>${URL}/Bikeflix</loc>
+    </url>
+    <url>
+        <loc>${URL}/Geschwindigkeit</loc>
+    </url>
+    <url>
+        <loc>${URL}/maps</loc>
+    </url>
+    <url>
+        <loc>${URL}/Speichenlaenge</loc>
+    </url>
+    <url>
+        <loc>${URL}/Trittfrequenz</loc>
+    </url>
+    <url>
+        <loc>${URL}/Wattrechner</loc>
+    </url>
+    <url>
+        <loc>${URL}/mapsOSM</loc>
+    </url>
+    <url>
+        <loc>${URL}/mapsapp</loc>
+    </url>
+    <url>
+        <loc>${URL}/Ritzelrechner</loc>
     </url>
      ${posts
        .map(({ id }) => {
