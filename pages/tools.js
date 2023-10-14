@@ -57,6 +57,22 @@ export default function tools({ products }) {
               Kurbellänge
             </a>
           </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="Reifendruck"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Reifendruck
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="Reifengroeße"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Reifengröße
+            </a>
+          </span>
         </div>
 
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
@@ -89,18 +105,34 @@ export default function tools({ products }) {
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <span className="text-gray-500">
             <a
-              href="Reifendruck"
+              href="mapOSM"
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
             >
-              Reifendruck
+              OSM
             </a>
           </span>
           <span className="mt-9 text-gray-500">
             <a
-              href="Reifengroeße"
+              href="mapTrinkwasserspender"
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
             >
-              Reifengröße
+              Trinkwasserspender
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="maps"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Standard-Touren
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="custom"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Individuelle Touren
             </a>
           </span>
         </div>
