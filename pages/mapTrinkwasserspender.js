@@ -1,10 +1,7 @@
 import Head from "next/head";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-import LeafletMap from "../components/LeafletMap";
-import Form from "../components/form";
+// import OverpassMap from "components/OverpassMap";
 
 export default class Main extends Component {
   constructor(props) {
@@ -31,8 +28,7 @@ export default class Main extends Component {
         {/* <HeaderComponent></HeaderComponent> */}
         {/* <main className={styles.main}> */}
         <main>
-          <Form></Form>
-          <LeafletMap
+          <OverpassMap
             // width="50vw"
             // height="50vh"
             zoom="1"
