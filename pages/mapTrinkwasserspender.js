@@ -28,13 +28,9 @@ export default class Main extends Component {
         {/* <HeaderComponent></HeaderComponent> */}
         {/* <main className={styles.main}> */}
         <main>
-          <OverpassMap
-            // width="50vw"
-            // height="50vh"
-            zoom="1"
-            lng="2.800029"
-            lat="42.834872"
-          />
+          {/* <OverpassMap
+          // width="50vw" // height="50vh" zoom="1" lng="2.800029"
+          lat="42.834872" /> */}
         </main>
         {/* <FooterComponent></FooterComponent> */}
       </div>
