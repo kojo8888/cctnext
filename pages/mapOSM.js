@@ -3,7 +3,7 @@ import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-import LeafletMap from "../components/LeafletMap";
+import MapOSML from "../components/MapOSML";
 import Form from "../components/form";
 
 export default class Main extends Component {
@@ -32,7 +32,8 @@ export default class Main extends Component {
         {/* <main className={styles.main}> */}
         <main>
           <Form></Form>
-          <LeafletMap
+
+          <MapOSML
             // width="50vw"
             // height="50vh"
             zoom="1"

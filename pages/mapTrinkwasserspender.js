@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-// import OverpassMap from "components/OverpassMap";
+import MapOverpass from "components/MapOverpass";
 
 export default class Main extends Component {
   constructor(props) {
@@ -20,19 +20,16 @@ export default class Main extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <Head>
-          <title>Standard GPX</title>
-          <meta name="description" content="Location-based Stories" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        {/* <HeaderComponent></HeaderComponent> */}
         {/* <main className={styles.main}> */}
         <main>
-          {/* <OverpassMap
-          // width="50vw" // height="50vh" zoom="1" lng="2.800029"
-          lat="42.834872" /> */}
+          <MapOverpass
+            width="50vw"
+            height="50vh"
+            zoom="1"
+            lng="2.800029"
+            lat="42.834872"
+          />
         </main>
-        {/* <FooterComponent></FooterComponent> */}
       </div>
     );
   }

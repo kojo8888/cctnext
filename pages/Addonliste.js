@@ -16,7 +16,11 @@ export default function ExampleCheckbox() {
         allData = responseData
           // .filter((el) => el.category == "Werkzeug")
           .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
+            return (
+              <p key={liste.id}>
+                <a href={liste.link}>{liste.name}</a>
+              </p>
+            );
           });
         setshowWerkzeug(allData);
       });
