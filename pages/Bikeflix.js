@@ -49,7 +49,7 @@ export default function ExampleCheckbox() {
               <span className="ml-3 text-left">{showWerkzeug}</span>
             </li>
           </ul> */}
-          <table>
+          <table className="table-auto">
             <thead>
               <tr>
                 {/* <th>ID</th> */}

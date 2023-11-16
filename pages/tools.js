@@ -122,7 +122,7 @@ export default function tools({ products }) {
           <span className="mt-9 text-gray-500">
             <a
               href="maps"
-              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
             >
               Standard-Touren
             </a>
@@ -130,7 +130,7 @@ export default function tools({ products }) {
           <span className="mt-9 text-gray-500">
             <a
               href="custom"
-              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
             >
               Individuelle Touren
             </a>
