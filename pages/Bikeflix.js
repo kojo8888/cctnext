@@ -3,34 +3,23 @@ import { Plus } from "react-feather";
 import Head from "next/head";
 
 export default function ExampleCheckbox() {
-  const [showWerkzeug, setshowWerkzeug] = useState();
-
-  // const [showVplatz, setshowVplatz] = useState();
+  const [allData, setAllData] = useState([]);
   const apiUrl = "/api/Bikeflix";
-  let allData;
 
-  function pullJson() {
+  // Fetch the data and update the state
+  useEffect(() => {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        allData = responseData
-          // .filter((el) => el.category == "Werkzeug")
-          .map(function (liste) {
-            return (
-              <p key={liste.id}>
-                {liste.name}
-                {/* {liste.url}
-                {liste.description} */}
-              </p>
-            );
-          });
-        setshowWerkzeug(allData);
+        const formattedData = responseData.map((item) => ({
+          id: item.id,
+          name: item.name,
+          url: item.url,
+          description: item.description,
+        }));
+        setAllData(formattedData);
       });
-  }
-
-  useEffect(() => {
-    pullJson();
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
@@ -51,16 +40,37 @@ export default function ExampleCheckbox() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
 
       <div className="space-y-12">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Bikeflix</h3>
-          <ul role="list" className="mt-6 space-y-6">
+          {/* <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
               <span className="ml-3 text-left">{showWerkzeug}</span>
             </li>
-          </ul>
+          </ul> */}
+          <table>
+            <thead>
+              <tr>
+                {/* <th>ID</th> */}
+                <th>Name</th>
+                {/* <th>URL</th> */}
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {allData.map((item) => (
+                <tr key={item.id}>
+                  {/* <td>{item.id}</td> */}
+                  <td>
+                    <a href={item.url}>{item.name}</a>
+                  </td>
+                  {/* <td>{item.url}</td> */}
+                  <td>{item.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
 
@@ -72,8 +82,6 @@ export default function ExampleCheckbox() {
           Schreib uns
         </a>
       </div>
-
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

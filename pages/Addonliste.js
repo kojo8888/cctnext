@@ -13,15 +13,13 @@ export default function ExampleCheckbox() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        allData = responseData
-          // .filter((el) => el.category == "Werkzeug")
-          .map(function (liste) {
-            return (
-              <p key={liste.id}>
-                <a href={liste.link}>{liste.name}</a>
-              </p>
-            );
-          });
+        allData = responseData.map(function (liste) {
+          return (
+            <p key={liste.id}>
+              <a href={liste.link}>{liste.name}</a>
+            </p>
+          );
+        });
         setshowWerkzeug(allData);
       });
   }

@@ -122,24 +122,26 @@ table {
 
 /* Styling the table headers */
 th {
-  background-color: black;
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: #8a8888;
   padding: 10px;
+  border-collapse: collapse;
   text-align: left;
   border-radius: 8px;
 }
 
 /* Styling the table cells */
 td {
-  border: 1px solid #ccc;
   padding: 10px;
   text-align: left;
+  border-collapse: collapse;
   border-radius: 8px;
+  color: #474141;
 }
 
 /* Styling the table rows */
 tr:nth-child(even) {
-  background-color: grey;
+  background-color: rgb(249, 248, 248);
   border-radius: 8px;
 }
 
