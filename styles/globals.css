@@ -139,6 +139,12 @@ td {
   color: #474141;
 }
 
+/* Styling the table rows */
+tr:nth-child(even) {
+  background-color: white;
+  border-radius: 8px;
+}
+
 ul {
   padding: 10px;
   text-align: left;
@@ -154,12 +160,6 @@ li {
   border-radius: 8px;
   color: #474141;
   line-height: 210%;
-}
-
-/* Styling the table rows */
-tr:nth-child(even) {
-  background-color: rgb(249, 248, 248);
-  border-radius: 8px;
 }
 
 @tailwind base;

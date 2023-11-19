@@ -18,42 +18,4 @@ ogImage:
 
 # Add-ons für Strava
 
-Es gibt so einige Add-ons für Strava. Direkt auf deren Seite gibt es eine [Liste](https://www.strava.com/apps).
-
-Klimat.app
-
-summitbag.com
-
-Flink
-
-StatsHunters
-
-VeloViewer
-
-Elevate for Strava
-
-ProBikeGarage
-
-Bandók
-
-WattsBoard
-
-Bikelog
-
-Relive
-
-Velographic for Strava
-
-Strava Sauce [https://saucellc.io/](https://saucellc.io/)
-
-Feed my ride
-
-StoryTeller
-
-Toolbox for Strava
-
-Wandrer.Earth
-
-PB Viewer
-
-MyWindsocks
+Es gibt so einige Add-ons für Strava. Direkt auf deren Seite gibt es eine [Liste](https://www.strava.com/apps) oder eine von mir selbst zusammengestellte [Übersicht](https://www.customcyclingtracks.com/Addonliste).

@@ -1,7 +1,7 @@
 ---
-title: "Mallorca im Frühjahr, beste!"
+title: "Rennradurlaub auf Mallorca: Der ultimative Planungs-Guide!"
 
-excerpt: "Das Trainingslager im Frühjahr auf Mallorca bietet viele Vorteile. Die Insel ist einfach zu erreichen, bietet gutes Wetter und hat die nötige Infrastruktur."
+excerpt: "Mallorca bietet zum Radfahren alles, was das Radler-Herz begehrt. Die Insel ist einfach zu erreichen, hat die nötige Infrastruktur und das Wetter ist gut. In diesem Guide sind die wichtigsten Punkte zur Planung zusammengefasst."
 
 coverImage: "/assets/blog/authors/joe.jpeg"
 
@@ -16,9 +16,9 @@ ogImage:
   url: "/assets/blog/authors/joe.jpeg"
 ---
 
-# Mallorca im Frühjahr, beste!
+# Rennradurlaub auf Mallorca: Der ultimative Planungs-Guide!
 
-Mallorca bietet als Trainingslager im Frühjahr viele Vorteile. Die Insel ist einfach zu erreichen, hat die nötige Infrastruktur und das Wetter ist gut.
+Mallorca bietet zum Radfahren alles, was das Radler-Herz begehrt. Die Insel ist einfach zu erreichen, hat die nötige Infrastruktur und das Wetter ist gut. In diesem Guide sind die wichtigsten Punkte zur Planung zusammengefasst.
 
 # Dauer
 
@@ -60,21 +60,27 @@ In der Vorbereitungsphase kann man in aller Ruhe die Pack- und Besorgungsliste a
 
 # Wetter
 
-Das Wetter ist ab Mitte Februar, Anfang März recht gut für längere Ausfahrten. Oft hat man morgens knapp unter 10 Grad und am späteren Mittag dann circa 20 Grad. Ein paar Wolken ziehen ab und zu vorbei, im Grunde scheint aber mild die Sonne. Das bietet den Vorteil, dass man nicht gleich total verbrennt und sich die Haut erstmal an die Sonnenstrahlen wieder gewöhnen kann. Da es noch früh im Jahr ist, kann es ab und zu zu Regenschauern kommen. Auch kann mal im Tramuntana Schnell fallen, das aber eher selten. Bei Detailfragen zum Wetter gibt es [hier](https://www.customcyclingtracks.com/posts/Wetter) einen weiteren Blogeintrag.
+Das Wetter ist ab Mitte Februar, Anfang März recht gut für längere Ausfahrten. Oft hat man morgens knapp unter 10 Grad und am späteren Mittag dann circa 20 Grad. Ein paar Wolken ziehen ab und zu vorbei, im Grunde scheint aber mild die Sonne. Das bietet den Vorteil, dass man nicht gleich total verbrennt und sich die Haut erstmal an die Sonnenstrahlen wieder gewöhnen kann. Da es noch früh im Jahr ist, kann es ab und zu zu Regenschauern kommen. Eine Temperatur- und Niederschlagsübersicht ist hier zu finden: [Wetter.de](https://www.wetter.de/klima/europa/spanien/mallorca-r32.html). Weitere Themen rund ums Wetter werden [hier](https://www.customcyclingtracks.com/posts/Wetter) in einem weiteren Blogeintrag beschrieben.
 
 # Routen
 
-Auf der folgenden Seite habe ich ein paar Touren zusammengefasst und sortiert. Schaut einfach, was euch gefällt.
+Auf der folgenden Seite habe ich ein paar [Touren](https://www.customcyclingtracks.com/maps) zusammengefasst und sortiert. Schaut einfach, was euch gefällt.
 
 # Selbstorganisiert oder geführt
 
-Es gibt einige Anbieter, die ein Komplettpaket vom Rad, über Hotel bis hin zur Gruppenausfahrt bieten. Die Alternative ist, man bucht sich selbst alles einzeln, so wie man es sich wünscht. Auch die Gruppenfahrt ist einzeln buchbar. Ob sich ein Preisvergleich zwischen individueller Planung und Komplettpaket lohnt, glaube ich nicht. Für mich stellt sich hier eher die Frage, was man lieber mag.
+Es gibt einige Anbieter, die ein Komplettpaket vom Rad, über Hotel bis hin zur Gruppenausfahrt bieten. Als namhaftesten Anbieter ist [Hürzeler](https://www.huerzeler.com/de/inspiration/stationen-und-hotels/mallorca) zu nennen, der im Übrigen auch viel zur Radentwicklung Mallorcas beigetragen hat.
+
+Die Alternative ist, man bucht sich selbst alles einzeln, so wie man es sich wünscht. Auch eine Gruppenausfahrt ist einzeln buchbar. Ob sich ein Preisvergleich zwischen individueller Planung und Komplettpaket lohnt, glaube ich nicht. Für mich stellt sich hier eher die Frage, was man lieber mag und wie viel Zeit man in die Planung stecken möchte.
 
 # Radverleih
 
-Es gibt unzählige Anbieter, um sich ein Rennrad zu leihen. Ich würde nach der Lage schauen, sodass man nicht allzu weit laufen muss, und wie gut die Google-Bewertungen sind. Da es so viele Verleiher gibt, kann man auch nach der gewünschten Radmarke suchen, um die gewohnte Geometrie zu haben oder mal etwas neues auszuprobieren. Zudem kann man auch überlegen, ob man ein Hotel mit Radverleih aussucht. Hier ist die Auswahl und die Qualität deutlich begrenzter.
+Es gibt unzählige Anbieter, um sich ein Rennrad zu leihen. Folgende Faktoren würde ich einbeziehen.
 
-Manche der Radverleiher bieten auch einen gewissen Pannenschutz. Das heißt, wenn man eine größere Panne hat, holen sie einen ab oder bringen ein Ersatzrad vorbei.
+- Öffnungszeiten: Nichts ist nerviger als ein Fahrradladen, der erst um 11 Uhr öffnet.
+- Die Lage sollte so gewählt sein, dass man nicht allzu weit laufen muss zwischen Hotel und Radverleih. Zudem kann man auch überlegen, ob man ein Hotel mit Radverleih aussucht. Hier ist die Auswahl und die Qualität deutlich begrenzter.
+- Google-Bewertungen sind heutzutage das Maß aller Dinge. Schaut nach, was andere Kunden zu berichten hatten.
+- Da es so viele Verleiher gibt, kann man auch nach der gewünschten Radmarke suchen, um die gewohnte Geometrie zu bekommen oder mal etwas Neues auszuprobieren.
+- Manche der Radverleiher bieten auch einen gewissen Pannenschutz. Das heißt, wenn man eine größere Panne hat, holen sie einen ab oder bringen ein Ersatzrad vorbei.
 
 # Radshuttle
 

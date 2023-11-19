@@ -67,8 +67,8 @@ export default function ExampleCheckbox() {
           <table className="table-auto">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Kategorie</th>
+                {/* <th>Name</th> */}
+                {/* <th>Kategorie</th> */}
               </tr>
             </thead>
             <tbody>
@@ -79,7 +79,7 @@ export default function ExampleCheckbox() {
                       {item.name}
                     </a>
                   </td>
-                  <td>{item.category}</td>
+                  {/* <td>{item.category}</td> */}
                 </tr>
               ))}
             </tbody>

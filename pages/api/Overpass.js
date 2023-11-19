@@ -22,7 +22,7 @@ async function fetchData() {
     const data = response.data;
 
     // Save the data to a file (you can modify the filename as needed)
-    fs.writeFileSync("munich_fountains.json", JSON.stringify(data, null, 2));
+    fs.writeFileSync("fountain.json", JSON.stringify(data, null, 2));
 
     console.log(
       "Data has been successfully fetched and saved to munich_fountains.json"
