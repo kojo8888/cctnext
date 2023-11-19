@@ -99,7 +99,7 @@ body {
 
 a {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 p {
@@ -137,6 +137,23 @@ td {
   border-collapse: collapse;
   border-radius: 8px;
   color: #474141;
+}
+
+ul {
+  padding: 10px;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 8px;
+  color: #474141;
+}
+
+li {
+  padding: 10px;
+  text-align: left;
+  border-collapse: collapse;
+  border-radius: 8px;
+  color: #474141;
+  line-height: 210%;
 }
 
 /* Styling the table rows */
