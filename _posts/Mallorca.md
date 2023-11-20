@@ -5,7 +5,7 @@ excerpt: "Mallorca bietet zum Radfahren alles, was das Radler-Herz begehrt. Die 
 
 coverImage: "/assets/blog/authors/joe.jpeg"
 
-date: "2023-03-16T05:35:07.322Z"
+date: "2023-10-16T05:35:07.322Z"
 
 author:
   name: Konstantin

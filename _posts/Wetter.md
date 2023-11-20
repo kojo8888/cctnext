@@ -1,5 +1,5 @@
 ---
-title: "Wie wird das Wetter auf meiner Radtour?"
+title: "Der Wetter-Ratgeber für Einsteiger"
 
 excerpt: "Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen."
 
@@ -16,7 +16,7 @@ ogImage:
   url: "/assets/blog/authors/joe.jpeg"
 ---
 
-# Wie wird das Wetter auf meiner Radtour?
+# Der Wetter-Ratgeber für Einsteiger
 
 Im Grunde ist die Wettervorhersage deine Übersetzung für die Kleiderwahl. Ob Regenjacke, Windweste oder Beinlinge, das alles lässt sich einigermaßen präzise mit einer Wetter-App planen.
 
