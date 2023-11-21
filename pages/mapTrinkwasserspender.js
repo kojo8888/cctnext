@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
-import MapOverpass from "components/MapOverpass";
+import MapOverpass from "../components/MapOverpass";
 
 export default class Main extends Component {
   constructor(props) {
@@ -26,8 +26,8 @@ export default class Main extends Component {
             width="50vw"
             height="50vh"
             zoom="1"
-            lng="2.800029"
-            lat="42.834872"
+            lng="12.800029"
+            lat="48.834872"
           />
         </main>
       </div>
