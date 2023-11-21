@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 // import L from "leaflet";
 // import OverPassLayer from "leaflet-overpass-layer";
 
-import munich_fountains from "../lib/munich_fountains.geojson";
+import munich_fountains from "../lib/munich_fountains.json";
 
 const MapOverpassDynamic = () => {
   const setColor = ({ properties }) => {
@@ -19,7 +19,7 @@ const MapOverpassDynamic = () => {
     <div>
       <MapContainer
         center={[48.13, 11.57]}
-        zoom={1}
+        zoom={10}
         style={{ width: "100%", height: "500px" }}
       >
         <TileLayer
