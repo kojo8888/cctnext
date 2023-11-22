@@ -6,21 +6,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5695937,
-          48.1386615
+          11.5746348,
+          48.1139242
         ]
       },
       "properties": {
-        "id": 201633475,
+        "id": 267732695,
         "tags": {
-          "amenity": "fountain",
-          "artist_name": "Hans Wimmer",
-          "name": "Richard-Strauss-Brunnen",
-          "name:ru": "Фонтан Штрауса",
-          "start_date": "1962",
-          "wikidata": "Q1726071",
-          "wikimedia_commons": "Category:Richard-Strauss-Brunnen",
-          "wikipedia": "de:Richard-Strauss-Brunnen"
+          "amenity": "drinking_water",
+          "fountain": "drinking",
+          "wheelchair": "no"
         }
       }
     },
@@ -29,1011 +24,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5809644,
-          48.1506744
+          11.5315034,
+          48.1565041
         ]
       },
       "properties": {
-        "id": 201978860,
+        "id": 433435497,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "lit": "yes",
-          "name": "Römischer Brunnen",
-          "note": "name nach Wikipedia, Liste Münchner Brunnen",
-          "ref:BLfD": "D-1-62-000-2150",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wheelchair:description": "nur unmittelbar an den Brunnen kann man nicht heranfahren",
-          "wikidata": "Q41181127",
-          "wikimedia_commons": "Category:Fountains at LMU Munich",
-          "wikipedia": "de:Schalenbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.581668,
-          48.1505312
-        ]
-      },
-      "properties": {
-        "id": 201979156,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "lit": "yes",
-          "name": "Römischer Brunnen",
-          "note": "name nach Wikipedia, Liste Münchner Brunnen",
-          "ref:BLfD": "D-1-62-000-2150",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wheelchair:description": "nur unmittelbar an den Brunnen selbst kann man nicht heranfahren",
-          "wikidata": "Q41181127",
-          "wikimedia_commons": "Category:Fountains at LMU Munich",
-          "wikipedia": "de:Schalenbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5682773,
-          48.1616291
-        ]
-      },
-      "properties": {
-        "id": 247857092,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "source": "Bing"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5494363,
-          48.180718
-        ]
-      },
-      "properties": {
-        "id": 262612919,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5488355,
-          48.1815997
-        ]
-      },
-      "properties": {
-        "id": 262612984,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6068756,
-          48.1391017
-        ]
-      },
-      "properties": {
-        "id": 268265293,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Springbrunnen am Prinzregentenplatz"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5417754,
-          48.1100937
-        ]
-      },
-      "properties": {
-        "id": 270588360,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "historic": "memorial",
-          "image": "https://commons.wikimedia.org/w/index.php?search=M%C3%BCnchen+Neuhofener+Berg&title=Special:Search&profile=advanced&fulltext=1&advancedSearch-current=%7B%7D&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Sendling_Neuhofener_Berg_Brunnen.jpg",
-          "name": "Neuhofener Berg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5522916,
-          48.180954
-        ]
-      },
-      "properties": {
-        "id": 270951131,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5496556,
-          48.1798355
-        ]
-      },
-      "properties": {
-        "id": 270951351,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5477244,
-          48.1848315
-        ]
-      },
-      "properties": {
-        "id": 270952540,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6035253,
-          48.128279
-        ]
-      },
-      "properties": {
-        "id": 283377878,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Brunnen am Orleansplatz"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5888453,
-          48.139286
-        ]
-      },
-      "properties": {
-        "id": 291364409,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Erwin Kunz",
-          "drinking_water": "yes",
-          "inscription": "gestaltet 1905 von Erwin Kunz. Der lieben Stadt München gestiftet von Karl Waitzfelder, Rentier",
-          "name": "Schnitterin-Brunnen",
-          "start_date": "1905",
-          "wikidata": "Q2248057",
-          "wikimedia_commons": "Category:Schnitterinbrunnen",
-          "wikipedia": "de:Schnitterinbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5888513,
-          48.1432662
-        ]
-      },
-      "properties": {
-        "id": 291642228,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Fischfrau Brunnen",
-          "wikimedia_commons": "Category:Nischenbrunnen am Bayerischen Nationalmuseum"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6263048,
-          48.1790738
-        ]
-      },
-      "properties": {
-        "id": 295434641,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5055294,
-          48.1583217
-        ]
-      },
-      "properties": {
-        "id": 296311418,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5009705,
-          48.1581567
-        ]
-      },
-      "properties": {
-        "id": 296312342,
-        "tags": {
-          "amenity": "fountain",
-          "covered": "no",
-          "fountain": "nozzle",
-          "indoor": "no",
-          "name": "Fontäne im Großen Parterre",
-          "operator": "Bayerische Verwaltung der staatlichen Schlösser, Gärten und Seen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6199338,
-          48.1513389
-        ]
-      },
-      "properties": {
-        "id": 335943004,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Geborstenes Blech München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5762598,
-          48.1350872
-        ]
-      },
-      "properties": {
-        "id": 343729152,
-        "tags": {
-          "amenity": "fountain",
-          "covered": "no",
-          "drinking_water": "yes",
-          "indoor": "no",
-          "lit": "no",
-          "name": "Liesl-Karlstadt-Brunnen",
-          "source": "survey",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q98704251",
-          "wikimedia_commons": "Category:Liesl-Karlstadt-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5766523,
-          48.1356076
-        ]
-      },
-      "properties": {
-        "id": 358493164,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Roider-Jackl-Brunnen",
-          "toilets:wheelchair": "no",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q98704231",
-          "wikimedia_commons": "Category:Roider-Jackl-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5768753,
-          48.1359612
-        ]
-      },
-      "properties": {
-        "id": 358493236,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Elise-Aulinger-Brunnen",
-          "name:ru": "Фонтан Elise Aulinger",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikimedia_commons": "Category:Elise-Aulinger-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5754761,
-          48.1349723
-        ]
-      },
-      "properties": {
-        "id": 358497644,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Karl-Valentin-Brunnen",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q98703770",
-          "wikimedia_commons": "Category:Karl-Valentin-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5311632,
-          48.1229805
-        ]
-      },
-      "properties": {
-        "id": 367788389,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "name": "Kugelbrunnen",
-          "wikimedia_commons": "Category:Kugelbrunnen (Westpark)",
-          "wikipedia": "de:Westpark (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6566034,
-          48.1663388
-        ]
-      },
-      "properties": {
-        "id": 368354973,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Johannes der Täufer"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5764677,
-          48.1347495
-        ]
-      },
-      "properties": {
-        "id": 430234743,
-        "tags": {
-          "amenity": "fountain",
-          "covered": "no",
-          "drinking_water": "yes",
-          "indoor": "no",
-          "lit": "no",
-          "name": "Ida-Schumacher-Brunnen",
-          "source": "survey",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q98768714",
-          "wikimedia_commons": "Category:Ida-Schumacher-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5941977,
-          48.1416738
-        ]
-      },
-      "properties": {
-        "id": 431804544,
-        "tags": {
-          "amenity": "fountain",
-          "wikidata": "Q114356192",
-          "wikimedia_commons": "Category:Nixenbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6405707,
-          48.1017758
-        ]
-      },
-      "properties": {
-        "id": 444004146,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Sternbrunnen Neuperlach-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5092834,
-          48.1477375
-        ]
-      },
-      "properties": {
-        "id": 451696449,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Springbrunnenlandschaft"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5724581,
-          48.1386089
-        ]
-      },
-      "properties": {
-        "id": 452558800,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Wasserglockenbrunnen Frauenplatz (Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.588957,
-          48.1613659
-        ]
-      },
-      "properties": {
-        "id": 454417048,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Ferdinand Filler",
-          "start_date": "1959",
-          "wikimedia_commons": "Category:Wedekindbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5344212,
-          48.126367
-        ]
-      },
-      "properties": {
-        "id": 459832077,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen im Westpark Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5899977,
-          48.1128572
-        ]
-      },
-      "properties": {
-        "id": 484742916,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5908634,
-          48.1126685
-        ]
-      },
-      "properties": {
-        "id": 484742919,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5895617,
-          48.1129529
-        ]
-      },
-      "properties": {
-        "id": 503603675,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6181021,
-          48.1663346
-        ]
-      },
-      "properties": {
-        "id": 503677981,
-        "tags": {
-          "alt_name": "Graef-Brunnen",
-          "amenity": "fountain",
-          "artist:wikidata": "Q89660",
-          "artist_name": "Georg Brenninger",
-          "material": "bronze",
-          "name": "Taubenbrunnen",
-          "start_date": "1986",
-          "wikimedia_commons": "File:Muemauerkircherstr171brunn08062013c85.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6047466,
-          48.1750659
-        ]
-      },
-      "properties": {
-        "id": 506338931,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5333033,
-          48.1602468
-        ]
-      },
-      "properties": {
-        "id": 518717167,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "fountain": "decorative",
-          "name": "Heraklesbrunnen",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5896421,
-          48.1697168
-        ]
-      },
-      "properties": {
-        "id": 518724545,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Andreas Rauch",
-          "drinking_water": "yes",
-          "name": "Berolinabrunnen",
-          "operator": "Stadtwerke München",
-          "source": "https://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
-          "start_date": "1980",
-          "wikidata": "Q826982",
-          "wikimedia_commons": "Category:Berolinabrunnen (München)",
-          "wikipedia": "de:Berolinabrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5901003,
-          48.1634625
-        ]
-      },
-      "properties": {
-        "id": 518729667,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Artur-Kutscher-Brunnen",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
-          "wikidata": "Q57757962",
-          "wikimedia_commons": "Category:Artur-Kutscher-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5775716,
-          48.1262245
-        ]
-      },
-      "properties": {
-        "id": 518747328,
-        "tags": {
-          "amenity": "fountain",
-          "note": "Zur Zeit trockengelegt",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5840902,
-          48.1233216
-        ]
-      },
-      "properties": {
-        "id": 518752919,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
-          "wikimedia_commons": "Category:Kugelbrunnen Neudeck (Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5836484,
-          48.1240097
-        ]
-      },
-      "properties": {
-        "id": 518752920,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "Category:Brunnen vor dem Landratsamt (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.559828,
-          48.1445379
-        ]
-      },
-      "properties": {
-        "id": 518756380,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "decorative",
-          "height": "1",
-          "name": "Delphinbrunnen",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
-          "wikidata": "Q1184659",
-          "wikipedia": "de:Delphinbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5578237,
-          48.1504188
-        ]
-      },
-      "properties": {
-        "id": 518758685,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Fischmarktbrunnen",
-          "operator": "Stadtwerke München",
-          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
-          "wikidata": "Q41180423",
-          "wikimedia_commons": "Category:Fischmarktbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5347996,
-          48.1660783
-        ]
-      },
-      "properties": {
-        "id": 553430121,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5415194,
-          48.1218663
-        ]
-      },
-      "properties": {
-        "id": 569013243,
-        "tags": {
-          "amenity": "fountain",
-          "historic": "yes",
-          "name": "Schmied-von-Kochel-Denkmal",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q256342",
-          "wikimedia_commons": "Category:Schmied-von-Kochel-Denkmal",
-          "wikipedia": "de:Schmied von Kochel"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5838668,
-          48.1440133
-        ]
-      },
-      "properties": {
-        "id": 597772575,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Prinz-Carl-Palais Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5789946,
-          48.1361543
-        ]
-      },
-      "properties": {
-        "id": 599314016,
-        "tags": {
-          "amenity": "fountain",
-          "artist:wikidata": "Q75204",
-          "artist_name": "Friedrich von Thiersch",
-          "comment": "Gestaltet 1902 von Friedrich von Thiersch",
-          "description": "Merkurbrunnen nach Entwurf Friedrich von Thierschs von 1902 durch den Bildhauer Hugo Kaufmann ausgeführt (Nachbildung der Figur des Giovanni Bologna von ca. 1580); 1911 Aufstellung auf dem Maximiliansplatz, 1975 hier.",
-          "drinking_water": "yes",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-6742",
-          "historic": "fountain",
-          "image": "https://de.wikipedia.org/wiki/Datei:Merkurbrunnen_Muenchen-01.JPG",
-          "name": "Merkurbrunnen",
-          "wikidata": "Q41176200",
-          "wikimedia_commons": "Category:Merkurbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5809389,
-          48.1384001
-        ]
-      },
-      "properties": {
-        "id": 599314051,
-        "tags": {
-          "addr:city": "München",
-          "amenity": "fountain",
-          "artist:wikidata": "Q1597089;Q1283548",
-          "artist_name": "Heinrich Düll, Georg Pezold",
-          "comment": "Gestaltet 1904 von Heinrich Düll und Georg Pezold",
-          "drinking_water": "yes",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-301",
-          "historic": "fountain",
-          "name": "Wolfsbrunnen",
-          "wikidata": "Q3747411",
-          "wikimedia_commons": "Category:Wolfsbrunnen (München)",
-          "wikipedia": "de:Wolfsbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5670153,
-          48.1608684
-        ]
-      },
-      "properties": {
-        "id": 600748808,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Mädchen mit Seehund"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5760733,
-          48.1347707
-        ]
-      },
-      "properties": {
-        "id": 603690546,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Kartoffelbrunnen",
-          "toilets:wheelchair": "no",
-          "tourism": "attraction",
-          "wheelchair": "yes",
-          "wikidata": "Q98768894",
-          "wikimedia_commons": "Category:Kartoffelbrunnen (Viktualienmarkt)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5760881,
-          48.1355289
-        ]
-      },
-      "properties": {
-        "id": 603690547,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Honigbrunnen",
-          "tourism": "attraction",
+          "amenity": "drinking_water",
+          "check_date": "2022-08-23",
+          "fountain": "bottle_refill",
           "wheelchair": "yes"
         }
       }
@@ -1043,20 +43,40 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5763637,
-          48.1352407
+          11.5285043,
+          48.1584012
         ]
       },
       "properties": {
-        "id": 603690548,
+        "id": 433435539,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Weiß-Ferdl-Brunnen",
-          "tourism": "attraction",
+          "amenity": "drinking_water",
+          "check_date": "2022-06-04",
+          "wheelchair": "yes"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5741512,
+          48.1571967
+        ]
+      },
+      "properties": {
+        "id": 452068331,
+        "tags": {
+          "access": "yes",
+          "amenity": "drinking_water",
+          "fee": "no",
+          "fountain": "bubbler",
+          "name": "Bärenbrunnen",
+          "operator": "Stadt München",
           "wheelchair": "yes",
-          "wikidata": "Q98768727",
-          "wikimedia_commons": "Category:Weiß-Ferdl-Brunnen"
+          "wheelchair:description": "Relativ hoch",
+          "wikidata": "Q41177622"
         }
       }
     },
@@ -1065,15 +85,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4634561,
-          48.1514604
+          11.5817574,
+          48.1174508
         ]
       },
       "properties": {
-        "id": 603697321,
+        "id": 456385235,
         "tags": {
-          "amenity": "fountain",
-          "name": "Bismarckbrunnen"
+          "access": "yes",
+          "amenity": "drinking_water",
+          "drinking_water": "unknown",
+          "fee": "no",
+          "fountain": "bubbler",
+          "wheelchair": "yes",
+          "wikimedia_commons": "File:Brunnen Obergiesing Edelweißplatz.JPG"
         }
       }
     },
@@ -1082,299 +107,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5675545,
-          48.1717308
+          11.5427322,
+          48.0757364
         ]
       },
       "properties": {
-        "id": 605248667,
+        "id": 471230911,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "ele": "510.64",
-          "name": "Pumucklbrunnen",
-          "wikidata": "Q2118266"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5670902,
-          48.1390154
-        ]
-      },
-      "properties": {
-        "id": 618560290,
-        "tags": {
-          "amenity": "fountain",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "inscription": "Gestaltet 1895 von Matthias Gasteiger",
-          "name": "Brunnenbuberl",
-          "name:ru": "Фонтан Голый мальчик Brunnenbuberl",
-          "note": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenM%C3%BCnchen",
-          "operator": "Stadtwerke München",
-          "wikidata": "Q41175881"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5300091,
-          48.1085279
-        ]
-      },
-      "properties": {
-        "id": 620891292,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5269324,
-          48.1169026
-        ]
-      },
-      "properties": {
-        "id": 631500900,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Brunnen am Partnachplatz (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5865765,
-          48.1586815
-        ]
-      },
-      "properties": {
-        "id": 638976677,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Fischerbrunnen",
-          "wikidata": "Q41211489"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6082047,
-          48.1137044
-        ]
-      },
-      "properties": {
-        "id": 649255784,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "name": "Gedenkbrunnen Reichssiedlungsschau",
-          "wikimedia_commons": "File:Brunnen Park an der Herrenchiemseestr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6087713,
-          48.1197361
-        ]
-      },
-      "properties": {
-        "id": 649255798,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "wikimedia_commons": "File:Fischbrunnen RimstingerStr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.61034,
-          48.1191032
-        ]
-      },
-      "properties": {
-        "id": 649255799,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Adolf Rothenburger",
-          "drinking_water": "no",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "name": "Melusinen-Brunnen",
-          "ref:BLfD": "D-1-62-000-3239",
-          "start_date": "1939",
-          "wikidata": "Q41210523",
-          "wikimedia_commons": "Category:Melusinen-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6418226,
-          48.1273997
-        ]
-      },
-      "properties": {
-        "id": 649255814,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "wikidata": "Q2259670",
-          "wikimedia_commons": "Category:Schüleinbrunnen",
-          "wikipedia": "de:Schüleinbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5730974,
-          48.1389217
-        ]
-      },
-      "properties": {
-        "id": 649286246,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Josef Henselmann",
-          "drinking_water": "yes",
-          "inscription": "Gestaltet 1972 von Josef Henselmann",
-          "name": "St. Benno-Brunnen",
-          "start_date": "1972",
-          "wikimedia_commons": "File:StBennoBrunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.593967,
-          48.1323282
-        ]
-      },
-      "properties": {
-        "id": 649286251,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Preysingplatz Ziegelbrennerbrunnen Hans Osel 1978 Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5997553,
-          48.1323236
-        ]
-      },
-      "properties": {
-        "id": 649286254,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "wikimedia_commons": "Category:Haferlbrunnen (Preysingstraße)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5970532,
-          48.1350454
-        ]
-      },
-      "properties": {
-        "id": 649286258,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Franz Schörg",
-          "drinking_water": "yes",
-          "name": "Zylinderbrunnen",
-          "start_date": "1929",
-          "wikimedia_commons": "File:Pumpbrunnen An der Kreppe Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5980858,
-          48.1353631
-        ]
-      },
-      "properties": {
-        "id": 649286260,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Max-Weber-Platz_Brunnen_Muenchen-1.jpg",
-          "ref:BLfD": "D-1-62-000-4494",
-          "start_date": "1888",
-          "wikidata": "Q41185422",
-          "wikimedia_commons": "Category:Brunnen am Max-Weber-Platz"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6765871,
-          48.1168902
-        ]
-      },
-      "properties": {
-        "id": 655349844,
-        "tags": {
-          "amenity": "fountain",
+          "access": "yes",
+          "amenity": "drinking_water",
           "bottle": "yes",
-          "drinking_water": "yes",
-          "inscription": "Dieser Drudenbrunnen wurde gestiftet und gebaut von der freien Interessenten-Vereinigung Neu-Trudering anlässlich der Feier des 10jährigen Bestehens im Jahre 1929 Entwurf und Ausführung Bildh. Josef Kaltenbach",
-          "name": "Drudenbrunnen",
-          "wikidata": "Q41210671"
+          "fee": "no",
+          "fountain": "drinking",
+          "name": "St.-Martin-Brunnen",
+          "operator": "Stadt München",
+          "wheelchair": "yes"
         }
       }
     },
@@ -1383,15 +130,21 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.6812958,
-          48.139772
+          11.5746036,
+          48.1430881
         ]
       },
       "properties": {
-        "id": 655349848,
+        "id": 516558607,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes"
+          "amenity": "drinking_water",
+          "check_date": "2022-01-29",
+          "fountain": "bubbler",
+          "inscription": "Prinzregent Luitpold von Bayern 1821-1912",
+          "name": "Prinzregent-Luitpold-Brunnen",
+          "operator": "Stadtwerke München",
+          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
+          "wheelchair": "yes"
         }
       }
     },
@@ -1400,17 +153,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.6671127,
-          48.110797
+          11.5830348,
+          48.1258515
         ]
       },
       "properties": {
-        "id": 655358525,
+        "id": 518737912,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "lit": "no",
-          "name": "Friedrich Ebert"
+          "amenity": "drinking_water",
+          "check_date": "2021-09-17",
+          "fountain": "bubbler",
+          "operator": "Stadtwerke München",
+          "source": "https://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
+          "wheelchair": "yes",
+          "wikimedia_commons": "File:Brunnen am Mariahilfplatz Muenchen.jpg"
         }
       }
     },
@@ -1419,16 +175,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.577043,
-          48.1164308
+          11.6341181,
+          48.11775
         ]
       },
       "properties": {
-        "id": 655375304,
+        "id": 534627972,
         "tags": {
-          "amenity": "fountain",
-          "water": "no",
-          "wikimedia_commons": "File:Nischenbrunnen am Giesinger Berg.JPG"
+          "amenity": "drinking_water",
+          "check_date": "2023-06-17",
+          "fountain": "bubbler"
         }
       }
     },
@@ -1437,15 +193,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5808108,
-          48.1204051
+          11.5880193,
+          48.1168361
         ]
       },
       "properties": {
-        "id": 655375307,
+        "id": 570088341,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Steinquader-Brunnen (Kronepark, München)"
+          "amenity": "drinking_water",
+          "check_date": "2021-10-24"
         }
       }
     },
@@ -1454,16 +210,18 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.580945,
-          48.1203608
+          11.415472,
+          48.1574886
         ]
       },
       "properties": {
-        "id": 655375310,
+        "id": 618557998,
         "tags": {
-          "amenity": "fountain",
-          "playground": "water",
-          "wikimedia_commons": "File:Spielplatz im Kronepark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "check_date": "2021-08-10",
+          "operator": "Stadtwerke München",
+          "source": "http://wiki.openstreetmap.org/wiki/User:PatrickK/Projekt:TrinkwasserbrunnenMünchen",
+          "wheelchair": "limited"
         }
       }
     },
@@ -1472,2428 +230,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.588193,
-          48.1246222
+          11.5961462,
+          48.1310776
         ]
       },
       "properties": {
-        "id": 655375322,
+        "id": 649255781,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "inscription": "gestaltet 1899 von Theodor Fischer und Joseph Flossmann",
-          "name": "Reiherbrunnen",
-          "ref:BLfD": "D-1-62-000-5681",
-          "wikidata": "Q98643183",
-          "wikimedia_commons": "Category:Reiherbrunnen (Regerplatz)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5861193,
-          48.1287534
-        ]
-      },
-      "properties": {
-        "id": 655397100,
-        "tags": {
-          "alt_name": "Die Au",
-          "amenity": "fountain",
-          "artist_name": "Ludwig von Schwanthaler",
-          "drinking_water": "yes",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "inscription": "Von Ludwig v. Schwanthaler 1848",
-          "name": "Augia-Brunnen",
-          "ref:BLfD": "D-1-62-000-3958",
-          "start_date": "1848",
-          "wikidata": "Q98644371",
-          "wikimedia_commons": "Category:Auia-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5846609,
-          48.1120903
-        ]
-      },
-      "properties": {
-        "id": 656248081,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Brunnenbuaberl",
-          "wikimedia_commons": "Category:Brunnen am Walchenseeplatz"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5858935,
-          48.1259146
-        ]
-      },
-      "properties": {
-        "id": 656646632,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "wikidata": "Q98739498",
-          "wikimedia_commons": "Category:Brunnenweibchen (Gebsattelbrücke)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5629767,
-          48.1144874
-        ]
-      },
-      "properties": {
-        "id": 656670500,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Christian Wrede",
-          "drinking_water": "yes",
-          "material": "stone",
-          "opening_hours": "Dec-Feb: off",
-          "start_date": "1934",
-          "wikidata": "Q96749090",
-          "wikimedia_commons": "Category:Tierreliefbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5800814,
-          48.1006118
-        ]
-      },
-      "properties": {
-        "id": 656670558,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5619076,
-          48.1210438
-        ]
-      },
-      "properties": {
-        "id": 656670559,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Friedrich Delcroix",
-          "drinking_water": "yes",
-          "name": "Roecklbrunnen",
-          "note": "Roeckl-Brunnen gestaltet 1908 von Friedrich Delcroix",
-          "start_date": "1908",
-          "url": "https://www.muenchenwiki.de/wiki/Roecklbrunnen",
-          "wikidata": "Q41179296",
-          "wikimedia_commons": "Category:Roeckl-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5698068,
-          48.1221163
-        ]
-      },
-      "properties": {
-        "id": 656670562,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.571263,
-          48.1627526
-        ]
-      },
-      "properties": {
-        "id": 658951455,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5790758,
-          48.1656799
-        ]
-      },
-      "properties": {
-        "id": 658951459,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Seehundbrunnen",
-          "wikidata": "Q587914",
-          "wikipedia": "de:Seehundbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5665005,
-          48.1309935
-        ]
-      },
-      "properties": {
-        "id": 666304988,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Eine große Kugel, die auf dem Wasser schwimmt."
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.563512,
-          48.1331182
-        ]
-      },
-      "properties": {
-        "id": 666304989,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "drinking_water:legal": "yes",
-          "inscription": "Friedrich Bezold 1842-1908. Dem Forscher, Lehrer und Arzte, seine Schüler und Freunde. Errichtet im Iahre 1914",
-          "name": "Friedrich Bezold",
-          "start_date": "1914"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5704625,
-          48.1344998
-        ]
-      },
-      "properties": {
-        "id": 666304990,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Mädchen auf Schildkröte (Jean Henninger, 1971)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.576613,
-          48.1368526
-        ]
-      },
-      "properties": {
-        "id": 666304991,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "name": "Kräutlmarktbrunnen",
-          "name:zh": "魚噴泉",
-          "wikidata": "Q107509088",
-          "wikimedia_commons": "Category:Kräutlmarktbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.573508,
-          48.1437618
-        ]
-      },
-      "properties": {
-        "id": 666304993,
-        "tags": {
-          "amenity": "fountain",
-          "inscription": "Hopfen und Malz Gott erhalt's",
-          "name": "Bierbrunnen",
-          "wikimedia_commons": "Category:Bierbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5735685,
-          48.1448748
-        ]
-      },
-      "properties": {
-        "id": 666304994,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "Category:Glasbrunnen (Brienner Straße)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5782237,
-          48.1703937
-        ]
-      },
-      "properties": {
-        "id": 666305001,
-        "tags": {
-          "access": "permissive",
-          "amenity": "fountain",
-          "drinking_water": "yes"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5329348,
-          48.1532287
-        ]
-      },
-      "properties": {
-        "id": 667454534,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Ursula und Rudolf Wachter",
-          "image": "https://www.muenchenwiki.de/wiki/Datei:Winthirbrunnen.jpg",
-          "inscription": "St. Winthir-Brunnen gestaltet 1955 von Ursula und Rudolf Wachter",
-          "name": "Winthirbrunnen",
-          "note": "Name ohne Sankt, der Winthir hats nur bis Selig gebracht",
-          "start_date": "1955"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5214778,
-          48.151223
-        ]
-      },
-      "properties": {
-        "id": 667528827,
-        "tags": {
-          "amenity": "fountain",
-          "artwork_type": "sculpture_group",
-          "drinking_water": "yes",
-          "inscription": "Errichtet im Jahre 1931",
-          "name": "Knabenbrunnen",
-          "start_date": "1931",
-          "tourism": "artwork"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5190814,
-          48.1533739
-        ]
-      },
-      "properties": {
-        "id": 667528829,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Roland von Bohr",
-          "name": "Kundschafter-Brunnen",
-          "start_date": "1963"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5689074,
-          48.1805839
-        ]
-      },
-      "properties": {
-        "id": 669926853,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Vasenbrunnen",
-          "wikimedia_commons": "File:Vasenbrunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5550928,
-          48.1804551
-        ]
-      },
-      "properties": {
-        "id": 672487918,
-        "tags": {
-          "amenity": "fountain",
-          "image": "https://commons.wikimedia.org/wiki/File:Brunnen_Helene-Mayer-Ring_1_(1).jpg",
-          "wikimedia_commons": "File:Brunnen Helene-Mayer-Ring 1 (1).jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6553477,
-          48.1202087
-        ]
-      },
-      "properties": {
-        "id": 673714798,
-        "tags": {
-          "addr:housenumber": "46",
-          "addr:street": "Damaschkestraße",
-          "amenity": "fountain",
-          "artist_name": "Simon Leibl",
-          "drinking_water": "yes",
-          "name": "Schnitterin-Brunnen",
-          "source": "http://www.muenchen.de/rathaus/Stadtverwaltung/baureferat/oeffentlicher-raum/brunnen.html",
-          "start_date": "1939",
-          "wikidata": "Q41210648"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4621347,
-          48.1467789
-        ]
-      },
-      "properties": {
-        "id": 677195648,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Hans Osel",
-          "drinking_water": "yes",
-          "name": "Hochzeitsbrunnen",
-          "start_date": "1963"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.500973,
-          48.1272436
-        ]
-      },
-      "properties": {
-        "id": 677195660,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Emil Epple",
-          "artwork_type": "statue",
-          "height": "4",
-          "material": "Würzburger_Muschelkalk",
-          "min_height": "1.2",
-          "name": "Mutter mit Kindern",
-          "source": "https://www.gewofag.de/web.nsf/id/mutter-mit-kindern-laim-gewofag?open&ccm=200040",
-          "wikidata": "Q41182423",
-          "wikimedia_commons": "File:Brunnen Reindlstr München.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5001041,
-          48.1284714
-        ]
-      },
-      "properties": {
-        "id": 677195677,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "height": "2.5 m",
-          "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Peterlbrunnen_M%C3%BCnchen.jpg",
-          "name": "Peterl-Brunnen",
-          "source:website": "https://stadt.muenchen.de/infos/brunnen-muenchen.html",
-          "start_date": "1930",
-          "wikipedia": "de:Liste Münchner Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4557613,
-          48.1444246
-        ]
-      },
-      "properties": {
-        "id": 677195682,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Kleiner Brunnen mit Christophorusfigur an der Mauer",
-          "drinking_water": "yes"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5189109,
-          48.1128084
-        ]
-      },
-      "properties": {
-        "id": 677214272,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Lothar Dietz",
-          "description": "Bronzestatue: Junge mit Fohlen",
-          "fountain": "decorative",
-          "image": "https://commons.wikimedia.org/wiki/File:Luise-Kiesselbach-Platz_Lothar_Dietz_Brunnen_Knabe_mit_Fuellen_Muenchen-3.jpg#/media/File:Luise-Kiesselbach-Platz_Lothar_Dietz_Brunnen_Knabe_mit_Fuellen_Muenchen-3.jpg",
-          "name": "Junges Leben",
-          "start_date": "1932",
-          "wikimedia_commons": "Category:Knabe mit Füllen (Lothar Dietz, Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4789722,
-          48.1146767
-        ]
-      },
-      "properties": {
-        "id": 677214280,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5184398,
-          48.1122073
-        ]
-      },
-      "properties": {
-        "id": 677214301,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Rödl Karl jun.",
-          "description": "Künstler: Rödl Karl jun., 1937",
-          "fountain": "decorative",
-          "image": "https://commons.wikimedia.org/wiki/File:Luise-Kiesselbach-Platz_6033.jpg#/media/File:Luise-Kiesselbach-Platz_6033.jpg",
-          "name": "Gänseliesl-Brunnen",
-          "start_date": "1937",
-          "wikimedia_commons": "Category:Gänseliesl-Brunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5288513,
-          48.2167237
-        ]
-      },
-      "properties": {
-        "id": 678060308,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5806719,
-          48.1486139
-        ]
-      },
-      "properties": {
-        "id": 689567443,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Leo von Klenze",
-          "wikimedia_commons": "Category:Klenzebrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5809546,
-          48.1491965
-        ]
-      },
-      "properties": {
-        "id": 689567445,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Friedr. v. Gärtner",
-          "wikimedia_commons": "Category:Friedrich-von-Gärtner-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5712949,
-          48.141511
-        ]
-      },
-      "properties": {
-        "id": 691084299,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "yes",
-          "inscription": "Grottenbrunnen errichtet 1886",
-          "name": "Grottenbrunnen",
-          "start_date": "1886"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5719573,
-          48.1421916
-        ]
-      },
-      "properties": {
-        "id": 699687239,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Karl-Amadeus-Hartmann-Brunnen",
-          "start_date": "1971",
-          "wikimedia_commons": "Category:Karl-Amadeus-Hartmann-Brunnen (Toni Stadler)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5718633,
-          48.1427252
-        ]
-      },
-      "properties": {
-        "id": 699694753,
-        "tags": {
-          "addr:city": "München",
-          "addr:country": "DE",
-          "addr:street": "Maximiliansplatz",
-          "addr:suburb": "Maxvorstadt",
-          "amenity": "fountain",
-          "artist:wikidata": "Q1633330",
-          "artist_name": "Hubert Netzer",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-3825",
-          "name": "Nornenbrunnen",
-          "start_date": "1907",
-          "wikidata": "Q877089",
-          "wikimedia_commons": "Category:Karl-Amadeus-Hartmann-Brunnen (Toni Stadler)",
-          "wikipedia": "de:Nornenbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5672396,
-          48.134542
-        ]
-      },
-      "properties": {
-        "id": 701344630,
-        "tags": {
-          "amenity": "fountain",
-          "inscription": "gestaltet 1937 von Karl Fotzler",
-          "name": "Auffliegende Vögel",
-          "wikimedia_commons": "Category:Auffliegende-Vögel-Brunnen (Karl Potzler)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5793091,
-          48.1499345
-        ]
-      },
-      "properties": {
-        "id": 704397711,
-        "tags": {
-          "amenity": "fountain",
-          "wikidata": "Q61475998",
-          "wikimedia_commons": "Category:Steinbrunnen (Herbert Peters)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6985029,
-          48.1396751
-        ]
-      },
-      "properties": {
-        "id": 726741580,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikidata": "Q2537402",
-          "wikimedia_commons": "Category:WM-Brunnen",
-          "wikipedia": "de:WM-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.618425,
-          48.1601554
-        ]
-      },
-      "properties": {
-        "id": 747490250,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5621699,
-          48.1340889
-        ]
-      },
-      "properties": {
-        "id": 817152237,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5973981,
-          48.1186937
-        ]
-      },
-      "properties": {
-        "id": 823297549,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "Category:Fontänenbrunnen St.-Martin-Straße (Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5896564,
-          48.1413161
-        ]
-      },
-      "properties": {
-        "id": 871941222,
-        "tags": {
-          "amenity": "fountain",
-          "artist:wikidata": "Q665809",
-          "artist_name": "Hans Rucker",
-          "height": "2",
-          "material": "bronze",
-          "name": "Fremde Blume",
-          "start_date": "1966",
-          "wikimedia_commons": "Category:Brunnen Alexandrastraße (Hans Rucker)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5477243,
-          48.1848315
-        ]
-      },
-      "properties": {
-        "id": 910777706,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6426526,
-          48.0889782
-        ]
-      },
-      "properties": {
-        "id": 968721211,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "File:Brunnen Maximilian-Kolbe-Allee Neuperlach Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.580828,
-          48.1393318
-        ]
-      },
-      "properties": {
-        "id": 973746019,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5337508,
-          48.1360274
-        ]
-      },
-      "properties": {
-        "id": 980331043,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5120416,
-          48.123048
-        ]
-      },
-      "properties": {
-        "id": 1043569932,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Wasserwand (Alf Lechner)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5126327,
-          48.1210958
-        ]
-      },
-      "properties": {
-        "id": 1043576961,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Springbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5175016,
-          48.0785998
-        ]
-      },
-      "properties": {
-        "id": 1081696063,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5795945,
-          48.1432994
-        ]
-      },
-      "properties": {
-        "id": 1098403518,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5804179,
-          48.1425839
-        ]
-      },
-      "properties": {
-        "id": 1098403521,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5793628,
-          48.1428054
-        ]
-      },
-      "properties": {
-        "id": 1098403524,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5792281,
-          48.1445576
-        ]
-      },
-      "properties": {
-        "id": 1137769039,
-        "tags": {
-          "amenity": "fountain",
-          "architect": "Ernst Andreas Rau",
-          "historic": "yes",
-          "start_date": "1961"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5196844,
-          48.119828
-        ]
-      },
-      "properties": {
-        "id": 1194156637,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.588474,
-          48.1561796
-        ]
-      },
-      "properties": {
-        "id": 1240377130,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Wzwz schwabing 16 munich re building.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5623603,
-          48.160456
-        ]
-      },
-      "properties": {
-        "id": 1248191574,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5353572,
-          48.1432755
-        ]
-      },
-      "properties": {
-        "id": 1255861626,
-        "tags": {
-          "amenity": "fountain",
-          "note": "Form: ein Quader, an dem Wasser herunterfließt",
-          "wikimedia_commons": "File:Glaskastenbrunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5892529,
-          48.156377
-        ]
-      },
-      "properties": {
-        "id": 1313466168,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Georg Brenninger",
-          "covered": "no",
-          "drinking_water": "no",
-          "indoor": "no",
-          "material": "aluminium",
-          "name": "Felsenbrunnen",
-          "note": "Technically tourism=artwork, with artwork_type=fountain. It is, however, questionable to what avail this more detailed tagging (in general) would be.",
-          "source": "survey",
-          "start_date": "1963",
-          "wikimedia_commons": "Category:Felsenbrunnen (Georg Brenninger)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5798794,
-          48.1504308
-        ]
-      },
-      "properties": {
-        "id": 1318875603,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Eulenbrunnen",
-          "wikimedia_commons": "Category:Eulenbrunnen (Eduard Beyrer)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5662808,
-          48.2055706
-        ]
-      },
-      "properties": {
-        "id": 1327854680,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5297824,
-          48.1591882
-        ]
-      },
-      "properties": {
-        "id": 1337056612,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Hubertusbrunnen",
-          "wikidata": "Q1633615"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6025215,
-          48.179106
-        ]
-      },
-      "properties": {
-        "id": 1352831998,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5833207,
-          48.1347753
-        ]
-      },
-      "properties": {
-        "id": 1368309481,
-        "tags": {
-          "amenity": "fountain",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "name": "Fortunabrunnen",
-          "ref:BLfD": "D-1-62-000-2997",
-          "wikidata": "Q949258",
-          "wikimedia_commons": "Category:Fortunabrunnen",
-          "wikipedia": "de:Fortunabrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5639152,
-          48.146931
-        ]
-      },
-      "properties": {
-        "id": 1375278287,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5641905,
-          48.1468479
-        ]
-      },
-      "properties": {
-        "id": 1375278288,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6348901,
-          48.1683472
-        ]
-      },
-      "properties": {
-        "id": 1428381471,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5308063,
-          48.2082082
-        ]
-      },
-      "properties": {
-        "id": 1438868830,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6000584,
-          48.1044077
-        ]
-      },
-      "properties": {
-        "id": 1613073628,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6000906,
-          48.1043504
-        ]
-      },
-      "properties": {
-        "id": 1613074155,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5806501,
-          48.1430774
-        ]
-      },
-      "properties": {
-        "id": 1636729087,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5369496,
-          48.1146854
-        ]
-      },
-      "properties": {
-        "id": 1643226898,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5369475,
-          48.1154425
-        ]
-      },
-      "properties": {
-        "id": 1643226908,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.536413,
-          48.1164342
-        ]
-      },
-      "properties": {
-        "id": 1643226921,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5358159,
-          48.1165688
-        ]
-      },
-      "properties": {
-        "id": 1643226931,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5479236,
-          48.1620018
-        ]
-      },
-      "properties": {
-        "id": 1689369639,
-        "tags": {
-          "amenity": "fountain",
-          "covered": "no",
-          "indoor": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5650415,
-          48.1270994
-        ]
-      },
-      "properties": {
-        "id": 1722866872,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4941935,
-          48.1555194
-        ]
-      },
-      "properties": {
-        "id": 1743661404,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Statue des Pan mit Quelle"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5379775,
-          48.1194243
-        ]
-      },
-      "properties": {
-        "id": 1773590061,
-        "tags": {
-          "amenity": "fountain",
-          "noname": "yes",
-          "wikimedia_commons": "File:Felsenbrunnen Hochmeierstr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5318924,
-          48.1708048
-        ]
-      },
-      "properties": {
-        "id": 1784539254,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5697597,
-          48.1322007
-        ]
-      },
-      "properties": {
-        "id": 1871487940,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Floriansbrunnen",
-          "wikimedia_commons": "Category:Floriansbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5001824,
-          48.1621702
-        ]
-      },
-      "properties": {
-        "id": 1887996559,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6445576,
-          48.104424
-        ]
-      },
-      "properties": {
-        "id": 1976315564,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Felsenquelle Neuperlach (Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5834586,
-          48.1647515
-        ]
-      },
-      "properties": {
-        "id": 1985669543,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Märchenbrunnen",
-          "wikidata": "Q1707736",
-          "wikipedia": "de:Märchenbrunnen (Schwabing)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4848225,
-          48.0938954
-        ]
-      },
-      "properties": {
-        "id": 2048994264,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Faun-Brunnen (Fürstenried)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5948536,
-          48.1251616
-        ]
-      },
-      "properties": {
-        "id": 2331641236,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen St Wolfgangplatz München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5265571,
-          48.108103
-        ]
-      },
-      "properties": {
-        "id": 2342234444,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5844352,
-          48.1234974
-        ]
-      },
-      "properties": {
-        "id": 2377795292,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "File:Waschbrett Brunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5809949,
-          48.1405401
-        ]
-      },
-      "properties": {
-        "id": 2380144773,
-        "tags": {
-          "amenity": "fountain",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-4351",
-          "historic": "fountain",
-          "image": "https://de.wikipedia.org/wiki/Datei:Felsenbrunnen_M%C3%BCnchen.JPG",
-          "name": "Felsenbrunnen",
-          "start_date": "1790",
-          "wikimedia_commons": "Category:Löwenbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5635026,
-          48.2123835
-        ]
-      },
-      "properties": {
-        "id": 2408219125,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Ab durch die Mitte"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5930474,
-          48.1304514
-        ]
-      },
-      "properties": {
-        "id": 2515489710,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "name": "Erich-Schulze-Brunnen",
-          "tourism": "artwork",
-          "wikidata": "Q786898",
-          "wikimedia_commons": "Category:Erich-Schulze-Brunnen",
-          "wikipedia": "de:Erich-Schulze-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5921726,
-          48.1307793
-        ]
-      },
-      "properties": {
-        "id": 2515521124,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Erich-Schulze-Brunnen",
-          "wikidata": "Q786898",
-          "wikimedia_commons": "Category:Erich-Schulze-Brunnen",
-          "wikipedia": "de:Erich-Schulze-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5284267,
-          48.1396529
-        ]
-      },
-      "properties": {
-        "id": 2521860863,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4599176,
-          48.1478621
-        ]
-      },
-      "properties": {
-        "id": 2556259439,
-        "tags": {
-          "amenity": "fountain",
-          "note": "Wasserhahn/Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5759303,
-          48.1767373
-        ]
-      },
-      "properties": {
-        "id": 2607605952,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6442159,
-          48.0907443
-        ]
-      },
-      "properties": {
-        "id": 2704347772,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6446441,
-          48.0910303
-        ]
-      },
-      "properties": {
-        "id": 2704347796,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6442261,
-          48.091319
-        ]
-      },
-      "properties": {
-        "id": 2704347822,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6446482,
-          48.0916051
-        ]
-      },
-      "properties": {
-        "id": 2704347839,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6446046,
-          48.0882763
-        ]
-      },
-      "properties": {
-        "id": 2704573790,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Brunnen vor der BSH-Zentrale (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.586134,
-          48.1627553
-        ]
-      },
-      "properties": {
-        "id": 2714392610,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Wolfgang Sand",
-          "artwork_type": "sculpture",
-          "height": "2.5",
-          "historic": "memorial",
-          "memorial": "statue",
-          "name": "Bally-Prell-Brunnen",
-          "start_date": "1992",
-          "tourism": "artwork",
-          "website": "https://www.muenchenwiki.de/wiki/Bally_Prell_Gedenkbrunnen",
-          "wikimedia_commons": "Category:Bally-Prell-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6356972,
-          48.0864642
-        ]
-      },
-      "properties": {
-        "id": 2729785950,
-        "tags": {
-          "amenity": "fountain",
-          "tourism": "artwork",
-          "wikimedia_commons": "Category:Objekt im See (Albert Hien)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5577145,
-          48.1394897
-        ]
-      },
-      "properties": {
-        "id": 2813537220,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Bayerpostbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5142765,
-          48.0646219
-        ]
-      },
-      "properties": {
-        "id": 2830190295,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.573143,
-          48.1290565
-        ]
-      },
-      "properties": {
-        "id": 2847706460,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5371219,
-          48.1360414
-        ]
-      },
-      "properties": {
-        "id": 2859401856,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Nymphenbrunnen",
-          "wikidata": "Q41183477",
-          "wikimedia_commons": "Category:Nymphenbrunnen (Elmar Dietz)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5332195,
-          48.1338959
-        ]
-      },
-      "properties": {
-        "id": 2859403005,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5342693,
-          48.1336275
-        ]
-      },
-      "properties": {
-        "id": 2859403039,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5513811,
-          48.1363718
-        ]
-      },
-      "properties": {
-        "id": 2859409132,
-        "tags": {
-          "alt_name": "St.-Pauls-Brunnen",
-          "amenity": "fountain",
-          "artist_name": "Claus Nageler",
-          "drinking_water": "no",
-          "name": "Sankt-Pauls-Brunnen",
-          "start_date": "1989",
-          "wikimedia_commons": "File:St.-Pauls-Brunnen Muenchen Claus Nageler 1989-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5367169,
-          48.1345828
-        ]
-      },
-      "properties": {
-        "id": 2953629738,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Rupertusbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5126479,
-          48.0738328
-        ]
-      },
-      "properties": {
-        "id": 2964710080,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5397587,
-          48.117178
-        ]
-      },
-      "properties": {
-        "id": 3027329133,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Brunnen am Harras (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5276384,
-          48.152862
-        ]
-      },
-      "properties": {
-        "id": 3041590745,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Gänsebrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5358525,
-          48.1698755
-        ]
-      },
-      "properties": {
-        "id": 3044733440,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.536515,
-          48.1698988
-        ]
-      },
-      "properties": {
-        "id": 3044733441,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5366813,
-          48.169906
-        ]
-      },
-      "properties": {
-        "id": 3044733443,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5328513,
-          48.1705749
-        ]
-      },
-      "properties": {
-        "id": 3044741213,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6366967,
-          48.1148086
-        ]
-      },
-      "properties": {
-        "id": 3128513450,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6365676,
-          48.1148729
-        ]
-      },
-      "properties": {
-        "id": 3128513451,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6367942,
-          48.1149279
-        ]
-      },
-      "properties": {
-        "id": 3128513452,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5866685,
-          48.1631699
-        ]
-      },
-      "properties": {
-        "id": 3349737171,
-        "tags": {
-          "amenity": "fountain",
-          "height": "2",
-          "wikimedia_commons": "File:Wasserkaskaden Münchner Freiheit.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6102509,
-          48.1194259
-        ]
-      },
-      "properties": {
-        "id": 3405893316,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Karl Kroher",
-          "drinking_water": "no",
-          "name": "Fischerbrunnen",
-          "start_date": "1927",
-          "wikimedia_commons": "Category:Karl Kroher Fischerbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.700351,
-          48.112295
-        ]
-      },
-      "properties": {
-        "id": 3463026399,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5330226,
-          48.1527034
-        ]
-      },
-      "properties": {
-        "id": 3481040136,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Prof. Klaus Schultze",
-          "image": "https://commons.wikimedia.org/wiki/File:München_-_Rotkreuzplatz_(Brunnen).JPG",
-          "name": "Steinernes Paar",
-          "start_date": "1984"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.59368,
-          48.1364879
-        ]
-      },
-      "properties": {
-        "id": 3487104282,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Fountain in front of the Maximilianeum"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6521246,
-          48.0899497
-        ]
-      },
-      "properties": {
-        "id": 3525551043,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5690078,
-          48.1430665
-        ]
-      },
-      "properties": {
-        "id": 3528545908,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Campus Karlstraße München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5900164,
-          48.1743608
-        ]
-      },
-      "properties": {
-        "id": 3538191347,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.576474,
-          48.1742533
-        ]
-      },
-      "properties": {
-        "id": 3564636572,
-        "tags": {
-          "amenity": "fountain",
-          "source": "Bing"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5745727,
-          48.1751758
-        ]
-      },
-      "properties": {
-        "id": 3564638006,
-        "tags": {
-          "amenity": "fountain",
-          "source": "Bing"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5458505,
-          48.1376223
-        ]
-      },
-      "properties": {
-        "id": 3643418985,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6487534,
-          48.0908485
-        ]
-      },
-      "properties": {
-        "id": 3645621759,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5797189,
-          48.1014036
-        ]
-      },
-      "properties": {
-        "id": 3659383070,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5934128,
-          48.1227072
-        ]
-      },
-      "properties": {
-        "id": 3673125491,
-        "tags": {
-          "amenity": "fountain",
+          "amenity": "drinking_water",
+          "artist_name": "Wilhelm Bertsch; Ernst Pfeifer",
           "colour": "green",
-          "drinking_water": "yes",
-          "height": "2",
-          "wikimedia_commons": "File:Muetassiloplatzbrunn21062015c85.jpg"
+          "fountain": "bottle_refill",
+          "start_date": "1911",
+          "wheelchair": "yes",
+          "wikimedia_commons": "File:Bertsch-Brunnen.JPG"
         }
       }
     },
@@ -3902,22 +252,69 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5760291,
-          48.1317032
+          11.6148943,
+          48.1140214
         ]
       },
       "properties": {
-        "id": 3738161528,
+        "id": 649255801,
         "tags": {
-          "amenity": "fountain",
+          "amenity": "drinking_water"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5770957,
+          48.1161593
+        ]
+      },
+      "properties": {
+        "id": 655375303,
+        "tags": {
+          "amenity": "drinking_water"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5839601,
+          48.1191326
+        ]
+      },
+      "properties": {
+        "id": 656248108,
+        "tags": {
+          "amenity": "drinking_water",
+          "check_date": "2021-10-24",
+          "fountain": "drinking",
+          "wikimedia_commons": "File:Trinkbrunnen am Ostfriedhof 1928 Muenchen-2.jpg"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5815029,
+          48.1214581
+        ]
+      },
+      "properties": {
+        "id": 656248193,
+        "tags": {
+          "amenity": "drinking_water",
+          "check_date": "2021-09-17",
           "drinking_water": "no",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "name": "Gärtnerplatzbrunnen",
-          "ref:BLfD": "D-1-62-000-2022",
-          "source": "http://www.muenchenwiki.de/wiki/Schalenbrunnen_am_G%C3%A4rtnerplatz",
-          "wikidata": "Q41178719",
-          "wikimedia_commons": "Category:Brunnen am Gärtnerplatz"
+          "fountain": "bubbler",
+          "wikimedia_commons": "File:Nischenbrunnen am Nockherberg München.jpg"
         }
       }
     },
@@ -3926,14 +323,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.6430959,
-          48.140623
+          11.5801889,
+          48.1214927
         ]
       },
       "properties": {
-        "id": 3838504505,
+        "id": 656248201,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "check_date": "2023-08-27",
+          "fountain": "bubbler"
         }
       }
     },
@@ -3942,15 +341,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5093585,
-          48.1226345
+          11.5675061,
+          48.1688582
         ]
       },
       "properties": {
-        "id": 4021885200,
+        "id": 666304998,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "check_date": "2022-07-19",
+          "fountain": "bubbler"
         }
       }
     },
@@ -3959,15 +359,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5093041,
-          48.1226406
+          11.5481909,
+          48.0920159
         ]
       },
       "properties": {
-        "id": 4021885202,
+        "id": 677225871,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "fountain": "drinking",
+          "wikimedia_commons": "File:20180630 Zentralländstraße 35 München.jpg"
         }
       }
     },
@@ -3976,15 +377,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5092691,
-          48.1226687
+          11.5025674,
+          48.1566906
         ]
       },
       "properties": {
-        "id": 4021885205,
+        "id": 692187620,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "check_date": "2021-08-24",
+          "fountain": "drinking"
         }
       }
     },
@@ -3993,15 +395,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5092575,
-          48.122702
+          11.5027858,
+          48.1587953
         ]
       },
       "properties": {
-        "id": 4021885213,
+        "id": 692234637,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "toilets:wheelchair": "no",
+          "wheelchair": "yes"
         }
       }
     },
@@ -4010,15 +413,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5092847,
-          48.1227296
+          11.6347883,
+          48.1530607
         ]
       },
       "properties": {
-        "id": 4021885218,
+        "id": 726741579,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "check_date": "2022-04-08"
         }
       }
     },
@@ -4027,15 +430,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5093358,
-          48.1227435
+          11.527864,
+          48.1679971
         ]
       },
       "properties": {
-        "id": 4021885220,
+        "id": 761774495,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen am Rosengarten Westpark Muenchen-1.jpg"
+          "amenity": "drinking_water",
+          "source": "survey"
         }
       }
     },
@@ -4044,14 +447,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4367428,
-          48.1497429
+          11.5132174,
+          48.1126312
         ]
       },
       "properties": {
-        "id": 4092192774,
+        "id": 1383139825,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "designation": "free drinking water",
+          "source": "sharefoodforest",
+          "wheelchair": "yes"
         }
       }
     },
@@ -4060,14 +466,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4367669,
-          48.1498064
+          11.631607,
+          48.1291263
         ]
       },
       "properties": {
-        "id": 4092192777,
+        "id": 2951318085,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "fee": "no",
+          "fountain": "bottle_refill",
+          "wheelchair": "limited"
         }
       }
     },
@@ -4076,14 +485,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4366637,
-          48.1498431
+          11.5860562,
+          48.1075537
         ]
       },
       "properties": {
-        "id": 4092192778,
+        "id": 3059481054,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "fountain": "drinking",
+          "opening_hours": "week 12-39 00:00-24:00",
+          "playground": "water"
         }
       }
     },
@@ -4092,14 +504,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5971123,
-          48.1821921
+          11.6302113,
+          48.2175894
         ]
       },
       "properties": {
-        "id": 4100509038,
+        "id": 3077164480,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water"
         }
       }
     },
@@ -4108,14 +520,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5507534,
-          48.1837606
+          11.5737122,
+          48.1363492
         ]
       },
       "properties": {
-        "id": 4100912492,
+        "id": 4347782530,
         "tags": {
-          "amenity": "fountain"
+          "access": "yes",
+          "amenity": "drinking_water",
+          "bottle": "yes",
+          "fee": "no",
+          "fountain": "drinking",
+          "wheelchair": "yes",
+          "wikimedia_commons": "File:Atlantida Brunnen Rindermarkt München.jpg"
         }
       }
     },
@@ -4124,14 +542,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5636786,
-          48.1432135
+          11.5429377,
+          48.1144642
         ]
       },
       "properties": {
-        "id": 4209393317,
+        "id": 5184087159,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water"
         }
       }
     },
@@ -4140,14 +558,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5574754,
-          48.1439544
+          11.4904065,
+          48.1651421
         ]
       },
       "properties": {
-        "id": 4211216572,
+        "id": 5585908527,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "opening_hours": "Mo-Sa 08:00-20:00; Ph off"
         }
       }
     },
@@ -4156,14 +575,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5591934,
-          48.1385092
+          11.5641742,
+          48.1039925
         ]
       },
       "properties": {
-        "id": 4228292993,
+        "id": 5696497293,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "man_made": "water_tap"
         }
       }
     },
@@ -4172,2123 +592,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5481853,
-          48.1526388
+          11.5708265,
+          48.153531
         ]
       },
       "properties": {
-        "id": 4261040852,
+        "id": 5777402981,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Springbrunnen Deutschen Herzzentrum München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5782497,
-          48.1382507
-        ]
-      },
-      "properties": {
-        "id": 4293341114,
-        "tags": {
-          "amenity": "fountain",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-221",
-          "historic": "fountain",
-          "image": "https://de.wikipedia.org/wiki/Datei:Brunnen_AlterHof_M%C3%BCnchen.jpg",
-          "source": "survey",
-          "start_date": "1785",
-          "wikidata": "Q41175309",
-          "wikimedia_commons": "File:Brunnen AlterHof München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5980704,
-          48.1428294
-        ]
-      },
-      "properties": {
-        "id": 4322350345,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Joseph-Ruederer-Brunnen",
-          "url": "https://www.nordostkultur-muenchen.de/architektur/joseph_ruederer_brunnen.htm",
-          "wikimedia_commons": "Category:Joseph-Ruederer-Gedächtnis-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5659232,
-          48.1356889
-        ]
-      },
-      "properties": {
-        "id": 4385264848,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5733555,
-          48.1321522
-        ]
-      },
-      "properties": {
-        "id": 4394004331,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Brunnen als stehende Wasserwand",
-          "name": "\"7\" The Seven",
-          "wikimedia_commons": "File:Hausschild von 'The Seven' in der Müllerstraße 7 in München.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6071917,
-          48.1325596
-        ]
-      },
-      "properties": {
-        "id": 4456416729,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Haidenaupark München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5796738,
-          48.148923
-        ]
-      },
-      "properties": {
-        "id": 4476505947,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Brunnenplastik (Thomas Otto Munz)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5555741,
-          48.1394344
-        ]
-      },
-      "properties": {
-        "id": 4685788768,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5068551,
-          48.1620605
-        ]
-      },
-      "properties": {
-        "id": 4821515162,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5068152,
-          48.1624453
-        ]
-      },
-      "properties": {
-        "id": 4821515163,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5296883,
-          48.1549085
-        ]
-      },
-      "properties": {
-        "id": 4823880108,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Ruth Schaumann",
-          "drinking_water": "no",
-          "name": "Peter Dörfler Brunnen",
-          "wikimedia_commons": "File:Peter Dörfler Brünnlein München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5798038,
-          48.1407432
-        ]
-      },
-      "properties": {
-        "id": 4921250902,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "File:Residenz Kabinettsgarten Muenchen-6.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5850706,
-          48.1109752
-        ]
-      },
-      "properties": {
-        "id": 4922303500,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Kein Trinkwasser!",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "name": "Pinguin-Brunnen",
-          "ref:BLfD": "D-1-62-000-5215",
-          "wikidata": "Q41182872",
-          "wikimedia_commons": "Category:Pinguinbrunnen (München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5781822,
-          48.1517775
-        ]
-      },
-      "properties": {
-        "id": 4958918477,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5781906,
-          48.1519867
-        ]
-      },
-      "properties": {
-        "id": 4978044221,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen im Durchgang zur Adalbertstraße.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4940157,
-          48.1033163
-        ]
-      },
-      "properties": {
-        "id": 5154812825,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5483885,
-          48.1469111
-        ]
-      },
-      "properties": {
-        "id": 5171976719,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:TaubenBrunnen Marsplatz4 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5827051,
-          48.1464074
-        ]
-      },
-      "properties": {
-        "id": 5182213939,
-        "tags": {
-          "amenity": "fountain",
-          "image": "https://commons.wikimedia.org/wiki/File:Bayerischer_Oberster_Rechnungshof_06.jpg",
-          "name": "Delphinbrunnen",
-          "wikimedia_commons": "Category:Delfin-Brunnen Kaulbachstraße",
-          "year_of_construction": "1962"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6538598,
-          48.1177713
-        ]
-      },
-      "properties": {
-        "id": 5221426042,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4618503,
-          48.147424
-        ]
-      },
-      "properties": {
-        "id": 5325431127,
-        "tags": {
-          "BLfD:criteria": "Baudenkmal",
-          "amenity": "fountain",
-          "architect": "Hans Osel",
-          "description": "Brunnen im Markthof: Kinderfigur mit Fischen, 1938 von Hans Osel",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "historic": "yes",
-          "image": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Fischbrunnen_Pasing.JPG",
-          "name": "Fischbrunnen",
-          "ref:BLfD": "D-1-62-000-539",
-          "start_date": "1938",
-          "wikidata": "Q1308392",
-          "wikipedia": "de:Fischbrunnen (Pasing)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.557844,
-          48.1438254
-        ]
-      },
-      "properties": {
-        "id": 5592884774,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6706306,
-          48.0863711
-        ]
-      },
-      "properties": {
-        "id": 5630794436,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5512672,
-          48.1187395
-        ]
-      },
-      "properties": {
-        "id": 5658493775,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Bronzestatue:Sankt Gertrud",
-          "name": "Gertrud-Brunnen",
-          "note": "Schutzpatronin der Gärtner | Gestiftet von den Gärtnern der Grossmarkthalle 1958",
-          "start_date": "1958"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5826675,
-          48.121313
-        ]
-      },
-      "properties": {
-        "id": 5697131667,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Paulanergarten-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5354456,
-          48.1403282
-        ]
-      },
-      "properties": {
-        "id": 5766684832,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5356026,
-          48.0853043
-        ]
-      },
-      "properties": {
-        "id": 5803651555,
-        "tags": {
-          "amenity": "fountain",
-          "artwork_type": "sculpture",
-          "material": "bronze",
-          "name": "Zwei Biber",
-          "tourism": "artwork"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5342982,
-          48.1633334
-        ]
-      },
-      "properties": {
-        "id": 5808402562,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5273218,
-          48.1159544
-        ]
-      },
-      "properties": {
-        "id": 5837980932,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5259153,
-          48.1197474
-        ]
-      },
-      "properties": {
-        "id": 5837980933,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5922574,
-          48.1834039
-        ]
-      },
-      "properties": {
-        "id": 5956684323,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6501697,
-          48.1023106
-        ]
-      },
-      "properties": {
-        "id": 6387512567,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6468967,
-          48.1026143
-        ]
-      },
-      "properties": {
-        "id": 6441644943,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Kaskadenbrunnen (Alexander v. Branca)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.628553,
-          48.1863263
-        ]
-      },
-      "properties": {
-        "id": 6466666521,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5623564,
-          48.1370287
-        ]
-      },
-      "properties": {
-        "id": 6524200078,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5514801,
-          48.1501564
-        ]
-      },
-      "properties": {
-        "id": 6533832809,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "nozzle"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5424615,
-          48.1320566
-        ]
-      },
-      "properties": {
-        "id": 6590366833,
-        "tags": {
-          "amenity": "fountain",
-          "image": "https://commons.wikimedia.org/wiki/File:Weibliche_Herme_mit_Brunnenbecken,_von_Heinrich_D%C3%BCll_u._Georg_Pezold,_Bavariapark_Muenchen-1.jpg",
-          "wikimedia_commons": "Category:Weibliche Herme mit Brunnenbecken (Heinrich Düll und Georg Pezold)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5648041,
-          48.1844068
-        ]
-      },
-      "properties": {
-        "id": 6637457085,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5864689,
-          48.171282
-        ]
-      },
-      "properties": {
-        "id": 6676047861,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6066486,
-          48.2014567
-        ]
-      },
-      "properties": {
-        "id": 6677633245,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5117482,
-          48.2009388
-        ]
-      },
-      "properties": {
-        "id": 6697034958,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5978873,
-          48.1603623
-        ]
-      },
-      "properties": {
-        "id": 6772343559,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Seehaus Paulaner, Englischer Garten, Munich - DSC07155.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5776222,
-          48.1776471
-        ]
-      },
-      "properties": {
-        "id": 6794710248,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5682836,
-          48.1487914
-        ]
-      },
-      "properties": {
-        "id": 6984907955,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5567395,
-          48.1638811
-        ]
-      },
-      "properties": {
-        "id": 7092920383,
-        "tags": {
-          "amenity": "fountain",
-          "fountain": "fontaine_publique_du_village",
-          "lit": "no",
-          "name": "Springbrunnen mit Sitzgelegenheit",
-          "operator": "Stadt München"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5900088,
-          48.143006
-        ]
-      },
-      "properties": {
-        "id": 7229856935,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Narzissbrunnen (Bayerisches Nationalmuseum)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5932678,
-          48.1433507
-        ]
-      },
-      "properties": {
-        "id": 7229912222,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5930854,
-          48.1466827
-        ]
-      },
-      "properties": {
-        "id": 7230540849,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6379358,
-          48.1085209
-        ]
-      },
-      "properties": {
-        "id": 7533386100,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6019516,
-          48.1502899
-        ]
-      },
-      "properties": {
-        "id": 7688121863,
-        "tags": {
-          "amenity": "fountain",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "name": "Dianabrunnen",
-          "ref:BLfD": "D-1-62-000-3648",
-          "wikidata": "Q97012760",
-          "wikimedia_commons": "Category:Dianabrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6272626,
-          48.1879058
-        ]
-      },
-      "properties": {
-        "id": 7746437237,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5859263,
-          48.1522655
-        ]
-      },
-      "properties": {
-        "id": 7786961187,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Schlangenbrunnen",
-          "wikimedia_commons": "Category:Schlangen-Brunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5623315,
-          48.2201011
-        ]
-      },
-      "properties": {
-        "id": 7852655883,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Hasenbrunnen",
-          "wikidata": "Q98703250",
-          "wikimedia_commons": "Category:Hasenbrunnen (Hasenbergl)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6564757,
-          48.0954435
-        ]
-      },
-      "properties": {
-        "id": 7920485088,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4615693,
-          48.1508714
-        ]
-      },
-      "properties": {
-        "id": 7991953318,
-        "tags": {
-          "amenity": "fountain",
-          "note": "Kinderwasserspielplatz, Pumpe und Wasserlabyrinth mit Klappen zum spielen",
-          "playground": "splash_pad"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5242301,
-          48.1498317
-        ]
-      },
-      "properties": {
-        "id": 8076653445,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.4188419,
-          48.1557299
-        ]
-      },
-      "properties": {
-        "id": 8316932620,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "nozzle",
-          "operator": "Heinz Kiesel & Söhne GmbH"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5266554,
-          48.1248886
-        ]
-      },
-      "properties": {
-        "id": 8721704937,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5543342,
-          48.1471218
-        ]
-      },
-      "properties": {
-        "id": 9060613829,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5050662,
-          48.1220691
-        ]
-      },
-      "properties": {
-        "id": 9176332692,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Joachim Berthold",
-          "drinking_water": "no",
-          "height": "2",
-          "lit": "no",
-          "name": "Fischbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5508207,
-          48.1501213
-        ]
-      },
-      "properties": {
-        "id": 9176332693,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "height": "2",
-          "lit": "no",
-          "name": "Brunnen von Marie Luise Wilckens"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5122777,
-          48.1567684
-        ]
-      },
-      "properties": {
-        "id": 9178153057,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5994118,
-          48.1228135
-        ]
-      },
-      "properties": {
-        "id": 9242875071,
-        "tags": {
-          "amenity": "fountain",
-          "description": "Erdkugel"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6027329,
-          48.132673
-        ]
-      },
-      "properties": {
-        "id": 9343473081,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6035083,
-          48.1345369
-        ]
-      },
-      "properties": {
-        "id": 9459715433,
-        "tags": {
-          "amenity": "fountain",
-          "artwork_subject": "figurative",
-          "artwork_type": "statue",
-          "material": "bronze",
-          "wikimedia_commons": "File:Brunnen Aufgang Haidhauser Friedhof München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5732707,
-          48.1352583
-        ]
-      },
-      "properties": {
-        "id": 9531583513,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Andreas Schwarzkopf, Alfred Regnat",
-          "image": "https://de.wikipedia.org/wiki/Datei:M%C3%BCnchen_-_Stadtmuseum_-_Brunnen_'Schwimmende_Nixen'.jpg",
-          "name": "Schwimmende Nixen",
-          "start_date": "1965",
-          "wikidata": "Q115054511",
-          "wikimedia_commons": "Category:Schwimmende Nixen (fountain)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5926237,
-          48.1254546
-        ]
-      },
-      "properties": {
-        "id": 9637515776,
-        "tags": {
-          "amenity": "fountain",
-          "material": "bronze",
-          "wikimedia_commons": "File:München — Sieboldstraße (Brunnen).jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6130476,
-          48.1277243
-        ]
-      },
-      "properties": {
-        "id": 9643397232,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Mühldorfstr15 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5816257,
-          48.1229049
-        ]
-      },
-      "properties": {
-        "id": 9655605279,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6485065,
-          48.1371586
-        ]
-      },
-      "properties": {
-        "id": 9661263945,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.648308,
-          48.1386395
-        ]
-      },
-      "properties": {
-        "id": 9671750847,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5632031,
-          48.1274966
-        ]
-      },
-      "properties": {
-        "id": 9759376316,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5049455,
-          48.1801232
-        ]
-      },
-      "properties": {
-        "id": 9803218292,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5641254,
-          48.1474334
-        ]
-      },
-      "properties": {
-        "id": 9889719424,
-        "tags": {
-          "amenity": "fountain",
-          "fountain": "decorative",
-          "lit": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5844081,
-          48.1434775
-        ]
-      },
-      "properties": {
-        "id": 9916419144,
-        "tags": {
-          "amenity": "fountain",
-          "artist:wikidata": "Q89660",
-          "artist_name": "Georg Brenninger",
-          "material": "granite",
-          "name": "Zehnflammiger Leuchter",
-          "start_date": "1969",
-          "wikimedia_commons": "Category:Zehnflammiger Leuchter"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.605568,
-          48.1399663
-        ]
-      },
-      "properties": {
-        "id": 9924837379,
-        "tags": {
-          "amenity": "fountain",
-          "artist:wikidata": "Q1449178",
-          "artist_name": "Klaus Backmund",
-          "drinking_water": "no",
-          "name": "Gisela-Brunnen",
-          "start_date": "1978",
-          "wikimedia_commons": "File:Prinzregentenpl - panoramio (1).jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5893144,
-          48.1702384
-        ]
-      },
-      "properties": {
-        "id": 9957856553,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5340821,
-          48.1701976
-        ]
-      },
-      "properties": {
-        "id": 9964799380,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5342166,
-          48.1704429
-        ]
-      },
-      "properties": {
-        "id": 9964799386,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5659678,
-          48.1558498
-        ]
-      },
-      "properties": {
-        "id": 9970250011,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "decorative",
-          "lit": "no",
-          "name": "Franziskusbrunnen",
-          "operator": "Stadt München"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.538114,
-          48.1444012
-        ]
-      },
-      "properties": {
-        "id": 10093226139,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen LilliPalmerStr 2 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5839928,
-          48.1323034
-        ]
-      },
-      "properties": {
-        "id": 10093273026,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Innenhof des Deutschen Patentamtes München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5924403,
-          48.1866924
-        ]
-      },
-      "properties": {
-        "id": 10122425436,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.616777,
-          48.1252226
-        ]
-      },
-      "properties": {
-        "id": 10177788011,
-        "tags": {
-          "amenity": "fountain",
-          "material": "stone"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6038975,
-          48.1296434
-        ]
-      },
-      "properties": {
-        "id": 10223685548,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Belfortstr8 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5785909,
-          48.1432377
-        ]
-      },
-      "properties": {
-        "id": 10223795283,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Nymphenbrunnen (Ludwig von Schwanthaler)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6062396,
-          48.1387692
-        ]
-      },
-      "properties": {
-        "id": 10276504891,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen im Garten des Prinzregententheaters Muenchen-1.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6580581,
-          48.1359563
-        ]
-      },
-      "properties": {
-        "id": 10285231870,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5250223,
-          48.1692815
-        ]
-      },
-      "properties": {
-        "id": 10290068110,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5266082,
-          48.170186
-        ]
-      },
-      "properties": {
-        "id": 10290068111,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6713266,
-          48.12133
-        ]
-      },
-      "properties": {
-        "id": 10311485550,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5800056,
-          48.13304
-        ]
-      },
-      "properties": {
-        "id": 10556769594,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Aventisstr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5691578,
-          48.1357942
-        ]
-      },
-      "properties": {
-        "id": 10557782524,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Springbrunnen Innenhof Asamhof München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5904343,
-          48.1127607
-        ]
-      },
-      "properties": {
-        "id": 10565433319,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Deisenhofenerstr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6659089,
-          48.1348404
-        ]
-      },
-      "properties": {
-        "id": 10571361496,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5764121,
-          48.1416612
-        ]
-      },
-      "properties": {
-        "id": 10573763674,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Konkave und konvexe Form (Hans Rucker)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5693734,
-          48.1363393
-        ]
-      },
-      "properties": {
-        "id": 10575512982,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Radl-Brunnen (Ernst Andreas Rauch)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5730968,
-          48.1370264
-        ]
-      },
-      "properties": {
-        "id": 10577667334,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "wikimedia_commons": "File:Brunnen Löwen Passage München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5789118,
-          48.1369412
-        ]
-      },
-      "properties": {
-        "id": 10579266435,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Lothar Dietz",
-          "description": "Reiher in Bronze mit Wasserspender, Brunnenfigur von Lothar Dietz",
-          "material": "bronze",
-          "start_date": "1963",
-          "wikimedia_commons": "File:Fischreiher am Brunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5728005,
-          48.1349825
-        ]
-      },
-      "properties": {
-        "id": 10591543502,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Wandbrunnen Innenhof Münchner Stadtmuseums.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5780019,
-          48.132169
-        ]
-      },
-      "properties": {
-        "id": 10594950704,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5969871,
-          48.1121213
-        ]
-      },
-      "properties": {
-        "id": 10599741454,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5864591,
-          48.129125
-        ]
-      },
-      "properties": {
-        "id": 10599972490,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:GER — BY – Oberbayern — München — Stadtbezirk Au-Haidhausen — Lilienstraße 51 (Wirtshaus in der Au, “Paulaner-Brunnen”) 2020.JPG"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5768725,
-          48.1424646
-        ]
-      },
-      "properties": {
-        "id": 10615758422,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Briennerstr. 1 Muenchen-2.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5700149,
-          48.1353215
-        ]
-      },
-      "properties": {
-        "id": 10615823158,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5924489,
-          48.1285673
-        ]
-      },
-      "properties": {
-        "id": 10616940012,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5633367,
-          48.1242292
-        ]
-      },
-      "properties": {
-        "id": 10627470265,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Innenhof des Instituts zur Förderung publizistischen Nachwuchses, ifp.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5303029,
-          48.1227644
-        ]
-      },
-      "properties": {
-        "id": 10627470633,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5781191,
-          48.1391017
-        ]
-      },
-      "properties": {
-        "id": 10676334625,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "File:Brunnen Maximilianstr2 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5660213,
-          48.1424998
-        ]
-      },
-      "properties": {
-        "id": 10709443566,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Schalenbrunnen Sophienstraße 6"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5658117,
-          48.1425608
-        ]
-      },
-      "properties": {
-        "id": 10709675999,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Schalenbrunnen Sophienstraße 6"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5804169,
-          48.1376358
-        ]
-      },
-      "properties": {
-        "id": 10738589141,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Platzl 9 Brunnen im Biergarten im Hofbraeuhaus Muenchen-3.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6019949,
-          48.1321521
-        ]
-      },
-      "properties": {
-        "id": 10742006218,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Campus Katholischen Stiftungsfachhochschule München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5812036,
-          48.1367466
-        ]
-      },
-      "properties": {
-        "id": 10780544380,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5325048,
-          48.1536005
-        ]
-      },
-      "properties": {
-        "id": 10792935494,
-        "tags": {
-          "amenity": "fountain",
-          "fountain": "decorative"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5635336,
-          48.1443368
-        ]
-      },
-      "properties": {
-        "id": 10834417930,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5340676,
-          48.1379111
-        ]
-      },
-      "properties": {
-        "id": 10835642307,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "decorative"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5779949,
-          48.1459199
-        ]
-      },
-      "properties": {
-        "id": 10853780703,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5039448,
-          48.1655595
-        ]
-      },
-      "properties": {
-        "id": 10858213610,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5642537,
-          48.1445965
-        ]
-      },
-      "properties": {
-        "id": 10889545672,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "Category:Benediktinerbrunnen Karlstrasse (Munich)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6174349,
-          48.1523889
-        ]
-      },
-      "properties": {
-        "id": 10897669867,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5339951,
-          48.1697066
-        ]
-      },
-      "properties": {
-        "id": 10916828231,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6150316,
-          48.1138996
-        ]
-      },
-      "properties": {
-        "id": 10921760400,
-        "tags": {
-          "amenity": "fountain",
+          "amenity": "drinking_water",
           "drinking_water": "yes",
           "drinking_water:legal": "yes",
-          "fountain": "decorative",
-          "height": "1.5",
-          "name": "Kennedy-Brünnlein",
-          "operator": "Maria Ramersdorf",
-          "wikidata": "Q39475701",
-          "wikimedia_commons": "Category:Kennedy-Brünnlein",
-          "wikipedia": "de:Kennedy-Brünnlein"
+          "fountain": "drinking",
+          "man_made": "water_tap",
+          "operator": "SWM GmbH"
         }
       }
     },
@@ -6297,15 +613,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5709802,
-          48.1389634
+          11.5643922,
+          48.1041904
         ]
       },
       "properties": {
-        "id": 10937944835,
+        "id": 5810943318,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Wandbrunnen Löwengrube München.jpg"
+          "amenity": "drinking_water",
+          "man_made": "water_tap"
         }
       }
     },
@@ -6314,14 +630,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5230127,
-          48.1626757
+          11.5639999,
+          48.1038573
         ]
       },
       "properties": {
-        "id": 10942350261,
+        "id": 5810944291,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "man_made": "water_tap"
         }
       }
     },
@@ -6330,14 +647,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4866353,
-          48.0995827
+          11.5511619,
+          48.0932692
         ]
       },
       "properties": {
-        "id": 10944489242,
+        "id": 6561330347,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "fountain": "drinking"
         }
       }
     },
@@ -6346,382 +664,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.621508,
-          48.1509021
+          11.570766,
+          48.1354432
         ]
       },
       "properties": {
-        "id": 10947528425,
+        "id": 6851817185,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "File:Brunnen Arabellastraße19a München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5395927,
-          48.1309547
-        ]
-      },
-      "properties": {
-        "id": 10948510526,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "File:Esplanade Brunnen München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6212438,
-          48.1331975
-        ]
-      },
-      "properties": {
-        "id": 10959423814,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6368682,
-          48.1170837
-        ]
-      },
-      "properties": {
-        "id": 10961399103,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "Category:Eisernes Paar (Hans Rucker)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6112267,
-          48.1412297
-        ]
-      },
-      "properties": {
-        "id": 10969804081,
-        "tags": {
-          "amenity": "fountain",
-          "drinking_water:legal": "no",
-          "wikimedia_commons": "Category:Kaskadenbrunnen (Mühlbaurstraße, München)"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5773326,
-          48.1415096
-        ]
-      },
-      "properties": {
-        "id": 10976107020,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6152561,
-          48.1162456
-        ]
-      },
-      "properties": {
-        "id": 11002824897,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5772142,
-          48.1440891
-        ]
-      },
-      "properties": {
-        "id": 11011270415,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:2012-07-19 - Landtagsprojekt München - Palais Leuchtenberg - 8427.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6222558,
-          48.1513119
-        ]
-      },
-      "properties": {
-        "id": 11017416924,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Springbrunnen Arabellapark München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6047966,
-          48.1189282
-        ]
-      },
-      "properties": {
-        "id": 11018738134,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5651579,
-          48.1428671
-        ]
-      },
-      "properties": {
-        "id": 11018740200,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5638373,
-          48.1448077
-        ]
-      },
-      "properties": {
-        "id": 11018789911,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5637603,
-          48.1469723
-        ]
-      },
-      "properties": {
-        "id": 11018850018,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6300637,
-          48.1223862
-        ]
-      },
-      "properties": {
-        "id": 11020680705,
-        "tags": {
-          "amenity": "fountain"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6320414,
-          48.1507961
-        ]
-      },
-      "properties": {
-        "id": 11020852222,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Höselstr München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5899198,
-          48.1425904
-        ]
-      },
-      "properties": {
-        "id": 11020882402,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Pinienzapfenbrunnen"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5840014,
-          48.1770614
-        ]
-      },
-      "properties": {
-        "id": 11040119386,
-        "tags": {
-          "amenity": "fountain",
-          "artist_name": "Roman Signer",
-          "artwork_type": "installation",
-          "name": "Zwei Paar Stiefel (Stiefelbrunnen)",
-          "tourism": "artwork"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6203709,
-          48.1497677
-        ]
-      },
-      "properties": {
-        "id": 11040162264,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Arabellastraße 30 München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.6192292,
-          48.1526418
-        ]
-      },
-      "properties": {
-        "id": 11046094959,
-        "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "File:Brunnen Staatsministerium für Umwelt Gesundheit und Verbraucherschutz München.jpg"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5269064,
-          48.1226561
-        ]
-      },
-      "properties": {
-        "id": 11061758901,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Felsquelle"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5464786,
-          48.1161106
-        ]
-      },
-      "properties": {
-        "id": 11066361862,
-        "tags": {
-          "amenity": "fountain",
-          "name": "Genovevabrunnen",
-          "wikidata": "Q41182251"
-        }
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          11.5652263,
-          48.1412846
-        ]
-      },
-      "properties": {
-        "id": 11066791580,
-        "tags": {
-          "amenity": "fountain",
-          "artist:wikidata": "Q876924",
-          "artist_name": "Joseph Wackerle",
-          "heritage": "4",
-          "heritage:operator": "BLfD",
-          "heritage:ref": "D-1-62-000-219",
+          "access": "yes",
+          "amenity": "drinking_water",
+          "bottle": "yes",
+          "covered": "no",
+          "description": "Holzabdeckung im Winter",
+          "fee": "no",
+          "indoor": "no",
           "lit": "yes",
-          "name": "Neptunbrunnen",
-          "start_date": "1937",
-          "wikidata": "Q879386",
-          "wikimedia_commons": "Category:Neptunbrunnen (München)",
-          "wikipedia": "de:Neptunbrunnen (München)"
+          "seasonal": "spring;summer;autumn",
+          "wheelchair": "yes"
         }
       }
     },
@@ -6730,18 +689,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.6821029,
-          48.1404071
+          11.501417,
+          48.1637842
         ]
       },
       "properties": {
-        "id": 11067095994,
+        "id": 6853181756,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "stone_block",
-          "lit": "no",
-          "operator": "Hotel Prinzregent"
+          "access": "customers",
+          "amenity": "drinking_water"
         }
       }
     },
@@ -6750,15 +706,16 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4916736,
-          48.1198197
+          11.6031565,
+          48.128495
         ]
       },
       "properties": {
-        "id": 11088879067,
+        "id": 8737119765,
         "tags": {
-          "amenity": "fountain",
-          "fountain": "decorative"
+          "amenity": "drinking_water",
+          "man_made": "water_tap",
+          "wikimedia_commons": "File:Frischwasserbrunnen 2022 Orleanplatz München.jpg"
         }
       }
     },
@@ -6767,14 +724,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.4939571,
-          48.1187516
+          11.5734468,
+          48.1342276
         ]
       },
       "properties": {
-        "id": 11089397893,
+        "id": 8923546405,
         "tags": {
-          "amenity": "fountain"
+          "access": "yes",
+          "amenity": "drinking_water",
+          "bottle": "yes",
+          "fee": "no"
         }
       }
     },
@@ -6783,14 +743,14 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5608832,
-          48.1225578
+          11.5542268,
+          48.178497
         ]
       },
       "properties": {
-        "id": 11115708584,
+        "id": 9833118562,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water"
         }
       }
     },
@@ -6799,18 +759,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5336467,
-          48.0984115
+          11.5023501,
+          48.1677264
         ]
       },
       "properties": {
-        "id": 11186253831,
+        "id": 9987143556,
         "tags": {
-          "amenity": "fountain",
-          "drinking_water": "no",
-          "fountain": "decorative",
-          "height": "3",
-          "lit": "no"
+          "access": "customers",
+          "amenity": "drinking_water",
+          "fountain": "bubbler",
+          "location": "outdoor"
         }
       }
     },
@@ -6819,14 +778,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.6048625,
-          48.1479447
+          11.5018225,
+          48.1678254
         ]
       },
       "properties": {
-        "id": 11237677627,
+        "id": 9988702748,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "man_made": "water_tap"
         }
       }
     },
@@ -6835,14 +795,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5995557,
-          48.0973516
+          11.5818469,
+          48.1775846
         ]
       },
       "properties": {
-        "id": 11345163938,
+        "id": 11040114910,
         "tags": {
-          "amenity": "fountain"
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
         }
       }
     },
@@ -6851,15 +812,83 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          11.5622783,
-          48.139913
+          11.5819798,
+          48.1775864
         ]
       },
       "properties": {
-        "id": 11364320351,
+        "id": 11040114911,
         "tags": {
-          "amenity": "fountain",
-          "wikimedia_commons": "Category:Myrthenbrunnen (Hubert Elsässer)"
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5819188,
+          48.1775408
+        ]
+      },
+      "properties": {
+        "id": 11040114912,
+        "tags": {
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5819201,
+          48.1774946
+        ]
+      },
+      "properties": {
+        "id": 11040114913,
+        "tags": {
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5818526,
+          48.1774911
+        ]
+      },
+      "properties": {
+        "id": 11040114914,
+        "tags": {
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5818517,
+          48.1775384
+        ]
+      },
+      "properties": {
+        "id": 11040114915,
+        "tags": {
+          "amenity": "drinking_water",
+          "fountain": "bubbler"
         }
       }
     }

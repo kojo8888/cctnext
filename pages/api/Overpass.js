@@ -5,7 +5,7 @@ const fs = require("fs");
 const overpassQuery = `
   [out:json];
   area["name"="München"]->.searchArea;
-  node["amenity"="fountain"](area.searchArea);
+  node["amenity"="drinking_water"](area.searchArea);
   out body;
 `;
 
