@@ -8,8 +8,15 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { useMapEvent } from "react-leaflet/hooks";
-// import L from "leaflet";
+import L from "leaflet";
 import Kreis from "../lib/Kreis.json";
+
+let DefaultIcon = L.icon({
+  iconUrl: "../marker-icon.png",
+  shadowUrl: "../marker-icon.png",
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const DynamicMap = () => {
   const [circleCenter, setCircleCenter] = useState(null);
