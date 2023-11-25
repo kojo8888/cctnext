@@ -4,18 +4,19 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
 // import OverPassLayer from "leaflet-overpass-layer";
-// import icon from "../node_modules/leaflet/dist/images/marker-icon.png";
-// import iconShadow from "leaflet/dist/images/marker-shadow.png";
+// import { fetchData } from './Overpass';
 import munich_fountains from "../lib/munich_fountains.json";
+
+// fetchData();
 
 const MapOverpassDynamic = () => {
   const mapRef = useRef();
 
   const location = useGeoLocation();
   const markerIcon = L.icon({
-    iconUrl: "../marker-icon.png",
+    iconUrl: "../platzhalter.png",
     iconSize: [64, 64], // Adjust the size of the icon
-    iconAnchor: [16, 32], // Adjust the anchor point of the icon
+    iconAnchor: [32, 64], // Adjust the anchor point of the icon
     popupAnchor: [0, -32], // Adjust the popup anchor point
   });
   const showMyLocation = () => {
@@ -33,7 +34,7 @@ const MapOverpassDynamic = () => {
   const pointToLayer = (feature, latlng) => {
     // Customize the marker icon here
     const markerIcon = L.icon({
-      iconUrl: "../marker-icon.png",
+      iconUrl: "../trinkflasche.png",
       iconSize: [32, 32], // Adjust the size of the icon
       iconAnchor: [16, 32], // Adjust the anchor point of the icon
       popupAnchor: [0, -32], // Adjust the popup anchor point
@@ -55,11 +56,11 @@ const MapOverpassDynamic = () => {
       <MapContainer
         center={[48.13, 11.57]}
         zoom={10}
-        style={{ width: "100%", height: "500px" }}
+        style={{ width: "100%", height: "1000px" }}
         ref={mapRef}
       >
         <TileLayer
-          url="https://{s}.tile-cyclosm.openstreetmap.fr/cyclosm/{z}/{x}/{y}.png"
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         {location.loaded && !location.error && (
