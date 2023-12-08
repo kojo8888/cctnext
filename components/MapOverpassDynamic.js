@@ -1,11 +1,18 @@
 import React, { useState, useRef } from "react";
-import { MapContainer, TileLayer, GeoJSON, Marker } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  GeoJSON,
+  Marker,
+  LayersControl,
+} from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
 // import OverPassLayer from "leaflet-overpass-layer";
 // import { fetchData } from './Overpass';
 import munich_fountains from "../lib/munich_fountains.json";
+import repair_station from "../Repair_station.json";
 
 // fetchData();
 
@@ -51,6 +58,12 @@ const MapOverpassDynamic = () => {
     return <></>;
   }
 
+  //circle für test
+  const center = [51.505, -0.09];
+  const rectangle = [
+    [51.49, -0.08],
+    [51.5, -0.06],
+  ];
   return (
     <div>
       <MapContainer
@@ -69,8 +82,15 @@ const MapOverpassDynamic = () => {
             position={[location.coordinates.lat, location.coordinates.lng]}
           ></Marker>
         )}
-
-        <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} />
+        {/* <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} /> */}
+        <LayersControl position="topright">
+          <LayersControl.Overlay name="Trinkwasser">
+            <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} />
+          </LayersControl.Overlay>
+          <LayersControl.Overlay checked name="Reparaturstation">
+            <GeoJSON data={repair_station} pointToLayer={pointToLayer} />
+          </LayersControl.Overlay>
+        </LayersControl>
         <MapContent />
       </MapContainer>
     </div>

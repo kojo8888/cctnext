@@ -5,7 +5,7 @@ const fs = require("fs");
 const overpassQuery = `
   [out:json];
   area["name"="Bayern"]->.searchArea;
-  node["amenity"="bicycle_repair_station"](area.searchArea);
+  node["amenity"="drinking_water"](area.searchArea);
   out body;
 `;
 
@@ -43,7 +43,7 @@ async function fetchData() {
 
     // Save the GeoJSON data to a file (you can modify the filename as needed)
     fs.writeFileSync(
-      "Repair_station.json",
+      "munich_fountains.json",
       JSON.stringify(geojsonData, null, 2)
     );
 

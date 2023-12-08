@@ -3341,6 +3341,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          10.1281704,
+          48.1216152
+        ]
+      },
+      "properties": {
+        "id": 919721505,
+        "tags": {
+          "access": "marktplatz_mit_trinkwasserbrunnen",
+          "amenity": "drinking_water"
+        }
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           11.4309394,
           47.6734357
         ]
