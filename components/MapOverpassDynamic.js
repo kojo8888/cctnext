@@ -9,11 +9,10 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
-// import OverPassLayer from "leaflet-overpass-layer";
-// import { fetchData } from './Overpass';
 import munich_fountains from "../lib/munich_fountains.json";
 import repair_station from "../Repair_station.json";
-
+// import OverPassLayer from "leaflet-overpass-layer";
+// import { fetchData } from './Overpass';
 // fetchData();
 
 const MapOverpassDynamic = () => {
@@ -50,6 +49,7 @@ const MapOverpassDynamic = () => {
     // Create a marker with the custom icon
     return L.marker(latlng, { icon: markerIcon });
   };
+
   const setColor = ({ properties }) => {
     return { weight: 1 };
   };
@@ -58,12 +58,6 @@ const MapOverpassDynamic = () => {
     return <></>;
   }
 
-  //circle für test
-  const center = [51.505, -0.09];
-  const rectangle = [
-    [51.49, -0.08],
-    [51.5, -0.06],
-  ];
   return (
     <div>
       <MapContainer

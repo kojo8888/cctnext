@@ -1,6 +1,6 @@
 import HeaderComponent from "../components/header";
 import FooterComponent from "../components/footer";
-import { Plus, Clock, Heart, MapPin, Users } from "react-feather";
+import { Plus, Clock, Heart, MapPin, Users, Map } from "react-feather";
 import Head from "next/head";
 
 export default function gpsind({ products }) {
@@ -26,8 +26,8 @@ export default function gpsind({ products }) {
       {/* <HeaderComponent></HeaderComponent> */}
 
       <div className="font-mono mt-3 mx-auto text-center max-w-3xl px-10"></div>
-      <p>
-        <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
+      <p className="flex justify-center mt-6">
+        <Map color="black" />
       </p>
       <p className="mt-12 text-3xl font-extrabold text-gray-900 tracking-tight">
         Keine Lust auf stundenlange Routenplanung?

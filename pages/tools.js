@@ -1,6 +1,5 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
+import { Tool } from "react-feather";
 
 export default function tools({ products }) {
   return (
@@ -22,7 +21,19 @@ export default function tools({ products }) {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
+      <div mb-9>
+        <p className="flex justify-center mt-6">
+          <Tool color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Tools für Nerds!
+        </p>
+
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Hier findest du alles: Ritzelrechner, Karte mit Trinkwasserbrunnen und
+          Packlisten.
+        </p>
+      </div>
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <span className="text-gray-500">
@@ -114,7 +125,7 @@ export default function tools({ products }) {
           <span className="mt-9 text-gray-500">
             <a
               href="mapTrinkwasserspender"
-              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
             >
               Trinkwasserspender
             </a>
@@ -173,7 +184,6 @@ export default function tools({ products }) {
           Schreib uns
         </a>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

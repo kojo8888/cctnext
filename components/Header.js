@@ -7,7 +7,7 @@ function HeaderComponent() {
 
       <Link href="gps">GPS Tracks</Link>
 
-      <Link href="tips">Tips & Packing</Link>
+      <Link href="tips">Tips & Tricks</Link>
 
       <Link href="tools">Tools</Link>
     </div>
