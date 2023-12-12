@@ -10,7 +10,7 @@ import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
 import munich_fountains from "../lib/munich_fountains.json";
-import repair_station from "../Repair_station.json";
+import repair_station from "../lib/repair_station.json";
 // import OverPassLayer from "leaflet-overpass-layer";
 // import { fetchData } from './Overpass';
 // fetchData();

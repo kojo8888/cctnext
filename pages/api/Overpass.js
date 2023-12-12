@@ -4,7 +4,7 @@ const fs = require("fs");
 // Define the Overpass query to fetch fountains in Munich
 const overpassQuery = `
   [out:json];
-  area["name"="Bayern"]->.searchArea;
+  area["name"="Deutschland"]->.searchArea;
   node["amenity"="bicycle_repair_station"](area.searchArea);
   out body;
 `;
