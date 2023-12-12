@@ -97,6 +97,10 @@ function generateSiteMap(posts) {
     <url>
         <loc>${URL}/Ritzelrechner</loc>
     </url>
+    <url>
+        <loc>${URL}/mapTrinkwasserspender</loc>
+    </url>
+    
      ${posts
        .map(({ id }) => {
          return `
