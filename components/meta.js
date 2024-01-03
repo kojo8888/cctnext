@@ -7,19 +7,22 @@ export default function Meta() {
       <link
         rel="apple-touch-icon"
         sizes="180x180"
-        href="/favicons/apple-touch-icon.png"
+        // href="/favicons/apple-touch-icon.png"
+        href="../Jersey_rainbow.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="32x32"
-        href="/favicons/favicon-32x32.png"
+        // href="/favicons/favicon-32x32.png"
+        href="../Jersey_rainbow.png"
       />
       <link
         rel="icon"
         type="image/png"
         sizes="16x16"
-        href="/favicons/favicon-16x16.png"
+        // href="/favicons/favicon-16x16.png"
+        href="../Jersey_rainbow.png"
       />
       <link rel="manifest" href="/favicons/site.webmanifest" />
       <link
