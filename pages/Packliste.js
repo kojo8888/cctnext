@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
-import { Plus } from "react-feather";
 import Head from "next/head";
 
 export default function ExampleCheckbox() {
@@ -102,8 +99,6 @@ export default function ExampleCheckbox() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
-
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
@@ -163,8 +158,6 @@ export default function ExampleCheckbox() {
           Schreib uns
         </a>
       </div>
-
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

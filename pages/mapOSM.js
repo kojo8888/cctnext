@@ -28,7 +28,6 @@ export default class Main extends Component {
           <meta name="description" content="Location-based Stories" />
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        {/* <HeaderComponent></HeaderComponent> */}
         {/* <main className={styles.main}> */}
         <main>
           <Form></Form>
@@ -41,7 +40,6 @@ export default class Main extends Component {
             lat="42.834872"
           />
         </main>
-        {/* <FooterComponent></FooterComponent> */}
       </div>
     );
   }

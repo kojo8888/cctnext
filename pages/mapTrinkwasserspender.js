@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
 import MapOverpass from "../components/MapOverpass";

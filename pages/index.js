@@ -1,7 +1,4 @@
 import Head from "next/head";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { Clock, Archive, Tool, Map } from "react-feather";
 
@@ -28,7 +25,6 @@ export default function Home({ props }) {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <p>
         <img src="Logo.png" className="rounded-lg w-32 mb-4 mx-auto" />
       </p>
@@ -112,7 +108,6 @@ export default function Home({ props }) {
           Frequent updates
         </a>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

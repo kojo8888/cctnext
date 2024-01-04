@@ -4,8 +4,6 @@ import Intro from "../components/intro";
 import Layout from "../components/layout";
 import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 
 export default function tips({ allPosts }) {
   const morePosts = allPosts.slice(0);
@@ -15,13 +13,10 @@ export default function tips({ allPosts }) {
         <Head>
           <title>Tips&Tricks</title>
         </Head>
-        {/* <HeaderComponent></HeaderComponent> */}
         <Container>
           <Intro />
-
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
-        {/* <FooterComponent></FooterComponent> */}
       </Layout>
     </>
   );

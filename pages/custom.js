@@ -1,5 +1,3 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { CreditCard, Database, Download, Clipboard } from "react-feather";
@@ -24,7 +22,6 @@ export default function custom({ products }) {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>{" "}
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mb-10 p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col text-left">
         <p className="flex">
           <Clipboard />
@@ -110,7 +107,6 @@ export default function custom({ products }) {
           Schreib uns
         </a>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

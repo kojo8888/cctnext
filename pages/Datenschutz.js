@@ -1,9 +1,5 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
-import Link from "next/link";
 import { useRouter } from "next/router";
-// import LocaleSwitcher from "../components/locale-switcher";
 
 export default function Datenschutz({ products }) {
   const router = useRouter();
@@ -21,7 +17,6 @@ export default function Datenschutz({ products }) {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="text-justify font-mono">
         <p>
           Der Schutz deiner persönlichen Daten liegt uns am Herzen. Gemäß der
@@ -320,8 +315,6 @@ export default function Datenschutz({ products }) {
           Mitteilung per E-Mail.
         </p>
       </div>
-
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

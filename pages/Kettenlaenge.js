@@ -1,5 +1,3 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
 
 export default function Kettenlaenge() {
@@ -80,7 +78,6 @@ export default function Kettenlaenge() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">Kettenlänge</div>
         <form className="flex flex-col" onSubmit={submitContact}>
@@ -157,7 +154,6 @@ export default function Kettenlaenge() {
           </div>
         </div>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

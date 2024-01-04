@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Plus } from "react-feather";
 import Head from "next/head";
 
 export default function ExampleCheckbox() {

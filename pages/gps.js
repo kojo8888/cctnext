@@ -1,6 +1,4 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
-import { Plus, Clock, Heart, MapPin, Users, Map } from "react-feather";
+import { Clock, Heart, MapPin, Users, Map } from "react-feather";
 import Head from "next/head";
 
 export default function gpsind({ products }) {
@@ -23,8 +21,6 @@ export default function gpsind({ products }) {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
-
       <div className="font-mono mt-3 mx-auto text-center max-w-3xl px-10"></div>
       <p className="flex justify-center mt-6">
         <Map color="black" />
@@ -110,8 +106,6 @@ export default function gpsind({ products }) {
           Schreib uns
         </a>
       </div>
-
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

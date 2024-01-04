@@ -133,7 +133,6 @@ const HomePage = () => {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="font-mono mt-10 text-center">
         <div className="mb-3 text-xl font-bold">Ritzelrechner</div>
         <form onSubmit={handleSubmit}>
@@ -302,7 +301,6 @@ const HomePage = () => {
           </p>
         </div>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 };

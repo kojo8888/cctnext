@@ -1,5 +1,3 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
 
 export default function Wattrechner() {
@@ -49,7 +47,6 @@ export default function Wattrechner() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-2 text-xl font-bold">Geschwindigkeit, Distanz</div>
         <form className="flex flex-col" onSubmit={submitContact}>
@@ -88,7 +85,6 @@ export default function Wattrechner() {
           </button>
         </form>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }

@@ -1,5 +1,3 @@
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import Head from "next/head";
 
 export default function Trittfrequenz() {
@@ -53,7 +51,6 @@ export default function Trittfrequenz() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      {/* <HeaderComponent></HeaderComponent> */}
       <div className="px-6 py-3">
         <div className="mb-3 text-xl font-bold">
           Trittfrequenz und Entfaltung
@@ -135,7 +132,6 @@ export default function Trittfrequenz() {
           </div>
         </div>
       </div>
-      {/* <FooterComponent></FooterComponent> */}
     </div>
   );
 }
