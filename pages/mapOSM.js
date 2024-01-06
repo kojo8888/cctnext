@@ -1,6 +1,4 @@
 import Head from "next/head";
-import HeaderComponent from "../components/header";
-import FooterComponent from "../components/footer";
 import { Component } from "react";
 import styles from "../styles/Home.module.css";
 import MapOSML from "../components/MapOSML";

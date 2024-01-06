@@ -9,33 +9,11 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
-import munich_fountains from "../lib/munich_fountains.json";
-import repair_station from "../lib/repair_station.json";
-// import OverPassLayer from "leaflet-overpass-layer";
-// import { fetchData } from './Overpass';
-// fetchData();
+import Viereck from "../lib/Viereck.json";
+import nodes from "../lib/nodes.json";
 
 const MapOverpassDynamic = () => {
   const mapRef = useRef();
-
-  const location = useGeoLocation();
-  const markerIcon = L.icon({
-    iconUrl: "../platzhalter.png",
-    iconSize: [64, 64], // Adjust the size of the icon
-    iconAnchor: [32, 64], // Adjust the anchor point of the icon
-    popupAnchor: [0, -32], // Adjust the popup anchor point
-  });
-  const showMyLocation = () => {
-    if (location.loaded && !location.error) {
-      mapRef.current.leafletElement.flyTo(
-        [location.coordinates.lat, location.coordinates.lng],
-        ZOOM_LEVEL,
-        { animate: true }
-      );
-    } else {
-      alert(location.error.message);
-    }
-  };
 
   const pointToLayer = (feature, latlng) => {
     // Customize the marker icon here
@@ -76,15 +54,9 @@ const MapOverpassDynamic = () => {
             position={[location.coordinates.lat, location.coordinates.lng]}
           ></Marker>
         )}
-        {/* <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} /> */}
-        <LayersControl position="topright">
-          <LayersControl.Overlay name="Trinkwasser">
-            <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} />
-          </LayersControl.Overlay>
-          <LayersControl.Overlay checked name="Reparaturstation">
-            <GeoJSON data={repair_station} pointToLayer={pointToLayer} />
-          </LayersControl.Overlay>
-        </LayersControl>
+        <GeoJSON data={nodes} pointToLayer={pointToLayer} />
+        <GeoJSON data={Viereck} pointToLayer={pointToLayer} />
+
         <MapContent />
       </MapContainer>
     </div>

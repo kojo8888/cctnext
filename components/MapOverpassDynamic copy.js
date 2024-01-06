@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import {
   MapContainer,
   TileLayer,
@@ -9,9 +9,16 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 import useGeoLocation from "../components/useGeoLocation";
-import axios from "axios";
+import schlauchautomat from "../lib/schlauchautomat.json";
+import repair_station from "../lib/repair_station.json";
+// import OverPassLayer from "leaflet-overpass-layer";
+// import { fetchData } from './Overpass';
+// fetchData();
 
 const MapOverpassDynamic = () => {
+  const mapRef = useRef();
+
+  const location = useGeoLocation();
   const markerIcon = L.icon({
     iconUrl: "../platzhalter.png",
     iconSize: [64, 64], // Adjust the size of the icon
@@ -51,52 +58,6 @@ const MapOverpassDynamic = () => {
     return <></>;
   }
 
-  const [repairStations, setRepairStations] = useState(null);
-  const mapRef = useRef();
-  const location = useGeoLocation();
-
-  const overpassApiUrl = "https://overpass-api.de/api/interpreter";
-  const overpassQuery = `
-    [out:json];
-    area["name"="Deutschland"]->.searchArea;
-    node["amenity"="drinking_water"](area.searchArea);
-    out body;
-  `;
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.post(overpassApiUrl, overpassQuery);
-        const geojsonData = formatToGeoJSON(response.data);
-        setRepairStations(geojsonData);
-      } catch (error) {
-        console.error("Error fetching data from Overpass API:", error.message);
-      }
-    };
-
-    fetchData();
-  }, []); // Empty dependency array ensures this runs once on mount
-
-  // Function to format Overpass API response to GeoJSON
-  function formatToGeoJSON(overpassResponse) {
-    const geojsonFeatures = overpassResponse.elements.map((element) => ({
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [element.lon, element.lat],
-      },
-      properties: {
-        id: element.id,
-        tags: element.tags,
-      },
-    }));
-
-    return {
-      type: "FeatureCollection",
-      features: geojsonFeatures,
-    };
-  }
-
   return (
     <div>
       <MapContainer
@@ -117,14 +78,12 @@ const MapOverpassDynamic = () => {
         )}
         {/* <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} /> */}
         <LayersControl position="topright">
-          {/* <LayersControl.Overlay name="Schlauchautomat">
+          <LayersControl.Overlay name="Schlauchautomat">
             <GeoJSON data={schlauchautomat} pointToLayer={pointToLayer} />
-          </LayersControl.Overlay> */}
-          {repairStations && (
-            <LayersControl.Overlay checked name="Reparaturstation">
-              <GeoJSON data={repairStations} pointToLayer={pointToLayer} />
-            </LayersControl.Overlay>
-          )}
+          </LayersControl.Overlay>
+          <LayersControl.Overlay checked name="Reparaturstation">
+            <GeoJSON data={repair_station} pointToLayer={pointToLayer} />
+          </LayersControl.Overlay>
         </LayersControl>
         <MapContent />
       </MapContainer>
