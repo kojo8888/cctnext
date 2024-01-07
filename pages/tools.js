@@ -116,18 +116,10 @@ export default function tools({ products }) {
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <span className="text-gray-500">
             <a
-              href="mapOSM"
-              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
-            >
-              OSM
-            </a>
-          </span>
-          <span className="mt-9 text-gray-500">
-            <a
               href="mapTrinkwasserspender"
               className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
             >
-              Trinkwasserspender
+              Fahrradkarte
             </a>
           </span>
           <span className="mt-9 text-gray-500">
@@ -144,6 +136,14 @@ export default function tools({ products }) {
               className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
             >
               Individuelle Touren
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="mapOSM"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              OSM
             </a>
           </span>
         </div>
