@@ -52,25 +52,57 @@ const MapOverpassDynamic = () => {
   }
 
   const [repairStations, setRepairStations] = useState(null);
+  const [brunnenStations, setBrunnenStations] = useState(null);
+  const [schlauchStations, setSchlauchStations] = useState(null);
   const mapRef = useRef();
   const location = useGeoLocation();
 
   const overpassApiUrl = "https://overpass-api.de/api/interpreter";
+
   const overpassQuery = `
+    [out:json];
+    area["name"="Deutschland"]->.searchArea;
+    node["amenity"="bicycle_repair_station"](area.searchArea);
+    out body;
+  `;
+
+  const overpassbrunnenQuery = `
     [out:json];
     area["name"="Deutschland"]->.searchArea;
     node["amenity"="drinking_water"](area.searchArea);
     out body;
   `;
+  const overpassschlauchQuery = `
+    [out:json];
+    area["name"="Deutschland"]->.searchArea;
+    node["amenity"="vending_machine"](area.searchArea);
+    node["vending"="bicycle_tube"](area.searchArea);
+    out body;
+  `;
+  const fetchData = async (query, setData) => {
+    try {
+      const response = await axios.post(overpassApiUrl, query);
+      const geojsonData = formatToGeoJSON(response.data);
+      setData(geojsonData);
+    } catch (error) {
+      console.error("Error fetching data:", error.message);
+    }
+  };
+  useEffect(() => {
+    // Fetch data for each dataset
+    fetchData(overpassQuery, setRepairStations);
+    fetchData(overpassbrunnenQuery, setBrunnenStations);
+    fetchData(overpassschlauchQuery, setSchlauchStations);
+  }, []);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (query, setData) => {
       try {
-        const response = await axios.post(overpassApiUrl, overpassQuery);
+        const response = await axios.post(overpassApiUrl, query);
         const geojsonData = formatToGeoJSON(response.data);
-        setRepairStations(geojsonData);
+        setData(geojsonData);
       } catch (error) {
-        console.error("Error fetching data from Overpass API:", error.message);
+        console.error("Error fetching data:", error.message);
       }
     };
 
@@ -117,12 +149,19 @@ const MapOverpassDynamic = () => {
         )}
         {/* <GeoJSON data={munich_fountains} pointToLayer={pointToLayer} /> */}
         <LayersControl position="topright">
-          {/* <LayersControl.Overlay name="Schlauchautomat">
-            <GeoJSON data={schlauchautomat} pointToLayer={pointToLayer} />
-          </LayersControl.Overlay> */}
           {repairStations && (
             <LayersControl.Overlay checked name="Reparaturstation">
               <GeoJSON data={repairStations} pointToLayer={pointToLayer} />
+            </LayersControl.Overlay>
+          )}
+          {brunnenStations && (
+            <LayersControl.Overlay name="Brunnen">
+              <GeoJSON data={brunnenStations} pointToLayer={pointToLayer} />
+            </LayersControl.Overlay>
+          )}
+          {schlauchStations && (
+            <LayersControl.Overlay name="Schlauchautomat">
+              <GeoJSON data={schlauchStations} pointToLayer={pointToLayer} />
             </LayersControl.Overlay>
           )}
         </LayersControl>
