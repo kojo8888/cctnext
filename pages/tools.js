@@ -26,7 +26,7 @@ export default function tools({ products }) {
           <Tool color="black" />
         </p>
         <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
-          Tools für Nerds!
+          Tools für Nerds!!!
         </p>
 
         <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
