@@ -31,8 +31,8 @@ export default class Main extends Component {
           <Form></Form>
 
           <MapOSML
-            // width="50vw"
-            // height="50vh"
+            width="50vw"
+            height="50vh"
             zoom="1"
             lng="2.800029"
             lat="42.834872"

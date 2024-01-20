@@ -105,7 +105,7 @@ export default function Home({ props }) {
           href="https://forms.aweber.com/form/40/1727432440.htm"
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
         >
-          Frequent updates
+          Email News!
         </a>
       </div>
     </div>

@@ -178,10 +178,10 @@ export default function tools({ products }) {
 
       <div className="p-8">
         <a
-          href="mailto:customcyclingtracks@gmx.net"
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
+          href="https://forms.aweber.com/form/40/1727432440.htm"
+          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
         >
-          Schreib uns
+          Email News!
         </a>
       </div>
     </div>

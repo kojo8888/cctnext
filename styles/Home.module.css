@@ -14,9 +14,17 @@
 }
 
 .mapContainer {
-  width: 100vw;
-  height: 65vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
+}
+
+.map {
+  width: auto;
+  height: auto;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .timeline {
