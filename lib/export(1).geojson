@@ -1,0 +1,64 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-01-10T08:31:58Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/152093783",
+        "access:backward:conditional": "destination @ (weight>7.5)",
+        "class:bicycle": "-1",
+        "cycleway:both": "no",
+        "highway": "residential",
+        "maxspeed": "30",
+        "name": "Lachnerstraße",
+        "smoothness": "intermediate",
+        "surface": "sett"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            11.526912,
+            48.1555687
+          ],
+          [
+            11.5267544,
+            48.1555439
+          ],
+          [
+            11.5263342,
+            48.1554645
+          ],
+          [
+            11.5259744,
+            48.1553758
+          ],
+          [
+            11.525705,
+            48.1552917
+          ],
+          [
+            11.5255985,
+            48.1552585
+          ],
+          [
+            11.5251218,
+            48.1550793
+          ],
+          [
+            11.5248368,
+            48.1549473
+          ],
+          [
+            11.5244427,
+            48.1547142
+          ]
+        ]
+      },
+      "id": "way/152093783"
+    }
+  ]
+}

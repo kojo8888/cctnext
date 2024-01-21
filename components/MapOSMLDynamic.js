@@ -6,10 +6,69 @@ import {
   Circle,
   GeoJSON,
 } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
+// import "leaflet/dist/leaflet.css";
 import { useMapEvent } from "react-leaflet/hooks";
 import L from "leaflet";
 import Kreis from "../lib/Kreis.json";
+import Ways from "../lib/Ways.json";
+import Polygon from "../lib/Polygon.json";
+import * as turf from "@turf/turf";
+
+// Load and parse the GeoJSON files
+// const waysGeoJSON = JSON.parse(fs.readFileSync("Ways.geojson", "utf8"));
+// const polygonGeoJSON = JSON.parse(fs.readFileSync("Polygon.geojson", "utf8"));
+
+// Function to extract coordinates from GeoJSON
+function extractCoordinates(json) {
+  const coordinates = [];
+  json.features.forEach((feature) => {
+    const geomType = feature.geometry.type;
+    const geomCoords = feature.geometry.coordinates;
+
+    switch (geomType) {
+      case "Point":
+        coordinates.push(geomCoords);
+        break;
+      case "LineString":
+      case "MultiPoint":
+        coordinates.push(...geomCoords);
+        break;
+      case "Polygon":
+      case "MultiLineString":
+        geomCoords.forEach((part) => coordinates.push(...part));
+        break;
+      case "MultiPolygon":
+        geomCoords.forEach((polygon) => {
+          polygon.forEach((part) => coordinates.push(...part));
+        });
+        break;
+    }
+  });
+  return coordinates;
+}
+
+// Define your transformation parameters
+const translationDistance = 6;
+const translationDirection = 45;
+const rotationAngle = 45;
+const scalingFactor = 3;
+
+// Apply transformations
+let transformedPolygon = turf.transformScale(Polygon, scalingFactor);
+transformedPolygon = turf.transformRotate(transformedPolygon, rotationAngle);
+transformedPolygon = turf.transformTranslate(
+  transformedPolygon,
+  translationDistance,
+  translationDirection
+);
+
+// Extract coordinates from both GeoJSON files
+const waysCoords = extractCoordinates(Ways);
+const polygonCoords = extractCoordinates(Polygon);
+const transformedpolygonCoords = extractCoordinates(transformedPolygon);
+console.log(waysCoords);
+console.log(polygonCoords);
+console.log(transformedpolygonCoords);
 
 let DefaultIcon = L.icon({
   iconUrl: "../marker-icon.png",
@@ -23,7 +82,7 @@ const DynamicMap = () => {
   const [circleRadius, setCircleRadius] = useState(10000); // Default radius in meters
 
   const setColor = ({ properties }) => {
-    return { weight: 1 };
+    return { color: "green", weight: 1, fillColor: "yellow", fillOpacity: 0.5 };
   };
 
   function MapContent({ map }) {
@@ -41,8 +100,8 @@ const DynamicMap = () => {
   return (
     <div>
       <MapContainer
-        center={[51.505, -0.09]}
-        zoom={10}
+        center={[48.15, 11.57]}
+        zoom={12}
         style={{ width: "100%", height: "500px" }}
       >
         <TileLayer
@@ -50,6 +109,9 @@ const DynamicMap = () => {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
         <GeoJSON data={Kreis} style={setColor} />
+        <GeoJSON data={Polygon} style={setColor} />
+        <GeoJSON data={transformedPolygon} style={setColor} />
+        <GeoJSON data={Ways} style={setColor} />
         <MapContent />
         {circleCenter && <Circle center={circleCenter} radius={circleRadius} />}
       </MapContainer>
