@@ -18,6 +18,58 @@ import * as turf from "@turf/turf";
 // const waysGeoJSON = JSON.parse(fs.readFileSync("Ways.geojson", "utf8"));
 // const polygonGeoJSON = JSON.parse(fs.readFileSync("Polygon.geojson", "utf8"));
 
+let isCloseEnough = false;
+let iterationCount = 0;
+const maxIterations = 100; // Prevent infinite loops
+const closenessThreshold = 0.01; // Threshold for latitude and longitude differences
+
+// Define your transformation parameters
+const translationDistance = 6;
+const translationDirection = 45;
+const rotationAngle = 45;
+const scalingFactor = 3;
+
+while (!isCloseEnough && iterationCount < maxIterations) {
+  // Apply transformations
+  let transformedPolygon = turf.transformScale(Polygon, scalingFactor);
+  transformedPolygon = turf.transformRotate(transformedPolygon, rotationAngle);
+  transformedPolygon = turf.transformTranslate(
+    transformedPolygon,
+    translationDistance,
+    translationDirection
+  );
+
+  // Extract coordinates from both GeoJSON files
+  const waysCoords = extractCoordinates(Ways);
+  const polygonCoords = extractCoordinates(Polygon);
+  const transformedpolygonCoords = extractCoordinates(transformedPolygon);
+  console.log(waysCoords);
+  console.log(polygonCoords);
+  console.log(transformedpolygonCoords);
+
+  // Check if any transformed coordinates are close to Ways coordinates
+  for (let coord of transformedpolygonCoords) {
+    for (let wayCoord of waysCoords) {
+      const latDiff = Math.abs(coord[0] - wayCoord[0]); // Difference in latitude
+      const lonDiff = Math.abs(coord[1] - wayCoord[1]); // Difference in longitude
+
+      if (latDiff < closenessThreshold && lonDiff < closenessThreshold) {
+        isCloseEnough = true;
+        break;
+      }
+    }
+    if (isCloseEnough) {
+      break;
+    }
+  }
+
+  // Update transformation parameters for the next iteration
+  // This could be increasing the translation distance, rotation angle, or scaling factor
+  // ...
+
+  iterationCount++;
+}
+
 // Function to extract coordinates from GeoJSON
 function extractCoordinates(json) {
   const coordinates = [];
@@ -46,29 +98,6 @@ function extractCoordinates(json) {
   });
   return coordinates;
 }
-
-// Define your transformation parameters
-const translationDistance = 6;
-const translationDirection = 45;
-const rotationAngle = 45;
-const scalingFactor = 3;
-
-// Apply transformations
-let transformedPolygon = turf.transformScale(Polygon, scalingFactor);
-transformedPolygon = turf.transformRotate(transformedPolygon, rotationAngle);
-transformedPolygon = turf.transformTranslate(
-  transformedPolygon,
-  translationDistance,
-  translationDirection
-);
-
-// Extract coordinates from both GeoJSON files
-const waysCoords = extractCoordinates(Ways);
-const polygonCoords = extractCoordinates(Polygon);
-const transformedpolygonCoords = extractCoordinates(transformedPolygon);
-console.log(waysCoords);
-console.log(polygonCoords);
-console.log(transformedpolygonCoords);
 
 let DefaultIcon = L.icon({
   iconUrl: "../marker-icon.png",
@@ -110,7 +139,7 @@ const DynamicMap = () => {
         />
         <GeoJSON data={Kreis} style={setColor} />
         <GeoJSON data={Polygon} style={setColor} />
-        <GeoJSON data={transformedPolygon} style={setColor} />
+        {/* <GeoJSON data={transformedPolygon} style={setColor} /> */}
         <GeoJSON data={Ways} style={setColor} />
         <MapContent />
         {circleCenter && <Circle center={circleCenter} radius={circleRadius} />}
