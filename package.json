@@ -21,6 +21,8 @@
     "eslint-config-next": "13.1.1",
     "fs": "^0.0.1-security",
     "globby": "^13.2.2",
+    "gpx-parse": "^0.10.4",
+    "gpx-parser-builder": "^1.1.0",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
     "leaflet-overpass-layer": "^2.9.0",
@@ -39,7 +41,8 @@
     "react-youtube": "^10.1.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "svg2geojson": "^0.7.1"
+    "svg2geojson": "^0.7.1",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
