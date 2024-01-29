@@ -1,0 +1,107 @@
+{
+  "type": "Ritzelrechner",
+  "features": [
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano 105 39 , 53",
+      "id": "5",
+      "Zaehne": [39, 53]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano 105 36 , 52",
+      "id": "6",
+      "Zaehne": [36, 52]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano 105 34 , 50",
+      "id": "7",
+      "Zaehne": [34, 50]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano 105 11 , 12 , 13 , 14 , 15 , 17 , 19 , 21 , 23 , 25 , 28",
+      "id": "1",
+      "Zaehne": [11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano 105 11 , 12 , 13 , 14 , 15 , 17 , 19 , 21 , 24 , 27 , 30",
+      "id": "2",
+      "Zaehne": [11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano 105 11 , 12 , 13 , 14 , 16 , 18 , 20 , 22 , 25 , 28 , 32",
+      "id": "3",
+      "Zaehne": [11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano 105 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 21 , 23 , 25",
+      "id": "4",
+      "Zaehne": [12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Ultegra 39 , 53",
+      "id": "8",
+      "Zaehne": [39, 53]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Ultegra 34 , 50",
+      "id": "9",
+      "Zaehne": [34, 50]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Ultegra 36 , 52",
+      "id": "10",
+      "Zaehne": [36, 52]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Ultegra 36 , 46",
+      "id": "11",
+      "Zaehne": [36, 46]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 11 , 12 , 13 , 14 , 15 , 16 , 17 , 19 , 21 , 23 , 25",
+      "id": "12",
+      "Zaehne": [11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 11 , 12 , 13 , 14 , 15 , 17 , 19 , 21 , 23 , 25 , 28",
+      "id": "13",
+      "Zaehne": [11, 12, 13, 14, 15, 17, 19, 21, 23, 25, 28]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 11 , 12 , 13 , 14 , 15 , 17 , 19 , 21 , 24 , 27 , 30",
+      "id": "14",
+      "Zaehne": [11, 12, 13, 14, 15, 17, 19, 21, 24, 27, 30]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 11 , 12 , 13 , 14 , 16 , 18 , 20 , 22 , 25 , 28 , 32",
+      "id": "15",
+      "Zaehne": [11, 12, 13, 14, 16, 18, 20, 22, 25, 28, 32]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 21 , 23 , 25",
+      "id": "16",
+      "Zaehne": [12, 13, 14, 15, 16, 17, 18, 19, 21, 23, 25]
+    },
+    {
+      "type": "Ritzel",
+      "name": "Shimano Ultegra 14 , 15 , 16 , 17 , 18 , 19 , 20 , 21 , 23 , 25 , 28",
+      "id": "17",
+      "Zaehne": [14, 15, 16, 17, 18, 19, 20, 21, 23, 25, 28]
+    }
+  ]
+}

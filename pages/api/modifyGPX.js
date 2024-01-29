@@ -4,34 +4,36 @@ import gpxParse from "gpx-parse";
 import xml2js from "xml2js";
 
 export default function handler(req, res) {
-  // Path to the GPX file in the public directory
   const filePath = path.resolve("./public/Bester.gpx");
 
-  // Read the file
-  fs.readFile(filePath, "utf8", (err, data) => {
+  fs.readFile(filePath, "utf8", (err, rawXmlData) => {
     if (err) {
       console.error("Error reading file:", err);
       res.status(500).json({ error: "Error reading GPX file" });
       return;
     }
 
-    // Parse the GPX file
-    gpxParse.parseGpx(data, (error, parsedData) => {
+    // Log the raw XML data
+    console.log("Raw XML Data:", rawXmlData);
+
+    gpxParse.parseGpx(rawXmlData, (error, parsedData) => {
       if (error) {
         console.error("Error parsing GPX data:", error);
         res.status(500).json({ error: "Error parsing GPX file" });
         return;
       }
 
-      // Modify the GPX data here
-      // For now, let's just log it
-      console.log(parsedData);
+      // Log the parsed data structure
+      console.log("Parsed GPX Data:", JSON.stringify(parsedData, null, 2));
 
-      // Convert the modified data back to GPX format
-      const builder = new xml2js.Builder();
+      // Customize xml2js builder options if needed
+      const builderOptions = {
+        renderOpts: { pretty: true },
+        headless: true, // Set to false if you want XML declaration (<?xml version="1.0" encoding="UTF-8"?>)
+      };
+      const builder = new xml2js.Builder(builderOptions);
       const xml = builder.buildObject(parsedData);
 
-      // Send the modified GPX data
       res.setHeader("Content-Type", "application/gpx+xml");
       res.send(xml);
     });
