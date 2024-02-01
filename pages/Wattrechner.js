@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { BatteryCharging } from "react-feather";
 
 export default function Wattrechner() {
   const submitContact = async (event) => {
@@ -68,8 +69,19 @@ export default function Wattrechner() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
+      <div mb-9>
+        <p className="flex justify-center mt-6">
+          <BatteryCharging color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Wattrechner!!!
+        </p>
+
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Drücken, Junge!
+        </p>
+      </div>
       <div className="px-6 py-3">
-        <div className="mb-3 text-xl font-bold">Wattrechner</div>
         <form className="flex flex-col" onSubmit={submitContact}>
           <label className="block mb-3" htmlFor="vk">
             Geschwindigkeit (in km/h)

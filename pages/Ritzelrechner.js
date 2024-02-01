@@ -1,3 +1,5 @@
+import Head from "next/head";
+import { Settings } from "react-feather";
 import { useState, useEffect } from "react";
 import jsonData from "../lib/ritzel.json"; // Adjust the path as necessary
 
@@ -8,6 +10,12 @@ export default function Home() {
   const [tableData, setTableData] = useState([]);
   const [ükValues, setÜkValues] = useState([]);
   const [ühValues, setÜhValues] = useState([]);
+  const [DevkValues, setDevkValues] = useState([]);
+  const [DevhValues, setDevhValues] = useState([]);
+  const [VhValues, setVhValues] = useState([]);
+  const [VkValues, setVkValues] = useState([]);
+  const [ShValues, setShValues] = useState([]);
+  const [SkValues, setSkValues] = useState([]);
 
   //Gegeben
   //Tabelle
@@ -26,15 +34,14 @@ export default function Home() {
     setKettenblattArray(kettenblattData);
 
     //Übersetzung
-    const divisork = kettenblattData[0];
-    const Ük = ritzelData.map((element) => element / divisork);
-
     const divisorh = kettenblattData[1];
     const Üh = ritzelData.map((element) => element / divisorh);
-    setÜkValues(Ük);
     setÜhValues(Üh);
-    console.log(Ük);
     console.log(Üh);
+    const divisork = kettenblattData[0];
+    const Ük = ritzelData.map((element) => element / divisork);
+    setÜkValues(Ük);
+    console.log(Ük);
 
     //Umfang in m
     var Umf;
@@ -43,26 +50,32 @@ export default function Home() {
     console.log(Umf);
 
     //Entfaltung,Development
-    const Devk = Ük.map((element) => Umf / element);
-    console.log(Devk);
     const Devh = Üh.map((element) => Umf / element);
     console.log(Devh);
+    setDevhValues(Devh);
+    const Devk = Ük.map((element) => Umf / element);
+    console.log(Devk);
+    setDevkValues(Devk);
 
     //Geschwindigkeit in km/h
     const vh = Devh.map((element) => (element * Cad * 60) / 1000);
     // vh = (Devh * parseInt(Cad) * 60) / 1000;
     // vh = Number.parseFloat(vh).toFixed(2);
     console.log(vh);
+    setVhValues(vh);
     const vk = Devk.map((element) => (element * Cad * 60) / 1000);
     // vk = (Devk * parseInt(Cad) * 60) / 1000;
     // vk = Number.parseFloat(vk).toFixed(2);
     console.log(vk);
+    setVkValues(vk);
 
     //Entfaltung bei Cad in m
     const sh = Üh.map((element) => Cad * Umf * element);
     console.log(sh);
+    setShValues(sh);
     const sk = Ük.map((element) => Cad * Umf * element);
     console.log(sk);
+    setSkValues(sk);
 
     // //Bandbreite
     // var Bb;
@@ -74,7 +87,36 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
+      <Head>
+        <title>Tools</title>
+        <meta
+          name="description"
+          content="Fahrradtouren, GPX Strecken und Packlisten für Rennradfahrer"
+          key="desc"
+        />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta
+          property="og:description"
+          content="Ritzelrechner, Gaenge, Kettenblatt, Schaltung, Uebersetzung"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
+      </Head>
+      <div mb-9>
+        <p className="flex justify-center mt-6">
+          <Settings color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Ritzelrechner!!!
+        </p>
+
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Dieser Ritzelrechner zeigt dir, welche Gänge welche Übersetzung haben.
+        </p>
+      </div>
       <h1>Ük and Üh Values</h1>
       <table>
         <thead>
@@ -87,14 +129,51 @@ export default function Home() {
         </thead>
         <tbody>
           <tr>
+            <td>Üh</td>
+            {ühValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
             <td>Ük</td>
             {ükValues.map((value, index) => (
               <td key={index}>{value.toFixed(2)}</td>
             ))}
           </tr>
+
           <tr>
-            <td>Üh</td>
-            {ühValues.map((value, index) => (
+            <td>Vh</td>
+            {VhValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
+            <td>Vk</td>
+            {VkValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
+            <td>Devh</td>
+            {DevhValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
+            <td>Devk</td>
+            {DevkValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
+            <td>Sh</td>
+            {ShValues.map((value, index) => (
+              <td key={index}>{value.toFixed(2)}</td>
+            ))}
+          </tr>
+          <tr>
+            <td>Sk</td>
+            {SkValues.map((value, index) => (
               <td key={index}>{value.toFixed(2)}</td>
             ))}
           </tr>
