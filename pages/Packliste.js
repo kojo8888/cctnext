@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import { List } from "react-feather";
 
 export default function ExampleCheckbox() {
   const [showWerkzeug, setshowWerkzeug] = useState();
@@ -99,6 +100,18 @@ export default function ExampleCheckbox() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
+      <div mb-9>
+        <p className="flex justify-center mt-6">
+          <List color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Packliste!!!
+        </p>
+
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Na, was haben wir vergessen?
+        </p>
+      </div>
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>

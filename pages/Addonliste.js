@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
+import { Umbrella } from "react-feather";
 
 export default function ExampleCheckbox() {
   const [allData, setAllData] = useState([]);
@@ -30,8 +31,28 @@ export default function ExampleCheckbox() {
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
-      <Head>{/* ... (your existing Head content) */}</Head>
+      <Head>
+        <title>Tools</title>
+        <meta name="description" content="Strava Add-ons" key="desc" />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta property="og:description" content="Liste mit Strava Add-ons" />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
+      </Head>
+      <div mb-9>
+        <p className="flex justify-center mt-6">
+          <Umbrella color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Strava Add-ons!!!
+        </p>
 
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Schau mal, was es noch so gibt..
+        </p>
+      </div>
       <div className="space-y-12">
         <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">
