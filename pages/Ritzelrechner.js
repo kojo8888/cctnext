@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import jsonData from "../lib/ritzel.json"; // Adjust the path as necessary
 
 export default function Home() {
+  const [ritzelNames, setRitzelNames] = useState([]); // Stores available ritzel names
+  const [kettenblattNames, setKettenblattNames] = useState([]); // Stores available kettenblatt names
+  const [selectedRitzel, setSelectedRitzel] = useState(""); // Selected ritzel name
+  const [selectedKettenblatt, setSelectedKettenblatt] = useState(""); // Selected kettenblatt name
   const [ritzelArray, setRitzelArray] = useState([]);
   const [kettenblattArray, setKettenblattArray] = useState([]);
   const [divisionResults, setDivisionResults] = useState([]);
@@ -23,12 +27,33 @@ export default function Home() {
     Cad: "",
   });
 
-  //Gegeben
-  //Tabelle
-  var wd = 632;
-  var wb = 23;
-  var Cad = 80;
+  useEffect(() => {
+    // Assuming jsonData.features includes an array of objects with a name property
+    const ritzels = jsonData.features
+      .filter((feature) => feature.type === "Ritzel")
+      .map((feature) => feature.name);
+    const kettenblatts = jsonData.features
+      .filter((feature) => feature.type === "Kettenblatt")
+      .map((feature) => feature.name);
+    setRitzelNames(ritzels);
+    setKettenblattNames(kettenblatts);
+  }, []);
+
+  const handleRitzelChange = (event) => {
+    setSelectedRitzel(event.target.value);
+  };
+
+  const handleKettenblattChange = (event) => {
+    setSelectedKettenblatt(event.target.value);
+  };
+
   const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
     const { name, value } = event.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
 
@@ -54,7 +79,8 @@ export default function Home() {
 
     //Umfang in m
     var Umf;
-    Umf = ((parseInt(wb) * 2 + parseInt(wd)) * Math.PI) / 1000;
+    Umf =
+      ((parseInt(formData.wb) * 2 + parseInt(formData.wd)) * Math.PI) / 1000;
     Umf = Number.parseFloat(Umf).toFixed(2);
     console.log(Umf);
 
@@ -67,22 +93,22 @@ export default function Home() {
     setDevkValues(Devk);
 
     //Geschwindigkeit in km/h
-    const vh = Devh.map((element) => (element * Cad * 60) / 1000);
+    const vh = Devh.map((element) => (element * formData.Cad * 60) / 1000);
     // vh = (Devh * parseInt(Cad) * 60) / 1000;
     // vh = Number.parseFloat(vh).toFixed(2);
     console.log(vh);
     setVhValues(vh);
-    const vk = Devk.map((element) => (element * Cad * 60) / 1000);
+    const vk = Devk.map((element) => (element * formData.Cad * 60) / 1000);
     // vk = (Devk * parseInt(Cad) * 60) / 1000;
     // vk = Number.parseFloat(vk).toFixed(2);
     console.log(vk);
     setVkValues(vk);
 
     //Entfaltung bei Cad in m
-    const sh = Üh.map((element) => Cad * Umf * element);
+    const sh = Üh.map((element) => formData.Cad * Umf * element);
     console.log(sh);
     setShValues(sh);
-    const sk = Ük.map((element) => Cad * Umf * element);
+    const sk = Ük.map((element) => formData.Cad * Umf * element);
     console.log(sk);
     setSkValues(sk);
 
@@ -94,12 +120,9 @@ export default function Home() {
     // Gh = ZKh / ZRh;
     // Bb = Gk / Gh;
     // }, []);
-  };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
     setTableData((prevTableData) => [...prevTableData, formData]);
-    setFormData({ name: "", age: "", country: "" });
+    setFormData({ wd: "", wb: "", Cad: "" });
   };
 
   return (
@@ -135,35 +158,39 @@ export default function Home() {
       </div>
       <h1>Gangwahl:</h1>
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-row">
           <div className="basis-1/3">
             <label className="block mb-1" htmlFor="wd">
               wd
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="wd"
               value={formData.wd}
               onChange={handleInputChange}
               placeholder="wd"
             />
+          </div>
+          <div className="basis-1/3">
             <label className="block mb-1" htmlFor="wb">
               wb
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="wb"
               value={formData.wb}
               onChange={handleInputChange}
               placeholder="wb"
             />
+          </div>
+          <div className="basis-1/3">
             <label className="block mb-1" htmlFor="Cad">
               Cad
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="Cad"
               value={formData.Cad}
@@ -171,10 +198,41 @@ export default function Home() {
               placeholder="Cad"
             />
           </div>
+          {/* Dropdown for selecting Ritzel */}
+          <div>
+            <label htmlFor="ritzel">Ritzel:</label>
+            <select
+              name="ritzel"
+              value={selectedRitzel}
+              onChange={handleRitzelChange}
+            >
+              {ritzelNames.map((name, index) => (
+                <option key={index} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Dropdown for selecting Kettenblatt */}
+          <div>
+            <label htmlFor="kettenblatt">Kettenblatt:</label>
+            <select
+              name="kettenblatt"
+              value={selectedKettenblatt}
+              onChange={handleKettenblattChange}
+            >
+              {kettenblattNames.map((name, index) => (
+                <option key={index} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
+          </div>
         </div>
         <div className="font-mono mt-1 mb-3 mx-auto text-center max-w-lg px-10">
           <button
-            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            className="px-4 py-3 font-bold text-black bg-white rounded-full hover:bg-red-300"
             type="submit"
           >
             Submit
