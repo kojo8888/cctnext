@@ -156,7 +156,6 @@ export default function Home() {
           Dieser Ritzelrechner zeigt dir, welche Gänge welche Übersetzung haben.
         </p>
       </div>
-      <h1>Gangwahl:</h1>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-row">
           <div className="basis-1/3">
@@ -198,10 +197,12 @@ export default function Home() {
               placeholder="Cad"
             />
           </div>
-          {/* Dropdown for selecting Ritzel */}
+        </div>
+        <div className="flex flex-row gap-3">
           <div>
             <label htmlFor="ritzel">Ritzel:</label>
             <select
+              className="text-center p-3 mb-3 border border-solid rounded-lg"
               name="ritzel"
               value={selectedRitzel}
               onChange={handleRitzelChange}
@@ -213,11 +214,10 @@ export default function Home() {
               ))}
             </select>
           </div>
-
-          {/* Dropdown for selecting Kettenblatt */}
           <div>
             <label htmlFor="kettenblatt">Kettenblatt:</label>
             <select
+              className="text-center p-3 mb-3 border border-solid rounded-lg"
               name="kettenblatt"
               value={selectedKettenblatt}
               onChange={handleKettenblattChange}
