@@ -17,13 +17,22 @@ export default function Home() {
   const [ShValues, setShValues] = useState([]);
   const [SkValues, setSkValues] = useState([]);
 
+  const [formData, setFormData] = useState({
+    wd: "",
+    wb: "",
+    Cad: "",
+  });
+
   //Gegeben
   //Tabelle
   var wd = 632;
   var wb = 23;
   var Cad = 80;
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-  useEffect(() => {
+    // useEffect(() => {
     const ritzelData = jsonData.features
       .filter((feature) => feature.type === "Ritzel" && feature.id === "1")
       .flatMap((feature) => feature.Zaehne);
@@ -84,7 +93,14 @@ export default function Home() {
     // Gk = ZRk / ZKk;
     // Gh = ZKh / ZRh;
     // Bb = Gk / Gh;
-  }, []);
+    // }, []);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setTableData((prevTableData) => [...prevTableData, formData]);
+    setFormData({ name: "", age: "", country: "" });
+  };
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
@@ -105,7 +121,7 @@ export default function Home() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      <div mb-9>
+      <div className="mb-9">
         <p className="flex justify-center mt-6">
           <Settings color="black" />
         </p>
@@ -117,7 +133,55 @@ export default function Home() {
           Dieser Ritzelrechner zeigt dir, welche Gänge welche Übersetzung haben.
         </p>
       </div>
-      <h1>Ük and Üh Values</h1>
+      <h1>Gangwahl:</h1>
+      <form onSubmit={handleSubmit}>
+        <div className="flex flex-row gap-3">
+          <div className="basis-1/3">
+            <label className="block mb-1" htmlFor="wd">
+              wd
+            </label>
+            <input
+              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              type="number"
+              name="wd"
+              value={formData.wd}
+              onChange={handleInputChange}
+              placeholder="wd"
+            />
+            <label className="block mb-1" htmlFor="wb">
+              wb
+            </label>
+            <input
+              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              type="number"
+              name="wb"
+              value={formData.wb}
+              onChange={handleInputChange}
+              placeholder="wb"
+            />
+            <label className="block mb-1" htmlFor="Cad">
+              Cad
+            </label>
+            <input
+              className="text-center w-20 p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+              type="number"
+              name="Cad"
+              value={formData.Cad}
+              onChange={handleInputChange}
+              placeholder="Cad"
+            />
+          </div>
+        </div>
+        <div className="font-mono mt-1 mb-3 mx-auto text-center max-w-lg px-10">
+          <button
+            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+      <h1>Ergebnis:</h1>
       <table>
         <thead>
           <tr>

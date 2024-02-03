@@ -132,6 +132,36 @@
       "name": "Shimano Dura Ace 11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25",
       "id": "22",
       "Zaehne": [11, 12, 13, 14, 15, 16, 17, 19, 21, 23, 25]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Dura Ace 39 , 53",
+      "id": "23",
+      "Zaehne": [39, 53]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Dura Ace 36 , 52",
+      "id": "24",
+      "Zaehne": [36, 52]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Dura Ace 34 , 50",
+      "id": "25",
+      "Zaehne": [34, 50]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Dura Ace 42, 55",
+      "id": "26",
+      "Zaehne": [42, 55]
+    },
+    {
+      "type": "Kettenblatt",
+      "name": "Shimano Dura Ace 42, 54",
+      "id": "27",
+      "Zaehne": [42, 54]
     }
   ]
 }

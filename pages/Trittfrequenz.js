@@ -52,7 +52,7 @@ export default function Trittfrequenz() {
           content="https://www.customcyclingtracks.com/Logo.png"
         />
       </Head>
-      <div mb-9>
+      <div className="mb-9">
         <p className="flex justify-center mt-6">
           <RefreshCw color="black" />
         </p>
