@@ -27,6 +27,9 @@ export default function Home() {
     Cad: "",
   });
   const chartRef = useRef(null);
+  const vhVkChartRef = useRef(null);
+  const devhDevkChartRef = useRef(null);
+  const shSkChartRef = useRef(null);
 
   useEffect(() => {
     if (chartRef && chartRef.current && ühValues.length > 0) {
@@ -37,10 +40,17 @@ export default function Home() {
           labels: ritzelArray, // Assuming this is an array of labels for the X-axis
           datasets: [
             {
-              label: "Üh Values",
+              label: "Übersetzung groß",
               data: ühValues, // The Y-axis data
               fill: false,
               borderColor: "rgb(75, 192, 192)",
+              tension: 0.1,
+            },
+            {
+              label: "Übersetzung klein",
+              data: ükValues, // The Y-axis data
+              fill: false,
+              borderColor: "rgb(75, 92, 192)",
               tension: 0.1,
             },
           ],
@@ -53,8 +63,103 @@ export default function Home() {
           },
         },
       });
+      if (vhVkChartRef.current) {
+        const ctxVhVk = vhVkChartRef.current.getContext("2d");
+        new Chart(ctxVhVk, {
+          type: "line",
+          data: {
+            labels: ritzelArray,
+            datasets: [
+              {
+                label: "Geschwindigkeit groß (Vh)",
+                data: VhValues,
+                fill: false,
+                borderColor: "rgb(255, 99, 132)",
+                tension: 0.1,
+              },
+              {
+                label: "Geschwindigkeit klein (Vk)",
+                data: VkValues,
+                fill: false,
+                borderColor: "rgb(54, 162, 235)",
+                tension: 0.1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      }
+      if (devhDevkChartRef.current) {
+        const ctxDevhDevk = devhDevkChartRef.current.getContext("2d");
+        new Chart(ctxDevhDevk, {
+          type: "line",
+          data: {
+            labels: ritzelArray,
+            datasets: [
+              {
+                label: "Entfaltung groß (Devh)",
+                data: DevhValues,
+                fill: false,
+                borderColor: "rgb(255, 99, 132)",
+                tension: 0.1,
+              },
+              {
+                label: "Entfaltung klein (Devk)",
+                data: DevkValues,
+                fill: false,
+                borderColor: "rgb(54, 162, 235)",
+                tension: 0.1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      }
+      if (shSkChartRef.current) {
+        const ctxShSk = shSkChartRef.current.getContext("2d");
+        new Chart(ctxShSk, {
+          type: "line",
+          data: {
+            labels: ritzelArray,
+            datasets: [
+              {
+                label: "Strecke groß (Sh)",
+                data: ShValues,
+                fill: false,
+                borderColor: "rgb(255, 99, 132)",
+                tension: 0.1,
+              },
+              {
+                label: "Strecke klein (Sk)",
+                data: SkValues,
+                fill: false,
+                borderColor: "rgb(54, 162, 235)",
+                tension: 0.1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
+      }
     }
-
     // Assuming jsonData.features includes an array of objects with a name property
     const ritzels = jsonData.features
       .filter((feature) => feature.type === "Ritzel")
@@ -64,7 +169,16 @@ export default function Home() {
       .map((feature) => feature.name);
     setRitzelNames(ritzels);
     setKettenblattNames(kettenblatts);
-  }, [ritzelArray, ühValues]);
+  }, [
+    ritzelArray,
+    ühValues,
+    VhValues,
+    VkValues,
+    DevhValues,
+    DevkValues,
+    ShValues,
+    SkValues,
+  ]);
 
   const handleRitzelChange = (event) => {
     setSelectedRitzel(event.target.value);
@@ -262,77 +376,97 @@ export default function Home() {
             className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
             type="submit"
           >
-            Submit
+            Rechnen
           </button>
         </div>
       </form>
-      <h1>Ergebnis:</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Ritzel</th>
-            {ritzelArray.map((ritzel, index) => (
-              <th key={index}>{ritzel}</th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Üh</td>
-            {ühValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Ük</td>
-            {ükValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
 
-          <tr>
-            <td>Vh</td>
-            {VhValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Vk</td>
-            {VkValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Devh</td>
-            {DevhValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Devk</td>
-            {DevkValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Sh</td>
-            {ShValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-          <tr>
-            <td>Sk</td>
-            {SkValues.map((value, index) => (
-              <td key={index}>{value.toFixed(2)}</td>
-            ))}
-          </tr>
-        </tbody>
-      </table>
+      <div className="">
+        <table className="table-auto">
+          <thead>
+            <tr>
+              <th>Ritzel</th>
+              {ritzelArray.map((ritzel, index) => (
+                <th key={index}>{ritzel}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Übersetzung groß</td>
+              {ühValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Übersetzung klein</td>
+              {ükValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+
+            <tr>
+              <td>Geschwindigkeit groß</td>
+              {VhValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Geschwindigkeit klein</td>
+              {VkValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Entwicklung groß</td>
+              {DevhValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Entwicklung klein</td>
+              {DevkValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Strecke groß</td>
+              {ShValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+            <tr>
+              <td>Strecke klein</td>
+              {SkValues.map((value, index) => (
+                <td key={index}>{value.toFixed(2)}</td>
+              ))}
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <div
         className="chart-container"
         style={{ position: "relative", height: "40vh", width: "80vw" }}
       >
         <canvas ref={chartRef}></canvas>
+      </div>
+      <div
+        className="chart-container"
+        style={{ position: "relative", height: "40vh", width: "80vw" }}
+      >
+        <canvas ref={vhVkChartRef}></canvas>
+      </div>
+      <div
+        className="chart-container"
+        style={{ position: "relative", height: "40vh", width: "80vw" }}
+      >
+        <canvas ref={devhDevkChartRef}></canvas>
+      </div>
+      <div
+        className="chart-container"
+        style={{ position: "relative", height: "40vh", width: "80vw" }}
+      >
+        <canvas ref={shSkChartRef}></canvas>
       </div>
     </div>
   );

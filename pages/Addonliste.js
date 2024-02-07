@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import { Umbrella } from "react-feather";
+import { PieChart } from "react-feather";
 
 export default function ExampleCheckbox() {
   const [allData, setAllData] = useState([]);
@@ -43,7 +43,7 @@ export default function ExampleCheckbox() {
       </Head>
       <div className="mb-9">
         <p className="flex justify-center mt-6">
-          <Umbrella color="black" />
+          <PieChart color="black" />
         </p>
         <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
           Strava Add-ons!!!

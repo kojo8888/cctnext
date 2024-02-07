@@ -122,18 +122,18 @@ table {
 
 /* Styling the table headers */
 th {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   color: #8a8888;
   padding: 10px;
   border-collapse: collapse;
-  text-align: left;
+  text-align: center;
   border-radius: 8px;
 }
 
 /* Styling the table cells */
 td {
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border-collapse: collapse;
   border-radius: 8px;
   color: #474141;
@@ -141,7 +141,7 @@ td {
 
 /* Styling the table rows */
 tr:nth-child(even) {
-  background-color: white;
+  /* background-color: white; */
   border-radius: 8px;
 }
 
