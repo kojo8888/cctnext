@@ -1,7 +1,8 @@
 import Head from "next/head";
 import { Settings } from "react-feather";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import jsonData from "../lib/ritzel.json"; // Adjust the path as necessary
+import Chart from "chart.js";
 
 export default function Home() {
   const [ritzelNames, setRitzelNames] = useState([]); // Stores available ritzel names
@@ -20,14 +21,40 @@ export default function Home() {
   const [VkValues, setVkValues] = useState([]);
   const [ShValues, setShValues] = useState([]);
   const [SkValues, setSkValues] = useState([]);
-
   const [formData, setFormData] = useState({
     wd: "",
     wb: "",
     Cad: "",
   });
+  const chartRef = useRef(null);
 
   useEffect(() => {
+    if (chartRef && chartRef.current && ühValues.length > 0) {
+      const ctx = chartRef.current.getContext("2d");
+      new Chart(ctx, {
+        type: "line", // Change the type as needed (line, bar, etc.)
+        data: {
+          labels: ritzelArray, // Assuming this is an array of labels for the X-axis
+          datasets: [
+            {
+              label: "Üh Values",
+              data: ühValues, // The Y-axis data
+              fill: false,
+              borderColor: "rgb(75, 192, 192)",
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    }
+
     // Assuming jsonData.features includes an array of objects with a name property
     const ritzels = jsonData.features
       .filter((feature) => feature.type === "Ritzel")
@@ -37,7 +64,7 @@ export default function Home() {
       .map((feature) => feature.name);
     setRitzelNames(ritzels);
     setKettenblattNames(kettenblatts);
-  }, []);
+  }, [ritzelArray, ühValues]);
 
   const handleRitzelChange = (event) => {
     setSelectedRitzel(event.target.value);
@@ -232,7 +259,7 @@ export default function Home() {
         </div>
         <div className="font-mono mt-1 mb-3 mx-auto text-center max-w-lg px-10">
           <button
-            className="px-4 py-3 font-bold text-black bg-white rounded-full hover:bg-red-300"
+            className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
             type="submit"
           >
             Submit
@@ -301,6 +328,12 @@ export default function Home() {
           </tr>
         </tbody>
       </table>
+      <div
+        className="chart-container"
+        style={{ position: "relative", height: "40vh", width: "80vw" }}
+      >
+        <canvas ref={chartRef}></canvas>
+      </div>
     </div>
   );
 }
