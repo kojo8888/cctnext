@@ -45,6 +45,7 @@
     "xml2js": "^0.6.2"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.31.0",
     "eslint-plugin-react": "^7.31.11",

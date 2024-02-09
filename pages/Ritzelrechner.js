@@ -74,14 +74,14 @@ export default function Home() {
                 label: "Geschwindigkeit groß (Vh)",
                 data: VhValues,
                 fill: false,
-                borderColor: "rgb(255, 99, 132)",
+                borderColor: "rgb(255, 99, 32)",
                 tension: 0.1,
               },
               {
                 label: "Geschwindigkeit klein (Vk)",
                 data: VkValues,
                 fill: false,
-                borderColor: "rgb(54, 162, 235)",
+                borderColor: "rgb(54, 162, 35)",
                 tension: 0.1,
               },
             ],
@@ -106,14 +106,14 @@ export default function Home() {
                 label: "Entfaltung groß (Devh)",
                 data: DevhValues,
                 fill: false,
-                borderColor: "rgb(255, 99, 132)",
+                borderColor: "rgb(155, 99, 132)",
                 tension: 0.1,
               },
               {
                 label: "Entfaltung klein (Devk)",
                 data: DevkValues,
                 fill: false,
-                borderColor: "rgb(54, 162, 235)",
+                borderColor: "rgb(154, 162, 235)",
                 tension: 0.1,
               },
             ],
@@ -301,10 +301,10 @@ export default function Home() {
         <div className="flex flex-row">
           <div className="basis-1/3">
             <label className="block mb-1" htmlFor="wd">
-              wd
+              Laufraddurchmesser
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
+              className="text-center bg-white text-black w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="wd"
               value={formData.wd}
@@ -314,10 +314,10 @@ export default function Home() {
           </div>
           <div className="basis-1/3">
             <label className="block mb-1" htmlFor="wb">
-              wb
+              Reifenbreite
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
+              className="text-center bg-white text-black w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="wb"
               value={formData.wb}
@@ -327,10 +327,10 @@ export default function Home() {
           </div>
           <div className="basis-1/3">
             <label className="block mb-1" htmlFor="Cad">
-              Cad
+              Trittfrequenz
             </label>
             <input
-              className="text-center w-20 p-3 mb-3 border border-solid rounded-lg"
+              className="text-center bg-white text-black w-20 p-3 mb-3 border border-solid rounded-lg"
               type="number"
               name="Cad"
               value={formData.Cad}
@@ -343,7 +343,7 @@ export default function Home() {
           <div>
             <label htmlFor="ritzel">Ritzel:</label>
             <select
-              className="text-center p-3 mb-3 border border-solid rounded-lg"
+              className="text-center bg-white text-black p-3 mb-3 border border-solid rounded-lg"
               name="ritzel"
               value={selectedRitzel}
               onChange={handleRitzelChange}
@@ -358,7 +358,7 @@ export default function Home() {
           <div>
             <label htmlFor="kettenblatt">Kettenblatt:</label>
             <select
-              className="text-center p-3 mb-3 border border-solid rounded-lg"
+              className="text-center bg-white text-black p-3 mb-3 border border-solid rounded-lg"
               name="kettenblatt"
               value={selectedKettenblatt}
               onChange={handleKettenblattChange}
@@ -444,29 +444,33 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-      <div
-        className="chart-container"
-        style={{ position: "relative", height: "40vh", width: "80vw" }}
-      >
-        <canvas ref={chartRef}></canvas>
-      </div>
-      <div
-        className="chart-container"
-        style={{ position: "relative", height: "40vh", width: "80vw" }}
-      >
-        <canvas ref={vhVkChartRef}></canvas>
-      </div>
-      <div
-        className="chart-container"
-        style={{ position: "relative", height: "40vh", width: "80vw" }}
-      >
-        <canvas ref={devhDevkChartRef}></canvas>
-      </div>
-      <div
-        className="chart-container"
-        style={{ position: "relative", height: "40vh", width: "80vw" }}
-      >
-        <canvas ref={shSkChartRef}></canvas>
+      <div className="mt-3 grid  grid-cols-1 max-w-3xl mx-auto">
+        <div className="bg-white border rounded-2xl">
+          <div
+            className="chart-container mt-3 max-w-2xl mx-auto"
+            style={{ position: "relative", height: "40vh", width: "80vw" }}
+          >
+            <canvas ref={chartRef}></canvas>
+          </div>
+          <div
+            className="chart-container mt-3 max-w-2xl mx-auto"
+            style={{ position: "relative", height: "40vh", width: "80vw" }}
+          >
+            <canvas ref={vhVkChartRef}></canvas>
+          </div>
+          <div
+            className="chart-container mt-3 max-w-2xl mx-auto"
+            style={{ position: "relative", height: "40vh", width: "80vw" }}
+          >
+            <canvas ref={devhDevkChartRef}></canvas>
+          </div>
+          <div
+            className="chart-container mt-3 max-w-2xl mx-auto"
+            style={{ position: "relative", height: "40vh", width: "80vw" }}
+          >
+            <canvas ref={shSkChartRef}></canvas>
+          </div>
+        </div>
       </div>
     </div>
   );
