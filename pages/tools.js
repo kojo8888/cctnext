@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Tool } from "react-feather";
+import { Tool, Map, Maximize2, BatteryCharging, List } from "react-feather";
 
 export default function tools({ products }) {
   return (
@@ -35,7 +35,21 @@ export default function tools({ products }) {
         </p>
       </div>
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+        <div className="p-9 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <div className="pb-12">
+            <p className="flex justify-center">
+              <Maximize2 color="black" />
+            </p>
+            <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+              <a
+                href="./gps"
+                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+              >
+                Geometrie
+              </a>
+            </h3>
+            <p className="mt-3 text-gray-500">Was muss wie lang?</p>
+          </div>
           <span className="text-gray-500">
             <a
               href="Kettenlaenge"
@@ -86,8 +100,30 @@ export default function tools({ products }) {
           </span>
         </div>
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+        <div className="p-9 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <div className="pb-12">
+            <p className="flex justify-center">
+              <BatteryCharging color="black" />
+            </p>
+            <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+              <a
+                href="./gps"
+                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+              >
+                Performance
+              </a>
+            </h3>
+            <p className="mt-3 text-gray-500">1000 Watt!</p>
+          </div>
           <span className="text-gray-500">
+            <a
+              href="GPX_Faelschung"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              Fälschungswerkstatt
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
             <a
               href="Wattrechner"
               className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 -mt-2 rounded-lg"
@@ -113,7 +149,21 @@ export default function tools({ products }) {
           </span>
         </div>
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+        <div className="p-9 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <div className="pb-12">
+            <p className="flex justify-center">
+              <Map color="black" />
+            </p>
+            <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+              <a
+                href="./gps"
+                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+              >
+                Geographie
+              </a>
+            </h3>
+            <p className="mt-3 text-gray-500">GPS Themen</p>
+          </div>
           <span className="text-gray-500">
             <a
               href="mapTrinkwasserspender"
@@ -148,7 +198,21 @@ export default function tools({ products }) {
           </span>
         </div>
 
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+        <div className="p-9 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <div className="pb-12">
+            <p className="flex justify-center">
+              <List color="black" />
+            </p>
+            <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
+              <a
+                href="./gps"
+                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
+              >
+                Listen
+              </a>
+            </h3>
+            <p className="mt-3 text-gray-500">Guckst du nach!</p>
+          </div>
           <span className="text-gray-500">
             <a
               href="Bikeflix"
