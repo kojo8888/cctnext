@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import StravaElapsedTime from "../components/strava/StravaElapsedTime";
-import StravaListSegments from "../components/strava/StravaListSegments";
+import StravaSegmentKOM from "../components/strava/StravaSegmentKOM";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         </h1>
 
         {/* <StravaElapsedTime /> */}
-        <StravaListSegments />
+        <StravaSegmentKOM />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ export default async (req, res) => {
     id: segment.id,
     name: segment.name,
     distance: segment.distance,
-    average_grade: segment.average_grade,
+    avg_grade: segment.avg_grade,
   }));
 
   return res.status(200).json(segments);

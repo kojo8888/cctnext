@@ -15,7 +15,7 @@ const StravaListSegments = () => {
         <div key={segment.id}>
           <p>Name: {segment.name}</p>
           <p>Distance: {segment.distance}</p>
-          <p>Average Grade: {segment.average_grade}%</p>
+          <p>Average Grade: {segment.avg_grade}%</p>
         </div>
       ))}
     </div>
