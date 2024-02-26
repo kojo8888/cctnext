@@ -3,21 +3,21 @@ import useSWR from "swr";
 import fetcher from "../../lib/fetcher";
 
 const StravaSegmentKOM = () => {
-  const { data, error } = useSWR("/api/stravafetchsegmentskom", fetcher);
+  const { data, error } = useSWR("/api/Strava/stravafetchsegmentskom", fetcher);
 
   if (error) return <div>Failed to load KOM/QOM information</div>;
   if (!data) return <div>Loading...</div>;
 
   // Helper function to convert seconds to HH:MM:SS format
-  const formatTime = (secs) => {
-    const hours = Math.floor(secs / 3600);
-    const minutes = Math.floor((secs % 3600) / 60);
-    const seconds = Math.floor(secs % 60);
-    return [hours, minutes, seconds]
-      .map((v) => (v < 10 ? "0" + v : v))
-      .filter((v, i) => v !== "00" || i > 0)
-      .join(":");
-  };
+  // const formatTime = (secs) => {
+  //   const hours = Math.floor(secs / 3600);
+  //   const minutes = Math.floor((secs % 3600) / 60);
+  //   const seconds = Math.floor(secs % 60);
+  //   return [hours, minutes, seconds]
+  //     .map((v) => (v < 10 ? "0" + v : v))
+  //     .filter((v, i) => v !== "00" || i > 0)
+  //     .join(":");
+  // };
 
   return (
     <div>

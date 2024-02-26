@@ -3,7 +3,7 @@ import useSWR from "swr";
 import fetcher from "../../lib/fetcher";
 
 const StravaListSegments = () => {
-  const { data, error } = useSWR("/api/stravafetchsegments", fetcher);
+  const { data, error } = useSWR("/api/Strava/stravafetchsegments", fetcher);
   if (error) return <div>Failed to load segments</div>;
   if (!data) return <div>Loading...</div>;
   // console.log(data);

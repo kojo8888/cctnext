@@ -100,7 +100,12 @@ function generateSiteMap(posts) {
     <url>
         <loc>${URL}/mapTrinkwasserspender</loc>
     </url>
-    
+    <url>
+        <loc>${URL}/KOMhunter</loc>
+    </url>
+    <url>
+        <loc>${URL}/GPX_Faelschung</loc>
+    </url>
      ${posts
        .map(({ id }) => {
          return `

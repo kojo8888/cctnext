@@ -8,13 +8,8 @@ export default async (req, res) => {
     `https://www.strava.com/api/v3/segments/${segmentId}?access_token=${key}`
   );
   const json = await response.json();
-  console.log(json);
-  // const segments = json.segments.map((segment) => ({
-  //   // id: segment.id,
-  //   // name: segment.name,
-  //   // distance: segment.distance,
-  //   // avg_grade: segment.avg_grade,
-  // }));
-
+  // console.log(json);
+  const xoms = json.xoms;
+  console.log(xoms);
   return res.status(200);
 };

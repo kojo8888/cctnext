@@ -41,12 +41,7 @@ export default function tools({ products }) {
               <Maximize2 color="black" />
             </p>
             <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-              <a
-                href="./gps"
-                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
-              >
-                Geometrie
-              </a>
+              Geometrie
             </h3>
             <p className="mt-3 text-gray-500">Was muss wie lang?</p>
           </div>
@@ -106,12 +101,7 @@ export default function tools({ products }) {
               <BatteryCharging color="black" />
             </p>
             <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-              <a
-                href="./gps"
-                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
-              >
-                Performance
-              </a>
+              Performance
             </h3>
             <p className="mt-3 text-gray-500">1000 Watt!</p>
           </div>
@@ -121,6 +111,14 @@ export default function tools({ products }) {
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
             >
               Fälschungswerkstatt
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="KOMhunter"
+              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 -mt-2 rounded-lg"
+            >
+              KOM Hunter
             </a>
           </span>
           <span className="mt-9 text-gray-500">
@@ -155,12 +153,7 @@ export default function tools({ products }) {
               <Map color="black" />
             </p>
             <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-              <a
-                href="./gps"
-                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
-              >
-                Geographie
-              </a>
+              Geographie
             </h3>
             <p className="mt-3 text-gray-500">GPS Themen</p>
           </div>
@@ -204,12 +197,7 @@ export default function tools({ products }) {
               <List color="black" />
             </p>
             <h3 className="mt-3 text-lg font-medium text-gray-900 tracking-tight">
-              <a
-                href="./gps"
-                className="font-medium hover:underline mt-3 text-lg text-gray-900 tracking-tight"
-              >
-                Listen
-              </a>
+              Listen
             </h3>
             <p className="mt-3 text-gray-500">Guckst du nach!</p>
           </div>
