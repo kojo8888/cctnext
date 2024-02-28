@@ -3,6 +3,7 @@ import StravaListSegments from "../components/strava/StravaListSegments";
 import StravaSegmentKOM from "../components/strava/StravaSegmentKOM";
 import { BatteryCharging } from "react-feather";
 import Formlatlng from "../components/formlatlng";
+
 export default function KOMhunter() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
