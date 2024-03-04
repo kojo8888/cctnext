@@ -7,10 +7,6 @@ function convertTimeToSeconds(timeString) {
   return minutes * 60 + seconds;
 }
 
-function calculateVelocity(distance, timeInSeconds) {
-  return (distance / timeInSeconds) * 3.6;
-}
-
 const StravaListSegments = () => {
   const { data, error } = useSWR("/api/Strava/stravafetchsegments", fetcher);
   if (error) return <div>Failed to load segments</div>;
@@ -23,9 +19,6 @@ const StravaListSegments = () => {
         const komTimeInSeconds = segment.xoms
           ? convertTimeToSeconds(segment.xoms.kom)
           : "N/A";
-        // const velocity = komTimeInSeconds
-        //   ? calculateVelocity(segment.distance, komTimeInSeconds)
-        //   : "N/A";
 
         return (
           <div key={segment.id}>
@@ -37,10 +30,6 @@ const StravaListSegments = () => {
                 <p>
                   KOM: {segment.xoms.kom} ({komTimeInSeconds} s)
                 </p>
-                {/* <p>
-                  Velocity:{" "}
-                  {velocity !== "N/A" ? `${velocity.toFixed(2)} km/h` : "N/A"}
-                </p> */}
               </div>
             )}
           </div>

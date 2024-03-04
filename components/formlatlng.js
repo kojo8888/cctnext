@@ -7,33 +7,36 @@ export default function Formlatlng() {
     NElat: "",
     NElong: "",
   });
+  const [segments, setSegments] = useState(null); // State to store fetched segments
+  const [loading, setLoading] = useState(false); // State to track loading status
 
   const handleInput = (e) => {
     const fieldName = e.target.name;
     const fieldValue = e.target.value;
-
     setFormData((prevState) => ({
       ...prevState,
       [fieldName]: fieldValue,
     }));
   };
 
-  const submitForm = (e) => {
-    // Prevent the default form submission behavior
+  const submitForm = async (e) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true while fetching data
 
-    // Here you can handle the form data as you need
-    // For example, log it to the console or update some state
-    console.log(formData);
+    const bounds = `${formData.SWlat},${formData.SWlong},${formData.NElat},${formData.NElong}`;
+    const response = await fetch(
+      `/api/Strava/stravafetchsegments?bounds=${bounds}`
+    );
+    if (response.ok) {
+      const data = await response.json();
+      setSegments(data); // Store the fetched segments in state
+    } else {
+      console.error("Failed to fetch segments");
+      setSegments(null); // Reset segments state in case of an error
+    }
 
-    // Optionally reset the form or set a success message
-    setFormData({
-      SWlat: "",
-      SWlong: "",
-      NElat: "",
-      NElong: "",
-    });
-    // If you want to display a success message or perform other actions, add your logic here
+    setLoading(false); // Set loading to false after fetching data
+    // Optionally reset the form or handle the response further
   };
 
   return (
@@ -81,6 +84,19 @@ export default function Formlatlng() {
 
         <button type="submit">Ab die Post</button>
       </form>
+      {loading && <p>Loading segments...</p>}
+      {segments && (
+        <div>
+          <h2>Segments</h2>
+          {segments.map((segment) => (
+            <div key={segment.id}>
+              <p>Name: {segment.name}</p>
+              <p>Distance: {segment.distance}</p>
+              {/* Display additional segment details here */}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
