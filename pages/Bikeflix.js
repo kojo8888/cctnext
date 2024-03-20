@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import { Youtube } from "react-feather";
+import { YouTubeEmbed } from "@next/third-parties/google";
 
 export default function ExampleCheckbox() {
   const [allData, setAllData] = useState([]);
@@ -20,6 +21,11 @@ export default function ExampleCheckbox() {
         setAllData(formattedData);
       });
   }, [apiUrl]);
+
+  // Function to extract YouTube video ID from shortened URL format
+  const extractVideoID = (url) => {
+    return url.split("=")[1];
+  };
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
@@ -53,38 +59,24 @@ export default function ExampleCheckbox() {
         </p>
       </div>
       <div className="space-y-12">
-        <div className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Bikeflix</h3>
-          {/* <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="ml-3 text-left">{showWerkzeug}</span>
-            </li>
-          </ul> */}
-          <table className="table-auto">
-            <thead>
-              <tr>
-                {/* <th>ID</th> */}
-                <th>Name</th>
-                {/* <th>URL</th> */}
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {allData.map((item) => (
-                <tr key={item.id}>
-                  {/* <td>{item.id}</td> */}
-                  <td>
-                    <a href={item.url}>{item.name}</a>
-                  </td>
-                  {/* <td>{item.url}</td> */}
-                  <td>{item.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        {allData.map((item) => (
+          <div
+            key={item.id}
+            className="p-8 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col"
+          >
+            <h3 className="text-3xl font-semibold text-gray-900">
+              {item.name}
+            </h3>
+            <p className="mt-4">{item.description}</p>
+            {/* Embed YouTube Video */}
+            <YouTubeEmbed
+              videoid={extractVideoID(item.url)}
+              height={400}
+              params="controls=0"
+            />
+          </div>
+        ))}
       </div>
-
       <div className="p-8">
         <a
           href="mailto:customcyclingtracks@gmx.net"
