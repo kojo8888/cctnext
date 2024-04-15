@@ -26,13 +26,33 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    console.dir(gpxData); // This will log the updated value after it changes
+    console.dir(gpxData);
   }, [gpxData]);
 
   const modifyGpxFile = () => {
-    setGpxData({ ...gpxData });
-    console.log("GPX data modified.");
+    if (!gpxData || !gpxData.trk) {
+      console.log("No track data found to modify.");
+      return;
+    }
+    gpxData.trk.forEach((track) => {
+      track.trkseg.forEach((segment) => {
+        segment.trkpt.forEach((point, index) => {
+          // Assuming point.time is in a compatible format to be parsed as a Date
+          const pointTime = new Date(point.time);
+          // Decrease the time by one second for each point
+          pointTime.setSeconds(pointTime.getSeconds() - 15);
+          // Update the time in the original GPX data
+          point.time = pointTime.toISOString();
+        });
+      });
+    });
+  };
 
+  useEffect(() => {
+    console.dir(gpxData);
+  }, [gpxData]);
+
+  const downloadModifiedGpxFile = () => {
     // Serialize the modified GPX data to string
     const gpxDataString = gpxData.toString(); // Make sure gpxData has a toString() method
     console.log(gpxDataString);
@@ -57,7 +77,12 @@ export default function Home() {
 
   return (
     <div>
-      <button onClick={modifyGpxFile}>Modify GPX File</button>
+      <p>
+        <button onClick={modifyGpxFile}>Modify GPX File</button>
+      </p>
+      <p>
+        <button onClick={downloadModifiedGpxFile}>Download Modified GPX</button>
+      </p>
     </div>
   );
 }

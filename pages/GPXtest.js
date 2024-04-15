@@ -46,7 +46,7 @@ export default function Home() {
           // Assuming point.time is in a compatible format to be parsed as a Date
           const pointTime = new Date(point.time);
           // Decrease the time by one second for each point
-          pointTime.setSeconds(pointTime.getSeconds() - 10);
+          pointTime.setSeconds(pointTime.getSeconds() - 15);
           // Update the time in the original GPX data
           point.time = pointTime.toISOString();
         });
@@ -54,7 +54,9 @@ export default function Home() {
     });
 
     // After modification, you might want to update the state or handle the modified data somehow
+    //This causes problems!
     setGpxData({ ...gpxData });
+    //
     console.log("GPX data modified.");
     console.log(gpxData);
     console.log(JSON.stringify(gpxData, null, 2));
