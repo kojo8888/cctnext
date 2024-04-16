@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Head from "next/head";
+import { FastForward } from "react-feather";
 
 export default function Home() {
   const [gpxData, setGpxData] = useState(null);
@@ -97,7 +99,35 @@ export default function Home() {
   };
 
   return (
-    <div className="p-6">
+    <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
+      <Head>
+        <title>KOM Hunter</title>
+        <meta
+          name="description"
+          content="KOM Hunter: Wo kann man welche KOMs holen"
+          key="desc"
+        />
+        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta
+          property="og:description"
+          content="KOM Hunter: Wo kann man welche KOMs holen"
+        />
+        <meta
+          property="og:image"
+          content="https://www.customcyclingtracks.com/Logo.png"
+        />
+      </Head>
+      <div className="mb-9">
+        <p className="flex justify-center mt-6">
+          <FastForward color="black" />
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          GPX Fälschungswerkstatt
+        </p>
+        <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
+          Bisschen die Performance tunen..
+        </p>
+      </div>
       <p>
         <input type="file" onChange={handleFileUpload} accept=".gpx" />
       </p>
@@ -120,6 +150,11 @@ export default function Home() {
       {/* <p>
         <button onClick={countTimeElements}>countTimeElements</button>
       </p> */}
+      <p className="mt-9">
+        Zur Erklärung: Lade eine gpx Datei hoch. Anschließend musst du auf
+        modify klicken und herunterladen. Die Datei modifiziert derzeit alle
+        Zeitstempel inkremental mit -0.3s.
+      </p>
     </div>
   );
 }
