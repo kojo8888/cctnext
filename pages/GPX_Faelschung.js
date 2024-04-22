@@ -4,6 +4,7 @@ import { FastForward } from "react-feather";
 
 export default function Home() {
   const [gpxData, setGpxData] = useState(null);
+  const [timeAdjustment, setTimeAdjustment] = useState(-0.3);
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
@@ -36,15 +37,11 @@ export default function Home() {
     }
     gpxData.trk.forEach((track) => {
       track.trkseg.forEach((segment) => {
-        let increment = 0.3; // Start incrementing from 10 seconds
         segment.trkpt.forEach((point, index) => {
-          // Assuming point.time is in a compatible format to be parsed as a Date
           const pointTime = new Date(point.time);
-          // Increment the time by 10 seconds multiplied by the index (0-based) + 1
           pointTime.setSeconds(
-            pointTime.getSeconds() - increment * (index + 1)
+            pointTime.getSeconds() + parseFloat(timeAdjustment) * (index + 1)
           );
-          // Update the time in the original GPX data
           point.time = pointTime.toISOString();
         });
       });
@@ -132,6 +129,18 @@ export default function Home() {
         <input type="file" onChange={handleFileUpload} accept=".gpx" />
       </p>
       <p>
+        <select
+          value={timeAdjustment}
+          onChange={(e) => setTimeAdjustment(e.target.value)}
+          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+        >
+          <option value="-0.3">Minimal (-0.3)</option>
+          <option value="-0.6">Ordentlich (-0.6)</option>
+          <option value="-0.9">Ulle (-0.9)</option>
+          <option value="-1.2">Max Kraft (-1.2)</option>
+        </select>
+      </p>
+      <p>
         <button
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
           onClick={modifyGpxFile}
@@ -151,9 +160,10 @@ export default function Home() {
         <button onClick={countTimeElements}>countTimeElements</button>
       </p> */}
       <p className="mt-9">
-        Zur Erklärung: Lade eine gpx Datei hoch. Anschließend musst du auf
-        modify klicken und herunterladen. Die Datei modifiziert derzeit alle
-        Zeitstempel inkremental mit -0.3s.
+        Zur Erklärung: Lade eine gpx Datei hoch, wähle einen Faktor zur
+        Zeitreduzierung, dann auf modify klicken und herunterladen. Das Programm
+        modifiziert derzeit alle Zeitstempel inkremental mit beispielsweise
+        -0.3s.
       </p>
     </div>
   );
