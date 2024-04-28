@@ -98,16 +98,16 @@ export default function Home() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
-        <title>KOM Hunter</title>
+        <title>GPX Fälschungswerkstatt</title>
         <meta
           name="description"
-          content="KOM Hunter: Wo kann man welche KOMs holen"
+          content="Ändere die Zeit vom GPX Track"
           key="desc"
         />
-        <meta property="og:title" content="Nützliche Tools für Radler" />
+        <meta property="og:title" content="Ändere die Zeit vom GPX Track" />
         <meta
           property="og:description"
-          content="KOM Hunter: Wo kann man welche KOMs holen"
+          content="Ändere die Zeit vom GPX Track"
         />
         <meta
           property="og:image"
