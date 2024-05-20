@@ -52,26 +52,6 @@ export default function Home() {
     console.dir(gpxData);
   }, [gpxData]);
 
-  // const countTimeElements = () => {
-  //   if (!gpxData || !gpxData.trk) {
-  //     console.log("No track data found to count.");
-  //     return;
-  //   }
-  //   let timeCount = 0;
-  //   gpxData.trk.forEach((track) => {
-  //     track.trkseg.forEach((segment) => {
-  //       segment.trkpt.forEach((point) => {
-  //         if (point.time) {
-  //           timeCount++;
-  //         }
-  //       });
-  //     });
-  //   });
-
-  //   console.log(`Total number of <time> elements: ${timeCount}`);
-  //   return timeCount; // Optional return, in case you need the count elsewhere
-  // };
-
   const downloadModifiedGpxFile = () => {
     // Serialize the modified GPX data to string
     const gpxDataString = gpxData.toString(); // Make sure gpxData has a toString() method
@@ -125,40 +105,58 @@ export default function Home() {
           Bisschen die Performance tunen..
         </p>
       </div>
-      <p>
-        <input type="file" onChange={handleFileUpload} accept=".gpx" />
-      </p>
-      <p>
-        <select
-          value={timeAdjustment}
-          onChange={(e) => setTimeAdjustment(e.target.value)}
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
-        >
-          <option value="-0.3">Minimal (-0.3)</option>
-          <option value="-0.6">Ordentlich (-0.6)</option>
-          <option value="-0.9">Ulle (-0.9)</option>
-          <option value="-1.2">Max Kraft (-1.2)</option>
-        </select>
-      </p>
-      <p>
-        <button
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
-          onClick={modifyGpxFile}
-        >
-          Modify GPX File
-        </button>
-      </p>
-      <p>
-        <button
-          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
-          onClick={downloadModifiedGpxFile}
-        >
-          Download Modified GPX
-        </button>
-      </p>
-      {/* <p>
-        <button onClick={countTimeElements}>countTimeElements</button>
-      </p> */}
+
+      <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">1 GPX Datei hochladen</p>
+          <p className="flex justify-center mt-6">
+            <input type="file" onChange={handleFileUpload} accept=".gpx" />
+          </p>
+        </div>
+
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">2 Performance verbessern</p>
+          <p>
+            <select
+              value={timeAdjustment}
+              onChange={(e) => setTimeAdjustment(e.target.value)}
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+            >
+              <option value="-0.3">Minimal (-0.3)</option>
+              <option value="-0.6">Ordentlich (-0.6)</option>
+              <option value="-0.9">Ulle (-0.9)</option>
+              <option value="-1.2">Max Kraft (-1.2)</option>
+            </select>
+          </p>
+        </div>
+
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">
+            3 Zeitpunkt ändern (optional)
+          </p>
+        </div>
+
+        <div className="bg-white border rounded-2xl px-6 pb-8">
+          <p className="flex justify-center mt-6">4 Fertig</p>
+          <p>
+            <button
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+              onClick={modifyGpxFile}
+            >
+              Modify GPX File
+            </button>
+          </p>
+          <p>
+            <button
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+              onClick={downloadModifiedGpxFile}
+            >
+              Download Modified GPX
+            </button>
+          </p>
+        </div>
+      </div>
+
       <p className="mt-9">
         Zur Erklärung: Lade eine gpx Datei hoch, wähle einen Faktor zur
         Zeitreduzierung, dann auf modify klicken und herunterladen. Das Programm
