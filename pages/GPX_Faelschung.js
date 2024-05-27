@@ -5,6 +5,8 @@ import { FastForward } from "react-feather";
 export default function Home() {
   const [gpxData, setGpxData] = useState(null);
   const [timeAdjustment, setTimeAdjustment] = useState(-0.3);
+  const [hrAdjustment, setHrAdjustment] = useState();
+  const [pmAdjustment, setPmAdjustment] = useState();
 
   const handleFileUpload = async (event) => {
     const file = event.target.files[0];
@@ -43,6 +45,26 @@ export default function Home() {
             pointTime.getSeconds() + parseFloat(timeAdjustment) * (index + 1)
           );
           point.time = pointTime.toISOString();
+
+          // Heart rate modification, ensure the heart rate data exists
+          if (
+            point.extensions &&
+            point.extensions["gpxtpx:TrackPointExtension"]
+          ) {
+            let hr = parseInt(
+              point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"]
+            );
+            hr += parseInt(hrAdjustment); // Adjusting the heart rate
+            point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"] =
+              hr.toString();
+          }
+
+          // Power modification, ensure the heart rate data exists
+          if (point.extensions && point.extensions["power"]) {
+            let powerValue = parseInt(point.extensions["power"]);
+            powerValue += parseInt(pmAdjustment);
+            point.extensions["power"] = powerValue.toString();
+          }
         });
       });
     });
@@ -116,16 +138,43 @@ export default function Home() {
 
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">2 Performance verbessern</p>
+          <p className="mt-6">Geschwindigkeit</p>
           <p>
             <select
               value={timeAdjustment}
               onChange={(e) => setTimeAdjustment(e.target.value)}
-              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-3 rounded-lg"
             >
               <option value="-0.3">Minimal (-0.3)</option>
               <option value="-0.6">Ordentlich (-0.6)</option>
               <option value="-0.9">Ulle (-0.9)</option>
               <option value="-1.2">Max Kraft (-1.2)</option>
+            </select>
+          </p>
+          <p className="mt-6">Herzfrequenz</p>
+          <p>
+            <select
+              value={hrAdjustment}
+              onChange={(e) => setHrAdjustment(e.target.value)}
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-3 rounded-lg"
+            >
+              <option value="-1">Minimal (-1)</option>
+              <option value="-3">Ordentlich (-3)</option>
+              <option value="-9">Ulle (-9)</option>
+              <option value="-15">Max Kraft (-15)</option>
+            </select>
+          </p>
+          <p className="mt-6">Watt</p>
+          <p>
+            <select
+              value={pmAdjustment}
+              onChange={(e) => setPmAdjustment(e.target.value)}
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-3 rounded-lg"
+            >
+              <option value="9">Minimal (9)</option>
+              <option value="12">Ordentlich (12)</option>
+              <option value="15">Ulle (15)</option>
+              <option value="30">Max Kraft (30)</option>
             </select>
           </p>
         </div>
