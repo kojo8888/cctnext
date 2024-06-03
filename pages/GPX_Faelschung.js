@@ -6,6 +6,7 @@ export default function Home() {
   const [gpxData, setGpxData] = useState(null);
   const [timeAdjustment, setTimeAdjustment] = useState(-0.3);
   const [hrAdjustment, setHrAdjustment] = useState();
+  const [maxHR, setMaxHR] = useState(null);
   const [pmAdjustment, setPmAdjustment] = useState();
 
   const handleFileUpload = async (event) => {
@@ -40,6 +41,7 @@ export default function Home() {
     gpxData.trk.forEach((track) => {
       track.trkseg.forEach((segment) => {
         segment.trkpt.forEach((point, index) => {
+          // Time modification
           const pointTime = new Date(point.time);
           pointTime.setSeconds(
             pointTime.getSeconds() + parseFloat(timeAdjustment) * (index + 1)
@@ -55,6 +57,7 @@ export default function Home() {
               point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"]
             );
             hr += parseInt(hrAdjustment); // Adjusting the heart rate
+
             point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"] =
               hr.toString();
           }
@@ -163,6 +166,14 @@ export default function Home() {
               <option value="-9">Ulle (-9)</option>
               <option value="-15">Max Kraft (-15)</option>
             </select>
+            {/* <input
+              className="text-center font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-3 rounded-lg"
+              type="number"
+              name="maxHR"
+              id="maxHR"
+              placeholder="max HR"
+              onChange={(e) => setMaxHR(e.target.value)}
+            ></input> */}
           </p>
           <p className="mt-6">Watt</p>
           <p>
