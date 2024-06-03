@@ -51,6 +51,22 @@ export default function Home() {
           // Heart rate modification, ensure the heart rate data exists
           if (
             point.extensions &&
+            point.extensions["gpxtpx:TrackPointExtension"] &&
+            point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"]
+          ) {
+            let hr = parseInt(
+              point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"]
+            );
+            if (maxHR && hr > parseInt(maxHR)) {
+              hr = parseInt(maxHR); // Cap the HR at maxHR if it's specified and exceeded
+            }
+            point.extensions["gpxtpx:TrackPointExtension"]["gpxtpx:hr"] =
+              hr.toString();
+          }
+
+          // Heart rate modification, ensure the heart rate data exists
+          if (
+            point.extensions &&
             point.extensions["gpxtpx:TrackPointExtension"]
           ) {
             let hr = parseInt(
@@ -166,14 +182,14 @@ export default function Home() {
               <option value="-9">Ulle (-9)</option>
               <option value="-15">Max Kraft (-15)</option>
             </select>
-            {/* <input
+            <input
               className="text-center font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-3 rounded-lg"
               type="number"
               name="maxHR"
               id="maxHR"
               placeholder="max HR"
               onChange={(e) => setMaxHR(e.target.value)}
-            ></input> */}
+            ></input>
           </p>
           <p className="mt-6">Watt</p>
           <p>
