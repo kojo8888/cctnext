@@ -32,23 +32,34 @@ export default function Home() {
   const shSkChartRef = useRef(null);
 
   useEffect(() => {
-    if (chartRef && chartRef.current && ühValues.length > 0) {
+    const ritzels = jsonData.features
+      .filter((feature) => feature.type === "Ritzel")
+      .map((feature) => feature.name);
+    const kettenblatts = jsonData.features
+      .filter((feature) => feature.type === "Kettenblatt")
+      .map((feature) => feature.name);
+    setRitzelNames(ritzels);
+    setKettenblattNames(kettenblatts);
+  }, []);
+
+  useEffect(() => {
+    if (chartRef.current && ühValues.length > 0) {
       const ctx = chartRef.current.getContext("2d");
       new Chart(ctx, {
-        type: "line", // Change the type as needed (line, bar, etc.)
+        type: "line",
         data: {
-          labels: ritzelArray, // Assuming this is an array of labels for the X-axis
+          labels: ritzelArray,
           datasets: [
             {
               label: "Übersetzung groß",
-              data: ühValues, // The Y-axis data
+              data: ühValues,
               fill: false,
               borderColor: "rgb(75, 192, 192)",
               tension: 0.1,
             },
             {
               label: "Übersetzung klein",
-              data: ükValues, // The Y-axis data
+              data: ükValues,
               fill: false,
               borderColor: "rgb(75, 92, 192)",
               tension: 0.1,
@@ -63,122 +74,113 @@ export default function Home() {
           },
         },
       });
-      if (vhVkChartRef.current) {
-        const ctxVhVk = vhVkChartRef.current.getContext("2d");
-        new Chart(ctxVhVk, {
-          type: "line",
-          data: {
-            labels: ritzelArray,
-            datasets: [
-              {
-                label: "Geschwindigkeit groß (Vh)",
-                data: VhValues,
-                fill: false,
-                borderColor: "rgb(255, 99, 32)",
-                tension: 0.1,
-              },
-              {
-                label: "Geschwindigkeit klein (Vk)",
-                data: VkValues,
-                fill: false,
-                borderColor: "rgb(54, 162, 35)",
-                tension: 0.1,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      }
-      if (devhDevkChartRef.current) {
-        const ctxDevhDevk = devhDevkChartRef.current.getContext("2d");
-        new Chart(ctxDevhDevk, {
-          type: "line",
-          data: {
-            labels: ritzelArray,
-            datasets: [
-              {
-                label: "Entfaltung groß (Devh)",
-                data: DevhValues,
-                fill: false,
-                borderColor: "rgb(155, 99, 132)",
-                tension: 0.1,
-              },
-              {
-                label: "Entfaltung klein (Devk)",
-                data: DevkValues,
-                fill: false,
-                borderColor: "rgb(154, 162, 235)",
-                tension: 0.1,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      }
-      if (shSkChartRef.current) {
-        const ctxShSk = shSkChartRef.current.getContext("2d");
-        new Chart(ctxShSk, {
-          type: "line",
-          data: {
-            labels: ritzelArray,
-            datasets: [
-              {
-                label: "Strecke groß (Sh)",
-                data: ShValues,
-                fill: false,
-                borderColor: "rgb(255, 99, 132)",
-                tension: 0.1,
-              },
-              {
-                label: "Strecke klein (Sk)",
-                data: SkValues,
-                fill: false,
-                borderColor: "rgb(54, 162, 235)",
-                tension: 0.1,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
-            },
-          },
-        });
-      }
     }
-    // Assuming jsonData.features includes an array of objects with a name property
-    const ritzels = jsonData.features
-      .filter((feature) => feature.type === "Ritzel")
-      .map((feature) => feature.name);
-    const kettenblatts = jsonData.features
-      .filter((feature) => feature.type === "Kettenblatt")
-      .map((feature) => feature.name);
-    setRitzelNames(ritzels);
-    setKettenblattNames(kettenblatts);
-  }, [
-    ritzelArray,
-    ühValues,
-    VhValues,
-    VkValues,
-    DevhValues,
-    DevkValues,
-    ShValues,
-    SkValues,
-  ]);
+  }, [ühValues, ükValues]);
+
+  useEffect(() => {
+    if (vhVkChartRef.current && VhValues.length > 0) {
+      const ctxVhVk = vhVkChartRef.current.getContext("2d");
+      new Chart(ctxVhVk, {
+        type: "line",
+        data: {
+          labels: ritzelArray,
+          datasets: [
+            {
+              label: "Geschwindigkeit groß (Vh)",
+              data: VhValues,
+              fill: false,
+              borderColor: "rgb(255, 99, 32)",
+              tension: 0.1,
+            },
+            {
+              label: "Geschwindigkeit klein (Vk)",
+              data: VkValues,
+              fill: false,
+              borderColor: "rgb(54, 162, 35)",
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    }
+  }, [VhValues, VkValues]);
+
+  useEffect(() => {
+    if (devhDevkChartRef.current && DevhValues.length > 0) {
+      const ctxDevhDevk = devhDevkChartRef.current.getContext("2d");
+      new Chart(ctxDevhDevk, {
+        type: "line",
+        data: {
+          labels: ritzelArray,
+          datasets: [
+            {
+              label: "Entfaltung groß (Devh)",
+              data: DevhValues,
+              fill: false,
+              borderColor: "rgb(155, 99, 132)",
+              tension: 0.1,
+            },
+            {
+              label: "Entfaltung klein (Devk)",
+              data: DevkValues,
+              fill: false,
+              borderColor: "rgb(154, 162, 235)",
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    }
+  }, [DevhValues, DevkValues]);
+
+  useEffect(() => {
+    if (shSkChartRef.current && ShValues.length > 0) {
+      const ctxShSk = shSkChartRef.current.getContext("2d");
+      new Chart(ctxShSk, {
+        type: "line",
+        data: {
+          labels: ritzelArray,
+          datasets: [
+            {
+              label: "Strecke groß (Sh)",
+              data: ShValues,
+              fill: false,
+              borderColor: "rgb(255, 99, 132)",
+              tension: 0.1,
+            },
+            {
+              label: "Strecke klein (Sk)",
+              data: SkValues,
+              fill: false,
+              borderColor: "rgb(54, 162, 235)",
+              tension: 0.1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    }
+  }, [ShValues, SkValues]);
 
   const handleRitzelChange = (event) => {
     setSelectedRitzel(event.target.value);
@@ -195,20 +197,23 @@ export default function Home() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const { name, value } = event.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
 
-    // useEffect(() => {
     const ritzelData = jsonData.features
-      .filter((feature) => feature.type === "Ritzel" && feature.id === "1")
+      .filter(
+        (feature) =>
+          feature.type === "Ritzel" && feature.name === selectedRitzel
+      )
       .flatMap((feature) => feature.Zaehne);
     const kettenblattData = jsonData.features
-      .filter((feature) => feature.type === "Kettenblatt" && feature.id === "6")
+      .filter(
+        (feature) =>
+          feature.type === "Kettenblatt" && feature.name === selectedKettenblatt
+      )
       .flatMap((feature) => feature.Zaehne);
+
     setRitzelArray(ritzelData);
     setKettenblattArray(kettenblattData);
 
-    //Übersetzung
     const divisorh = kettenblattData[1];
     const Üh = ritzelData.map((element) => element / divisorh);
     setÜhValues(Üh);
@@ -218,14 +223,10 @@ export default function Home() {
     setÜkValues(Ük);
     console.log(Ük);
 
-    //Umfang in m
-    var Umf;
-    Umf =
+    const Umf =
       ((parseInt(formData.wb) * 2 + parseInt(formData.wd)) * Math.PI) / 1000;
-    Umf = Number.parseFloat(Umf).toFixed(2);
     console.log(Umf);
 
-    //Entfaltung,Development
     const Devh = Üh.map((element) => Umf / element);
     console.log(Devh);
     setDevhValues(Devh);
@@ -233,19 +234,13 @@ export default function Home() {
     console.log(Devk);
     setDevkValues(Devk);
 
-    //Geschwindigkeit in km/h
     const vh = Devh.map((element) => (element * formData.Cad * 60) / 1000);
-    // vh = (Devh * parseInt(Cad) * 60) / 1000;
-    // vh = Number.parseFloat(vh).toFixed(2);
     console.log(vh);
     setVhValues(vh);
     const vk = Devk.map((element) => (element * formData.Cad * 60) / 1000);
-    // vk = (Devk * parseInt(Cad) * 60) / 1000;
-    // vk = Number.parseFloat(vk).toFixed(2);
     console.log(vk);
     setVkValues(vk);
 
-    //Entfaltung bei Cad in m
     const sh = Üh.map((element) => formData.Cad * Umf * element);
     console.log(sh);
     setShValues(sh);
@@ -435,7 +430,7 @@ export default function Home() {
           </tbody>
         </table>
       </div>
-      <div className="mt-3 grid  grid-cols-1 max-w-3xl mx-auto">
+      <div className="mt-3 grid grid-cols-1 max-w-3xl mx-auto">
         <div className="bg-white border rounded-2xl">
           <div
             className="chart-container mt-3 max-w-2xl mx-auto"
