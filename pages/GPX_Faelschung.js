@@ -147,7 +147,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2">
+      <div className="mt-12 grid gap-8">
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">1 GPX Datei hochladen</p>
           <p className="flex justify-center mt-6">

@@ -1,14 +1,14 @@
 import Head from "next/head";
 import { Settings } from "react-feather";
 import { useState, useEffect, useRef } from "react";
-import jsonData from "../lib/ritzel.json"; // Adjust the path as necessary
+import jsonData from "../lib/ritzel.json";
 import Chart from "chart.js";
 
 export default function Home() {
-  const [ritzelNames, setRitzelNames] = useState([]); // Stores available ritzel names
-  const [kettenblattNames, setKettenblattNames] = useState([]); // Stores available kettenblatt names
-  const [selectedRitzel, setSelectedRitzel] = useState(""); // Selected ritzel name
-  const [selectedKettenblatt, setSelectedKettenblatt] = useState(""); // Selected kettenblatt name
+  const [ritzelNames, setRitzelNames] = useState([]);
+  const [kettenblattNames, setKettenblattNames] = useState([]);
+  const [selectedRitzel, setSelectedRitzel] = useState("");
+  const [selectedKettenblatt, setSelectedKettenblatt] = useState("");
   const [ritzelArray, setRitzelArray] = useState([]);
   const [kettenblattArray, setKettenblattArray] = useState([]);
   const [divisionResults, setDivisionResults] = useState([]);
@@ -252,15 +252,6 @@ export default function Home() {
     const sk = Ük.map((element) => formData.Cad * Umf * element);
     console.log(sk);
     setSkValues(sk);
-
-    // //Bandbreite
-    // var Bb;
-    // var Gk;
-    // var Gh;
-    // Gk = ZRk / ZKk;
-    // Gh = ZKh / ZRh;
-    // Bb = Gk / Gh;
-    // }, []);
 
     setTableData((prevTableData) => [...prevTableData, formData]);
     setFormData({ wd: "", wb: "", Cad: "" });
