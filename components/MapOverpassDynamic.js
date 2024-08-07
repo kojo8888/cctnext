@@ -71,7 +71,7 @@ const MapOverpassDynamic = () => {
 
   const overpassbrunnenQuery = `
     [out:json];
-    area["name"="Bayern"]->.searchArea;
+    area["name"="Italia"]->.searchArea;
     node["amenity"="drinking_water"](area.searchArea);
     out body;
   `;
