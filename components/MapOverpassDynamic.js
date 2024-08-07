@@ -71,7 +71,7 @@ const MapOverpassDynamic = () => {
 
   const overpassbrunnenQuery = `
     [out:json];
-    area["name"="Italia"]->.searchArea;
+    area["name"="Friuli-Venezia Giulia"]->.searchArea;
     node["amenity"="drinking_water"](area.searchArea);
     out body;
   `;
