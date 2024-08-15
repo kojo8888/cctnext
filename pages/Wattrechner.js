@@ -57,7 +57,9 @@ export default function Wattrechner() {
     v = parseInt(vk) / 3.6;
     m = parseInt(mfahrer) + parseInt(mrad);
 
-    Pair = Math.round((1 / 2) * cwa * p * Math.pow(v, 2));
+    Pair = Math.round((1 / 2) * cwa * p * Math.pow(v, 3));
+    // TODO: Hoch 3 oder hoch 2?
+
     Proll = Math.round(m * g * cr * v);
 
     vclimb = (k * v) / Math.sqrt(1 + Math.pow(k, 2));
