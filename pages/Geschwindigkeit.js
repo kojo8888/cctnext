@@ -66,7 +66,7 @@ export default function Wattrechner() {
             Durchschnittliche Geschwindigkeit (in km/h)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="vd"
             id="vd"
@@ -75,7 +75,7 @@ export default function Wattrechner() {
             Distanz (in km)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="s"
             id="s"
@@ -84,7 +84,7 @@ export default function Wattrechner() {
             Zeit (in h)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="t"
             id="t"

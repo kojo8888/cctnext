@@ -1,26 +1,48 @@
 import Head from "next/head";
+import { useState, useEffect } from "react";
 import { BatteryCharging } from "react-feather";
+import jsonData from "../lib/position_luftwiderstandswerte.json";
 
 export default function Wattrechner() {
-  const submitContact = async (event) => {
+  const [selectedValue, setSelectedValue] = useState("");
+  const [options, setOptions] = useState([]);
+
+  useEffect(() => {
+    // Extracting options based on Position "Oberlenker"
+    const extractedOptions = jsonData.features.map((feature) => ({
+      label: feature.Position,
+      value: feature.Gesamt_gross_c_wA_Richtwert,
+    }));
+
+    setOptions(extractedOptions);
+  }, []);
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
+  const submitForm = async (event) => {
     event.preventDefault();
 
+    // Use the selectedValue for calculations or other logic
+    // alert(`Selected value for Oberlenker is: ${selectedValue}`);
+
     //Variablen zum Abfragen
-    const vk = event.target.vk.value;
+    const vk = event.target.vk.value; // Geschwindigkeit
     const mfahrer = event.target.mfahrer.value;
     const mrad = event.target.mrad.value;
-    const d = event.target.d.value;
-    const h = event.target.h.value;
+    const d = event.target.d.value; // Distanz
+    const h = event.target.h.value; // Höhe
 
     // fixe Variablen
     const p = 1.2;
-    const cwa = 0.3;
-    const y = 0.005;
+    // const cwa = 0.3;
+    const cwa = selectedValue;
+    const cr = 0.0032; // Rollwiderstandskoeffizient
     let g = 9.18;
-    //let k = 0.001;
 
     // Variablen zum Rechnen
-    let k;
+    let k; // Steigungsverhältnis Höhe (m) zu Länge (km)
     let v;
     let vclimb;
     let m;
@@ -34,8 +56,9 @@ export default function Wattrechner() {
     k = parseInt(h) / (parseInt(d) * 1000);
     v = parseInt(vk) / 3.6;
     m = parseInt(mfahrer) + parseInt(mrad);
-    Pair = Math.round((1 / 2) * cwa * p * Math.pow(v, 3));
-    Proll = Math.round(m * g * y * v);
+
+    Pair = Math.round((1 / 2) * cwa * p * Math.pow(v, 2));
+    Proll = Math.round(m * g * cr * v);
 
     vclimb = (k * v) / Math.sqrt(1 + Math.pow(k, 2));
     Pclimb = Math.round(m * g * vclimb);
@@ -46,7 +69,7 @@ export default function Wattrechner() {
 
     // Ausgabe
     alert(
-      `Die Leistung ist ${Ptotal}, die relative Leistung ist ${Prel}, die Leistung für den Anstieg ist ${Pclimb}, die Leistung gegen den Luftwiderstand ist ${Pair}, die Leistung gegen den Rollwiderstand ist ${Proll}`
+      `Die Leistung ist ${Ptotal}W, die relative Leistung ist ${Prel}W/kg, die Leistung für den Anstieg ist ${Pclimb}W, die Leistung gegen den Luftwiderstand ist ${Pair}W, die Leistung gegen den Rollwiderstand ist ${Proll}W`
     );
   };
 
@@ -76,18 +99,17 @@ export default function Wattrechner() {
         <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
           Wattrechner!!!
         </p>
-
         <p className="mt-9 mb-9 text-xl font-extrabold text-gray-900 tracking-tight">
           Drücken, Junge!
         </p>
       </div>
       <div className="px-6 py-3">
-        <form className="flex flex-col" onSubmit={submitContact}>
+        <form className="flex flex-col" onSubmit={submitForm}>
           <label className="block mb-3" htmlFor="vk">
             Geschwindigkeit (in km/h)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="vk"
             id="vk"
@@ -97,7 +119,7 @@ export default function Wattrechner() {
             Gewicht Fahrer (in kg)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="mfahrer"
             id="mfahrer"
@@ -107,7 +129,7 @@ export default function Wattrechner() {
             Gewicht Rad (in kg)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="mrad"
             id="mrad"
@@ -117,7 +139,7 @@ export default function Wattrechner() {
             Distanz (in km)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="d"
             id="d"
@@ -127,12 +149,31 @@ export default function Wattrechner() {
             Höhenunterschied (in m)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="h"
             id="h"
             required
           />
+          <label className="block mb-3" htmlFor="positionSelect">
+            Sitzposition (Fahrer groß)
+          </label>
+          <select
+            id="positionSelect"
+            value={selectedValue}
+            onChange={handleChange}
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            required
+          >
+            <option value="" disabled>
+              Auswählen..
+            </option>
+            {options.map((option, index) => (
+              <option key={index} value={option.value}>
+                {option.label} - {option.value}
+              </option>
+            ))}
+          </select>
           <button
             type="submit"
             className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"

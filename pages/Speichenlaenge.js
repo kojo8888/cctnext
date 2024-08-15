@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Aperture } from "react-feather";
+import { Loader } from "react-feather";
 
 export default function Speichenlaenge() {
   const submitContact = async (event) => {
@@ -57,7 +57,7 @@ export default function Speichenlaenge() {
       </Head>
       <div className="mb-9">
         <p className="flex justify-center mt-6">
-          <Aperture color="black" />
+          <Loader color="black" />
         </p>
         <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
           Speichenlänge!!!
@@ -73,7 +73,7 @@ export default function Speichenlaenge() {
             Durchmesser durch Speichenenden (in mm)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="D"
             id="D"
@@ -84,7 +84,7 @@ export default function Speichenlaenge() {
             Durchmesser Nabenflansch-Lochkreis (in mm)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="N"
             id="N"
@@ -95,7 +95,7 @@ export default function Speichenlaenge() {
             Abstand Flansch zur Mittelachse (in mm)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="A"
             id="A"
@@ -106,7 +106,7 @@ export default function Speichenlaenge() {
             Anzahl der Speichenkreuzungen
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="K"
             id="K"
@@ -116,7 +116,7 @@ export default function Speichenlaenge() {
             Speichenanzahl
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="Z"
             id="Z"

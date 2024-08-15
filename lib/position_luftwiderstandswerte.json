@@ -1,0 +1,89 @@
+{
+  "type": "Luftwiderstand",
+  "features": [
+    {
+      "type": "Position",
+      "Position": "Oberlenker",
+      "Fahrer_gross_%_c_wA": 78.0,
+      "Fahrer_klein_%_c_wA": 72.0,
+      "Fahrer_gross_c_wA_Richtwert": 0.38,
+      "Fahrer_klein_c_wA_Richtwert": 0.26,
+      "Fahrrad_gross_%_c_wA": 22.0,
+      "Fahrrad_klein_%_c_wA": 28.0,
+      "Fahrrad_gross_c_wA_Richtwert": 0.107,
+      "Fahrrad_klein_c_wA_Richtwert": 0.101,
+      "Gesamt_gross_c_wA_Richtwert": 0.487,
+      "Gesamt_klein_c_wA_Richtwert": 0.361
+    },
+    {
+      "type": "Position",
+      "Position": "Bremsholm",
+      "Fahrer_gross_%_c_wA": 77.1,
+      "Fahrer_klein_%_c_wA": 70.3,
+      "Fahrer_gross_c_wA_Richtwert": 0.36,
+      "Fahrer_klein_c_wA_Richtwert": 0.24,
+      "Fahrrad_gross_%_c_wA": 22.9,
+      "Fahrrad_klein_%_c_wA": 29.7,
+      "Fahrrad_gross_c_wA_Richtwert": 0.107,
+      "Fahrrad_klein_c_wA_Richtwert": 0.101,
+      "Gesamt_gross_c_wA_Richtwert": 0.467,
+      "Gesamt_klein_c_wA_Richtwert": 0.341
+    },
+    {
+      "type": "Position",
+      "Position": "Unterlenker",
+      "Fahrer_gross_%_c_wA": 76.0,
+      "Fahrer_klein_%_c_wA": 69.4,
+      "Fahrer_gross_c_wA_Richtwert": 0.34,
+      "Fahrer_klein_c_wA_Richtwert": 0.23,
+      "Fahrrad_gross_%_c_wA": 24.0,
+      "Fahrrad_klein_%_c_wA": 30.6,
+      "Fahrrad_gross_c_wA_Richtwert": 0.107,
+      "Fahrrad_klein_c_wA_Richtwert": 0.101,
+      "Gesamt_gross_c_wA_Richtwert": 0.447,
+      "Gesamt_klein_c_wA_Richtwert": 0.331
+    },
+    {
+      "type": "Position",
+      "Position": "Unterlenker gebueckt",
+      "Fahrer_gross_%_c_wA": 73.0,
+      "Fahrer_klein_%_c_wA": 66.4,
+      "Fahrer_gross_c_wA_Richtwert": 0.29,
+      "Fahrer_klein_c_wA_Richtwert": 0.21,
+      "Fahrrad_gross_%_c_wA": 27.0,
+      "Fahrrad_klein_%_c_wA": 33.6,
+      "Fahrrad_gross_c_wA_Richtwert": 0.107,
+      "Fahrrad_klein_c_wA_Richtwert": 0.101,
+      "Gesamt_gross_c_wA_Richtwert": 0.397,
+      "Gesamt_klein_c_wA_Richtwert": 0.301
+    },
+    {
+      "type": "Position",
+      "Position": "Triathlon Aufsatz",
+      "Fahrer_gross_%_c_wA": 71.2,
+      "Fahrer_klein_%_c_wA": 64.8,
+      "Fahrer_gross_c_wA_Richtwert": 0.27,
+      "Fahrer_klein_c_wA_Richtwert": 0.19,
+      "Fahrrad_gross_%_c_wA": 28.8,
+      "Fahrrad_klein_%_c_wA": 35.2,
+      "Fahrrad_gross_c_wA_Richtwert": 0.109,
+      "Fahrrad_klein_c_wA_Richtwert": 0.103,
+      "Gesamt_gross_c_wA_Richtwert": 0.379,
+      "Gesamt_klein_c_wA_Richtwert": 0.293
+    },
+    {
+      "type": "Position",
+      "Position": "Zeitfahrrad",
+      "Fahrer_gross_%_c_wA": 71.0,
+      "Fahrer_klein_%_c_wA": 64.0,
+      "Fahrer_gross_c_wA_Richtwert": 0.23,
+      "Fahrer_klein_c_wA_Richtwert": 0.17,
+      "Fahrrad_gross_%_c_wA": 29.0,
+      "Fahrrad_klein_%_c_wA": 36.0,
+      "Fahrrad_gross_c_wA_Richtwert": 0.094,
+      "Fahrrad_klein_c_wA_Richtwert": 0.096,
+      "Gesamt_gross_c_wA_Richtwert": 0.324,
+      "Gesamt_klein_c_wA_Richtwert": 0.266
+    }
+  ]
+}

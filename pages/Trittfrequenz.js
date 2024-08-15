@@ -70,7 +70,7 @@ export default function Trittfrequenz() {
             Zähnezahl Kettenblatt
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="ZK"
             id="ZK"
@@ -80,7 +80,7 @@ export default function Trittfrequenz() {
             Zähnezahl Ritzel
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="ZR"
             id="ZR"
@@ -90,7 +90,7 @@ export default function Trittfrequenz() {
             Laufraddurchmesser (in mm)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="wd"
             placeholder="Rennrad ~ 694mm"
@@ -101,7 +101,7 @@ export default function Trittfrequenz() {
             Geschwindigkeit (in km/h)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="veloc"
             id="veloc"

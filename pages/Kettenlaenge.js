@@ -98,7 +98,7 @@ export default function Kettenlaenge() {
             Kettenstrebenlänge (in mm)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="lKettenstrebe"
             id="lKettenstrebe"
@@ -109,7 +109,7 @@ export default function Kettenlaenge() {
             Zähnezahl größtes Kettenblatt (vorne)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="ZKettenblatt"
             id="ZKettenblatt"
@@ -120,7 +120,7 @@ export default function Kettenlaenge() {
             Zähnezahl größtes Ritzel (hinten)
           </label>
           <input
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             type="number"
             name="ZRitzel"
             id="ZRitzel"
@@ -131,7 +131,7 @@ export default function Kettenlaenge() {
             Zähnezahl Schaltungsröllchen
           </label>
           <select
-            className="text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+            className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
             id="Schaltungsroellchen"
             name="Schaltungsroellchen"
             required

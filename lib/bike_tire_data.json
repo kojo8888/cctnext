@@ -1,0 +1,254 @@
+[
+    {
+        "Reifenfabrikat":"Conti Tour de Sol (Spezialanfertigung)",
+        "Reifengr\u00f6\u00dfe":"47 - 305",
+        "cR x 10^5 bei 3 bar":669.0,
+        "cR x 10^5 bei 5 bar":436.0,
+        "cR x 10^5 bei 7 bar":378.0
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW HS 159",
+        "Reifengr\u00f6\u00dfe":"47 - 305",
+        "cR x 10^5 bei 3 bar":614.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"ASC RL-Edge",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Avocet Fastgrip Freestyle",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Continental Nylon S US Type",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":392.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Rinkowski G\u00fcrtelreifen Typ 1",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":219.0,
+        "cR x 10^5 bei 5 bar":160.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Rinkowski G\u00fcrtelreifen Typ 2",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":261.0,
+        "cR x 10^5 bei 5 bar":195.0,
+        "cR x 10^5 bei 7 bar":467.0
+    },
+    {
+        "Reifenfabrikat":"Schwalbe City Jet",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard SK, HS 188",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":436.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW, HS 159",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW, HS 159",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Tioga Competition mit Mittelsteg",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":394.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Tioga Competition mit Stollen",
+        "Reifengr\u00f6\u00dfe":"47 - 406",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":419.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Michelin Standard",
+        "Reifengr\u00f6\u00dfe":"28 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":351.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Hudyn HPV",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":477.0,
+        "cR x 10^5 bei 7 bar":376.0
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW, HS 159",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":408.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Continental Avenue",
+        "Reifengr\u00f6\u00dfe":"47 - 559",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":267.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Continental Super Cross",
+        "Reifengr\u00f6\u00dfe":"50 - 559",
+        "cR x 10^5 bei 3 bar":696.0,
+        "cR x 10^5 bei 5 bar":643.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW, HS 159",
+        "Reifengr\u00f6\u00dfe":"47 - 559",
+        "cR x 10^5 bei 3 bar":332.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Avocet Silk",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":513.0,
+        "cR x 10^5 bei 5 bar":381.0,
+        "cR x 10^5 bei 7 bar":349.0
+    },
+    {
+        "Reifenfabrikat":"Avocet Silk",
+        "Reifengr\u00f6\u00dfe":"28 - 622",
+        "cR x 10^5 bei 3 bar":596.0,
+        "cR x 10^5 bei 5 bar":596.0,
+        "cR x 10^5 bei 7 bar":376.0
+    },
+    {
+        "Reifenfabrikat":"Continental Super Sport",
+        "Reifengr\u00f6\u00dfe":"28 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":351.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Continental Top Touring Skinwall",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":278.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Continental Top Touring wei\u00df",
+        "Reifengr\u00f6\u00dfe":"37 - 622",
+        "cR x 10^5 bei 3 bar":448.0,
+        "cR x 10^5 bei 5 bar":341.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Panaracer Tour Guard",
+        "Reifengr\u00f6\u00dfe":"37 - 622",
+        "cR x 10^5 bei 3 bar":537.0,
+        "cR x 10^5 bei 5 bar":537.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe City Jet HS 257",
+        "Reifengr\u00f6\u00dfe":"47 - 622",
+        "cR x 10^5 bei 3 bar":446.0,
+        "cR x 10^5 bei 5 bar":446.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe City Jet HS 257",
+        "Reifengr\u00f6\u00dfe":"47 - 622",
+        "cR x 10^5 bei 3 bar":522.0,
+        "cR x 10^5 bei 5 bar":362.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Blizzard HS190",
+        "Reifengr\u00f6\u00dfe":"25 - 622",
+        "cR x 10^5 bei 3 bar":573.0,
+        "cR x 10^5 bei 5 bar":389.0,
+        "cR x 10^5 bei 7 bar":321.0
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Blizzard HS190",
+        "Reifengr\u00f6\u00dfe":"25 - 622",
+        "cR x 10^5 bei 3 bar":432.0,
+        "cR x 10^5 bei 5 bar":342.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Blizzard HS190",
+        "Reifengr\u00f6\u00dfe":"25 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":498.0,
+        "cR x 10^5 bei 7 bar":405.0
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Hurricane",
+        "Reifengr\u00f6\u00dfe":"42 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":307.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Marathon",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":474.0,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Schwalbe Standard GW, HS 159",
+        "Reifengr\u00f6\u00dfe":"47 - 622",
+        "cR x 10^5 bei 3 bar":336.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Semperit Longlife",
+        "Reifengr\u00f6\u00dfe":"28 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Vredestein Monte Carlo",
+        "Reifengr\u00f6\u00dfe":"32 - 622",
+        "cR x 10^5 bei 3 bar":393.0,
+        "cR x 10^5 bei 5 bar":null,
+        "cR x 10^5 bei 7 bar":null
+    },
+    {
+        "Reifenfabrikat":"Vredestein Runner",
+        "Reifengr\u00f6\u00dfe":"25 - 622",
+        "cR x 10^5 bei 3 bar":null,
+        "cR x 10^5 bei 5 bar":312.0,
+        "cR x 10^5 bei 7 bar":null
+    }
+]
