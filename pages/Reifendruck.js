@@ -50,6 +50,8 @@ export default function Reifendruck() {
     const F = conditionFactor * (roadTypeFactors[roadType] || 1.0); // default to 1.0 for tarmac
 
     // Calculate pressure
+    //TODO: Formel überprüfen
+    //TODO: Detaillierung über Schlauchart, Reifentyp etc
     const pressure = (weight / T) * F + 4.2;
     return pressure.toFixed(1); // return 2 decimal places
   };
