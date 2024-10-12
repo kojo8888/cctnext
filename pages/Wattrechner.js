@@ -58,7 +58,6 @@ export default function Wattrechner() {
     m = parseInt(mfahrer) + parseInt(mrad);
 
     Pair = Math.round((1 / 2) * cwa * p * Math.pow(v, 3));
-    // TODO: Hoch 3 oder hoch 2?
 
     Proll = Math.round(m * g * cr * v);
 
@@ -68,6 +67,7 @@ export default function Wattrechner() {
     // Ergebnis
     Ptotal = Math.round(Pair + Proll + Pclimb);
     Prel = Math.round(Ptotal / m);
+    // TODO: Rundung zu grob
 
     // Ausgabe
     alert(
