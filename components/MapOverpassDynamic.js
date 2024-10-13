@@ -13,32 +13,71 @@ import axios from "axios";
 import styles from "../styles/Home.module.css";
 
 const MapOverpassDynamic = () => {
-  const markerIcon = L.icon({
-    iconUrl: "../platzhalter.png",
-    iconSize: [64, 64], // Adjust the size of the icon
-    iconAnchor: [32, 64], // Adjust the anchor point of the icon
-    popupAnchor: [0, -32], // Adjust the popup anchor point
+  // Define different icons for each amenity
+  const locationIcon = L.icon({
+    iconUrl: "../platzhalter.png", // Replace with the path to your water icon
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
+  });
+
+  const waterIcon = L.icon({
+    iconUrl: "../trinkflasche.png", // Replace with the path to your water icon
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
+  });
+
+  const repairIcon = L.icon({
+    iconUrl: "../werkzeug.png", // Replace with the path to your bicycle repair station icon
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
+  });
+
+  const vendingIcon = L.icon({
+    iconUrl: "../vending-machine.png", // Replace with the path to your vending machine icon
+    iconSize: [32, 32],
+    iconAnchor: [16, 32],
+    popupAnchor: [0, -32],
   });
 
   const [brunnenStations, setBrunnenStations] = useState(null);
+  const [bicycleRepairStations, setBicycleRepairStations] = useState(null);
+  const [vendingMachines, setVendingMachines] = useState(null);
+
   const mapRef = useRef();
   const location = useGeoLocation();
   const overpassApiUrl = "https://overpass-api.de/api/interpreter";
 
   // Function to create a dynamic query based on user's location
-  const createOverpassQuery = (lat, lon) => {
-    // Define the bounding box (0.1 lat/lon)
-    const minLat = lat - 0.15;
-    const maxLat = lat + 0.15;
-    const minLon = lon - 0.15;
-    const maxLon = lon + 0.15;
+  const createOverpassQuery = (lat, lon, amenity, additionalTags = "") => {
+    // Define the bounding box (0.15 lat/lon for a larger search area)
+    const minLat = lat - 0.3;
+    const maxLat = lat + 0.3;
+    const minLon = lon - 0.3;
+    const maxLon = lon + 0.3;
 
-    // Return a dynamic query string for the bounding box
+    // Return a dynamic query string for the bounding box and amenity
     return `
       [out:json];
       (
-        node["amenity"="drinking_water"](${minLat},${minLon},${maxLat},${maxLon});
+        node["amenity"="${amenity}"${additionalTags}](${minLat},${minLon},${maxLat},${maxLon});
       );
+      out body;
+    `;
+  };
+
+  // Query specific for vending machines with bicycle tubes
+  const createVendingMachineQuery = (lat, lon) => {
+    const minLat = lat - 0.3;
+    const maxLat = lat + 0.3;
+    const minLon = lon - 0.3;
+    const maxLon = lon + 0.3;
+
+    return `
+      [out:json];
+      node["amenity"="vending_machine"]["vending"~"bicycle_tube"](${minLat},${minLon},${maxLat},${maxLon});
       out body;
     `;
   };
@@ -56,11 +95,25 @@ const MapOverpassDynamic = () => {
   // Fetch data when location is loaded and changes
   useEffect(() => {
     if (location.loaded && !location.error) {
-      const query = createOverpassQuery(
+      const drinkingWaterQuery = createOverpassQuery(
+        location.coordinates.lat,
+        location.coordinates.lng,
+        "drinking_water"
+      );
+      const bicycleRepairQuery = createOverpassQuery(
+        location.coordinates.lat,
+        location.coordinates.lng,
+        "bicycle_repair_station"
+      );
+      const vendingMachineQuery = createVendingMachineQuery(
         location.coordinates.lat,
         location.coordinates.lng
       );
-      fetchData(query, setBrunnenStations);
+
+      // Fetch data for each amenity
+      fetchData(drinkingWaterQuery, setBrunnenStations);
+      fetchData(bicycleRepairQuery, setBicycleRepairStations);
+      fetchData(vendingMachineQuery, setVendingMachines);
     }
   }, [location]);
 
@@ -84,6 +137,20 @@ const MapOverpassDynamic = () => {
     };
   }
 
+  // Function to add custom markers with specific icons based on amenity
+  const pointToLayer = (feature, latlng, amenityType) => {
+    let icon;
+    if (amenityType === "drinking_water") {
+      icon = waterIcon;
+    } else if (amenityType === "bicycle_repair_station") {
+      icon = repairIcon;
+    } else if (amenityType === "vending_machine") {
+      icon = vendingIcon;
+    }
+
+    return L.marker(latlng, { icon });
+  };
+
   return (
     <div className={styles.map}>
       <div>
@@ -99,14 +166,39 @@ const MapOverpassDynamic = () => {
           />
           {location.loaded && !location.error && (
             <Marker
-              icon={markerIcon}
+              icon={locationIcon} // Change the icon to user's location icon if needed
               position={[location.coordinates.lat, location.coordinates.lng]}
             ></Marker>
           )}
           <LayersControl position="topright">
             {brunnenStations && (
-              <LayersControl.Overlay name="Brunnen">
-                <GeoJSON data={brunnenStations} />
+              <LayersControl.Overlay name="Drinking Water Stations">
+                <GeoJSON
+                  data={brunnenStations}
+                  pointToLayer={(feature, latlng) =>
+                    pointToLayer(feature, latlng, "drinking_water")
+                  }
+                />
+              </LayersControl.Overlay>
+            )}
+            {bicycleRepairStations && (
+              <LayersControl.Overlay name="Bicycle Repair Stations">
+                <GeoJSON
+                  data={bicycleRepairStations}
+                  pointToLayer={(feature, latlng) =>
+                    pointToLayer(feature, latlng, "bicycle_repair_station")
+                  }
+                />
+              </LayersControl.Overlay>
+            )}
+            {vendingMachines && (
+              <LayersControl.Overlay name="Vending Machines (Bicycle Tubes)">
+                <GeoJSON
+                  data={vendingMachines}
+                  pointToLayer={(feature, latlng) =>
+                    pointToLayer(feature, latlng, "vending_machine")
+                  }
+                />
               </LayersControl.Overlay>
             )}
           </LayersControl>
