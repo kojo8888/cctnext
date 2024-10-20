@@ -38,16 +38,16 @@ export default function Upload() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
       <Head>
-        <title>GPX Fälschungswerkstatt</title>
+        <title>Reifengröße</title>
         <meta
           name="description"
-          content="Ändere die Zeit vom GPX Track"
+          content="Finde den richtigen Schlauch oder Mantel"
           key="desc"
         />
-        <meta property="og:title" content="Ändere die Zeit vom GPX Track" />
+        <meta property="og:title" content="Reifengröße" />
         <meta
           property="og:description"
-          content="Ändere die Zeit vom GPX Track"
+          content="Finde den richtigen Schlauch oder Mantel"
         />
         <meta
           property="og:image"

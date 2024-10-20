@@ -1,3 +1,5 @@
+//TODO: UI Iphone; nach rechts scrollen
+
 import Head from "next/head";
 import { Settings } from "react-feather";
 import { useState, useEffect, useRef } from "react";

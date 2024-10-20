@@ -1,42 +1,42 @@
 [
-    {
-        "Reifentyp":"Breiter Slickreifen",
-        "Breite in mm":32,
-        "Felgen-Nenn-durchmesser in mm":622,
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 3 bar":"0,00513",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 4 bar":"0,00361",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 5 bar":"-"
-    },
-    {
-        "Reifentyp":"Mittelbreiter Slickreifen",
-        "Breite in mm":28,
-        "Felgen-Nenn-durchmesser in mm":622,
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 3 bar":"0,00596",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 4 bar":"0,00404",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 5 bar":"0,00349"
-    },
-    {
-        "Reifentyp":"Schmaler Slickreifen",
-        "Breite in mm":20,
-        "Felgen-Nenn-durchmesser in mm":622,
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 3 bar":"-",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 4 bar":"0,00477",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 5 bar":"0,00376"
-    },
-    {
-        "Reifentyp":"Profilreifen",
-        "Breite in mm":37,
-        "Felgen-Nenn-durchmesser in mm":622,
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 3 bar":"0,00545",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 4 bar":"0,00404",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 5 bar":"-"
-    },
-    {
-        "Reifentyp":"Conti-Tour de Sol-Reifen",
-        "Breite in mm":47,
-        "Felgen-Nenn-durchmesser in mm":305,
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 3 bar":"0,00669",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 4 bar":"0,00436",
-        "Rollwiderstandskoeffizient c_R f\u00fcr glatte Fahrbahnen bei p = 5 bar":"0,00378"
-    }
+  {
+    "Reifentyp": "Breiter Slickreifen",
+    "Breite in mm": 32,
+    "Felgen-Nenn-durchmesser in mm": 622,
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 3 bar": "0,00513",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 4 bar": "0,00361",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 5 bar": "-"
+  },
+  {
+    "Reifentyp": "Mittelbreiter Slickreifen",
+    "Breite in mm": 28,
+    "Felgen-Nenn-durchmesser in mm": 622,
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 3 bar": "0,00596",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 4 bar": "0,00404",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 5 bar": "0,00349"
+  },
+  {
+    "Reifentyp": "Schmaler Slickreifen",
+    "Breite in mm": 20,
+    "Felgen-Nenn-durchmesser in mm": 622,
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 3 bar": "-",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 4 bar": "0,00477",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 5 bar": "0,00376"
+  },
+  {
+    "Reifentyp": "Profilreifen",
+    "Breite in mm": 37,
+    "Felgen-Nenn-durchmesser in mm": 622,
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 3 bar": "0,00545",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 4 bar": "0,00404",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 5 bar": "-"
+  },
+  {
+    "Reifentyp": "Conti-Tour de Sol-Reifen",
+    "Breite in mm": 47,
+    "Felgen-Nenn-durchmesser in mm": 305,
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 3 bar": "0,00669",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 4 bar": "0,00436",
+    "Rollwiderstandskoeffizient c_R fuer glatte Fahrbahnen bei p = 5 bar": "0,00378"
+  }
 ]

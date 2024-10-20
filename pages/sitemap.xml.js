@@ -56,7 +56,7 @@ function generateSiteMap(posts) {
         <loc>${URL}/Addonliste</loc>
     </url>
     <url>
-    <loc>${URL}/custom</loc>
+        <loc>${URL}/custom</loc>
     </url>
     <url>
         <loc>${URL}/Datenschutz</loc>
@@ -105,6 +105,15 @@ function generateSiteMap(posts) {
     </url>
     <url>
         <loc>${URL}/GPX_Faelschung</loc>
+    </url>
+       <url>
+        <loc>${URL}/Reifengroesse</loc>
+    </url>
+    <url>
+        <loc>${URL}/Reifendruck</loc>
+    </url>
+    <url>
+        <loc>${URL}/KOMhunter</loc>
     </url>
      ${posts
        .map(({ id }) => {
