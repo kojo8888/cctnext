@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import { Disc } from "react-feather";
+import tireData from "../lib/groessenbezeichnungen_reifen.json";
 
 export default function HomePage() {
   // State to track which option the user has selected
@@ -46,19 +47,19 @@ export default function HomePage() {
           className="mx-3 font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
           onClick={() => handleOptionChange("upload")}
         >
-          Upload Photo of Bike Tire
+          Foto auslesen
         </button>
         <button
           className="mx-3 font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
           onClick={() => handleOptionChange("search")}
         >
-          Search Function
+          Suchen
         </button>
         <button
           className="mx-3 font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
           onClick={() => handleOptionChange("dropdown")}
         >
-          Choose from Drop-down Menu
+          Auswahlmenü
         </button>
       </div>
 
@@ -137,29 +138,115 @@ function SearchFunction() {
 
 // Component for choosing tire from a drop-down menu
 function DropdownMenu() {
-  const [selectedTire, setSelectedTire] = useState("");
+  const [reifenaussenmass, setReifenaussenmass] = useState("");
+  const [etrtoMm, setEtrtoMm] = useState("");
+  const [deutschZoll, setDeutschZoll] = useState("");
+  const [franzMm, setFranzMm] = useState("");
 
-  const handleDropdownChange = (event) => {
-    setSelectedTire(event.target.value);
+  const handleDropdownChange = (event, setState) => {
+    setState(event.target.value);
   };
 
   const handleDropdownSubmit = (event) => {
     event.preventDefault();
-    alert(`You selected: ${selectedTire}`);
+    // Build a search query based on the selected values
+    const searchQuery = `${reifenaussenmass || ""} ${etrtoMm || ""} ${
+      deutschZoll || ""
+    } ${franzMm || ""}`.trim();
+
+    if (!searchQuery) {
+      alert("Please select a size before proceeding!");
+      return;
+    }
+
+    // Replace spaces with "+" to create a valid search string
+    const formattedQuery = encodeURIComponent(searchQuery);
+
+    // Add your Amazon affiliate tag here
+    const affiliateTag = "customcycling-20"; // Replace with your Amazon affiliate ID
+
+    // Build the Amazon search URL with the search query and affiliate tag
+    const amazonUrl = `https://www.amazon.com/s?k=${formattedQuery}&tag=${affiliateTag}`;
+
+    // Open the Amazon search URL in a new tab
+    window.open(amazonUrl, "_blank");
   };
 
   return (
-    <div>
-      <h2>Choose Tire from Drop-down Menu</h2>
-      <form onSubmit={handleDropdownSubmit}>
-        <select value={selectedTire} onChange={handleDropdownChange}>
-          <option value="">Select a tire size</option>
-          <option value="700x25c">700x25c</option>
-          <option value="26x1.95">26x1.95</option>
-          <option value="29x2.1">29x2.1</option>
-          <option value="27.5x2.2">27.5x2.2</option>
+    <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <h2>Wähle in einem der Fenster die gewünschte Größe aus</h2>
+      <form onSubmit={handleDropdownSubmit} className="flex flex-col">
+        {/* Reifenaussenmass Dropdown */}
+        <label htmlFor="reifenaussenmass">Reifenaussenmaß</label>
+        <select
+          className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+          id="reifenaussenmass"
+          value={reifenaussenmass}
+          onChange={(e) => handleDropdownChange(e, setReifenaussenmass)}
+        >
+          <option value="">Größe wählen</option>
+          {tireData.features.map((feature, index) => (
+            <option key={index} value={feature.Reifenaussenmass}>
+              {feature.Reifenaussenmass}
+            </option>
+          ))}
         </select>
-        <button type="submit">Choose</button>
+        <br />
+        {/* ETRTO mm Dropdown */}
+        <label htmlFor="etrtoMm">ETRTO mm</label>
+        <select
+          className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+          id="etrtoMm"
+          value={etrtoMm}
+          onChange={(e) => handleDropdownChange(e, setEtrtoMm)}
+        >
+          <option value="">Größe wählen</option>
+          {tireData.features.map((feature, index) => (
+            <option key={index} value={feature["ETRTO mm"]}>
+              {feature["ETRTO mm"]}
+            </option>
+          ))}
+        </select>
+        <br />
+        {/* Deutsch Zoll Dropdown */}
+        <label htmlFor="deutschZoll">Deutsche Zoll</label>
+        <select
+          className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+          id="deutschZoll"
+          value={deutschZoll}
+          onChange={(e) => handleDropdownChange(e, setDeutschZoll)}
+        >
+          <option value="">Größe wählen</option>
+          {tireData.features.map((feature, index) => (
+            <option key={index} value={feature["Deutsch Zoll"]}>
+              {feature["Deutsch Zoll"]}
+            </option>
+          ))}
+        </select>
+        <br />
+
+        {/* Franz. Dropdown //TODO:Auswahl funktioniert noch nicht*/}
+        <label htmlFor="franzMm">Französich mm</label>
+        <select
+          className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
+          id="franzMm"
+          value={franzMm}
+          onChange={(e) => handleDropdownChange(e, setDeutschZoll)}
+        >
+          <option value="">Größe wählen</option>
+          {tireData.features.map((feature, index) => (
+            <option key={index} value={feature["Franzoes. mm"]}>
+              {feature["Franzoes. mm"]}
+            </option>
+          ))}
+        </select>
+        <br />
+        <button
+          className="px-4 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+          type="submit"
+        >
+          Choose
+        </button>
       </form>
     </div>
   );
