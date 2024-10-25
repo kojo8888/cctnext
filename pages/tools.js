@@ -72,14 +72,14 @@ export default function tools({ products }) {
               Ritzelrechner
             </a>
           </span>
-          <span className="mt-9 text-gray-500">
+          {/* <span className="mt-9 text-gray-500">
             <a
               href="Kurbellaenge"
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 rounded-lg"
             >
               Kurbellänge
             </a>
-          </span>
+          </span> */}
           <span className="mt-9 text-gray-500">
             <a
               href="Reifendruck"
@@ -91,7 +91,7 @@ export default function tools({ products }) {
           <span className="mt-9 text-gray-500">
             <a
               href="Reifengroesse"
-              className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 rounded-lg"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-lg"
             >
               Reifengröße
             </a>
@@ -117,14 +117,14 @@ export default function tools({ products }) {
               Fälschungswerkstatt
             </a>
           </span>
-          <span className="mt-9 text-gray-500">
+          {/* <span className="mt-9 text-gray-500">
             <a
               href="KOMhunter"
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 rounded-lg"
             >
               KOM Hunter
             </a>
-          </span>
+          </span> */}
           <span className="mt-9 text-gray-500">
             <a
               href="Wattrechner"
@@ -186,14 +186,14 @@ export default function tools({ products }) {
               Individuelle Touren
             </a>
           </span>
-          <span className="mt-9 text-gray-500">
+          {/* <span className="mt-9 text-gray-500">
             <a
               href="mapOSM"
               className="font-medium text-white hover:bg-blue-600 bg-red-500 px-3 py-2 rounded-lg"
             >
               OSM
             </a>
-          </span>
+          </span> */}
         </div>
 
         {/* Grid item 4: Listen */}

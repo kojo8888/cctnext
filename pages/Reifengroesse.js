@@ -2,6 +2,17 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import { Disc } from "react-feather";
 import tireData from "../lib/groessenbezeichnungen_reifen.json";
+import {
+  Switch,
+  FormControlLabel,
+  Button,
+  Select,
+  MenuItem,
+  FormControl,
+  InputLabel,
+  Slider,
+  Typography,
+} from "@mui/material";
 
 export default function HomePage() {
   // State to track which option the user has selected
@@ -142,6 +153,9 @@ function DropdownMenu() {
   const [etrtoMm, setEtrtoMm] = useState("");
   const [deutschZoll, setDeutschZoll] = useState("");
   const [franzMm, setFranzMm] = useState("");
+  const [mantel, setMantel] = useState(false); // false = dry, true = wet
+
+  const handleConditionChange = (e) => setMantel(e.target.checked);
 
   const handleDropdownChange = (event, setState) => {
     setState(event.target.value);
@@ -150,9 +164,10 @@ function DropdownMenu() {
   const handleDropdownSubmit = (event) => {
     event.preventDefault();
     // Build a search query based on the selected values
+    const condition = mantel ? "Schlauch" : "Mantel";
     const searchQuery = `${reifenaussenmass || ""} ${etrtoMm || ""} ${
       deutschZoll || ""
-    } ${franzMm || ""}`.trim();
+    } ${franzMm || ""}${condition}`.trim();
 
     if (!searchQuery) {
       alert("Please select a size before proceeding!");
@@ -175,7 +190,18 @@ function DropdownMenu() {
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
       <h2>Wähle in einem der Fenster die gewünschte Größe aus</h2>
-      <form onSubmit={handleDropdownSubmit} className="flex flex-col">
+      <form
+        onSubmit={handleDropdownSubmit}
+        className="flex flex-col"
+        style={{ maxWidth: "500px", margin: "auto", padding: "20px" }}
+      >
+        {/* Wet/Dry Condition Switch */}
+        <FormControlLabel
+          control={<Switch checked={mantel} onChange={handleConditionChange} />}
+          label={`Was brauchste: ${mantel ? "Schlauch" : "Mantel"}`}
+          style={{ marginTop: "20px" }}
+        />
+
         {/* Reifenaussenmass Dropdown */}
         <label htmlFor="reifenaussenmass">Reifenaussenmaß</label>
         <select
