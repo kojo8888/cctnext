@@ -127,22 +127,48 @@ function SearchFunction() {
 
   const handleSearch = (event) => {
     event.preventDefault();
-    // Add logic for searching the term here
-    alert(`Searching for: ${searchTerm}`);
+
+    const searchQuery = `${searchTerm}`.trim();
+
+    if (!searchQuery) {
+      alert("Bitte etwas eintippen!");
+      return;
+    }
+
+    // Replace spaces with "+" to create a valid search string
+    const formattedQuery = encodeURIComponent(searchQuery);
+
+    // Add your Amazon affiliate tag here
+    const affiliateTag = "customcycling-20"; // Replace with your Amazon affiliate ID
+
+    // Build the Amazon search URL with the search query and affiliate tag
+    const amazonUrl = `https://www.amazon.com/s?k=${formattedQuery}&tag=${affiliateTag}`;
+
+    // Open the Amazon search URL in a new tab
+    window.open(amazonUrl, "_blank");
   };
 
   return (
-    <div>
-      <h2>Search for a Bike Tire</h2>
-      <form onSubmit={handleSearch}>
+    <div className="font-mono mt-10 mx-auto text-center max-w-lg px-10">
+      <h2>Suchfunktion für Schlauch und Mantel mit Link zu Amazon</h2>
+      <form
+        className="flex flex-col"
+        style={{ maxWidth: "500px", margin: "auto", padding: "20px" }}
+        onSubmit={handleSearch}
+      >
         <input
+          className="text-gray-900 text-center w-half p-3 mb-3 border border-gray-400 border-solid rounded-lg"
           type="text"
-          placeholder="Enter tire size or description"
+          placeholder="Bitte Mantel oder Schlauchgröße eintragen"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button type="submit">Suchen</button>
       </form>
+      <p>
+        Diese Seite verlinkt zu Amazon. Die Links sind mit Amazon Affiliate
+        verbunden und der Betreiber enthält eine Kommission.
+      </p>
     </div>
   );
 }
