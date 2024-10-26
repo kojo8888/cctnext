@@ -142,7 +142,7 @@ function SearchFunction() {
     const affiliateTag = "customcycling-20"; // Replace with your Amazon affiliate ID
 
     // Build the Amazon search URL with the search query and affiliate tag
-    const amazonUrl = `https://www.amazon.com/s?k=${formattedQuery}&tag=${affiliateTag}`;
+    const amazonUrl = `https://www.amazon.de/s?k=${formattedQuery}&tag=${affiliateTag}`;
 
     // Open the Amazon search URL in a new tab
     window.open(amazonUrl, "_blank");
@@ -207,7 +207,7 @@ function DropdownMenu() {
     const affiliateTag = "customcycling-20"; // Replace with your Amazon affiliate ID
 
     // Build the Amazon search URL with the search query and affiliate tag
-    const amazonUrl = `https://www.amazon.com/s?k=${formattedQuery}&tag=${affiliateTag}`;
+    const amazonUrl = `https://www.amazon.de/s?k=${formattedQuery}&tag=${affiliateTag}`;
 
     // Open the Amazon search URL in a new tab
     window.open(amazonUrl, "_blank");
