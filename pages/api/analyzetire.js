@@ -1,5 +1,6 @@
 import Tesseract from "tesseract.js";
 import formidable from "formidable";
+import fs from "fs";
 
 export const config = {
   api: {
@@ -16,12 +17,15 @@ export default async function handler(req, res) {
     // Parse the form data to get the uploaded file
     const { files } = await parseFormData(req);
 
-    if (!files || !files.file || files.file.length === 0) {
+    if (!files || !files.file) {
       throw new Error("No file uploaded");
     }
 
     // Access the file buffer
-    const imageBuffer = files.file[0].buffer;
+    const file = Array.isArray(files.file) ? files.file[0] : files.file;
+    const imageBuffer = file.filepath
+      ? await fs.promises.readFile(file.filepath)
+      : file.buffer;
 
     if (!imageBuffer) {
       throw new Error("Failed to extract buffer from the uploaded file");
@@ -31,19 +35,22 @@ export default async function handler(req, res) {
     console.log("Buffer size:", imageBuffer.length);
     console.log("Buffer type:", typeof imageBuffer);
 
-    // Use Tesseract.js to recognize text in the image
+    // Use Tesseract.js to recognize text in the image, using "eng" language
     const {
       data: { text },
     } = await Tesseract.recognize(imageBuffer, "eng");
 
+    // Log the recognized text for debugging
+    console.log("Recognized Text:", text);
+
     // Extract the tire size from the recognized text
     const tireSize = extractTireSize(text);
 
-    // Generate the Amazon affiliate link based on the tire size
-    const amazonLink = generateAmazonLink(tireSize);
+    // Log the extracted tire size for debugging
+    console.log("Extracted Tire Size:", tireSize);
 
-    // Return the result as JSON
-    return res.status(200).json({ tireSize, amazonLink });
+    // Return the extracted tire size as JSON
+    return res.status(200).json({ tireSize });
   } catch (error) {
     console.error("Error during analysis:", error.message);
     return res.status(500).json({ error: "Failed to analyze image" });
@@ -52,21 +59,15 @@ export default async function handler(req, res) {
 
 // Helper function to extract tire size from the recognized text
 const extractTireSize = (text) => {
-  const match = text.match(/\b\d{2,3}\/\d{2,3}\b/);
-  return match ? match[0] : "Unknown";
-};
-
-// Helper function to generate Amazon affiliate link based on the tire size
-const generateAmazonLink = (tireSize) => {
-  const affiliateId = "your-affiliate-id"; // Replace with your actual Amazon affiliate ID
-  const query = encodeURIComponent(`bike tire ${tireSize}`);
-  return `https://www.amazon.com/s?k=${query}&tag=${affiliateId}`;
+  // Improve the regular expression to match common tire size formats
+  const match = text.match(/\b\d{2,3}\s*[-x/]\s*\d{1,3}\b/);
+  return match ? match[0].replace(/\s+/g, "") : "Unknown";
 };
 
 // Helper function to parse multipart/form-data using formidable
 const parseFormData = (req) => {
   return new Promise((resolve, reject) => {
-    const form = formidable({ multiples: false });
+    const form = formidable({ multiples: false, keepExtensions: true });
 
     form.parse(req, (err, fields, files) => {
       if (err) return reject(err);
@@ -74,3 +75,5 @@ const parseFormData = (req) => {
     });
   });
 };
+
+//TODO: Verbesserung benötigt (Rotation? Textbeschreibung? SW?)

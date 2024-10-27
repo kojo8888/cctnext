@@ -99,7 +99,7 @@ function UploadPhoto() {
     formData.append("file", image);
 
     try {
-      const response = await fetch("/api/analyze", {
+      const response = await fetch("/api/analyzetire", {
         method: "POST",
         body: formData,
       });
