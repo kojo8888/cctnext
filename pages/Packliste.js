@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import { List } from "react-feather";
+import Switch from "@mui/material/Switch";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
 export default function ExampleCheckbox() {
   const [showWerkzeug, setshowWerkzeug] = useState();
@@ -9,77 +11,54 @@ export default function ExampleCheckbox() {
   const [showErsatzteile, setshowErsatzteile] = useState();
   const [showAusruestung, setshowAusruestung] = useState();
 
-  // const [showVplatz, setshowVplatz] = useState();
+  const [nassSelected, setNassSelected] = useState(false);
+  const [langSelected, setLangSelected] = useState(false);
+  const [vielPlatzSelected, setVielPlatzSelected] = useState(false);
+
   const apiUrl = "/api/Packliste";
-  let werkzeugData;
-  let elektronikData;
-  let nasskaltData;
-  let ersatzteileData;
-  let ausruestungData;
 
   function pullJson() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        werkzeugData = responseData
-          .filter((el) => el.category == "Werkzeug")
-          .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
-          });
-
+        const werkzeugData = responseData
+          .filter((el) => el.category === "Werkzeug")
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setshowWerkzeug(werkzeugData);
-      });
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((rData) => {
-        nasskaltData = rData
-          .filter((els) => els.location != "warm")
-          .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
-          });
 
-        setshowNasskalt(nasskaltData);
-      });
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((rData) => {
-        elektronikData = rData
-          .filter((els) => els.category == "Elektronik")
-          .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
-          });
-
-        setshowElektronik(elektronikData);
-      });
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((rData) => {
-        ersatzteileData = rData
-          .filter((els) => els.category == "Ersatzteile")
-          .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
-          });
-
-        setshowErsatzteile(ersatzteileData);
-      });
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((rData) => {
-        ausruestungData = rData
-          .filter(
-            (els) => els.category == "Ausrüstung" && els.location == "warm"
+        const nasskaltData = responseData
+          .filter((el) =>
+            nassSelected ? el.location !== "warm" : el.location === "warm"
           )
-          .map(function (liste) {
-            return <p key={liste.id}>{liste.name}</p>;
-          });
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setshowNasskalt(nasskaltData);
 
+        const elektronikData = responseData
+          .filter((el) => el.category === "Elektronik")
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setshowElektronik(elektronikData);
+
+        const ersatzteileData = responseData
+          .filter((el) => el.category === "Ersatzteile")
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setshowErsatzteile(ersatzteileData);
+
+        const ausruestungData = responseData
+          .filter(
+            (el) =>
+              el.category === "Ausrüstung" &&
+              (langSelected ? el.duration === "lang" : true) &&
+              (vielPlatzSelected ? el.size === "groß" : true) &&
+              (nassSelected ? el.location === "kalt" : el.location === "warm")
+          )
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setshowAusruestung(ausruestungData);
       });
   }
 
   useEffect(() => {
     pullJson();
-  }, []);
+  }, [nassSelected, langSelected, vielPlatzSelected]);
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
@@ -112,7 +91,43 @@ export default function ExampleCheckbox() {
           Na, was haben wir vergessen?
         </p>
       </div>
+
+      {/* Switches for filtering */}
+      <div className="mb-6 flex justify-center space-x-4">
+        <FormControlLabel
+          control={
+            <Switch
+              checked={nassSelected}
+              onChange={(e) => setNassSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Nass"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={langSelected}
+              onChange={(e) => setLangSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Lang"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={vielPlatzSelected}
+              onChange={(e) => setVielPlatzSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Viel Platz"
+        />
+      </div>
+
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
+        {/* Sections for each category */}
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
           <ul role="list" className="mt-6 space-y-6">
