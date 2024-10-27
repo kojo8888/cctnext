@@ -11,6 +11,10 @@ export default function ExampleCheckbox() {
   const [showErsatzteile, setshowErsatzteile] = useState();
   const [showAusruestung, setshowAusruestung] = useState();
 
+  const [trockenNassData, setTrockenNassData] = useState();
+  const [kurzLangData, setKurzLangData] = useState();
+  const [wenigVielPlatzData, setWenigVielPlatzData] = useState();
+
   const [nassSelected, setNassSelected] = useState(false);
   const [langSelected, setLangSelected] = useState(false);
   const [vielPlatzSelected, setVielPlatzSelected] = useState(false);
@@ -27,9 +31,7 @@ export default function ExampleCheckbox() {
         setshowWerkzeug(werkzeugData);
 
         const nasskaltData = responseData
-          .filter((el) =>
-            nassSelected ? el.location !== "warm" : el.location === "warm"
-          )
+          .filter((el) => el.location !== "warm")
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setshowNasskalt(nasskaltData);
 
@@ -45,14 +47,32 @@ export default function ExampleCheckbox() {
 
         const ausruestungData = responseData
           .filter(
-            (el) =>
-              el.category === "Ausrüstung" &&
-              (langSelected ? el.duration === "lang" : true) &&
-              (vielPlatzSelected ? el.size === "groß" : true) &&
-              (nassSelected ? el.location === "kalt" : el.location === "warm")
+            (el) => el.category === "Ausrüstung" && el.location === "warm"
           )
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setshowAusruestung(ausruestungData);
+
+        // Additional filtering for the new switches
+        const filteredTrockenNass = responseData
+          .filter((el) =>
+            nassSelected ? el.location !== "warm" : el.location === "warm"
+          )
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setTrockenNassData(filteredTrockenNass);
+
+        const filteredKurzLang = responseData
+          .filter((el) =>
+            langSelected ? el.duration === "lang" : el.duration === "kurz"
+          )
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setKurzLangData(filteredKurzLang);
+
+        const filteredWenigVielPlatz = responseData
+          .filter((el) =>
+            vielPlatzSelected ? el.size === "groß" : el.size === "klein"
+          )
+          .map((liste) => <p key={liste.id}>{liste.name}</p>);
+        setWenigVielPlatzData(filteredWenigVielPlatz);
       });
   }
 
@@ -127,7 +147,7 @@ export default function ExampleCheckbox() {
       </div>
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
-        {/* Sections for each category */}
+        {/* Original Sections */}
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
           <ul role="list" className="mt-6 space-y-6">
@@ -172,6 +192,38 @@ export default function ExampleCheckbox() {
             <li className="flex">
               <span className="ml-3 text-black text-left">
                 {showErsatzteile}
+              </span>
+            </li>
+          </ul>
+        </div>
+
+        {/* New Sections for the Switches */}
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">Trocken/Nass</h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">
+                {trockenNassData}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">Kurz/Lang</h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">{kurzLangData}</span>
+            </li>
+          </ul>
+        </div>
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">
+            Wenig/Viel Platz
+          </h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">
+                {wenigVielPlatzData}
               </span>
             </li>
           </ul>
