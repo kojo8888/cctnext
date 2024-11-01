@@ -120,9 +120,7 @@ export default function Packliste() {
 
   const getAllDataForDownload = () => {
     return {
-      KurzLang: vielPlatzSelected
-        .filter((el) => el.duration)
-        .map((item) => item.name),
+      WenigVielPlatz: wenigVielPlatzData.map((item) => item.props.children),
     };
   };
 
