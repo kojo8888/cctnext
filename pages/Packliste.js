@@ -111,6 +111,14 @@ export default function ExampleCheckbox() {
           Na, was haben wir vergessen?
         </p>
       </div>
+      <div className="mb-9">
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Auflistung nach Kategorie
+        </p>
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Download als PDF Dokument?
+        </p>
+      </div>
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
@@ -197,42 +205,40 @@ export default function ExampleCheckbox() {
           label="Viel Platz"
         />
       </div>
-      <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
+      <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-x-3 sm:gap-y-3">
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-            <h3 className="text-3xl font-semibold text-gray-900">
-              Trocken/Nass
-            </h3>
-            <ul role="list" className="mt-6 space-y-6">
-              <li className="flex">
-                <span className="ml-3 text-black text-left">
-                  {trockenNassData}
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-            <h3 className="text-3xl font-semibold text-gray-900">Kurz/Lang</h3>
-            <ul role="list" className="mt-6 space-y-6">
-              <li className="flex">
-                <span className="ml-3 text-black text-left">
-                  {kurzLangData}
-                </span>
-              </li>
-            </ul>
-          </div>
-          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-            <h3 className="text-3xl font-semibold text-gray-900">
-              Wenig/Viel Platz
-            </h3>
-            <ul role="list" className="mt-6 space-y-6">
-              <li className="flex">
-                <span className="ml-3 text-black text-left">
-                  {wenigVielPlatzData}
-                </span>
-              </li>
-            </ul>
-          </div>
+          <h3 className="text-3xl font-semibold text-gray-900">
+            Trocken vs nass
+          </h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">
+                {trockenNassData}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">
+            Kurzer vs langer Urlaub
+          </h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">{kurzLangData}</span>
+            </li>
+          </ul>
+        </div>
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+          <h3 className="text-3xl font-semibold text-gray-900">
+            Wenig vs viel Platz
+          </h3>
+          <ul role="list" className="mt-6 space-y-6">
+            <li className="flex">
+              <span className="ml-3 text-black text-left">
+                {wenigVielPlatzData}
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
 
