@@ -80,6 +80,25 @@ export default function ExampleCheckbox() {
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setWenigVielPlatzData(filteredWenigVielPlatz);
       });
+    const downloadCategory = (data, filename = "packing-list") => {
+      // Convert the filtered data to a JSON string
+      const dataString = JSON.stringify(data, null, 2); // Pretty-print JSON
+
+      // Create a Blob from the string and generate a download URL
+      const blob = new Blob([dataString], { type: "application/json" });
+      const href = URL.createObjectURL(blob);
+
+      // Create a temporary link to trigger download
+      const link = document.createElement("a");
+      link.href = href;
+      link.download = `${filename}.json`; // Sets the downloaded file name
+      document.body.appendChild(link);
+      link.click();
+
+      // Clean-up
+      document.body.removeChild(link);
+      URL.revokeObjectURL(href);
+    };
   }
 
   useEffect(() => {
@@ -121,9 +140,13 @@ export default function ExampleCheckbox() {
         <p className="mt-3  text-gray-900 tracking-tight">
           Auflistung nach Kategorie
         </p>
-        <p className="mt-3 text-gray-900 tracking-tight">
-          Download als PDF Dokument?
-        </p>
+
+        <button
+          className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
+          onClick={downloadCategory}
+        >
+          Download als PDF Dokument
+        </button>
       </div>
 
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
