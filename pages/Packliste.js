@@ -6,6 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import jsPDF from "jspdf";
 
 export default function Packliste() {
+  const [showAlles, setshowAlles] = useState();
   const [showWerkzeug, setshowWerkzeug] = useState();
   const [showNasskalt, setshowNasskalt] = useState();
   const [showElektronik, setshowElektronik] = useState();
@@ -113,19 +114,10 @@ export default function Packliste() {
     doc.save(`${filename}.pdf`);
   };
 
-  const getFilteredDataForDownload = () => {
+  const getAllDataForDownload = () => {
     return {
-      TrockenNass: responseData
-        .filter((el) => el.category === "Ausrüstung")
-        .map((item) => item.name),
-      Werkzeug: responseData
-        .filter((el) => el.category === "Werkzeug")
-        .map((item) => item.name),
-      Elektronik: responseData
-        .filter((el) => el.category === "Elektronik")
-        .map((item) => item.name),
-      Ersatzteile: responseData
-        .filter((el) => el.category === "Ersatzteile")
+      KurzLang: responseData
+        .filter((el) => el.duration)
         .map((item) => item.name),
     };
   };
@@ -172,10 +164,7 @@ export default function Packliste() {
         <button
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
           onClick={() =>
-            downloadCategory(
-              getFilteredDataForDownload(),
-              "filtered-packing-list"
-            )
+            downloadCategory(getAllDataForDownload(), "filtered-packing-list")
           }
         >
           Download als PDF Dokument
