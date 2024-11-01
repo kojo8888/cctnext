@@ -6,6 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import jsPDF from "jspdf";
 
 export default function Packliste() {
+  const [responseData, setResponseData] = useState([]);
   const [showWerkzeug, setshowWerkzeug] = useState();
   const [showNasskalt, setshowNasskalt] = useState();
   const [showElektronik, setshowElektronik] = useState();
@@ -26,6 +27,8 @@ export default function Packliste() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
+        setResponseData(data);
+
         const werkzeugData = responseData
           .filter((el) => el.category === "Werkzeug")
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
@@ -88,7 +91,7 @@ export default function Packliste() {
 
     // Add title
     doc.setFontSize(20);
-    doc.text("Filtered Packing List", 10, 10);
+    doc.text("Packliste Radurlaub", 10, 10);
 
     // Define starting position
     let yPosition = 20;
@@ -116,17 +119,16 @@ export default function Packliste() {
   const getFilteredDataForDownload = () => {
     return {
       TrockenNass: responseData
-        .filter(
-          (el) => el.category === "Ausrüstung",
-          "Werkzeug",
-          "Elektronik",
-          "Ersatzteile",
-          "Ernährung",
-          "Waschen",
-          "Transport",
-          "Hygieneartikel",
-          "Regeneration"
-        )
+        .filter((el) => el.category === "Ausrüstung")
+        .map((item) => item.name),
+      Werkzeug: responseData
+        .filter((el) => el.category === "Werkzeug")
+        .map((item) => item.name),
+      Elektronik: responseData
+        .filter((el) => el.category === "Elektronik")
+        .map((item) => item.name),
+      Ersatzteile: responseData
+        .filter((el) => el.category === "Ersatzteile")
         .map((item) => item.name),
     };
   };
