@@ -112,42 +112,7 @@ export default function ExampleCheckbox() {
         </p>
       </div>
 
-      {/* Switches for filtering */}
-      <div className="mb-6 flex justify-center space-x-4">
-        <FormControlLabel
-          control={
-            <Switch
-              checked={nassSelected}
-              onChange={(e) => setNassSelected(e.target.checked)}
-              color="primary"
-            />
-          }
-          label="Nass"
-        />
-        <FormControlLabel
-          control={
-            <Switch
-              checked={langSelected}
-              onChange={(e) => setLangSelected(e.target.checked)}
-              color="primary"
-            />
-          }
-          label="Lang"
-        />
-        <FormControlLabel
-          control={
-            <Switch
-              checked={vielPlatzSelected}
-              onChange={(e) => setVielPlatzSelected(e.target.checked)}
-              color="primary"
-            />
-          }
-          label="Viel Platz"
-        />
-      </div>
-
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
-        {/* Original Sections */}
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
           <ul role="list" className="mt-6 space-y-6">
@@ -196,37 +161,78 @@ export default function ExampleCheckbox() {
             </li>
           </ul>
         </div>
+      </div>
 
-        {/* New Sections for the Switches */}
+      {/* New Sections for the Switches */}
+      {/* Switches for filtering */}
+      <div className="mb-6 flex justify-center space-x-4">
+        <FormControlLabel
+          control={
+            <Switch
+              checked={nassSelected}
+              onChange={(e) => setNassSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Nass"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={langSelected}
+              onChange={(e) => setLangSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Lang"
+        />
+        <FormControlLabel
+          control={
+            <Switch
+              checked={vielPlatzSelected}
+              onChange={(e) => setVielPlatzSelected(e.target.checked)}
+              color="primary"
+            />
+          }
+          label="Viel Platz"
+        />
+      </div>
+      <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-4 sm:gap-x-3 sm:gap-y-3">
         <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Trocken/Nass</h3>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="ml-3 text-black text-left">
-                {trockenNassData}
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">Kurz/Lang</h3>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="ml-3 text-black text-left">{kurzLangData}</span>
-            </li>
-          </ul>
-        </div>
-        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            Wenig/Viel Platz
-          </h3>
-          <ul role="list" className="mt-6 space-y-6">
-            <li className="flex">
-              <span className="ml-3 text-black text-left">
-                {wenigVielPlatzData}
-              </span>
-            </li>
-          </ul>
+          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+            <h3 className="text-3xl font-semibold text-gray-900">
+              Trocken/Nass
+            </h3>
+            <ul role="list" className="mt-6 space-y-6">
+              <li className="flex">
+                <span className="ml-3 text-black text-left">
+                  {trockenNassData}
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+            <h3 className="text-3xl font-semibold text-gray-900">Kurz/Lang</h3>
+            <ul role="list" className="mt-6 space-y-6">
+              <li className="flex">
+                <span className="ml-3 text-black text-left">
+                  {kurzLangData}
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col">
+            <h3 className="text-3xl font-semibold text-gray-900">
+              Wenig/Viel Platz
+            </h3>
+            <ul role="list" className="mt-6 space-y-6">
+              <li className="flex">
+                <span className="ml-3 text-black text-left">
+                  {wenigVielPlatzData}
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
