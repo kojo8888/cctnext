@@ -115,9 +115,19 @@ export default function Packliste() {
 
   const getFilteredDataForDownload = () => {
     return {
-      TrockenNass: trockenNassData.map((item) => item.props.children),
-      KurzLang: kurzLangData.map((item) => item.props.children),
-      WenigVielPlatz: wenigVielPlatzData.map((item) => item.props.children),
+      TrockenNass: responseData
+        .filter(
+          (el) => el.category === "Ausrüstung",
+          "Werkzeug",
+          "Elektronik",
+          "Ersatzteile",
+          "Ernährung",
+          "Waschen",
+          "Transport",
+          "Hygieneartikel",
+          "Regeneration"
+        )
+        .map((item) => item.name),
     };
   };
 
