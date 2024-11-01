@@ -6,7 +6,6 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import jsPDF from "jspdf";
 
 export default function Packliste() {
-  const [responseData, setResponseData] = useState([]);
   const [showWerkzeug, setshowWerkzeug] = useState();
   const [showNasskalt, setshowNasskalt] = useState();
   const [showElektronik, setshowElektronik] = useState();
@@ -27,8 +26,6 @@ export default function Packliste() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((responseData) => {
-        setResponseData(data);
-
         const werkzeugData = responseData
           .filter((el) => el.category === "Werkzeug")
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
