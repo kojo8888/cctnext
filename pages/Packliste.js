@@ -54,9 +54,12 @@ export default function ExampleCheckbox() {
 
         // Additional filtering for the new switches
         const filteredTrockenNass = responseData
-          .filter((el) =>
-            nassSelected ? el.location !== "warm" : el.location === "warm"
+          .filter(
+            (el) =>
+              el.category === "Ausrüstung" &&
+              (nassSelected ? el.location !== "warm" : el.location === "warm")
           )
+          //TODO: und Ausrüstung
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setTrockenNassData(filteredTrockenNass);
 
@@ -173,12 +176,12 @@ export default function ExampleCheckbox() {
 
       {/* New Sections for the Switches */}
       {/* Switches for filtering */}
-      <div className="mb-9">
-        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+      <div className="mb-9 mt-9">
+        <p className="text-3xl font-extrabold text-gray-900 tracking-tight">
           Per Schalter Auswahl treffen
         </p>
       </div>
-      <div className="mt-12 mb-12 flex justify-center space-x-4">
+      <div className="mt-6 mb-6 flex justify-center space-x-4">
         <FormControlLabel
           control={
             <Switch
