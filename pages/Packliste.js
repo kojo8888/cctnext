@@ -3,8 +3,9 @@ import Head from "next/head";
 import { List } from "react-feather";
 import Switch from "@mui/material/Switch";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import jsPDF from "jspdf";
 
-export default function ExampleCheckbox() {
+export default function Packliste() {
   const [showWerkzeug, setshowWerkzeug] = useState();
   const [showNasskalt, setshowNasskalt] = useState();
   const [showElektronik, setshowElektronik] = useState();
@@ -80,26 +81,45 @@ export default function ExampleCheckbox() {
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setWenigVielPlatzData(filteredWenigVielPlatz);
       });
-    const downloadCategory = (data, filename = "packing-list") => {
-      // Convert the filtered data to a JSON string
-      const dataString = JSON.stringify(data, null, 2); // Pretty-print JSON
-
-      // Create a Blob from the string and generate a download URL
-      const blob = new Blob([dataString], { type: "application/json" });
-      const href = URL.createObjectURL(blob);
-
-      // Create a temporary link to trigger download
-      const link = document.createElement("a");
-      link.href = href;
-      link.download = `${filename}.json`; // Sets the downloaded file name
-      document.body.appendChild(link);
-      link.click();
-
-      // Clean-up
-      document.body.removeChild(link);
-      URL.revokeObjectURL(href);
-    };
   }
+
+  const downloadCategory = (data, filename = "packing-list") => {
+    const doc = new jsPDF();
+
+    // Add title
+    doc.setFontSize(20);
+    doc.text("Filtered Packing List", 10, 10);
+
+    // Define starting position
+    let yPosition = 20;
+
+    // Iterate through data and add each section to the PDF
+    for (const [section, items] of Object.entries(data)) {
+      doc.setFontSize(16);
+      doc.text(section, 10, yPosition);
+      yPosition += 10;
+
+      // Add each item in the section
+      doc.setFontSize(12);
+      items.forEach((item) => {
+        doc.text(`- ${item}`, 10, yPosition);
+        yPosition += 8;
+      });
+
+      yPosition += 10; // Add extra space after each section
+    }
+
+    // Trigger download of PDF
+    doc.save(`${filename}.pdf`);
+  };
+
+  const getFilteredDataForDownload = () => {
+    return {
+      TrockenNass: trockenNassData.map((item) => item.props.children),
+      KurzLang: kurzLangData.map((item) => item.props.children),
+      WenigVielPlatz: wenigVielPlatzData.map((item) => item.props.children),
+    };
+  };
 
   useEffect(() => {
     pullJson();
@@ -140,10 +160,14 @@ export default function ExampleCheckbox() {
         <p className="mt-3  text-gray-900 tracking-tight">
           Auflistung nach Kategorie
         </p>
-
         <button
           className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
-          onClick={downloadCategory}
+          onClick={() =>
+            downloadCategory(
+              getFilteredDataForDownload(),
+              "filtered-packing-list"
+            )
+          }
         >
           Download als PDF Dokument
         </button>
