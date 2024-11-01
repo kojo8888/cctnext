@@ -112,10 +112,10 @@ export default function ExampleCheckbox() {
         </p>
       </div>
       <div className="mb-9">
-        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+        <p className="mt-3  text-gray-900 tracking-tight">
           Auflistung nach Kategorie
         </p>
-        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+        <p className="mt-3 text-gray-900 tracking-tight">
           Download als PDF Dokument?
         </p>
       </div>
@@ -173,7 +173,12 @@ export default function ExampleCheckbox() {
 
       {/* New Sections for the Switches */}
       {/* Switches for filtering */}
-      <div className="mb-6 flex justify-center space-x-4">
+      <div className="mb-9">
+        <p className="mt-9 text-3xl font-extrabold text-gray-900 tracking-tight">
+          Per Schalter Auswahl treffen
+        </p>
+      </div>
+      <div className="mt-12 mb-12 flex justify-center space-x-4">
         <FormControlLabel
           control={
             <Switch
