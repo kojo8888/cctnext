@@ -114,17 +114,17 @@ export default function Packliste() {
     doc.save(`${filename}.pdf`);
   };
 
+  useEffect(() => {
+    pullJson();
+  }, [nassSelected, langSelected, vielPlatzSelected]);
+
   const getAllDataForDownload = () => {
     return {
-      KurzLang: responseData
+      KurzLang: vielPlatzSelected
         .filter((el) => el.duration)
         .map((item) => item.name),
     };
   };
-
-  useEffect(() => {
-    pullJson();
-  }, [nassSelected, langSelected, vielPlatzSelected]);
 
   return (
     <div className="font-mono mt-10 mx-auto text-center max-w-7xl px-10">
