@@ -65,14 +65,18 @@ export default function ExampleCheckbox() {
 
         const filteredKurzLang = responseData
           .filter((el) =>
-            langSelected ? el.duration === "lang" : el.duration === "kurz"
+            langSelected
+              ? el.duration === "kurz" || el.duration === "lang"
+              : el.duration === "kurz"
           )
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setKurzLangData(filteredKurzLang);
 
         const filteredWenigVielPlatz = responseData
           .filter((el) =>
-            vielPlatzSelected ? el.size === "groß" : el.size === "klein"
+            vielPlatzSelected
+              ? el.size === "klein" || el.size === "groß"
+              : el.size === "klein"
           )
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setWenigVielPlatzData(filteredWenigVielPlatz);
