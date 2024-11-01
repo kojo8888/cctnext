@@ -59,7 +59,6 @@ export default function ExampleCheckbox() {
               el.category === "Ausrüstung" &&
               (nassSelected ? el.location !== "warm" : el.location === "warm")
           )
-          //TODO: und Ausrüstung
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setTrockenNassData(filteredTrockenNass);
 
@@ -194,7 +193,7 @@ export default function ExampleCheckbox() {
               color="primary"
             />
           }
-          label="Nass"
+          label="Wetter"
         />
         <FormControlLabel
           control={
@@ -204,7 +203,7 @@ export default function ExampleCheckbox() {
               color="primary"
             />
           }
-          label="Lang"
+          label="Dauer"
         />
         <FormControlLabel
           control={
@@ -214,7 +213,7 @@ export default function ExampleCheckbox() {
               color="primary"
             />
           }
-          label="Viel Platz"
+          label="Platz"
         />
       </div>
       <div className="space-y-12 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-x-3 sm:gap-y-3">
