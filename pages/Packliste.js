@@ -6,7 +6,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import jsPDF from "jspdf";
 
 export default function Packliste() {
-  const [showAlles, setshowAlles] = useState();
+  const [showAlles, setShowAlles] = useState();
   const [showWerkzeug, setshowWerkzeug] = useState();
   const [showNasskalt, setshowNasskalt] = useState();
   const [showElektronik, setshowElektronik] = useState();
@@ -81,6 +81,11 @@ export default function Packliste() {
           )
           .map((liste) => <p key={liste.id}>{liste.name}</p>);
         setWenigVielPlatzData(filteredWenigVielPlatz);
+
+        const allitems = responseData.map((liste) => (
+          <p key={liste.id}>{liste.name}</p>
+        ));
+        setShowAlles(allitems);
       });
   }
 
@@ -121,6 +126,7 @@ export default function Packliste() {
   const getAllDataForDownload = () => {
     return {
       WenigVielPlatz: wenigVielPlatzData.map((item) => item.props.children),
+      ShowAlles: showAlles.map((item) => item.props.children),
     };
   };
 
