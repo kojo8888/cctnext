@@ -91,30 +91,35 @@ export default function Packliste() {
 
   const downloadCategory = (data, filename = "packing-list") => {
     const doc = new jsPDF();
-
+  
     // Add title
     doc.setFontSize(18);
     doc.text("Packliste Radurlaub", 10, 10);
-
+  
     // Define starting position
-    let yPosition = 20;
-
+    let yPosition = 15;
+  
     // Iterate through data and add each section to the PDF
     for (const [section, items] of Object.entries(data)) {
       doc.setFontSize(12);
       doc.text(section, 10, yPosition);
-      yPosition += 10;
-
-      // Add each item in the section
-      doc.setFontSize(9);
+      yPosition += 6;
+  
+      // Add each item with a checkbox
       items.forEach((item) => {
-        doc.text(`- ${item}`, 10, yPosition);
-        yPosition += 8;
+        doc.setFontSize(9);
+  
+        // Draw a checkbox (a small square)
+        doc.rect(10, yPosition - 3, 4, 4); // Adjust size and position of the checkbox
+  
+        // Add the item text next to the checkbox
+        doc.text(item, 16, yPosition);
+        yPosition += 6; // Reduced spacing between items
       });
-
-      yPosition += 10; // Add extra space after each section
+  
+      yPosition += 6; // Add extra space after each section
     }
-
+  
     // Trigger download of PDF
     doc.save(`${filename}.pdf`);
   };
@@ -125,7 +130,7 @@ export default function Packliste() {
 
   const getAllDataForDownload = () => {
     return {
-      ShowAlles: showAlles.map((item) => item.props.children),
+      Komplette Liste: showAlles.map((item) => item.props.children),
     };
   };
 
