@@ -93,7 +93,7 @@ export default function Packliste() {
     const doc = new jsPDF();
 
     // Add title
-    doc.setFontSize(20);
+    doc.setFontSize(18);
     doc.text("Packliste Radurlaub", 10, 10);
 
     // Define starting position
@@ -101,12 +101,12 @@ export default function Packliste() {
 
     // Iterate through data and add each section to the PDF
     for (const [section, items] of Object.entries(data)) {
-      doc.setFontSize(16);
+      doc.setFontSize(12);
       doc.text(section, 10, yPosition);
       yPosition += 10;
 
       // Add each item in the section
-      doc.setFontSize(12);
+      doc.setFontSize(9);
       items.forEach((item) => {
         doc.text(`- ${item}`, 10, yPosition);
         yPosition += 8;
@@ -125,7 +125,6 @@ export default function Packliste() {
 
   const getAllDataForDownload = () => {
     return {
-      WenigVielPlatz: wenigVielPlatzData.map((item) => item.props.children),
       ShowAlles: showAlles.map((item) => item.props.children),
     };
   };
