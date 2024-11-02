@@ -86,6 +86,7 @@ export default function Packliste() {
           <p key={liste.id}>{liste.name}</p>
         ));
         setShowAlles(allitems);
+        console.log(showAlles);
       });
   }
 
@@ -96,28 +97,52 @@ export default function Packliste() {
     doc.setFontSize(18);
     doc.text("Packliste Radurlaub", 10, 10);
 
-    // Define starting position
-    let yPosition = 15;
+    // Define starting positions and layout
+    let yPosition = 20;
+    const leftColumnX = 10; // X position for the first column
+    const rightColumnX = 105; // X position for the second column
+    let xPosition = leftColumnX; // Start in the left column
+    const pageHeight = 290; // Page height limit
 
     // Iterate through data and add each section to the PDF
     for (const [section, items] of Object.entries(data)) {
       doc.setFontSize(12);
-      doc.text(section, 10, yPosition);
-      yPosition += 6;
+      doc.text(section, xPosition, yPosition);
+      yPosition += 8;
 
-      // Add each item with a checkbox
       items.forEach((item) => {
-        doc.setFontSize(9);
+        doc.setFontSize(10);
 
         // Draw a checkbox (a small square)
-        doc.rect(10, yPosition - 3, 4, 4); // Adjust size and position of the checkbox
+        doc.rect(xPosition, yPosition - 3, 4, 4); // Adjust size and position of the checkbox
 
         // Add the item text next to the checkbox
-        doc.text(item, 16, yPosition);
-        yPosition += 6; // Reduced spacing between items
+        doc.text(item, xPosition + 6, yPosition);
+        yPosition += 6;
+
+        // Check if we need to switch to the right column or a new page
+        if (yPosition > pageHeight - 10) {
+          if (xPosition === leftColumnX) {
+            // Switch to the right column
+            xPosition = rightColumnX;
+            yPosition = 20; // Reset yPosition to the top for the new column
+          } else {
+            // If already in the right column, add a new page and reset
+            doc.addPage();
+            xPosition = leftColumnX;
+            yPosition = 20;
+          }
+        }
       });
 
-      yPosition += 6; // Add extra space after each section
+      yPosition += 8; // Add extra space after each section
+
+      // Reset to left column if switching sections in the right column
+      if (xPosition === rightColumnX && yPosition > pageHeight - 10) {
+        doc.addPage();
+        xPosition = leftColumnX;
+        yPosition = 20;
+      }
     }
 
     // Trigger download of PDF
