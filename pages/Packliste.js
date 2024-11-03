@@ -205,7 +205,7 @@ export default function Packliste() {
       </div>
 
       <div className="space-y-6 sm:space-y-4 md:space-y-3 lg:space-y-0 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-4 gap-y-6">
-        <div className="p-3 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
           <h3 className="text-3xl font-semibold text-gray-900">Ausrüstung</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
@@ -215,17 +215,15 @@ export default function Packliste() {
             </li>
           </ul>
         </div>
-        <div className="p-3 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
-          <h3 className="text-3xl font-semibold text-gray-900">
-            Nass und kalt
-          </h3>
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
+          <h3 className="text-3xl font-semibold text-gray-900">Nass-kalt</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
               <span className="ml-3 text-black text-left">{showNasskalt}</span>
             </li>
           </ul>
         </div>
-        <div className="p-3 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
           <h3 className="text-3xl font-semibold text-gray-900">Werkzeug</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
@@ -233,7 +231,7 @@ export default function Packliste() {
             </li>
           </ul>
         </div>
-        <div className="p-3 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
           <h3 className="text-3xl font-semibold text-gray-900">Elektronik</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
@@ -243,7 +241,7 @@ export default function Packliste() {
             </li>
           </ul>
         </div>
-        <div className="p-3 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
+        <div className="p-6 bg-white border border-gray-200 rounded-2xl shadow-sm flex flex-col w-full max-w-xs mx-auto">
           <h3 className="text-3xl font-semibold text-gray-900">Ersatzteile</h3>
           <ul role="list" className="mt-6 space-y-6">
             <li className="flex">
