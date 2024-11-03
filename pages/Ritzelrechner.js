@@ -35,6 +35,15 @@ export default function Home() {
   const devhDevkChartRef = useRef(null);
   const shSkChartRef = useRef(null);
 
+  const downloadChart = (chartRef, filename) => {
+    if (chartRef.current) {
+      const link = document.createElement("a");
+      link.href = chartRef.current.toDataURL("image/png");
+      link.download = `${filename}.png`;
+      link.click();
+    }
+  };
+
   useEffect(() => {
     const ritzels = jsonData.features
       .filter((feature) => feature.type === "Ritzel")
@@ -542,18 +551,36 @@ export default function Home() {
             style={{ position: "relative", height: "40vh", width: "80vw" }}
           >
             <canvas ref={vhVkChartRef}></canvas>
+            <button
+              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+              onClick={() => downloadChart(vhVkChartRef, "Geschwindigkeit")}
+            >
+              Download Geschwindigkeit
+            </button>
           </div>
           <div
             className="chart-container mt-3 max-w-2xl mx-auto"
             style={{ position: "relative", height: "40vh", width: "80vw" }}
           >
             <canvas ref={chartRef}></canvas>
+            <button
+              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+              onClick={() => downloadChart(chartRef, "Übersetzung")}
+            >
+              Download Übersetzung
+            </button>
           </div>
           <div
             className="chart-container mt-3 max-w-2xl mx-auto"
             style={{ position: "relative", height: "40vh", width: "80vw" }}
           >
             <canvas ref={devhDevkChartRef}></canvas>
+            <button
+              className="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700"
+              onClick={() => downloadChart(devhDevkChartRef, "Entfaltung")}
+            >
+              Download Entfaltung
+            </button>
           </div>
           {/* <div
             className="chart-container mt-3 max-w-2xl mx-auto"

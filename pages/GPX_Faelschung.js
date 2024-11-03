@@ -149,14 +149,18 @@ export default function Home() {
 
       <div className="mt-12 grid gap-8">
         <div className="bg-white border rounded-2xl px-6 pb-8">
-          <p className="flex justify-center mt-6">1 GPX Datei hochladen</p>
+          <p className="flex justify-center mt-6 text-xl">
+            GPX Datei hochladen
+          </p>
           <p className="flex justify-center mt-6">
             <input type="file" onChange={handleFileUpload} accept=".gpx" />
           </p>
         </div>
 
         <div className="bg-white border rounded-2xl px-6 pb-8">
-          <p className="flex justify-center mt-6">2 Performance verbessern</p>
+          <p className="flex justify-center mt-6 text-xl">
+            Performance verbessern
+          </p>
           <p className="mt-6">Geschwindigkeit</p>
           <p>
             <select
@@ -208,12 +212,12 @@ export default function Home() {
 
         <div className="bg-white border rounded-2xl px-6 pb-8">
           <p className="flex justify-center mt-6">
-            3 Zeitpunkt ändern (optional)
+            Zeitpunkt ändern (in Arbeit..)
           </p>
         </div>
 
         <div className="bg-white border rounded-2xl px-6 pb-8">
-          <p className="flex justify-center mt-6">4 Fertig</p>
+          <p className="flex justify-center text-xl mt-6">Fertig</p>
           <p>
             <button
               className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-3 mt-6 rounded-lg"
