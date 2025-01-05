@@ -167,7 +167,15 @@ export default function tools({ products }) {
               href="mapTrinkwasserspender"
               className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-lg"
             >
-              Fahrradkarte
+              Wasserbrunnen auf Karte
+            </a>
+          </span>
+          <span className="mt-9 text-gray-500">
+            <a
+              href="mapMallorca"
+              className="font-medium text-white hover:bg-blue-600 bg-blue-500 px-3 py-2 rounded-lg"
+            >
+              Mallorca-Karte
             </a>
           </span>
           <span className="mt-9 text-gray-500">

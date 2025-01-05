@@ -1,0 +1,172 @@
+{
+  "Tabellenblatt1": {
+    "Cyclista": {
+      "Address": "Av. d'Amèrica, 6, Platja de Palma, 07600 S'Arenal, Illes Balears, Spanien",
+      "Latitude": 39.5128525,
+      "Longitude": 2.7521522,
+      "Phone": null,
+      "Website": "http://www.cyclista.at"
+    },
+    "BERNER Bikes, Mallorca - Radvermietung": {
+      "Address": "THB El Cid, Carrer del Vaixell, 2, Platja de Palma, 07610 Can Pastilla, Illes Balears, Spanien",
+      "Latitude": 39.5346057,
+      "Longitude": 2.7222189,
+      "Phone": "015142541715",
+      "Website": "http://berner-bikes-mallorca.com/"
+    },
+    "Mallorca Cycling Station": {
+      "Address": "Carrer de la Garita, 11, Ponent, 07015 Palma, Illes Balears, Spanien",
+      "Latitude": 39.5551454,
+      "Longitude": 2.6224099,
+      "Phone": "+34871024399",
+      "Website": "http://www.mallorca-cycling.com/"
+    },
+    "Quilòmetre Zero": {
+      "Address": "Carrer de la Marina, 18, 07108 Port de Sóller, Illes Balears, Spanien",
+      "Latitude": 39.7975399,
+      "Longitude": 2.6958929,
+      "Phone": null,
+      "Website": "http://www.kilometrocero-mallorca.com/"
+    },
+    "Tramuntana Tours": {
+      "Address": "Carrer de sa Lluna, 72, 07100 Sóller, Illes Balears, Spanien",
+      "Latitude": 39.7676273999999,
+      "Longitude": 2.717613,
+      "Phone": "+34971632423",
+      "Website": "http://www.tramuntanatours.com/"
+    },
+    "REYNES CYCLING Bike Rental Mallorca": {
+      "Address": "Polígon de Sa Platja, 8, 07100 Sóller, Illes Balears, Spanien",
+      "Latitude": 39.7906771,
+      "Longitude": 2.6938881,
+      "Phone": null,
+      "Website": "https://www.reynescycling.com/bike-rental"
+    },
+    "Cycling Planet": {
+      "Address": "Av. Constitució, 26, 07340 Alaró, Illes Balears, Spanien",
+      "Latitude": 39.7042693,
+      "Longitude": 2.7919238,
+      "Phone": null,
+      "Website": "https://www.cyclingplanet.es/"
+    },
+    "RossRent Mallorca Bike": {
+      "Address": "Ctra. de Lluc, 25, 07313 Selva, Illes Balears, Spanien",
+      "Latitude": 39.7563094,
+      "Longitude": 2.903749,
+      "Phone": "+34600863560",
+      "Website": "http://www.rossrentmallorca.com/"
+    },
+    "n+1 Bicycles": {
+      "Address": "Carrer dels Àngels, 3, 07460 Pollença, Illes Balears, Spanien",
+      "Latitude": 39.8778559,
+      "Longitude": 3.0163495,
+      "Phone": "+34682889304",
+      "Website": "http://nplus1bicycles.com/"
+    },
+    "ULTIMATE BIKE HIRE, MALLORCA": {
+      "Address": "Ctra. Palma a Puerto Pollença, 58, 07470 Port de Pollença, Illes Balears, Spanien",
+      "Latitude": 39.9033667,
+      "Longitude": 3.0677547,
+      "Phone": null,
+      "Website": "http://ultimatebikehiremallorca.com/"
+    },
+    "Sventy triathlon premium bike rental": {
+      "Address": "Carrer de l'Almirall Cervera, 24, 07470 Port de Pollença, Illes Balears, Spanien",
+      "Latitude": 39.9088043,
+      "Longitude": 3.0823532,
+      "Phone": "+34662399532",
+      "Website": "http://www.sventy-triathlon.com/"
+    },
+    "Mallorca Bike Hire | Mallorca Cycle Hire": {
+      "Address": "Carrer de Temple Fielding, 10, 07470 Port de Pollença, Illes Balears, Spanien",
+      "Latitude": 39.9032334,
+      "Longitude": 3.0795594,
+      "Phone": "+447460279744",
+      "Website": "http://www.mallorcabikehire.com/"
+    },
+    "Clips Mallorca Bikes - Port de Pollenca": {
+      "Address": "Carrer de la Nansa, 5, 07470 Port de Pollença, Illes Balears, Spanien",
+      "Latitude": 39.9004071,
+      "Longitude": 3.0765217,
+      "Phone": "+31853032829",
+      "Website": "http://www.mallorcacycling.nl/en"
+    },
+    "Bike Island Mallorca": {
+      "Address": "Carrer de Formentor, 14, 07470 Port de Pollença, Illes Balears, Spanien",
+      "Latitude": 39.9071235,
+      "Longitude": 3.0826257,
+      "Phone": "+34676607822",
+      "Website": "http://www.bikeislandmallorca.com/"
+    },
+    "Bike hire Alcúdia": {
+      "Address": "Av. Marina, 6 - 1, 07400 Alcúdia, Illes Balears, Spanien",
+      "Latitude": 39.8520557,
+      "Longitude": 3.1152387,
+      "Phone": "+34971549584",
+      "Website": "http://www.bikehirealcudia.com/"
+    },
+    "New Horizon Bike Rental": {
+      "Address": "Avinguda de la Platja, 3, 07400 Alcúdia, Illes Balears, Spanien",
+      "Latitude": 39.8430189,
+      "Longitude": 3.1280435,
+      "Phone": "+34971597987",
+      "Website": "http://www.newhorizon.es/"
+    },
+    "Enjoy Bike Garage": {
+      "Address": "Carrer del Mercat, 3, 07400 Alcúdia, Illes Balears, Spanien",
+      "Latitude": 39.8514614,
+      "Longitude": 3.1239847,
+      "Phone": "+34871513547",
+      "Website": "http://www.enjoybikegarage.com/"
+    },
+    "Wheelssport Alcudia": {
+      "Address": "CRTA. ALCUDIA - ARTA, 56, Ctra. Artà-Alcúdia, 56, 07458 Can Picafort, Balearic Islands, Spanien",
+      "Latitude": 39.7674103,
+      "Longitude": 3.1462307,
+      "Phone": null,
+      "Website": "http://www.wheelssport.net/"
+    },
+    "Elite Sports Mallorca Radvermietung": {
+      "Address": "Ctra. Artà-Alcúdia, 103, 07458 Can Picafort, Illes Balears, Spanien",
+      "Latitude": 39.7614067,
+      "Longitude": 3.1530511,
+      "Phone": "+34607183610",
+      "Website": "https://elitesports-mallorca.com/"
+    },
+    "Active Mallorca Fahrradvermietung": {
+      "Address": "Ctra. Artá-Alcudia, km 23,4, Ma-12, 07458 Playa de, 07458 Mallora, Illes Balears, Spanien",
+      "Latitude": 39.7295903,
+      "Longitude": 3.1937333,
+      "Phone": "+34971747000",
+      "Website": "http://www.active-mallorca.com/"
+    },
+    "Pasculli | Petra #ridesmart": {
+      "Address": "Carrer de Manacor, 43, 07520 Petra, Illes Balears, Spanien",
+      "Latitude": 39.6143767,
+      "Longitude": 3.1129052,
+      "Phone": null,
+      "Website": "http://www.pasculli.de/"
+    },
+    "Micobike - Bike rental": {
+      "Address": "Carrer de Bonany, 84, 07250 Vilafranca de Bonany, Illes Balears, Spanien",
+      "Latitude": 39.574482,
+      "Longitude": 3.0849253,
+      "Phone": "+34610806009",
+      "Website": "https://micobike.com/"
+    },
+    "Danilo Hondo Bike Center Cala d'Or": {
+      "Address": "Rotonda 1, Av. dels Benvinguts, s/n, 07660 Cala D'or, Illes Balears, Spanien",
+      "Latitude": 39.3756698,
+      "Longitude": 3.2287242,
+      "Phone": "+34971657890",
+      "Website": "http://www.danilo-hondo-epoint.com/"
+    },
+    "Two Fine Wheels Bikecenter // formerly Marimonte 1999-2023": {
+      "Address": "Av. dels Benvinguts, 3, 07660 Santanyí, Illes Balears, Spanien",
+      "Latitude": 39.3756780999999,
+      "Longitude": 3.2287582,
+      "Phone": "+34616893000",
+      "Website": "http://marimonte-mallorca.com/"
+    }
+  }
+}
