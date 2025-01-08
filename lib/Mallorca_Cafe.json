@@ -1,0 +1,39 @@
+{
+  "Tabellenblatt1": {
+    "Cycling Planet": {
+      "Address": "Av. Constitució, 26, 07340 Alaró, Illes Balears, Spanien",
+      "Latitude": 39.7042693,
+      "Longitude": 2.7919238,
+      "Phone": null,
+      "Website": "https://www.cyclingplanet.es/de/"
+    },
+    "Sa Mola 13": {
+      "Address": "Carretera de Santa Margalida, 1, 07510 Sineu, Illes Balears, Spanien",
+      "Latitude": 39.645818,
+      "Longitude": 3.0139019,
+      "Phone": null,
+      "Website": "https://www.instagram.com/sa_mola_13/?hl=de"
+    },
+    "Sa Ruta Verda": {
+      "Address": "62 Nuestra Senora de Lluc, 07314 Caimari, Balearic Islands, Spanien",
+      "Latitude": 39.8224927,
+      "Longitude": 2.8848365,
+      "Phone": null,
+      "Website": "https://rutaverda.com/"
+    },
+    "Mercat Tramuntana": {
+      "Address": "Carrer de Ciutat, 6, 07194 Puigpunyent, Illes Balears, Spanien",
+      "Latitude": 39.6218963,
+      "Longitude": 2.5277045,
+      "Phone": null,
+      "Website": "https://www.mercattramuntana.com/"
+    },
+    "Reynes Cycling Cafe": {
+      "Address": "Polígon de Sa Platja, 8, 07100 Sóller, Illes Balears, Spanien",
+      "Latitude": 39.7906771,
+      "Longitude": 2.6938881,
+      "Phone": null,
+      "Website": "https://www.reynescycling.com/"
+    }
+  }
+}

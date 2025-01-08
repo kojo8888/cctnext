@@ -27,6 +27,13 @@ const bikeIcon = L.icon({
   popupAnchor: [0, -32],
 });
 
+const cafeIcon = L.icon({
+  iconUrl: "/kaffee.png",
+  iconSize: [32, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32],
+});
+
 const GpxLoader = ({ gpxFilePath }) => {
   const map = useMap();
 
@@ -46,6 +53,7 @@ const GpxLoader = ({ gpxFilePath }) => {
 const MapOverpassDynamicMallorca = () => {
   const [gpxFiles, setGpxFiles] = useState([]);
   const [verleiher, setVerleiher] = useState([]);
+  const [cafe, setCafe] = useState([]);
   const location = useGeoLocation();
   
   // Fetch GPX files
@@ -80,7 +88,7 @@ const MapOverpassDynamicMallorca = () => {
         const data = response.Tabellenblatt1;
         const verleiherList = Object.entries(data).map(([name, info]) => ({
           name,
-          latitude: info.Latitude, // Convert to decimal degrees
+          latitude: info.Latitude, 
           longitude: info.Longitude,
           website: info.Website || "#",
           address: info.Address || "No address available",
@@ -93,11 +101,32 @@ const MapOverpassDynamicMallorca = () => {
   fetchVerleiherData();
   }, []);
 
+  // Load Cafe from JSON
+  useEffect(() => {
+    const fetchCafeData = async () => {
+     try {
+        const response = await import("../lib/Mallorca_Cafe.json");
+        const data = response.Tabellenblatt1;
+        const cafeList = Object.entries(data).map(([name, info]) => ({
+          name,
+          latitude: info.Latitude, 
+          longitude: info.Longitude,
+          website: info.Website || "#",
+          address: info.Address || "No address available",
+        }));
+       setCafe(cafeList);
+      } catch (error) {
+        console.error("Error loading bike rental shops:", error);
+     }
+   };
+  fetchCafeData();
+  }, []);
+
   return (
     <div className={styles.map}>
       <MapContainer
         center={[39.69, 3.01]} // Mallorca default center
-        zoom={9}
+        zoom={10}
         style={{ width: "100%", height: "100vh" }}
       >
         <TileLayer
@@ -123,6 +152,28 @@ const MapOverpassDynamicMallorca = () => {
                 <Marker
                   key={index}
                   icon={bikeIcon}
+                  position={[shop.latitude, shop.longitude]}
+                >
+                  <Popup>
+                    <strong>{shop.name}</strong>
+                    <br />
+                    <span>{shop.address}</span>
+                    <br />
+                    <a href={shop.website} target="_blank" rel="noopener noreferrer">
+                      Visit Website
+                    </a>
+                  </Popup>
+                </Marker>
+              ))}
+            </LayerGroup>
+          </LayersControl.Overlay>
+          {/* Cafe Layer */}
+          <LayersControl.Overlay name="Cafe's">
+            <LayerGroup>
+              {cafe.map((shop, index) => (
+                <Marker
+                  key={index}
+                  icon={cafeIcon}
                   position={[shop.latitude, shop.longitude]}
                 >
                   <Popup>
