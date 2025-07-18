@@ -8,7 +8,7 @@ export default function aboutus({ products }) {
         <meta name="description" content="Über uns, wer wir sind." key="desc" />
         <meta property="og:title" content="Über uns" />
         <meta property="og:description" content="Über uns, wer wir sind." />
-        <meta
+           <meta
           property="og:image"
           content="https://www.customcyclingtracks.com/Logo.png"
         />
