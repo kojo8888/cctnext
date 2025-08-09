@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "prisma generate && prisma migrate deploy && next build",
+    "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
